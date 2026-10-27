@@ -64,7 +64,7 @@
     "credit": "@Baidu_Inc"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:04:31Z",
+    "checked_at": "2026-10-27T22:06:46Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -84,12 +84,12 @@
       "detail": "image/jpg, 254520 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:04:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:04:31Z",
+  "updated_at": "2026-10-27T22:06:46Z",
   "history": [
     {
       "operation_id": "5c393a3f-aa6c-4c68-aea0-2040f51a43fb",
@@ -99,6 +99,15 @@
       "payload_sha256": "445385716635fc727e91980a47abcec27d33a76b6b4416183d831c0e6f2e5219",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "ea440fb5-2da7-422e-a8a3-8fd386322f43",
+      "action": "update",
+      "at": "2026-10-27T22:06:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "359cdeff26372339c8fa2d0d1d8a92bb71cf4b4a878a59d86f9599d7d0b41929",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
