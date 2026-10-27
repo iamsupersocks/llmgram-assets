@@ -1,0 +1,97 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0a21aae1e4cb",
+  "name": "Treg (pay-per-call agent tool router)",
+  "summary": "Open-source router that gives agents one key and pay-per-call access to many data providers (\"OpenRouter for agent tools\"). Its people-search tool queries over 100 providers in parallel; the team claims about $0.0089 per lead. Self-hostable or used as a hosted service with $1 of free credit.",
+  "category": "tools",
+  "tags": [
+    "agents",
+    "api-router",
+    "people-search",
+    "enrichment",
+    "pay-per-call",
+    "self-hosted"
+  ],
+  "publisher": {
+    "name": "Superdesign (treg)",
+    "url": "https://treg.to/"
+  },
+  "resource_url": "https://treg.to/people-search",
+  "download_url": "https://github.com/superdesigndev/treg",
+  "access": {
+    "model": "freemium",
+    "license": "Apache-2.0 with additional terms",
+    "license_url": "https://github.com/superdesigndev/treg/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": true,
+    "price": "Hosted: pay per call, $1 free credit; self-hosted $0 plus provider costs",
+    "notes": "Additional terms forbid offering Treg as a hosted service to third parties; self-hosting for your own use is allowed. People data is subject to privacy law (e.g. GDPR)."
+  },
+  "procedure": [
+    "Use the hosted version at treg.to (sign up, $1 free credit)",
+    "Or self-host from https://github.com/superdesigndev/treg",
+    "Call the people-search tool from your agent with one key"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "HTTP API"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/treg_ai/status/2114687440699367734",
+    "author": "@treg_ai",
+    "published_at": "2026-10-26T11:03:27Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 62,
+    "why": "Useful agent-tool router with a self-host option; licence adds restrictions and people search raises privacy questions."
+  },
+  "image": {
+    "url": "https://treg.to/media/og.png",
+    "alt": "",
+    "credit": "Superdesign (treg)"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:05:11Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 92425 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:05:11Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:05:11Z",
+  "history": [
+    {
+      "operation_id": "553b606a-c766-4541-9f51-a80a3f1bfa60",
+      "action": "submit",
+      "at": "2026-10-27T22:05:11Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b6b8c9bc437a2bde154751d7bdf5d168a8ccd3bb19876b81822b051557ff20d0",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
