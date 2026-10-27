@@ -1,0 +1,90 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c15ef0a7dbd0",
+  "name": "Macro (open-source team workspace)",
+  "summary": "Open-source unified workspace that combines email (multi-account inbox), channels and DMs, real-time markdown docs, tasks, agents, calls and CRM, all @-linked in one graph with shared AI memory. Built in SolidJS and Rust; self-host it or use a free hosted account.",
+  "category": "tools",
+  "tags": [
+    "notion-alternative",
+    "email-client",
+    "docs",
+    "tasks",
+    "self-hosted",
+    "rust"
+  ],
+  "publisher": {
+    "name": "Macro",
+    "url": "https://macro.com/"
+  },
+  "resource_url": "https://github.com/macro-inc/macro",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "AGPL-3.0",
+    "license_url": "https://github.com/macro-inc/macro/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 self-hosted; free hosted account available",
+    "notes": "AGPL-3.0: offering a modified version as a network service requires publishing your changes."
+  },
+  "procedure": [
+    "Self-host from https://github.com/macro-inc/macro following the README",
+    "Or create a free account on macro.com"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "web app"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/alexhvnsen/status/2114877623021293892",
+    "author": "@alexhvnsen",
+    "published_at": "2026-10-27T00:31:32Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Full workspace suite under AGPL with a free hosted option; replaces several SaaS tools."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/b42d2737d980173b737dea4813d7f88bc32f0e20462ac31d711ca00e643a22b1/macro-inc/macro",
+    "alt": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory. - macro-inc/macro",
+    "credit": "Macro"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:04:02Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 54752 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:04:02Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:04:02Z",
+  "history": [
+    {
+      "operation_id": "c8730f61-e6d7-4428-b527-b5f12621c82a",
+      "action": "submit",
+      "at": "2026-10-27T22:04:02Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "76716a5cd94c32f88d3138ae659b2d065235799e51aa8aa2738f39e8b6486918",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
