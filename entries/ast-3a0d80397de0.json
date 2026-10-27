@@ -56,7 +56,7 @@
     "credit": "ArtCraft (storytold)"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:03:50Z",
+    "checked_at": "2026-10-27T22:06:36Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -70,12 +70,12 @@
       "detail": "image/png, 49435 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:03:50Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:03:50Z",
+  "updated_at": "2026-10-27T22:06:36Z",
   "history": [
     {
       "operation_id": "c9f366a1-4d46-4d33-a3e9-dbe4993d84e7",
@@ -85,6 +85,15 @@
       "payload_sha256": "c8711c184e471edbf080d22665aa869584377d89bcb2f8223594294af3f8109c",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "82e1d04d-b5cd-467f-8c7a-cd06e2b51520",
+      "action": "update",
+      "at": "2026-10-27T22:06:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9dd18d9b440c5d21ec90927b61e5957f89602b4788f8a704c1cf4a74669bcdd6",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
