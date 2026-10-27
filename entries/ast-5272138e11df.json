@@ -1,0 +1,77 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-5272138e11df",
+  "name": "POSE-DB-01 (AI pose reference gallery)",
+  "summary": "Free gallery of AI-generated pose reference images for artists and image generation, browsable by pose. Images may be used commercially without credit; redistribution or resale of the images as a collection is not allowed.",
+  "category": "images-video",
+  "tags": [
+    "pose-reference",
+    "images",
+    "art-reference",
+    "ai-generated",
+    "free"
+  ],
+  "publisher": {
+    "name": "POSE-DB",
+    "url": "https://ai-pose-gallery.pages.dev/"
+  },
+  "resource_url": "https://ai-pose-gallery.pages.dev/",
+  "download_url": null,
+  "access": {
+    "model": "free",
+    "license": "Site terms: free commercial use, no redistribution or resale",
+    "license_url": null,
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "No og:image. The page also promotes \"uncensored AI\" use in an open chat."
+  },
+  "procedure": [
+    "Open ai-pose-gallery.pages.dev",
+    "Browse and download pose references"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://ai-pose-gallery.pages.dev/",
+    "author": "",
+    "published_at": null,
+    "kind": "website"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 45,
+    "why": "Free reference set, but no preview image, no source post and questionable surrounding content."
+  },
+  "image": null,
+  "verification": {
+    "checked_at": "2026-10-27T22:05:17Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:05:17Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:05:17Z",
+  "history": [
+    {
+      "operation_id": "503b65fc-6425-4c96-bbe7-32dcb6c1d73a",
+      "action": "submit",
+      "at": "2026-10-27T22:05:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "26f86d9ac72b025c49f3accf85c8a8a06732305cf18f3a4465667ec663c29706",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
