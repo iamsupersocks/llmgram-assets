@@ -64,7 +64,7 @@
     "credit": "@rehan_shei"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:04:43Z",
+    "checked_at": "2026-10-27T22:07:05Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -78,12 +78,12 @@
       "detail": "image/jpg, 59896 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:04:43Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:04:43Z",
+  "updated_at": "2026-10-27T22:07:05Z",
   "history": [
     {
       "operation_id": "31fda8f9-0192-442a-99dd-a6c3d2e94f16",
@@ -93,6 +93,15 @@
       "payload_sha256": "e7dd2c837cb29b5c6d9eef5b8592340fecada8f27cd20dedfd72a8aa7857dc55",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "2ff16929-41da-4f2c-871a-8cc6ed250e16",
+      "action": "update",
+      "at": "2026-10-27T22:07:05Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8529456259ccf173ee975560e486a4420657cd46cb85c86c29b7f95f7e9a57da",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
