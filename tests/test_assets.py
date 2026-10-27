@@ -98,6 +98,18 @@ class ServiceTests(Base):
         self.assertEqual(record["added_by"], "grokbot")
         self.assertEqual(model.validate_record(record), [])
 
+    def test_hold_keeps_complete_record_hidden_until_released(self):
+        receipt = self.service.submit({"operation_id": op(), "hold": True, "asset": COMPLETE}, "grokbot")
+        self.assertEqual((receipt["status"], receipt["missing"]), ("candidate", ["hold"]))
+        record, _ = self.store.get(receipt["asset_id"])
+        self.assertEqual(model.validate_record(record), [])
+        kept = self.service.update({"operation_id": op(), "asset_id": receipt["asset_id"], "changes": {"summary": "Still checking."}}, "grokbot")
+        self.assertEqual(kept["status"], "candidate")
+        released = self.service.update({"operation_id": op(), "asset_id": receipt["asset_id"], "hold": False, "changes": {}}, "grokbot")
+        self.assertEqual(released["status"], "published")
+        with self.assertRaises(ToolError):
+            self.service.update({"operation_id": op(), "asset_id": receipt["asset_id"], "hold": "yes", "changes": {}}, "grokbot")
+
     def test_incomplete_submission_stays_candidate(self):
         asset = {k: v for k, v in COMPLETE.items() if k not in ("access", "procedure")}
         receipt = self.service.submit({"operation_id": op(), "asset": asset}, "grokbot")

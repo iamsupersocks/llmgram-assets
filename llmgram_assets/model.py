@@ -318,6 +318,8 @@ def _source(value: Any, field: str, *, required: bool) -> dict:
 def missing_for_publication(record: dict) -> list[str]:
     """Fields that keep a record out of the public page."""
     missing = []
+    if record.get("hold"):
+        missing.append("hold")
     access = record.get("access") or {}
     if access.get("model", "unknown") == "unknown":
         missing.append("access.model")

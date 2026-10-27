@@ -47,11 +47,13 @@ from mcp.shared.auth import OAuthClientInformationFull, OAuthToken
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, RedirectResponse, Response
 
-from .mcp_server import INSTRUCTIONS, MAX_BODY, MUTATIONS_PER_HOUR, TOOLS, Handler, RateLimiter
+from .mcp_server import INSTRUCTIONS, MAX_BODY, MUTATING, MUTATIONS_PER_HOUR, TOOLS, Handler, RateLimiter
 from .service import AssetService
 from .store import GitStore, LocalStore
 
-SCOPE = "llmgram-assets"
+READ_SCOPE = "assets.read"
+WRITE_SCOPE = "assets.write"
+SCOPES = [READ_SCOPE, WRITE_SCOPE]
 ACCESS_TTL = 3600
 REFRESH_TTL = 30 * 24 * 3600
 CODE_TTL = 300
@@ -141,7 +143,7 @@ class OwnerApprovedOAuth:
             pending = self._pending.get(request_id)
             if pending is None:
                 return HTMLResponse(_page("Demande expirée", "Relance la connexion depuis Grok Bot."), 400)
-            return HTMLResponse(_approval_page(request_id, pending[1].client_name or "Client MCP"),
+            return HTMLResponse(_approval_page(request_id, pending[1].client_name or "Client MCP", _granted(pending[2].scopes)),
                                 headers={"Cache-Control": "no-store"})
 
         body = (await request.body())[:4096].decode("utf-8", "replace")
@@ -157,12 +159,12 @@ class OwnerApprovedOAuth:
             self._pending.pop(request_id, None)
             return RedirectResponse(construct_redirect_uri(str(params.redirect_uri), error="access_denied", state=params.state), 302)
         if not hmac.compare_digest(owner_secret.encode(), self._secret.encode()):
-            return HTMLResponse(_approval_page(request_id, client.client_name or "Client MCP", invalid=True), 403)
+            return HTMLResponse(_approval_page(request_id, client.client_name or "Client MCP", _granted(params.scopes), invalid=True), 403)
         self._pending.pop(request_id, None)
         code_value = secrets.token_urlsafe(32)
         self._codes[code_value] = AuthorizationCode(
             code=code_value,
-            scopes=params.scopes or [SCOPE],
+            scopes=_granted(params.scopes),
             expires_at=time.time() + CODE_TTL,
             client_id=client.client_id or "",
             code_challenge=params.code_challenge,
@@ -187,7 +189,7 @@ class OwnerApprovedOAuth:
         payload = self._decode(refresh_token, "refresh")
         if payload is None or payload.get("client_id") != client.client_id:
             return None
-        return RefreshToken(token=refresh_token, client_id=payload["client_id"], scopes=payload.get("scopes") or [SCOPE], expires_at=payload["exp"])
+        return RefreshToken(token=refresh_token, client_id=payload["client_id"], scopes=_granted(payload.get("scopes")), expires_at=payload["exp"])
 
     async def exchange_refresh_token(self, client: OAuthClientInformationFull, refresh_token: RefreshToken, scopes: list[str]) -> OAuthToken:
         return self._issue(client.client_id or "", scopes or refresh_token.scopes, None)
@@ -196,7 +198,7 @@ class OwnerApprovedOAuth:
         payload = self._decode(token, "access")
         if payload is None or payload.get("client_id") not in self._clients:
             return None
-        return AccessToken(token=token, client_id=payload["client_id"], scopes=payload.get("scopes") or [SCOPE],
+        return AccessToken(token=token, client_id=payload["client_id"], scopes=_granted(payload.get("scopes")),
                            expires_at=payload["exp"], resource=payload.get("resource"))
 
     async def revoke_token(self, token) -> None:
@@ -236,6 +238,12 @@ class OwnerApprovedOAuth:
             return None
 
 
+def _granted(scopes) -> list[str]:
+    """Known scopes only; read is always implied."""
+    granted = [s for s in SCOPES if s in (scopes or [])]
+    return granted if READ_SCOPE in granted else [READ_SCOPE, *granted]
+
+
 def _page(title: str, message: str) -> str:
     return ("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width'>"
             "<title>LLMgram assets</title><style>body{font:16px system-ui;max-width:520px;margin:12vh auto;padding:24px}"
@@ -243,14 +251,15 @@ def _page(title: str, message: str) -> str:
             "</h1><p>" + html.escape(message) + "</p></main>")
 
 
-def _approval_page(request_id: str, client_name: str, invalid: bool = False) -> str:
+def _approval_page(request_id: str, client_name: str, scopes: list[str], invalid: bool = False) -> str:
+    access = "lire et compléter (ajout, mise à jour, signalement ; aucune suppression)" if WRITE_SCOPE in scopes else "lire"
     warning = "<p style='color:#b42318'>Code incorrect.</p>" if invalid else ""
     return ("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width'>"
             "<title>Autoriser LLMgram assets</title><style>body{font:16px system-ui;max-width:520px;margin:8vh auto;padding:24px}"
             "main{border:1px solid #ddd;border-radius:16px;padding:28px}input,button{box-sizing:border-box;width:100%;"
             "padding:12px;margin-top:12px;border-radius:10px;border:1px solid #bbb}button{background:#111;color:#fff;border:0}"
             ".deny{background:#fff;color:#333;border:1px solid #bbb}</style><main><h1>Autoriser LLMgram assets</h1><p>" +
-            html.escape(client_name) + " demande à lire et compléter le catalogue Asset Signal.</p>" + warning +
+            html.escape(client_name) + " demande à " + access + " le catalogue Asset Signal.</p>" + warning +
             "<form method=post action='/oauth/approve'><input type=hidden name=request value='" +
             html.escape(request_id, quote=True) + "'><input type=password name=secret autocomplete=off placeholder='Secret propriétaire'>"
             "<button name=action value=approve>Autoriser</button><button class=deny name=action value=deny>Refuser</button></form></main>")
@@ -290,8 +299,8 @@ def build_app(service: AssetService, *, secret: str, public_url: str, clients_fi
         auth=AuthSettings(
             issuer_url=public_url,
             resource_server_url=f"{public_url.rstrip('/')}{MCP_PATH}",
-            client_registration_options=ClientRegistrationOptions(enabled=True, valid_scopes=[SCOPE], default_scopes=[SCOPE]),
-            required_scopes=[SCOPE],
+            client_registration_options=ClientRegistrationOptions(enabled=True, valid_scopes=SCOPES, default_scopes=[READ_SCOPE]),
+            required_scopes=[READ_SCOPE],
         ),
         transport_security=TransportSecuritySettings(
             enable_dns_rebinding_protection=True,
@@ -310,6 +319,10 @@ def build_app(service: AssetService, *, secret: str, public_url: str, clients_fi
     @low.call_tool(validate_input=False)
     async def call_tool(name: str, arguments: dict) -> types.CallToolResult:
         token = get_access_token()
+        if name in MUTATING and (token is None or WRITE_SCOPE not in token.scopes):
+            message = f"{name} needs the {WRITE_SCOPE} scope; this connection is read-only"
+            return types.CallToolResult(content=[types.TextContent(type="text", text=json.dumps({"error": message}))],
+                                        structuredContent={"error": message}, isError=True)
         actor = "oauth:" + provider.client_name(token.client_id) if token else "oauth:unknown"
         result = await anyio.to_thread.run_sync(handler.call, name, arguments or {}, actor)
         return types.CallToolResult(content=[types.TextContent(type="text", text=result["content"][0]["text"])],

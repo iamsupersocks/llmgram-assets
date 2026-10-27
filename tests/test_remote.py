@@ -42,8 +42,8 @@ class RemoteGatewayTests(unittest.TestCase):
         self.client.__exit__(None, None, None)
         self.tmp.cleanup()
 
-    def _authorize(self, secret=SECRET):
-        reg = self.client.post("/register", json={"redirect_uris": [REDIRECT], "client_name": "Grok Bot",
+    def _authorize(self, secret=SECRET, scope="assets.read assets.write"):
+        reg = self.client.post("/register", json={"redirect_uris": [REDIRECT], "client_name": "Grok Bot", "scope": scope,
                                                   "token_endpoint_auth_method": "none",
                                                   "grant_types": ["authorization_code", "refresh_token"]})
         self.assertEqual(reg.status_code, 201, reg.text)
@@ -52,7 +52,7 @@ class RemoteGatewayTests(unittest.TestCase):
         challenge = base64.urlsafe_b64encode(hashlib.sha256(verifier.encode()).digest()).decode().rstrip("=")
         auth = self.client.get("/authorize", params={
             "response_type": "code", "client_id": client_id, "redirect_uri": REDIRECT, "state": "st",
-            "code_challenge": challenge, "code_challenge_method": "S256", "scope": "llmgram-assets"})
+            "code_challenge": challenge, "code_challenge_method": "S256", "scope": scope})
         self.assertEqual(auth.status_code, 302, auth.text)
         request_id = parse_qs(urlsplit(auth.headers["location"]).query)["request"][0]
         page = self.client.get("/oauth/approve", params={"request": request_id})
@@ -60,8 +60,8 @@ class RemoteGatewayTests(unittest.TestCase):
         approve = self.client.post("/oauth/approve", data={"request": request_id, "secret": secret, "action": "approve"})
         return client_id, verifier, approve
 
-    def _token(self):
-        client_id, verifier, approve = self._authorize()
+    def _token(self, scope="assets.read assets.write"):
+        client_id, verifier, approve = self._authorize(scope=scope)
         self.assertEqual(approve.status_code, 302)
         query = parse_qs(urlsplit(approve.headers["location"]).query)
         self.assertEqual(query["state"], ["st"])
@@ -112,6 +112,16 @@ class RemoteGatewayTests(unittest.TestCase):
         refreshed = self.client.post("/token", data={"grant_type": "refresh_token", "refresh_token": tokens["refresh_token"],
                                                      "client_id": json.loads(self.clients_file.read_text()).popitem()[0]})
         self.assertEqual(refreshed.status_code, 200, refreshed.text)
+
+    def test_read_only_connection_cannot_write(self):
+        access = self._token(scope="assets.read")["access_token"]
+        found = self._rpc(access, "tools/call", {"name": "asset_search", "arguments": {}}).json()["result"]
+        self.assertFalse(found["isError"], found)
+        refused = self._rpc(access, "tools/call", {"name": "asset_flag", "arguments": {
+            "operation_id": "6f1c1b2e-8d3a-4b8e-9f00-2a1c3d4e5f61", "asset_id": "ast-000000000000", "reason": "dead_link"}},
+            rid=2).json()["result"]
+        self.assertTrue(refused["isError"])
+        self.assertIn("assets.write", refused["structuredContent"]["error"])
 
     def test_tampered_token_is_refused(self):
         access = self._token()["access_token"]

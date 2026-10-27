@@ -26,6 +26,13 @@ class ToolError(Exception):
     """Recoverable business error returned with ``isError=true``."""
 
 
+def _hold(args: dict) -> bool | None:
+    value = args.get("hold")
+    if value is not None and not isinstance(value, bool):
+        raise ToolError("hold must be a boolean")
+    return value
+
+
 def _operation_id(value: Any) -> str:
     if not isinstance(value, str) or not _UUID.match(value.lower()):
         raise ToolError("operation_id must be a fresh UUID; reuse it only to retry the same call")
@@ -108,7 +115,8 @@ class AssetService:
             fields = model.normalize_fields(raw, partial=False)
         except model.ValidationError as exc:
             raise ToolError(str(exc)) from None
-        digest = model.payload_hash({"action": "submit", "asset": raw})
+        hold = _hold(args)
+        digest = model.payload_hash({"action": "submit", "asset": raw, "hold": hold})
         asset_id = model.asset_id_for(fields["resource_url"])
 
         existing, _ = self._get(asset_id)
@@ -130,6 +138,7 @@ class AssetService:
             **{k: fields.get(k) for k in ("name", "summary", "category", "tags", "publisher", "resource_url", "download_url",
                                           "access", "procedure", "stats", "source", "related_sources", "verdict")},
             "verification": self._verify(fields, now),
+            "hold": bool(hold),
             "status": "candidate",
             "flags": [],
             "added_at": now,
@@ -161,7 +170,8 @@ class AssetService:
             raise ToolError("changes must be an object")
         if "resource_url" in changes:
             raise ToolError("resource_url identifies the asset and cannot change; flag it as duplicate and submit the new URL")
-        digest = model.payload_hash({"action": "update", "asset_id": asset_id, "changes": changes})
+        hold = _hold(args)
+        digest = model.payload_hash({"action": "update", "asset_id": asset_id, "changes": changes, "hold": hold})
 
         def mutate(record: dict, now: str) -> tuple[str, dict]:
             merged = {}
@@ -173,6 +183,8 @@ class AssetService:
             except model.ValidationError as exc:
                 raise ToolError(str(exc)) from None
             record.update(fields)
+            if hold is not None:
+                record["hold"] = hold
             record["verification"] = self._verify(record, now)
             for flag in record.get("flags", []):
                 if flag.get("open") and flag.get("reason") in FIXED_BY_UPDATE:
