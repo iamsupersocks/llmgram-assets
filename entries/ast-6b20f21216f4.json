@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6b20f21216f4",
+  "name": "iMCP (macOS MCP server)",
+  "summary": "macOS app that exposes your Messages, Contacts, Calendar, Reminders, Maps and more to AI agents as an MCP server. Version 1.8.0 adds Mail, Notes, Voice Memos and Music.",
+  "category": "tools",
+  "tags": [
+    "mcp",
+    "macos",
+    "agents",
+    "apple",
+    "local",
+    "privacy"
+  ],
+  "publisher": {
+    "name": "Mattt",
+    "url": "https://github.com/mattt"
+  },
+  "resource_url": "https://github.com/mattt/iMCP",
+  "download_url": "https://github.com/mattt/iMCP/releases/tag/1.8.0",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/mattt/iMCP/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Each data source is enabled separately and asks for macOS permissions."
+  },
+  "procedure": [
+    "Download the 1.8.0 release from GitHub",
+    "Enable the services you want in the iMCP menu bar app",
+    "Add iMCP as an MCP server in your client (e.g. Claude Desktop)"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "macOS app",
+      "MCP"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/mattt/status/2114702405824868432",
+    "author": "@mattt",
+    "published_at": "2026-10-26T12:55:17Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "MIT, local, wide coverage of Apple apps for agents."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVjugw8agAA7CL6.jpg?name=orig",
+    "alt": "The iMCP logo under two rows of round service icons, including the new Mail, Notes, Voice Memos, and Music icons.",
+    "credit": "@mattt"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:04:36Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 114708 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:04:36Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:04:36Z",
+  "history": [
+    {
+      "operation_id": "cd952341-75ef-4bff-a3a4-f733264e9f5a",
+      "action": "submit",
+      "at": "2026-10-27T22:04:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e7aaaa85b4790b9d40d1f8774799ba96be5799a0817e7ad030e238cd9b1192cc",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
