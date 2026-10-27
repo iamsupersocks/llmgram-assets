@@ -64,7 +64,7 @@
     "credit": "@MiniMax_AI"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:02:59Z",
+    "checked_at": "2026-10-27T22:06:05Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -84,12 +84,12 @@
       "detail": "image/jpg, 163935 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:02:59Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:02:59Z",
+  "updated_at": "2026-10-27T22:06:05Z",
   "history": [
     {
       "operation_id": "978d5427-b482-41ac-bd46-cf03e796593c",
@@ -99,6 +99,15 @@
       "payload_sha256": "8cb1957caec211f338a4de0a2c5f4b4499f1e60a8220f73f0dcf823bb804d62a",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "e7f7a92a-51fd-4f08-8c90-29995e6009e4",
+      "action": "update",
+      "at": "2026-10-27T22:06:05Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e2841de412a05b9ba15380653ee2f85e2b3471001bdb47370263b6e2b6b6e897",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
