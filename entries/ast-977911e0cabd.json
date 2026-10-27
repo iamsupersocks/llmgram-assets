@@ -58,7 +58,7 @@
     "credit": "@plotarmordev"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:02:50Z",
+    "checked_at": "2026-10-27T22:06:05Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -78,12 +78,12 @@
       "detail": "image/jpg, 24236 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:02:50Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:02:50Z",
+  "updated_at": "2026-10-27T22:06:05Z",
   "history": [
     {
       "operation_id": "4d2fc0bf-e6ef-4724-bfba-9215ad16cc01",
@@ -93,6 +93,15 @@
       "payload_sha256": "429e734a227d333eb3bccaa222e1aba796f7a9d2badb87d9fdf0d4895008e0e1",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "ef95bb15-9ccf-46b6-9943-e9db589d5dce",
+      "action": "update",
+      "at": "2026-10-27T22:06:05Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bd005c6d5b7b712d4c1d57526e19279b2b1ce3c4d8a24d7cb6b05daabc6eb25f",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
