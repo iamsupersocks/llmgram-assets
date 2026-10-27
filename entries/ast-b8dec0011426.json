@@ -57,7 +57,7 @@
     "credit": "@CamilleRoux"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:03:11Z",
+    "checked_at": "2026-10-27T22:06:17Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -77,12 +77,12 @@
       "detail": "image/jpg, 276665 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:03:11Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:03:11Z",
+  "updated_at": "2026-10-27T22:06:17Z",
   "history": [
     {
       "operation_id": "19647de0-86c7-4cb8-88dc-f1abf7d24431",
@@ -92,6 +92,15 @@
       "payload_sha256": "430df04dd4bf2467e08f0652fe1c0bc5102a7a92d5a10b09f59a52da2e03c57a",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "17c6a8a9-8b8c-4772-a600-1d56d4fefa83",
+      "action": "update",
+      "at": "2026-10-27T22:06:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ccd379c5cc4c8a2ce8dadbcaa21e860824e2de7bd5df8a3ea48c5ac97356767d",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
