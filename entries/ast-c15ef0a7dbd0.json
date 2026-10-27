@@ -56,7 +56,7 @@
     "credit": "Macro"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:04:02Z",
+    "checked_at": "2026-10-27T22:06:40Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -70,12 +70,12 @@
       "detail": "image/png, 54752 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:04:02Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:04:02Z",
+  "updated_at": "2026-10-27T22:06:40Z",
   "history": [
     {
       "operation_id": "c8730f61-e6d7-4428-b527-b5f12621c82a",
@@ -85,6 +85,15 @@
       "payload_sha256": "76716a5cd94c32f88d3138ae659b2d065235799e51aa8aa2738f39e8b6486918",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8ea78872-84c8-41c1-8311-01c5c91ad878",
+      "action": "update",
+      "at": "2026-10-27T22:06:40Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1b668e0e26dcd64b94afa617c0706194aeaf6764dbe2fc3ad3a2fcf288269385",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
