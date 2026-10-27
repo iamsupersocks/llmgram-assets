@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-da4c60e692cc",
+  "name": "FlashRaw (Rust camera RAW decoder)",
+  "summary": "Memory-safe camera RAW decoder in Rust for about 40 formats, with SIMD, multi-core and GPU paths, WebAssembly and ICC colour management. CLI plus C, C++, Python and JavaScript bindings and a LibRaw-compatible layer; author reports up to 15.4x faster than LibRaw.",
+  "category": "tools",
+  "tags": [
+    "raw",
+    "photography",
+    "rust",
+    "image-decoding",
+    "wasm",
+    "libraw-alternative"
+  ],
+  "publisher": {
+    "name": "Yassine Bouane",
+    "url": "https://github.com/ybouane"
+  },
+  "resource_url": "https://github.com/ybouane/flashraw",
+  "download_url": "https://flashraw.ybouane.com/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT OR Apache-2.0",
+    "license_url": "https://github.com/ybouane/flashraw",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": ""
+  },
+  "procedure": [
+    "Try the in-browser demo at flashraw.ybouane.com",
+    "Install from crates.io, PyPI or npm (`flashraw`, v0.1.0)",
+    "Coming from LibRaw: see docs/libraw-compat.md"
+  ],
+  "stats": {
+    "count": "about 40 RAW formats",
+    "size": "",
+    "formats": [
+      "Rust",
+      "Python",
+      "JavaScript",
+      "C",
+      "C++"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/ybouane/status/2115037039519568293",
+    "author": "@ybouane",
+    "published_at": "2026-10-27T11:05:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Permissive dual licence, multi-language packages and published benchmarks; early 0.1.0 release."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2114735414636642304/img/nERyjkbh-K52m8Ps.jpg",
+    "alt": "",
+    "credit": "@ybouane"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:04:49Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 27133 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:04:49Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:04:49Z",
+  "history": [
+    {
+      "operation_id": "e9fe6440-9699-462d-a18e-6f06629631b8",
+      "action": "submit",
+      "at": "2026-10-27T22:04:49Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "73ebfc6be395069dc9f73aa11aefb1e6818fb856c25dfb7e6fb5db8d77a7a01e",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
