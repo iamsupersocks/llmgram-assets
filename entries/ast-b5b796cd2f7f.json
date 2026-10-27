@@ -1,0 +1,89 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b5b796cd2f7f",
+  "name": "DarkUGC viral UGC video library",
+  "summary": "Free research library of viral short-form UGC videos for apps and brands, mostly from TikTok and Instagram creators. Each video is filed by brand with creator, platform, views, post date and creative format; about 15,000 videos, 412 brands and 3,200 creators, with sort by views or engagement and research guides.",
+  "category": "images-video",
+  "tags": [
+    "ugc",
+    "marketing",
+    "short-form-video",
+    "tiktok",
+    "research",
+    "inspiration"
+  ],
+  "publisher": {
+    "name": "DarkUGC",
+    "url": "https://darkugc.com/"
+  },
+  "resource_url": "https://darkugc.com/",
+  "download_url": null,
+  "access": {
+    "model": "free",
+    "license": "DarkUGC Terms of Use (videos remain their creators')",
+    "license_url": "https://darkugc.com/terms",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Reference and research only: browse, study and use the learnings; the videos belong to their creators and brands and are not licensed for reuse."
+  },
+  "procedure": [
+    "Open darkugc.com and filter by brand, format or platform",
+    "Sort by views, engagement or saves; saves work in the browser without an account",
+    "Use the research guides and brief builder to plan your own videos"
+  ],
+  "stats": {
+    "count": "about 15,000 videos, 412 brands, 3,232 creators",
+    "size": "",
+    "formats": [],
+    "cadence": "daily additions"
+  },
+  "source": {
+    "url": "https://x.com/fuckgrowth/status/2114783239705424235",
+    "author": "@fuckgrowth",
+    "published_at": "2026-10-26T18:16:29Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 60,
+    "why": "Large, free, well-tagged reference set for UGC marketing; inspiration only, not reusable footage."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2114779625473617920/img/9-Wrtd_LGjqSu1p7.jpg",
+    "alt": "",
+    "credit": "@fuckgrowth"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:56Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 117392 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:56Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:56Z",
+  "history": [
+    {
+      "operation_id": "88de9e3c-7d77-47b7-9cf5-e3c67534e588",
+      "action": "submit",
+      "at": "2026-10-27T22:03:56Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "df3c75ee73461d50d9a317e270d94022551283545d31ddbaa00ffce0d51cafd6",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
