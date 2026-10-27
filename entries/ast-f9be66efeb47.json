@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-f9be66efeb47",
+  "name": "Harness² (Google Research)",
+  "summary": "Open-source framework for recursive agent harnessing: the agent proposes edits to its own harness (prompt, tools, memory, skills, subagents), probes candidate versions on the same task and composes a better one from the behavioural differences, without a grader or ground truth. Lessons carry over to the next task; model weights stay fixed.",
+  "category": "tools",
+  "tags": [
+    "agents",
+    "harness",
+    "self-improving",
+    "python",
+    "google-research",
+    "benchmarks"
+  ],
+  "publisher": {
+    "name": "Google Research",
+    "url": "https://github.com/google-research"
+  },
+  "resource_url": "https://github.com/google-research/harness2",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/google-research/harness2/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (you pay for the model API you run it with)",
+    "notes": ""
+  },
+  "procedure": [
+    "Clone https://github.com/google-research/harness2",
+    "Install: `uv pip install -e '.[render]'`",
+    "Set up a benchmark, e.g. `harness2-setup jb`, then run `harness2 --bench jb --k 1 --mode parallel` (see docs/BENCHMARKS.md)"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "Python"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/akshay_pachaar/status/2111753928031531232",
+    "author": "@akshay_pachaar",
+    "published_at": "2026-10-18T09:39:05Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://arxiv.org/pdf/2610.14224",
+      "author": "",
+      "published_at": null,
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Apache-2.0 reference implementation from Google Research with paper and benchmark guides; useful pattern for anyone building agent harnesses."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HU5046ubEAANqCu.jpg?name=orig",
+    "alt": "",
+    "credit": "@akshay_pachaar"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:02:44Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 246886 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:02:44Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:02:44Z",
+  "history": [
+    {
+      "operation_id": "25a6524b-6413-4991-ad6c-7fcd677e8a9e",
+      "action": "submit",
+      "at": "2026-10-27T22:02:44Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "935b36250d14f9a0cb0728ba5c4961e844763b914d54156558199f252fbb63d8",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
