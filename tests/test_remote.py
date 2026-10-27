@@ -42,7 +42,7 @@ class RemoteGatewayTests(unittest.TestCase):
         self.client.__exit__(None, None, None)
         self.tmp.cleanup()
 
-    def _authorize(self, secret=SECRET, scope="assets.read assets.write"):
+    def _authorize(self, secret=SECRET, scope="assets.read assets.write", action="approve"):
         reg = self.client.post("/register", json={"redirect_uris": [REDIRECT], "client_name": "Grok Bot", "scope": scope,
                                                   "token_endpoint_auth_method": "none",
                                                   "grant_types": ["authorization_code", "refresh_token"]})
@@ -57,11 +57,11 @@ class RemoteGatewayTests(unittest.TestCase):
         request_id = parse_qs(urlsplit(auth.headers["location"]).query)["request"][0]
         page = self.client.get("/oauth/approve", params={"request": request_id})
         self.assertIn("Grok Bot", page.text)
-        approve = self.client.post("/oauth/approve", data={"request": request_id, "secret": secret, "action": "approve"})
+        approve = self.client.post("/oauth/approve", data={"request": request_id, "secret": secret, "action": action})
         return client_id, verifier, approve
 
-    def _token(self, scope="assets.read assets.write"):
-        client_id, verifier, approve = self._authorize(scope=scope)
+    def _token(self, scope="assets.read assets.write", action="approve"):
+        client_id, verifier, approve = self._authorize(scope=scope, action=action)
         self.assertEqual(approve.status_code, 302)
         query = parse_qs(urlsplit(approve.headers["location"]).query)
         self.assertEqual(query["state"], ["st"])
@@ -127,6 +127,18 @@ class RemoteGatewayTests(unittest.TestCase):
         access = self._token()["access_token"]
         response = self._rpc(access[:-2] + "AA", "tools/list")
         self.assertEqual(response.status_code, 401)
+
+    def test_owner_can_grant_read_only_to_a_write_request(self):
+        tokens = self._token(action="approve_read")
+        self.assertEqual(tokens["scope"], "assets.read")
+        refused = self._rpc(tokens["access_token"], "tools/call", {"name": "asset_flag", "arguments": {
+            "operation_id": "6f1c1b2e-8d3a-4b8e-9f00-2a1c3d4e5f62", "asset_id": "ast-000000000000", "reason": "dead_link"}}).json()["result"]
+        self.assertTrue(refused["isError"])
+
+    def test_resource_metadata_lists_both_scopes(self):
+        meta = self.client.get("/.well-known/oauth-protected-resource/mcp").json()
+        self.assertEqual(meta["scopes_supported"], ["assets.read", "assets.write"])
+        self.assertEqual(meta["resource"], "https://assets.example/mcp")
 
     def test_health(self):
         self.assertEqual(self.client.get("/healthz").json(), {"ok": True})

@@ -155,7 +155,7 @@ class OwnerApprovedOAuth:
         if pending is None:
             return HTMLResponse(_page("Demande expirée", "Relance la connexion depuis Grok Bot."), 400)
         _, client, params = pending
-        if action != "approve":
+        if action not in ("approve", "approve_read"):
             self._pending.pop(request_id, None)
             return RedirectResponse(construct_redirect_uri(str(params.redirect_uri), error="access_denied", state=params.state), 302)
         if not hmac.compare_digest(owner_secret.encode(), self._secret.encode()):
@@ -164,7 +164,7 @@ class OwnerApprovedOAuth:
         code_value = secrets.token_urlsafe(32)
         self._codes[code_value] = AuthorizationCode(
             code=code_value,
-            scopes=_granted(params.scopes),
+            scopes=[READ_SCOPE] if action == "approve_read" else _granted(params.scopes),
             expires_at=time.time() + CODE_TTL,
             client_id=client.client_id or "",
             code_challenge=params.code_challenge,
@@ -172,7 +172,7 @@ class OwnerApprovedOAuth:
             redirect_uri_provided_explicitly=params.redirect_uri_provided_explicitly,
             resource=params.resource,
         )
-        logger.info("oauth client approved: %s", client.client_name or client.client_id)
+        logger.info("oauth client approved (%s): %s", action, client.client_name or client.client_id)
         return RedirectResponse(construct_redirect_uri(str(params.redirect_uri), code=code_value, state=params.state), 302,
                                 headers={"Cache-Control": "no-store"})
 
@@ -253,6 +253,8 @@ def _page(title: str, message: str) -> str:
 
 def _approval_page(request_id: str, client_name: str, scopes: list[str], invalid: bool = False) -> str:
     access = "lire et compléter (ajout, mise à jour, signalement ; aucune suppression)" if WRITE_SCOPE in scopes else "lire"
+    buttons = ("<button name=action value=approve_read>Autoriser en lecture seule</button>" +
+               ("<button name=action value=approve>Autoriser lecture + écriture</button>" if WRITE_SCOPE in scopes else ""))
     warning = "<p style='color:#b42318'>Code incorrect.</p>" if invalid else ""
     return ("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width'>"
             "<title>Autoriser LLMgram assets</title><style>body{font:16px system-ui;max-width:520px;margin:8vh auto;padding:24px}"
@@ -262,17 +264,32 @@ def _approval_page(request_id: str, client_name: str, scopes: list[str], invalid
             html.escape(client_name) + " demande à " + access + " le catalogue Asset Signal.</p>" + warning +
             "<form method=post action='/oauth/approve'><input type=hidden name=request value='" +
             html.escape(request_id, quote=True) + "'><input type=password name=secret autocomplete=off placeholder='Secret propriétaire'>"
-            "<button name=action value=approve>Autoriser</button><button class=deny name=action value=deny>Refuser</button></form></main>")
+            + buttons + "<button class=deny name=action value=deny>Refuser</button></form></main>")
 
 
-class BodyLimit:
-    """Refuse oversized request bodies before the MCP layer reads them."""
+class Gateway:
+    """Refuse oversized bodies and advertise both scopes to MCP clients.
 
-    def __init__(self, app, limit: int = MAX_BODY):
+    The SDK lists only the required (read) scope in the protected resource
+    metadata, so clients would never ask for write. The owner still picks
+    read-only or read + write on the approval page.
+    """
+
+    def __init__(self, app, public_url: str, limit: int = MAX_BODY):
         self.app = app
         self.limit = limit
+        base = public_url.rstrip("/")
+        self.metadata_path = "/.well-known/oauth-protected-resource" + MCP_PATH
+        self.metadata = json.dumps({"resource": base + MCP_PATH, "authorization_servers": [base + "/"],
+                                    "scopes_supported": SCOPES, "bearer_methods_supported": ["header"]}).encode()
 
     async def __call__(self, scope, receive, send):
+        if scope["type"] == "http" and scope["path"] == self.metadata_path and scope["method"] in ("GET", "HEAD"):
+            await send({"type": "http.response.start", "status": 200, "headers": [
+                (b"content-type", b"application/json"), (b"cache-control", b"public, max-age=3600"),
+                (b"access-control-allow-origin", b"*")]})
+            await send({"type": "http.response.body", "body": self.metadata if scope["method"] == "GET" else b""})
+            return
         if scope["type"] == "http":
             length = dict(scope.get("headers") or []).get(b"content-length")
             if length and length.isdigit() and int(length) > self.limit:
@@ -330,7 +347,7 @@ def build_app(service: AssetService, *, secret: str, public_url: str, clients_fi
 
     server.custom_route("/oauth/approve", methods=["GET", "POST"])(provider.approval)
     server.custom_route("/healthz", methods=["GET"])(_health)
-    return BodyLimit(server.streamable_http_app()), provider
+    return Gateway(server.streamable_http_app(), public_url), provider
 
 
 async def _health(request: Request) -> Response:
