@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-977911e0cabd",
+  "name": "Drama TensorFold (local Fish Audio Drama 3 TTS)",
+  "summary": "Recipe and patch series that runs Fish Audio's Drama 3 text-to-speech locally on the TensorFold native engine (NVIDIA GB10 / DGX Spark via CUDA, or Apple silicon via Metal) and serves an OpenAI-style /v1/audio/speech route. Author reports about 1.6x faster generation and 40x faster cold start; recommended NVFP4 pruned weights halve GPU memory.",
+  "category": "models-weights",
+  "tags": [
+    "tts",
+    "speech",
+    "local-inference",
+    "cuda",
+    "metal",
+    "fish-audio"
+  ],
+  "publisher": {
+    "name": "plotarmordev",
+    "url": "https://github.com/plotarmordev"
+  },
+  "resource_url": "https://github.com/plotarmordev/drama-tensorfold",
+  "download_url": "https://huggingface.co/plotarmordev/drama-3-NVFP4-Pruned",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0 (code) + Fish Audio Community License v1.0 (model)",
+    "license_url": "https://github.com/plotarmordev/drama-tensorfold/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code is Apache-2.0; the Drama 3 weights and the NVFP4 quant follow the Fish Audio Community License. Targets GB10 (sm_121, CUDA 13) or Apple silicon only."
+  },
+  "procedure": [
+    "Clone https://github.com/plotarmordev/drama-tensorfold",
+    "Follow the Quickstart: it builds the patched TensorFold engine and downloads weights on first run (`--weights nvfp4` recommended, `--weights full` for the full model)",
+    "Call the local OpenAI-style /v1/audio/speech endpoint"
+  ],
+  "stats": {
+    "count": "",
+    "size": "about 21 GiB (NVFP4) or 39 GiB (full) on disk",
+    "formats": [
+      "safetensors",
+      "HTTP API"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/plotarmordev/status/2111087449212629392",
+    "author": "@plotarmordev",
+    "published_at": "2026-10-16T13:30:44Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 66,
+    "why": "Concrete, benchmarked local TTS server, but narrow hardware targets and a community model licence."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2111087395529764864/img/aAjQ8Eropn6qzrHt.jpg",
+    "alt": "",
+    "credit": "@plotarmordev"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:02:50Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 24236 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:02:50Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:02:50Z",
+  "history": [
+    {
+      "operation_id": "4d2fc0bf-e6ef-4724-bfba-9215ad16cc01",
+      "action": "submit",
+      "at": "2026-10-27T22:02:50Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "429e734a227d333eb3bccaa222e1aba796f7a9d2badb87d9fdf0d4895008e0e1",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
