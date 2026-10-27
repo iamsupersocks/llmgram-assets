@@ -43,7 +43,7 @@
     "cadence": ""
   },
   "source": {
-    "url": "https://x.com/bearstech/status/2115117000011837533",
+    "url": "https://x.com/bearstech/status/2115133986057937004",
     "author": "@bearstech",
     "published_at": "2026-10-27T17:30:14Z",
     "kind": "x_post"
@@ -59,7 +59,7 @@
     "credit": "OpenObserve"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:07:06Z",
+    "checked_at": "2026-10-27T22:10:55Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -84,7 +84,7 @@
   "flags": [],
   "added_at": "2026-10-27T22:05:04Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:07:06Z",
+  "updated_at": "2026-10-27T22:10:55Z",
   "history": [
     {
       "operation_id": "9d926842-25f0-44df-801c-1b3c6d369df2",
@@ -101,6 +101,15 @@
       "at": "2026-10-27T22:07:06Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "88d66a315a9af8ea858e7cd57d793d78f487eae7056aa52f8a94feef9c4f378d",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "b7a50bb0-7190-4bbb-9402-aacea86989c8",
+      "action": "update",
+      "at": "2026-10-27T22:10:55Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "677afa60ac06a80c462bcb7e6d86cf5303fd132904925f43f89e18debac2ffcb",
       "result": "updated",
       "status": "published"
     }
