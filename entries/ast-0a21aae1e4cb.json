@@ -41,7 +41,7 @@
     "cadence": ""
   },
   "source": {
-    "url": "https://x.com/treg_ai/status/2114687440699367734",
+    "url": "https://x.com/treg_ai/status/2114674262179188755",
     "author": "@treg_ai",
     "published_at": "2026-10-26T11:03:27Z",
     "kind": "x_post"
@@ -57,7 +57,7 @@
     "credit": "Superdesign (treg)"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:07:16Z",
+    "checked_at": "2026-10-27T22:10:55Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -82,7 +82,7 @@
   "flags": [],
   "added_at": "2026-10-27T22:05:11Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:07:16Z",
+  "updated_at": "2026-10-27T22:10:55Z",
   "history": [
     {
       "operation_id": "553b606a-c766-4541-9f51-a80a3f1bfa60",
@@ -99,6 +99,15 @@
       "at": "2026-10-27T22:07:16Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "3105905be96edc78c2f03393636ecd93e744611579a80251d471b072fc9ed513",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "9f48ae2b-a415-4cb8-94fc-0da0147c1165",
+      "action": "update",
+      "at": "2026-10-27T22:10:55Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9c5c6590bea1af7b037d0a773928a980fb716a3bc395af81b43c99db7a901667",
       "result": "updated",
       "status": "published"
     }
