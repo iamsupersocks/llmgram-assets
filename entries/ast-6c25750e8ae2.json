@@ -1,0 +1,93 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6c25750e8ae2",
+  "name": "Designeer",
+  "summary": "Hand-curated catalogue for designers and developers: design inspiration (interface, motion, 3D, typography, branding, game UI), UI resources such as components, icons and fonts, tools for building digital products, and practitioner portfolios. Every listing is reviewed by Dhruv Jaradi; short motion previews; favourites and folders.",
+  "category": "other",
+  "tags": [
+    "design",
+    "inspiration",
+    "ui",
+    "motion",
+    "3d",
+    "typography",
+    "game-ui",
+    "portfolios",
+    "tools",
+    "curated"
+  ],
+  "publisher": {
+    "name": "Dhruv Jaradi (Designeer)",
+    "url": "https://designeer.xyz/info"
+  },
+  "resource_url": "https://designeer.xyz/",
+  "download_url": null,
+  "access": {
+    "model": "free",
+    "license": "Showcased work: rights stay with creators",
+    "license_url": "https://designeer.xyz/terms",
+    "commercial_use": "restricted",
+    "signup_required": null,
+    "price": "$0 to browse and submit; featured placement $49/week",
+    "notes": "Catalogue of links for inspiration; each linked resource has its own license. No large-scale scraping."
+  },
+  "procedure": [
+    "Open https://designeer.xyz/",
+    "Filter by category (Interface, Motion, 3D, Typography, Game UI...) or browse Resources and Tools",
+    "Open a listing and follow the link to the original creator's site; check that resource's own license"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://designeer.xyz/",
+    "author": "",
+    "published_at": null,
+    "kind": "website"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Useful, curated discovery hub covering UI, motion, 3D and game UI; it's an aggregator of links rather than downloadable assets, so licensing depends on each listing."
+  },
+  "image": {
+    "url": "https://designeer.xyz/og_image.png",
+    "alt": "Designeer",
+    "credit": "Dhruv Jaradi (Designeer)"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T20:52:03Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 118231 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T20:52:03Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T20:52:03Z",
+  "history": [
+    {
+      "operation_id": "6f1c2a9e-3b7d-4e85-9a1f-d2e4c7b80a31",
+      "action": "submit",
+      "at": "2026-10-27T20:52:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "cf7f607ee0b4610140b7bfa6413f5d5733eb3d7e25d3db0b752f88a28f4dc480",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
