@@ -1,0 +1,92 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-d3e8e3e03371",
+  "name": "DeepSeek Search & Fetch API",
+  "summary": "Two raw JSON endpoints for agents and RAG: Search returns structured web results from DeepSeek's in-house search engine, Fetch returns one page as Markdown. Same bearer key as the DeepSeek API, $0.75 per 1,000 calls per endpoint.",
+  "category": "tools",
+  "tags": [
+    "api",
+    "web-search",
+    "fetch",
+    "rag",
+    "agents",
+    "deepseek"
+  ],
+  "publisher": {
+    "name": "DeepSeek",
+    "url": "https://www.deepseek.com/"
+  },
+  "resource_url": "https://api-docs.deepseek.com/guides/search",
+  "download_url": null,
+  "access": {
+    "model": "paid",
+    "license": "DeepSeek API terms",
+    "license_url": null,
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0.75 per 1,000 calls per endpoint",
+    "notes": "Requires a DeepSeek API key. Calls through server-side tools in DeepSeek Harness, Claude Code and Codex are free until billing starts on Oct 31, 2026 16:00 UTC."
+  },
+  "procedure": [
+    "Create a DeepSeek API key on platform.deepseek.com",
+    "POST to https://api.deepseek.com/v1/tools/search or /v1/tools/fetch with `Authorization: Bearer <key>`",
+    "See the Search and Fetch API reference for request and response schemas"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "JSON",
+      "Markdown"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/deepseek_ai/status/2111375650414309859",
+    "author": "@deepseek_ai",
+    "published_at": "2026-10-17T08:35:57Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Cheap, documented search and fetch primitives for agents with transparent per-call pricing."
+  },
+  "image": {
+    "url": "https://api-docs.deepseek.com/img/deepseek-social-card.jpeg",
+    "alt": "",
+    "credit": "DeepSeek"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:04Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 466392 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:04Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:04Z",
+  "history": [
+    {
+      "operation_id": "6308c78e-a201-4be1-924a-2164bd3d99fe",
+      "action": "submit",
+      "at": "2026-10-27T22:03:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "71a944836e8cbe30f0a60368cbcf1a937669760d3ef065dd4aa112a55d6a6df7",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
