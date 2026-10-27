@@ -59,7 +59,7 @@
     "credit": "Dhruv Jaradi (Designeer)"
   },
   "verification": {
-    "checked_at": "2026-10-27T20:52:03Z",
+    "checked_at": "2026-10-27T20:52:14Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -73,12 +73,12 @@
       "detail": "image/png, 118231 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T20:52:03Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T20:52:03Z",
+  "updated_at": "2026-10-27T20:52:14Z",
   "history": [
     {
       "operation_id": "6f1c2a9e-3b7d-4e85-9a1f-d2e4c7b80a31",
@@ -88,6 +88,15 @@
       "payload_sha256": "cf7f607ee0b4610140b7bfa6413f5d5733eb3d7e25d3db0b752f88a28f4dc480",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "a83d5f12-7c4e-4b19-8e6a-1f0b9d2c5e74",
+      "action": "update",
+      "at": "2026-10-27T20:52:14Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e8e5728ca5b48afa2d51ad870d4235f9b2002fcc666988ccda20f7744d4cdc5e",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
