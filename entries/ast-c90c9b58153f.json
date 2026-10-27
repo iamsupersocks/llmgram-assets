@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c90c9b58153f",
+  "name": "Kargul calendar dashboard (Next.js design prototype)",
+  "summary": "Open-source front-end prototype of a people-ops workspace built from a Figma \"Dashboard – calendar\" design: week/day/month calendar with drag to create, move and resize, time-off requests, command palette, dark mode and keyboard shortcuts. Next.js 16, React 19, Tailwind v4, shadcn/ui; no backend (localStorage).",
+  "category": "icons-ui",
+  "tags": [
+    "ui-template",
+    "nextjs",
+    "react",
+    "tailwind",
+    "shadcn",
+    "calendar"
+  ],
+  "publisher": {
+    "name": "Kargul Studio",
+    "url": "https://github.com/kargulstudio"
+  },
+  "resource_url": "https://github.com/kargulstudio/calender-app-design",
+  "download_url": "https://calender-app-design.vercel.app/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/kargulstudio/calender-app-design/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Design prototype: front end only, data in localStorage."
+  },
+  "procedure": [
+    "Preview the live demo at calender-app-design.vercel.app",
+    "Clone https://github.com/kargulstudio/calender-app-design",
+    "`npm install` then `npm run dev`"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/marcelkargul/status/2114866114136310061",
+    "author": "@marcelkargul",
+    "published_at": "2026-10-26T23:45:48Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 64,
+    "why": "Polished MIT dashboard UI to start from; front end only."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2114865998054510592/img/opjLX4vJATy3hUvw.jpg",
+    "alt": "",
+    "credit": "@marcelkargul"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:04:24Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 82020 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:04:24Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:04:24Z",
+  "history": [
+    {
+      "operation_id": "e0975257-46f4-4f6d-8d89-ff490d0bc8ed",
+      "action": "submit",
+      "at": "2026-10-27T22:04:24Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "897fa978e18d2535241056cffd46ab4f21cc917c2b632fa2449d4c89dfca699b",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
