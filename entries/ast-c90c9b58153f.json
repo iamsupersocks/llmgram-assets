@@ -58,7 +58,7 @@
     "credit": "@marcelkargul"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:04:24Z",
+    "checked_at": "2026-10-27T22:06:43Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -78,12 +78,12 @@
       "detail": "image/jpg, 82020 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:04:24Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:04:24Z",
+  "updated_at": "2026-10-27T22:06:43Z",
   "history": [
     {
       "operation_id": "e0975257-46f4-4f6d-8d89-ff490d0bc8ed",
@@ -93,6 +93,15 @@
       "payload_sha256": "897fa978e18d2535241056cffd46ab4f21cc917c2b632fa2449d4c89dfca699b",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "92a6b1f4-760d-470e-bc81-364959e66595",
+      "action": "update",
+      "at": "2026-10-27T22:06:43Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4314129e4b8ecc41b6b676a055691051d0ae44259b964b9203dcc85ad05de2e8",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
