@@ -55,7 +55,7 @@
     "credit": "@shcallaway"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:03:16Z",
+    "checked_at": "2026-10-27T22:06:17Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -69,12 +69,12 @@
       "detail": "image/jpg, 652088 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:03:16Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:03:16Z",
+  "updated_at": "2026-10-27T22:06:17Z",
   "history": [
     {
       "operation_id": "9d8ff7b4-8459-4097-bc85-df09b53e2751",
@@ -84,6 +84,15 @@
       "payload_sha256": "a5dc7e32c275ec8bd0a9e5ca0eb1579ecf045312ddbb5a6dde51325d00afc8b1",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "80af577b-ac94-458d-8ef1-02fb63e3e32b",
+      "action": "update",
+      "at": "2026-10-27T22:06:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1a8ce77b3004203823ea85eae83b56a7d53c24515bed3114735c9d4c9222a85d",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
