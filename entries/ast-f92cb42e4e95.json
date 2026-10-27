@@ -1,0 +1,111 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-f92cb42e4e95",
+  "name": "Hi3D v1.0 (open image-to-3D refinement)",
+  "summary": "Open inference code and weights for Hi3D v1.0 (formerly Sparc3D): refines a coarse mesh into high-resolution geometry conditioned on a reference image, trained on about 2 million curated 3D assets, up to a 1536³ sparse extraction grid. Free Hugging Face Space demo.",
+  "category": "models-weights",
+  "tags": [
+    "3d",
+    "image-to-3d",
+    "mesh",
+    "sparc3d",
+    "open-weights",
+    "game-assets"
+  ],
+  "publisher": {
+    "name": "Hi3D (Oceano HK Holding)",
+    "url": "https://www.hi3d.ai/"
+  },
+  "resource_url": "https://github.com/hi3d-official/Hi3Dv1.0",
+  "download_url": "https://huggingface.co/hi3d-official/Hi3Dv1.0",
+  "access": {
+    "model": "free",
+    "license": "Hi3D Open License v1.0",
+    "license_url": "https://github.com/hi3d-official/Hi3Dv1.0/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Commercial products integrating the model must show \"Powered by Hi3D 1.0\"; above 200,000 MAU or $1M monthly revenue a separate licence is needed. Generated output files alone carry no branding duty. Inference code only, no training code."
+  },
+  "procedure": [
+    "Try it in the browser: huggingface.co/spaces/ilcve21/Sparc3D",
+    "Clone https://github.com/hi3d-official/Hi3Dv1.0 and install per the README",
+    "Load `hi3d-official/Hi3Dv1.0` from Hugging Face (package name `sparc3d`, `Sparc3DPipeline`)"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "safetensors",
+      "mesh"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/chetaslua/status/2113564161733165558",
+    "author": "@chetaslua",
+    "published_at": "2026-10-23T09:32:18Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://www.hi3d.ai/hi3d-1-0-open-source",
+      "author": "",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://x.com/Hi3D_AI/status/2113456796715319591",
+      "author": "@Hi3D_AI",
+      "published_at": "2026-10-23T02:25:41Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 76,
+    "why": "Production-grade 3D geometry model with downloadable weights and a free demo; custom licence with branding and scale thresholds."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2113564098806112256/img/fOIv7lLOglmsFVZO.jpg",
+    "alt": "",
+    "credit": "@chetaslua"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:33Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 77255 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:33Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:33Z",
+  "history": [
+    {
+      "operation_id": "97011cd0-9d9b-4ea7-9bc3-e3d0577815f3",
+      "action": "submit",
+      "at": "2026-10-27T22:03:33Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8ba43376df0705d3686bb4b4dfb06429d66cf8d1375f5f3f5a422127da618f98",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
