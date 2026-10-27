@@ -58,7 +58,7 @@
     "credit": "HKUDS (HKU Data Intelligence Lab)"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:04:18Z",
+    "checked_at": "2026-10-27T22:06:43Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -72,12 +72,12 @@
       "detail": "image/png, 118423 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:04:18Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:04:18Z",
+  "updated_at": "2026-10-27T22:06:43Z",
   "history": [
     {
       "operation_id": "5678023b-d00d-4af9-8457-476698a5ecc2",
@@ -87,6 +87,15 @@
       "payload_sha256": "6eb5f348589ad2cf96f2c3ba104031b3a2a79129b2ee695ae3d59c556027604b",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "90afa0a5-4497-4333-8c01-955097896da6",
+      "action": "update",
+      "at": "2026-10-27T22:06:43Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a8009dfd66c7954ecd958753e94766f41daafbc038933353ac4b5170bfffd378",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
