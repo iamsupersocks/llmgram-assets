@@ -1,0 +1,89 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-84f928e96a0d",
+  "name": "cve.now",
+  "summary": "Free vulnerability feed merging CVE List, OSV, GitHub Advisories, NVD and more, with labelled model-written plain-English summaries. Filter by technology or ecosystem, check a lockfile against it, and consume it by RSS or MCP. No login.",
+  "category": "tools",
+  "tags": [
+    "security",
+    "cve",
+    "vulnerabilities",
+    "rss",
+    "mcp",
+    "devsecops"
+  ],
+  "publisher": {
+    "name": "Sazabi",
+    "url": "https://cve.now/"
+  },
+  "resource_url": "https://cve.now/",
+  "download_url": null,
+  "access": {
+    "model": "free",
+    "license": "Free public service",
+    "license_url": null,
+    "commercial_use": "unknown",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Summaries are AI-generated and labelled as such; check the primary advisory before acting."
+  },
+  "procedure": [
+    "Open cve.now and filter by technology or package ecosystem",
+    "Paste a lockfile under \"Check your stack\"",
+    "Subscribe by RSS or connect the MCP endpoint listed on the Agents page"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": "continuous"
+  },
+  "source": {
+    "url": "https://x.com/shcallaway/status/2113312773228929511",
+    "author": "@shcallaway",
+    "published_at": "2026-10-22T16:53:23Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 68,
+    "why": "Useful free aggregator with RSS and MCP for agents; summaries are AI-written."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVP8VQraYAApG4r.jpg?name=orig",
+    "alt": "",
+    "credit": "@shcallaway"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:16Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 652088 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:16Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:16Z",
+  "history": [
+    {
+      "operation_id": "9d8ff7b4-8459-4097-bc85-df09b53e2751",
+      "action": "submit",
+      "at": "2026-10-27T22:03:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a5dc7e32c275ec8bd0a9e5ca0eb1579ecf045312ddbb5a6dde51325d00afc8b1",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
