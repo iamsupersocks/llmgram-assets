@@ -1,0 +1,88 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-a896f3fe87c4",
+  "name": "Exercises Dataset (1,324 exercises)",
+  "summary": "1,324 fitness exercises with body part, equipment, target muscles and step-by-step instructions in 10 languages, plus a 180×180 animation GIF and thumbnail for each. JSON with a JSON Schema, and SQL generator for apps, trackers and recommenders.",
+  "category": "datasets",
+  "tags": [
+    "fitness",
+    "exercises",
+    "json",
+    "gif",
+    "multilingual",
+    "health"
+  ],
+  "publisher": {
+    "name": "Hasan Emir Yıldırım",
+    "url": "https://github.com/hasaneyldrm"
+  },
+  "resource_url": "https://github.com/hasaneyldrm/exercises-dataset",
+  "download_url": "https://github.com/hasaneyldrm/exercises-dataset/blob/main/data/exercises.json",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (data) + Gym visual (media)",
+    "license_url": "https://github.com/hasaneyldrm/exercises-dataset/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT covers the data and instruction text only. GIFs and thumbnails are © Gym visual, 180×180 only, attribution required, reuse under Gym visual terms (license your own media for an app)."
+  },
+  "procedure": [
+    "Clone the repository: `git clone https://github.com/hasaneyldrm/exercises-dataset` (about 125 MB with media)",
+    "Use `data/exercises.json` (17 MB) and validate with `data/exercises.schema.json`; open `setup.html` to generate SQL for PostgreSQL, MySQL, SQLite or SQL Server",
+    "If you ship the GIFs or thumbnails, keep \"© Gym visual — https://gymvisual.com/\" and check Gym visual's terms; for commercial use, license the media directly"
+  ],
+  "stats": {
+    "count": "1,324 exercises, 1,324 GIFs, 1,324 thumbnails",
+    "size": "about 125 MB repository, 17 MB JSON",
+    "formats": [
+      "JSON",
+      "GIF",
+      "SQL"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/0x0SojalSec/status/2115113691008094641",
+    "author": "@0x0SojalSec",
+    "published_at": "2026-10-27T16:09:35Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Rich, well-structured multilingual data under MIT; the media is not freely reusable for commercial apps."
+  },
+  "verification": {
+    "checked_at": "2026-10-27T18:36:55Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-27T18:36:55Z",
+  "added_by": "claude-seed",
+  "updated_at": "2026-10-27T18:36:55Z",
+  "history": [
+    {
+      "operation_id": "883c2a1a-eeb3-4a77-b842-4871124ac21d",
+      "action": "submit",
+      "at": "2026-10-27T18:36:55Z",
+      "actor": "claude-seed",
+      "payload_sha256": "35e40400555f378d4d97da361295602fd0a458f9e7e3b3146103ff675ab9e3b5",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
