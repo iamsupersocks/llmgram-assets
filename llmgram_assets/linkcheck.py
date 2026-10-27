@@ -99,3 +99,51 @@ def _request(conn: http.client.HTTPSConnection, method: str, path: str) -> tuple
     conn.request(method, path, headers=headers)
     response = conn.getresponse()
     return response.status, response.getheader("Location")
+
+
+@dataclass
+class FetchResult:
+    ok: bool
+    status: int | None
+    content_type: str
+    body: bytes
+    detail: str
+
+
+def fetch(url: str, *, max_bytes: int = 5_000_000, accept: str = "*/*") -> FetchResult:
+    """GET with the same guards as ``check_url``; the body is capped at ``max_bytes``."""
+    current = url
+    for _ in range(MAX_REDIRECTS + 1):
+        parts = urlsplit(current)
+        if parts.scheme != "https" or not parts.hostname:
+            return FetchResult(False, None, "", b"", "redirect left https")
+        port = parts.port or 443
+        try:
+            address = _public_address(parts.hostname, port)
+        except PermissionError as exc:
+            return FetchResult(False, None, "", b"", str(exc))
+        except OSError:
+            return FetchResult(False, None, "", b"", "dns failure")
+        path = (parts.path or "/") + ("?" + parts.query if parts.query else "")
+        conn = _PinnedHTTPSConnection(parts.hostname, address, port, TIMEOUT)
+        try:
+            conn.request("GET", path, headers={"User-Agent": USER_AGENT, "Accept": accept})
+            response = conn.getresponse()
+            status, location = response.status, response.getheader("Location")
+            content_type = (response.getheader("Content-Type") or "").split(";")[0].strip().lower()
+            body = b""
+            if status < 300:
+                body = response.read(max_bytes + 1)
+        except (OSError, http.client.HTTPException, ssl.SSLError) as exc:
+            return FetchResult(False, None, "", b"", type(exc).__name__)
+        finally:
+            conn.close()
+        if 300 <= status < 400 and location:
+            current = urljoin(current, location)
+            continue
+        if status >= 300:
+            return FetchResult(False, status, content_type, b"", "http error")
+        if len(body) > max_bytes:
+            return FetchResult(False, status, content_type, b"", "too large")
+        return FetchResult(True, status, content_type, body, "ok")
+    return FetchResult(False, None, "", b"", "too many redirects")

@@ -52,19 +52,25 @@
     "why": "Web-ready GLB with commercial use and no attribution; a free account is required."
   },
   "verification": {
-    "checked_at": "2026-10-27T17:57:31Z",
+    "checked_at": "2026-10-27T18:44:16Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
       "status": 200,
       "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 91090 bytes"
     }
   },
   "status": "published",
   "flags": [],
   "added_at": "2026-10-27T17:57:31Z",
   "added_by": "claude-seed",
-  "updated_at": "2026-10-27T17:57:31Z",
+  "updated_at": "2026-10-27T18:44:16Z",
   "history": [
     {
       "operation_id": "cadde9c8-5183-424f-8596-54aa6e6a8112",
@@ -74,6 +80,29 @@
       "payload_sha256": "1fb63bd8775790c52da4ee8547d901ad56ff5e2ca8f052fead351ca18e258855",
       "result": "created",
       "status": "published"
+    },
+    {
+      "operation_id": "1de7a2bd-3025-4a58-aa75-052b1f3e3a54",
+      "action": "update",
+      "at": "2026-10-27T18:43:33Z",
+      "actor": "claude-seed",
+      "payload_sha256": "5033e56609142aaa955a49b60b14a3778f363a59806cae8526bb2dcd32ebedfe",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "b76b677c-2057-40ca-95cd-a948af2119c9",
+      "action": "update",
+      "at": "2026-10-27T18:44:16Z",
+      "actor": "claude-seed",
+      "payload_sha256": "044c4a63849dc5459704cd8f6fa8494ea6bc2159f2a005f18269b34942e2f003",
+      "result": "updated",
+      "status": "published"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2115084290505494528/img/M7I6qXELgX_qX-_w.jpg",
+    "alt": "threejsassets: 937 free 3D assets for $0",
+    "credit": "@threejsassets"
+  }
 }

@@ -13,8 +13,8 @@ import copy
 import re
 from typing import Any, Callable
 
-from . import model
-from .linkcheck import check_url
+from . import media, model
+from .linkcheck import check_url, fetch
 from .store import Conflict, StoreError
 
 _UUID = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
@@ -40,9 +40,11 @@ def _operation_id(value: Any) -> str:
 
 
 class AssetService:
-    def __init__(self, store, *, checker: Callable[[str], Any] = check_url, clock: Callable[[], str] = model.utc_now):
+    def __init__(self, store, *, checker: Callable[[str], Any] = check_url, fetcher: Callable[..., Any] = fetch,
+                 clock: Callable[[], str] = model.utc_now):
         self.store = store
         self.checker = checker
+        self.fetcher = fetcher
         self.clock = clock
 
     # ---- reads -------------------------------------------------------
@@ -132,11 +134,12 @@ class AssetService:
             }
 
         now = self.clock()
+        self._fill_image(fields)
         record = {
             "schema_version": model.SCHEMA_VERSION,
             "id": asset_id,
             **{k: fields.get(k) for k in ("name", "summary", "category", "tags", "publisher", "resource_url", "download_url",
-                                          "access", "procedure", "stats", "source", "related_sources", "verdict")},
+                                          "access", "procedure", "stats", "source", "related_sources", "verdict", "image")},
             "verification": self._verify(fields, now),
             "hold": bool(hold),
             "status": "candidate",
@@ -185,6 +188,7 @@ class AssetService:
             record.update(fields)
             if hold is not None:
                 record["hold"] = hold
+            self._fill_image(record)
             record["verification"] = self._verify(record, now)
             for flag in record.get("flags", []):
                 if flag.get("open") and flag.get("reason") in FIXED_BY_UPDATE:
@@ -242,12 +246,27 @@ class AssetService:
             return receipt
         raise ToolError("asset changed concurrently twice; retry with the same operation_id")
 
+    def _fill_image(self, fields: dict) -> None:
+        """Find the post or asset picture when the caller gave none."""
+        if (fields.get("image") or {}).get("url"):
+            return
+        try:
+            found = media.discover(fields, self.fetcher)
+        except Exception:  # noqa: BLE001 - discovery is best effort; the gate reports a missing image
+            found = None
+        if found:
+            fields["image"] = {"url": found["url"], "alt": found.get("alt", ""), "credit": found.get("credit", "")}
+
     def _verify(self, fields: dict, now: str) -> dict:
         resource = self.checker(fields["resource_url"])
         out = {"checked_at": now, "resource_ok": resource.ok, "resource": resource.as_dict()}
         if fields.get("download_url"):
             download = self.checker(fields["download_url"])
             out.update(download_ok=download.ok, download=download.as_dict())
+        image_url = (fields.get("image") or {}).get("url")
+        if image_url:
+            image = media.check_image(image_url, self.fetcher)
+            out.update(image_ok=image.ok, image=image.as_dict())
         return out
 
     @staticmethod

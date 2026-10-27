@@ -31,7 +31,9 @@ class RemoteGatewayTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         root = Path(self.tmp.name)
-        service = AssetService(LocalStore(root / "data"), checker=lambda url: LinkResult(True, 200, "ok"))
+        from tests.test_assets import FakeFetcher
+
+        service = AssetService(LocalStore(root / "data"), checker=lambda url: LinkResult(True, 200, "ok"), fetcher=FakeFetcher())
         app, _ = build_app(service, secret=SECRET, public_url="https://assets.example",
                            clients_file=root / "clients.json")
         self.client = TestClient(app, base_url="http://127.0.0.1:8791", follow_redirects=False)

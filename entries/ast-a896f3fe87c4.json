@@ -54,7 +54,7 @@
     "why": "Rich, well-structured multilingual data under MIT; the media is not freely reusable for commercial apps."
   },
   "verification": {
-    "checked_at": "2026-10-27T18:36:55Z",
+    "checked_at": "2026-10-27T18:44:17Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -66,6 +66,12 @@
       "ok": true,
       "status": 200,
       "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 273491 bytes"
     }
   },
   "hold": false,
@@ -73,7 +79,7 @@
   "flags": [],
   "added_at": "2026-10-27T18:36:55Z",
   "added_by": "claude-seed",
-  "updated_at": "2026-10-27T18:36:55Z",
+  "updated_at": "2026-10-27T18:44:17Z",
   "history": [
     {
       "operation_id": "883c2a1a-eeb3-4a77-b842-4871124ac21d",
@@ -83,6 +89,29 @@
       "payload_sha256": "35e40400555f378d4d97da361295602fd0a458f9e7e3b3146103ff675ab9e3b5",
       "result": "created",
       "status": "published"
+    },
+    {
+      "operation_id": "9d6d0ed3-7caf-4af4-be9a-9d0d25e5caf5",
+      "action": "update",
+      "at": "2026-10-27T18:43:37Z",
+      "actor": "claude-seed",
+      "payload_sha256": "393486109f5b7c45e423f418928570ce8b18f86e9854946b09e606ec169f944c",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "faa71ed9-280b-4aec-a9db-98bddad35202",
+      "action": "update",
+      "at": "2026-10-27T18:44:17Z",
+      "actor": "claude-seed",
+      "payload_sha256": "6ffe7985f2aa69a1a4b298c1e394e0d25d2ea7e52cbe8d8cf5949aed297d5655",
+      "result": "updated",
+      "status": "published"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVpjtyIaoAA9H1D.jpg?name=orig",
+    "alt": "Exercises Dataset preview from the source post",
+    "credit": "@0x0SojalSec"
+  }
 }

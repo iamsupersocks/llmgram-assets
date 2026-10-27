@@ -74,6 +74,8 @@ _LIMITS = {
     "format": 24,
     "author": 80,
     "why": 400,
+    "image.alt": 200,
+    "image.credit": 120,
     "flag.note": 300,
 }
 
@@ -215,7 +217,7 @@ def _iso(value: Any, field: str) -> str | None:
 
 SUBMIT_FIELDS = {
     "name", "summary", "category", "tags", "publisher", "resource_url", "download_url",
-    "access", "procedure", "stats", "source", "related_sources", "verdict",
+    "access", "procedure", "stats", "source", "related_sources", "verdict", "image",
 }
 
 
@@ -301,6 +303,14 @@ def normalize_fields(raw: dict, *, partial: bool) -> dict:
         if score is not None and (isinstance(score, bool) or not isinstance(score, int) or not 0 <= score <= 100):
             raise ValidationError("verdict.score", "must be an integer from 0 to 100")
         out["verdict"] = {"score": score, "why": clean_text(ver.get("why"), "verdict.why", _LIMITS["why"])}
+    if "image" in raw:
+        img = _obj(raw.get("image"), "image")
+        _reject_unknown(img, {"url", "alt", "credit"}, "image")
+        out["image"] = {
+            "url": clean_url(img.get("url"), "image.url"),
+            "alt": clean_text(img.get("alt"), "image.alt", _LIMITS["image.alt"]),
+            "credit": clean_text(img.get("credit"), "image.credit", _LIMITS["image.credit"]),
+        }
     return out
 
 
@@ -334,6 +344,10 @@ def missing_for_publication(record: dict) -> list[str]:
         missing.append("verification.resource_url")
     if record.get("download_url") and not check.get("download_ok"):
         missing.append("verification.download_url")
+    if not (record.get("image") or {}).get("url"):
+        missing.append("image")
+    elif not check.get("image_ok"):
+        missing.append("verification.image")
     return missing
 
 

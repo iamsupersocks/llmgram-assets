@@ -52,7 +52,7 @@
     "why": "Open licence, physics and semantics included; large download."
   },
   "verification": {
-    "checked_at": "2026-10-27T17:04:40Z",
+    "checked_at": "2026-10-27T18:44:14Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -64,13 +64,19 @@
       "ok": true,
       "status": 200,
       "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 359078 bytes"
     }
   },
   "status": "published",
   "flags": [],
   "added_at": "2026-10-27T17:04:35Z",
   "added_by": "claude-seed",
-  "updated_at": "2026-10-27T17:04:40Z",
+  "updated_at": "2026-10-27T18:44:14Z",
   "history": [
     {
       "operation_id": "cf2b0534-06ec-4b02-9b41-ca0eb3dac6bb",
@@ -89,6 +95,29 @@
       "payload_sha256": "f5f6f3d02f83e23fbcd4ecedecd83753b60b288134e241951fa1c54418291eec",
       "result": "updated",
       "status": "published"
+    },
+    {
+      "operation_id": "e796ca8e-bc5d-4f68-93a9-3e568390426e",
+      "action": "update",
+      "at": "2026-10-27T18:43:35Z",
+      "actor": "claude-seed",
+      "payload_sha256": "ecbdf508b2b5f0f936ea8a1ef9ddf756ea8f31e3163ff8f2a9a5d5b897703fb1",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "0deee9ba-ed2b-4671-86c1-ec9d3423a9a3",
+      "action": "update",
+      "at": "2026-10-27T18:44:14Z",
+      "actor": "claude-seed",
+      "payload_sha256": "cdf8cd4b563ddfc8a34f3158d63362c240befb6375229dd8a9d06f1ca436536b",
+      "result": "updated",
+      "status": "published"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/nvidia/simready-assets.png",
+    "alt": "nvidia/simready-assets on Hugging Face",
+    "credit": "Hugging Face"
+  }
 }

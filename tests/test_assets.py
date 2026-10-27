@@ -9,7 +9,8 @@ import uuid
 from pathlib import Path
 
 from llmgram_assets import model
-from llmgram_assets.linkcheck import LinkResult
+from llmgram_assets import media
+from llmgram_assets.linkcheck import FetchResult, LinkResult
 from llmgram_assets.mcp_server import Handler, RateLimiter, TokenBook, dispatch, make_http_handler
 from llmgram_assets.service import AssetService, ToolError
 import subprocess
@@ -50,12 +51,35 @@ class FakeChecker:
         return LinkResult(True, 200, "reachable")
 
 
+JPEG = b"\xff\xd8\xff\xe0" + b"0" * 64
+POST_JSON = json.dumps({"tweet": {"media": {"photos": [{"url": "https://pbs.twimg.com/media/kit.jpg", "altText": "Kit preview"}]}}}).encode()
+
+
+class FakeFetcher:
+    """Serves the X post API, one picture and one HTML page; everything else is 404."""
+
+    def __init__(self, pages=None):
+        self.pages = {
+            "https://api.fxtwitter.com/example/status/1": ("application/json", POST_JSON),
+            "https://pbs.twimg.com/media/kit.jpg": ("image/jpeg", JPEG),
+            **(pages or {}),
+        }
+        self.calls = []
+
+    def __call__(self, url, *, max_bytes=5_000_000, accept="*/*"):
+        self.calls.append(url)
+        if url not in self.pages:
+            return FetchResult(False, 404, "", b"", "http error")
+        content_type, body = self.pages[url]
+        return FetchResult(True, 200, content_type, body, "ok")
+
+
 class Base(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.store = LocalStore(Path(self.tmp.name))
         self.checker = FakeChecker()
-        self.service = AssetService(self.store, checker=self.checker, clock=lambda: "2026-10-27T16:00:00Z")
+        self.service = AssetService(self.store, fetcher=FakeFetcher(), checker=self.checker, clock=lambda: "2026-10-27T16:00:00Z")
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -109,6 +133,45 @@ class ServiceTests(Base):
         self.assertEqual(released["status"], "published")
         with self.assertRaises(ToolError):
             self.service.update({"operation_id": op(), "asset_id": receipt["asset_id"], "hold": "yes", "changes": {}}, "grokbot")
+
+    def test_post_picture_is_taken_automatically(self):
+        receipt = self.service.submit({"operation_id": op(), "asset": COMPLETE}, "grokbot")
+        record, _ = self.store.get(receipt["asset_id"])
+        self.assertEqual(record["image"], {"url": "https://pbs.twimg.com/media/kit.jpg", "alt": "Kit preview", "credit": "@example"})
+        self.assertTrue(record["verification"]["image_ok"])
+        self.assertEqual(receipt["status"], "published")
+
+    def test_asset_page_picture_when_post_has_none(self):
+        page = b"<html><head><meta content='/og/kit.png' property='og:image'><meta name=twitter:image:alt content='x'></head></html>"
+        self.service.fetcher = FakeFetcher({"https://example.com/kit": ("text/html; charset=utf-8", page),
+                                            "https://example.com/og/kit.png": ("image/png", b"\x89PNG\r\n\x1a\n" + b"0" * 32)})
+        asset = {**COMPLETE, "resource_url": "https://example.com/kit", "source": {"url": "https://example.com/blog/post", "kind": "article"}}
+        receipt = self.service.submit({"operation_id": op(), "asset": asset}, "grokbot")
+        record, _ = self.store.get(receipt["asset_id"])
+        self.assertEqual(record["image"]["url"], "https://example.com/og/kit.png")
+        self.assertEqual(record["image"]["credit"], "Example")
+        self.assertEqual(receipt["status"], "published")
+
+    def test_no_picture_keeps_candidate(self):
+        self.service.fetcher = FakeFetcher({"https://api.fxtwitter.com/example/status/1": ("application/json", b"{}")})
+        receipt = self.service.submit({"operation_id": op(), "asset": COMPLETE}, "grokbot")
+        self.assertEqual((receipt["status"], receipt["missing"]), ("candidate", ["image"]))
+
+    def test_picture_that_is_not_an_image_is_refused(self):
+        self.service.fetcher = FakeFetcher({"https://example.com/fake.jpg": ("image/jpeg", b"<html>nope</html>")})
+        asset = {**COMPLETE, "image": {"url": "https://example.com/fake.jpg", "alt": "Kit"}}
+        receipt = self.service.submit({"operation_id": op(), "asset": asset}, "grokbot")
+        self.assertEqual(receipt["missing"], ["verification.image"])
+        fixed = self.service.update({"operation_id": op(), "asset_id": receipt["asset_id"],
+                                     "changes": {"image": {"url": "https://pbs.twimg.com/media/kit.jpg"}}}, "grokbot")
+        self.assertEqual(fixed["status"], "published")
+
+    def test_sniff_and_post_url_parsing(self):
+        self.assertEqual(media.sniff(b"RIFF\x00\x00\x00\x00WEBPVP8 "), "webp")
+        self.assertIsNone(media.sniff(b"<svg"))
+        self.assertIsNone(media.post_image("https://x.com/example", FakeFetcher()))
+        self.assertEqual(media.post_image("https://twitter.com/example/status/1?s=61", FakeFetcher())["url"],
+                         "https://pbs.twimg.com/media/kit.jpg")
 
     def test_incomplete_submission_stays_candidate(self):
         asset = {k: v for k, v in COMPLETE.items() if k not in ("access", "procedure")}
@@ -182,7 +245,7 @@ class ServiceTests(Base):
                     raise StoreError("GitHub unreachable: TimeoutError")
                 return super().put(record, version, message)
 
-        service = AssetService(Flaky(Path(self.tmp.name) / "flaky"), checker=self.checker)
+        service = AssetService(Flaky(Path(self.tmp.name) / "flaky"), fetcher=FakeFetcher(), checker=self.checker)
         oid = op()
         self.assertEqual(service.submit({"operation_id": oid, "asset": COMPLETE}, "grokbot")["result"], "ambiguous")
         self.assertEqual(service.submit({"operation_id": oid, "asset": COMPLETE}, "grokbot")["result"], "created")
@@ -235,8 +298,8 @@ class GitStoreTests(unittest.TestCase):
 
     def test_writes_are_pushed_commits_and_conflicts_detected(self):
         a, b = self.clones
-        svc_a = AssetService(a, checker=FakeChecker())
-        svc_b = AssetService(b, checker=FakeChecker())
+        svc_a = AssetService(a, fetcher=FakeFetcher(), checker=FakeChecker())
+        svc_b = AssetService(b, fetcher=FakeFetcher(), checker=FakeChecker())
         rid = svc_a.submit({"operation_id": op(), "asset": COMPLETE}, "grokbot")["asset_id"]
         self.assertEqual(svc_b.get({"asset_id": rid})["asset"]["name"], "Example Kit")
         _, version = b.get(rid)
@@ -255,7 +318,7 @@ class GitStoreTests(unittest.TestCase):
 class TransportTests(Base):
     def setUp(self):
         super().setUp()
-        self.handler = Handler(AssetService(self.store, checker=self.checker), RateLimiter(3))
+        self.handler = Handler(AssetService(self.store, fetcher=FakeFetcher(), checker=self.checker), RateLimiter(3))
 
     def test_jsonrpc_flow(self):
         init = dispatch(self.handler, {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-06-18"}}, "local")

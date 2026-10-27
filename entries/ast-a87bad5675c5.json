@@ -55,7 +55,7 @@
     "why": "Free commercial use without attribution, parametric models and an MCP endpoint for agents."
   },
   "verification": {
-    "checked_at": "2026-10-27T17:04:34Z",
+    "checked_at": "2026-10-27T18:44:15Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -67,13 +67,19 @@
       "ok": true,
       "status": 200,
       "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 19604 bytes"
     }
   },
   "status": "published",
   "flags": [],
   "added_at": "2026-10-27T17:04:34Z",
   "added_by": "claude-seed",
-  "updated_at": "2026-10-27T17:04:34Z",
+  "updated_at": "2026-10-27T18:44:15Z",
   "history": [
     {
       "operation_id": "d0ff6391-27b4-410b-acf1-0243becff103",
@@ -83,6 +89,29 @@
       "payload_sha256": "1d4d4229cd46753fbc8206fbac43e419259e21dafb68b30c8e6fb5d827bf8638",
       "result": "created",
       "status": "published"
+    },
+    {
+      "operation_id": "6ff4e79c-5976-4d13-ac25-19c915268101",
+      "action": "update",
+      "at": "2026-10-27T18:43:36Z",
+      "actor": "claude-seed",
+      "payload_sha256": "dbc80de4cbb70b82fd2fd3fd6a011cd73d4ffdb7c3320e0171747d70ec86043e",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "bfe2c417-9637-40d6-bde1-6adaa1f34e91",
+      "action": "update",
+      "at": "2026-10-27T18:44:15Z",
+      "actor": "claude-seed",
+      "payload_sha256": "c63bac13201e8ca594314b71fa25a402869c6c7fd3ba51a12dda5bfdd822b7ec",
+      "result": "updated",
+      "status": "published"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2115097114040487938/img/pyLf2D2FNGJFDKMD.jpg",
+    "alt": "Polyfork low-poly kago palanquin model",
+    "credit": "@polyfork3d"
+  }
 }
