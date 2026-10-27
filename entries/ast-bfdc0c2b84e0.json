@@ -1,0 +1,86 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-bfdc0c2b84e0",
+  "name": "System One Computer Use",
+  "summary": "Prototype computer-use agent that drives the real mouse and keyboard of the host machine. Built on the typesafe/JEV stack and requires a TYPESAFE_API_KEY; the authors flag it as unsafe and experimental.",
+  "category": "tools",
+  "tags": [
+    "computer-use",
+    "agents",
+    "automation",
+    "prototype"
+  ],
+  "publisher": {
+    "name": "brainstormity",
+    "url": "https://github.com/brainstormity"
+  },
+  "resource_url": "https://github.com/brainstormity/System-One-Computer-Use",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/brainstormity/System-One-Computer-Use",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0 code; requires a typesafe API key",
+    "notes": "Repository inferred from the author's GitHub; the source post said \"open sourcing soon\" without a link. Controls the real host input devices."
+  },
+  "procedure": [
+    "Read the README warnings first",
+    "Run only in a disposable VM"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/brainstormity/status/2112258474629898497",
+    "author": "@brainstormity",
+    "published_at": "2026-10-19T17:09:05Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 40,
+    "why": "Early, explicitly unsafe prototype whose link to the post is not confirmed."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/46187128531d2bf7777803808f449921ae334c0cf855b9d5d7d8b5b62778ccad/brainstormity/System-One-Computer-Use",
+    "alt": "Contribute to brainstormity/System-One-Computer-Use development by creating an account on GitHub.",
+    "credit": "brainstormity"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:05:21Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 90604 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:05:21Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:05:21Z",
+  "history": [
+    {
+      "operation_id": "bf23a4f8-2064-48ff-87f0-76929dc34ce8",
+      "action": "submit",
+      "at": "2026-10-27T22:05:21Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ed8ec356e21f63c9b8e6b0e021e02d4b1f520771ca50edbc34c6d57ecb7e07bb",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
