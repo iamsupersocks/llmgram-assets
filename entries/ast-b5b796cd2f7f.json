@@ -55,7 +55,7 @@
     "credit": "@fuckgrowth"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:03:56Z",
+    "checked_at": "2026-10-27T22:06:36Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -69,12 +69,12 @@
       "detail": "image/jpg, 117392 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:03:56Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:03:56Z",
+  "updated_at": "2026-10-27T22:06:36Z",
   "history": [
     {
       "operation_id": "88de9e3c-7d77-47b7-9cf5-e3c67534e588",
@@ -84,6 +84,15 @@
       "payload_sha256": "df3c75ee73461d50d9a317e270d94022551283545d31ddbaa00ffce0d51cafd6",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "163ce830-d752-4dc3-94a9-3b834004c74f",
+      "action": "update",
+      "at": "2026-10-27T22:06:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "df7420077cb35920ada4619f3199a53ec8dcf751c5adc05c6840676f54f665d6",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
