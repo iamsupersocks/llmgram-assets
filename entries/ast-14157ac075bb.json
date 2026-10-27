@@ -1,0 +1,79 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-14157ac075bb",
+  "name": "ThreeJS Assets free library",
+  "summary": "959 web-optimized low-poly GLB models for three.js and React Three Fiber: buildings, nature, vehicles, roads, props. Drawn from the paid library, not a lower-quality tier; premium packs are sold separately.",
+  "category": "3d-models",
+  "tags": [
+    "low-poly",
+    "glb",
+    "three.js",
+    "react-three-fiber",
+    "webgl",
+    "game-assets"
+  ],
+  "publisher": {
+    "name": "ThreeJS Assets",
+    "url": "https://threejsassets.com/"
+  },
+  "resource_url": "https://threejsassets.com/assets/free",
+  "download_url": null,
+  "access": {
+    "model": "free-with-signup",
+    "license": "Free Commercial License",
+    "license_url": "https://threejsassets.com/license",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0; premium packs $29–99, Stylised lifetime $69",
+    "notes": "No attribution. No resale, mirroring, redistribution or repackaging of the files, including as datasets or starter kits."
+  },
+  "procedure": [
+    "Open threejsassets.com/assets/free and pick a model or filter by category",
+    "Create a free account (no card)",
+    "Download the GLB and load it with GLTFLoader in three.js or useGLTF in React Three Fiber"
+  ],
+  "stats": {
+    "count": "959 models (937 in the launch post)",
+    "size": "",
+    "formats": [
+      "GLB"
+    ],
+    "cadence": "updated weekly"
+  },
+  "source": {
+    "url": "https://x.com/threejsassets/status/2115084338228351210",
+    "author": "@threejsassets",
+    "published_at": "2026-10-27T14:12:57Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Web-ready GLB with commercial use and no attribution; a free account is required."
+  },
+  "verification": {
+    "checked_at": "2026-10-27T17:57:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    }
+  },
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-27T17:57:31Z",
+  "added_by": "claude-seed",
+  "updated_at": "2026-10-27T17:57:31Z",
+  "history": [
+    {
+      "operation_id": "cadde9c8-5183-424f-8596-54aa6e6a8112",
+      "action": "submit",
+      "at": "2026-10-27T17:57:31Z",
+      "actor": "claude-seed",
+      "payload_sha256": "1fb63bd8775790c52da4ee8547d901ad56ff5e2ca8f052fead351ca18e258855",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}

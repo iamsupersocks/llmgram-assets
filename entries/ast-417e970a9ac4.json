@@ -1,0 +1,94 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-417e970a9ac4",
+  "name": "NVIDIA SimReady Assets",
+  "summary": "Simulation-ready 3D assets from NVIDIA with physics settings and semantic labels, for robotics training, digital twins and synthetic data. Everyday objects, tools, medical and industrial equipment.",
+  "category": "3d-models",
+  "tags": [
+    "usd",
+    "simulation",
+    "robotics",
+    "digital-twin",
+    "synthetic-data",
+    "isaac-sim"
+  ],
+  "publisher": {
+    "name": "NVIDIA",
+    "url": "https://huggingface.co/nvidia"
+  },
+  "resource_url": "https://huggingface.co/datasets/nvidia/simready-assets",
+  "download_url": "https://huggingface.co/datasets/nvidia/simready-assets/tree/main",
+  "access": {
+    "model": "free",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Attribution required (CC-BY-4.0). Dataset not gated."
+  },
+  "procedure": [
+    "Open the dataset on Hugging Face",
+    "Download one asset folder from the Files tab, or the whole set with `hf download nvidia/simready-assets --repo-type dataset`",
+    "Open the simready_usd files in Isaac Sim, Omniverse or any USD tool"
+  ],
+  "stats": {
+    "count": "2,575 assets (per source post)",
+    "size": "about 80 GB on Hugging Face",
+    "formats": [
+      "USD"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/polyfork3d/status/2115097607634551081",
+    "author": "@polyfork3d",
+    "published_at": "2026-10-27T15:05:40Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "Open licence, physics and semantics included; large download."
+  },
+  "verification": {
+    "checked_at": "2026-10-27T17:04:40Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    }
+  },
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-27T17:04:35Z",
+  "added_by": "claude-seed",
+  "updated_at": "2026-10-27T17:04:40Z",
+  "history": [
+    {
+      "operation_id": "cf2b0534-06ec-4b02-9b41-ca0eb3dac6bb",
+      "action": "submit",
+      "at": "2026-10-27T17:04:35Z",
+      "actor": "claude-seed",
+      "payload_sha256": "90ba4b909d4b9efd0097f280237cd5e04205bed41aa73818da05877ac249fb89",
+      "result": "created",
+      "status": "published"
+    },
+    {
+      "operation_id": "1bff0cc6-277b-4f20-9e23-1b89c3a952a4",
+      "action": "update",
+      "at": "2026-10-27T17:04:40Z",
+      "actor": "claude-seed",
+      "payload_sha256": "f5f6f3d02f83e23fbcd4ecedecd83753b60b288134e241951fa1c54418291eec",
+      "result": "updated",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-a87bad5675c5",
+  "name": "Polyfork low-poly 3D catalogue",
+  "summary": "2,660 low-poly 3D models written as small programs: colours, proportions and parts are parameters you can tweak. Free tier covers every low-poly model; HD editions with PBR materials are paid.",
+  "category": "3d-models",
+  "tags": [
+    "low-poly",
+    "parametric",
+    "glb",
+    "three.js",
+    "game-assets",
+    "mcp"
+  ],
+  "publisher": {
+    "name": "Polyfork",
+    "url": "https://polyfork.dev/"
+  },
+  "resource_url": "https://polyfork.dev/",
+  "download_url": "https://polyfork.dev/assets",
+  "access": {
+    "model": "freemium",
+    "license": "Polyfork licence",
+    "license_url": "https://polyfork.dev/licensing",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "Low poly free; HD with Pro $15/month or $100 lifetime",
+    "notes": "No attribution. No resale or redistribution of the files; serving them to your own users needs a platform licence."
+  },
+  "procedure": [
+    "Open polyfork.dev/assets and filter by free",
+    "Download the GLB (Godot, Blender, glTF), FBX (Unity, Unreal) or USDZ, or import https://polyfork.dev/cdn/<id>.mjs in three.js",
+    "Agents: connect the MCP endpoint https://polyfork.dev/mcp, no key needed to browse"
+  ],
+  "stats": {
+    "count": "2,660 models",
+    "size": "",
+    "formats": [
+      "GLB",
+      "FBX",
+      "USDZ",
+      "ES module"
+    ],
+    "cadence": "about +200/week"
+  },
+  "source": {
+    "url": "https://x.com/polyfork3d/status/2115097607634551081",
+    "author": "@polyfork3d",
+    "published_at": "2026-10-27T15:05:40Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 82,
+    "why": "Free commercial use without attribution, parametric models and an MCP endpoint for agents."
+  },
+  "verification": {
+    "checked_at": "2026-10-27T17:04:34Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    }
+  },
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-27T17:04:34Z",
+  "added_by": "claude-seed",
+  "updated_at": "2026-10-27T17:04:34Z",
+  "history": [
+    {
+      "operation_id": "d0ff6391-27b4-410b-acf1-0243becff103",
+      "action": "submit",
+      "at": "2026-10-27T17:04:34Z",
+      "actor": "claude-seed",
+      "payload_sha256": "1d4d4229cd46753fbc8206fbac43e419259e21dafb68b30c8e6fb5d827bf8638",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=LLMgram assets remote MCP (Grok Bot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/llmgram-assets-mcp/app
+EnvironmentFile=%h/.config/llmgram-assets-mcp/env
+ExecStart=%h/llmgram-assets-mcp/app/.venv/bin/python -m llmgram_assets.remote --git-checkout %h/llmgram-assets-mcp/data --ssh-key %h/.config/llmgram-assets-mcp/deploy_key --host 127.0.0.1 --port 8791
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+[Install]
+WantedBy=default.target
