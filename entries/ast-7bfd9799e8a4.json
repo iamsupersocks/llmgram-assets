@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-7bfd9799e8a4",
+  "name": "MiniMax M3.1 Flash (open weights + API)",
+  "summary": "Native multimodal mixture-of-experts model (about 428B total, 23B active, up to 1M context) for coding, agentic workflows and computer use. Weights on Hugging Face; API at a flat $0.15 / $0.60 per 1M input/output tokens ($0.015 cache reads). MiniMax reports DeepSWE 74% at a third of M3's cost.",
+  "category": "models-weights",
+  "tags": [
+    "llm",
+    "moe",
+    "open-weights",
+    "coding",
+    "agents",
+    "multimodal"
+  ],
+  "publisher": {
+    "name": "MiniMax",
+    "url": "https://www.minimax.io/"
+  },
+  "resource_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+  "download_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/tree/main",
+  "access": {
+    "model": "free",
+    "license": "MiniMax Community License",
+    "license_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "Weights $0; API $0.15 / $0.60 per 1M input/output tokens",
+    "notes": "Free for non-commercial use. Commercial use requires displaying \"Built with MiniMax M3.1-Flash\" and a one-time notice to MiniMax; written authorization above $20M yearly revenue. Prohibited-uses appendix applies."
+  },
+  "procedure": [
+    "Download weights from huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash (community GGUF quants exist, e.g. unsloth)",
+    "Or use the API from platform.minimax.io",
+    "For commercial products, add the attribution and send the licence notice described in LICENSE"
+  ],
+  "stats": {
+    "count": "",
+    "size": "about 428B parameters (23B active)",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+    "author": "@MiniMax_AI",
+    "published_at": "2026-10-19T11:56:23Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "author": "",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Downloadable frontier-class weights plus cheap public API pricing; licence is not OSI open source and adds commercial conditions."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HU_d5nbXEAAict2.jpg?name=orig",
+    "alt": "",
+    "credit": "@MiniMax_AI"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:02:59Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 163935 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:02:59Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:02:59Z",
+  "history": [
+    {
+      "operation_id": "978d5427-b482-41ac-bd46-cf03e796593c",
+      "action": "submit",
+      "at": "2026-10-27T22:02:59Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8cb1957caec211f338a4de0a2c5f4b4499f1e60a8220f73f0dcf823bb804d62a",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
