@@ -1,0 +1,90 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-16b375c63c5a",
+  "name": "Phantom-KV",
+  "summary": "Research tool that removes or restores a language model's refusals by loading a KV-cache graft (\"pills\") at runtime, with no weight modification; unloading the cache restores the byte-identical base model. Demos include defensive (DFIR) and offensive cyber modes on Qwen3-4B.",
+  "category": "tools",
+  "tags": [
+    "llm",
+    "kv-cache",
+    "refusals",
+    "security-research",
+    "pytorch",
+    "transformers"
+  ],
+  "publisher": {
+    "name": "lordx64",
+    "url": "https://github.com/lordx64"
+  },
+  "resource_url": "https://github.com/lordx64/phantom-kv",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/lordx64/phantom-kv/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Removes safety refusals; intended for security research. Status: active research."
+  },
+  "procedure": [
+    "Clone https://github.com/lordx64/phantom-kv (Python 3.10+, PyTorch 2.x, transformers >= 4.51)",
+    "Follow the README to build or load a KV-cache pill for a supported model"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "Python"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/lordx64/status/2114407896498987039",
+    "author": "@lordx64",
+    "published_at": "2026-10-25T17:25:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 50,
+    "why": "Technically novel and MIT, but it is a refusal-removal (guardrail bypass) tool; editorial fit needs a human decision."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/a55026324af1bfdf825417af5cd12ac73e46bec782c1d1fd8f9389aae1d7c6f6/lordx64/phantom-kv",
+    "alt": "Refusal removal as a loadable KV-cache graft — zero weight modification, no refusal-direction projection, fully reversible. - lordx64/phantom-kv",
+    "credit": "lordx64"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:39Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 116658 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:39Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:39Z",
+  "history": [
+    {
+      "operation_id": "1c33c3c7-5ded-4151-9023-ef39c06ed5c2",
+      "action": "submit",
+      "at": "2026-10-27T22:03:39Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bc9363262da69ae7ea60099f6dde5b35aa1a67a4cb6fecd730ee4eb6e23747de",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
