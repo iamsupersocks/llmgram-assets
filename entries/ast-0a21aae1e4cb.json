@@ -57,7 +57,7 @@
     "credit": "Superdesign (treg)"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:05:11Z",
+    "checked_at": "2026-10-27T22:07:16Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -77,12 +77,12 @@
       "detail": "image/png, 92425 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:05:11Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:05:11Z",
+  "updated_at": "2026-10-27T22:07:16Z",
   "history": [
     {
       "operation_id": "553b606a-c766-4541-9f51-a80a3f1bfa60",
@@ -92,6 +92,15 @@
       "payload_sha256": "b6b8c9bc437a2bde154751d7bdf5d168a8ccd3bb19876b81822b051557ff20d0",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "b3e651d3-25e9-45ae-b0b3-e51f75bbca73",
+      "action": "update",
+      "at": "2026-10-27T22:07:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3105905be96edc78c2f03393636ecd93e744611579a80251d471b072fc9ed513",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
