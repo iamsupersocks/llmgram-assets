@@ -71,7 +71,7 @@
     "credit": "@chetaslua"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:03:33Z",
+    "checked_at": "2026-10-27T22:06:17Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -91,12 +91,12 @@
       "detail": "image/jpg, 77255 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:03:33Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:03:33Z",
+  "updated_at": "2026-10-27T22:06:17Z",
   "history": [
     {
       "operation_id": "97011cd0-9d9b-4ea7-9bc3-e3d0577815f3",
@@ -106,6 +106,15 @@
       "payload_sha256": "8ba43376df0705d3686bb4b4dfb06429d66cf8d1375f5f3f5a422127da618f98",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "86b99da1-be82-42b3-95a1-0d64beee5039",
+      "action": "update",
+      "at": "2026-10-27T22:06:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a277f5d555b3a09261a8af528f4ea1b5b6fdc48c4227e16d93c3ecee9cebd85b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
