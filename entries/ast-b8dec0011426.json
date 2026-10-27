@@ -1,0 +1,97 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b8dec0011426",
+  "name": "xtool (cross-platform Xcode replacement)",
+  "summary": "Command-line tool to build, sign and install iOS apps with SwiftPM from Linux, Windows (WSL) or macOS, with access to Apple Developer Services. Works from any editor such as VS Code.",
+  "category": "tools",
+  "tags": [
+    "ios",
+    "swift",
+    "swiftpm",
+    "xcode",
+    "linux",
+    "cli"
+  ],
+  "publisher": {
+    "name": "xtool-org",
+    "url": "https://github.com/xtool-org"
+  },
+  "resource_url": "https://github.com/xtool-org/xtool",
+  "download_url": "https://xtool.sh/documentation/xtool/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/xtool-org/xtool/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Signing and device install need an Apple Developer account."
+  },
+  "procedure": [
+    "Follow the install guide at xtool.sh for your OS",
+    "Run `xtool setup` and sign in with your Apple ID",
+    "Create or open a SwiftPM project and build, sign and install with xtool"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "CLI"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/CamilleRoux/status/2112544401239003151",
+    "author": "@CamilleRoux",
+    "published_at": "2026-10-20T14:00:09Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "MIT, actively maintained, removes the Mac requirement for iOS builds."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVFD77PWgAAUEd-.jpg?name=orig",
+    "alt": "",
+    "credit": "@CamilleRoux"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:11Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 276665 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:11Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:11Z",
+  "history": [
+    {
+      "operation_id": "19647de0-86c7-4cb8-88dc-f1abf7d24431",
+      "action": "submit",
+      "at": "2026-10-27T22:03:11Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "430df04dd4bf2467e08f0652fe1c0bc5102a7a92d5a10b09f59a52da2e03c57a",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
