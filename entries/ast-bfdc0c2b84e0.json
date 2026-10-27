@@ -36,7 +36,7 @@
     "cadence": ""
   },
   "source": {
-    "url": "https://x.com/brainstormity/status/2112258474629898497",
+    "url": "https://x.com/brainstormity/status/2112229561689587880",
     "author": "@brainstormity",
     "published_at": "2026-10-19T17:09:05Z",
     "kind": "x_post"
@@ -52,7 +52,7 @@
     "credit": "brainstormity"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:05:21Z",
+    "checked_at": "2026-10-27T22:11:02Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -71,7 +71,7 @@
   "flags": [],
   "added_at": "2026-10-27T22:05:21Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:05:21Z",
+  "updated_at": "2026-10-27T22:11:02Z",
   "history": [
     {
       "operation_id": "bf23a4f8-2064-48ff-87f0-76929dc34ce8",
@@ -80,6 +80,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "ed8ec356e21f63c9b8e6b0e021e02d4b1f520771ca50edbc34c6d57ecb7e07bb",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "e2adb78a-f3ca-4af2-be41-597e35d61c4f",
+      "action": "update",
+      "at": "2026-10-27T22:11:02Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4085bc1b8cba0451d188df3fd8030abb7ab0bac5d5f266bf425a6dcd72412b58",
+      "result": "updated",
       "status": "candidate"
     }
   ]
