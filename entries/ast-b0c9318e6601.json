@@ -1,0 +1,92 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b0c9318e6601",
+  "name": "DeepTutor (HKUDS)",
+  "summary": "Open-source personalised AI tutor from HKU Data Intelligence Lab: load textbooks, notes or YouTube/Bilibili videos and it explains, generates exercises, runs deep research and draws visual explanations in one workspace. Keeps three-layer, editable learner memory across sessions; ships a SKILL.md so coding agents can install it.",
+  "category": "tools",
+  "tags": [
+    "education",
+    "tutor",
+    "rag",
+    "agents",
+    "python",
+    "self-hosted"
+  ],
+  "publisher": {
+    "name": "HKUDS (HKU Data Intelligence Lab)",
+    "url": "https://github.com/HKUDS"
+  },
+  "resource_url": "https://github.com/HKUDS/DeepTutor",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/HKUDS/DeepTutor/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (bring your own model provider)",
+    "notes": ""
+  },
+  "procedure": [
+    "`pip install -U deeptutor`",
+    "`deeptutor init` to configure model providers",
+    "`deeptutor start`, or point Claude Code / Codex at the repo's SKILL.md to install it for you"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "Python",
+      "web app"
+    ],
+    "cadence": "frequent releases (v1.6.15 on Oct 19, 2026)"
+  },
+  "source": {
+    "url": "https://x.com/chasen_liao/status/2114702883673501719",
+    "author": "@chasen_liao",
+    "published_at": "2026-10-26T12:57:11Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 76,
+    "why": "Apache-2.0, very active (45k+ stars), three-command install; strong reference app for learning agents."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/d7e35a4020176c08eaeb7600a2da61a2c615c118f0a94c15e9bd5c8488f40bb5/HKUDS/DeepTutor",
+    "alt": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/. - HKUDS/DeepTutor",
+    "credit": "HKUDS (HKU Data Intelligence Lab)"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:04:18Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 118423 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:04:18Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:04:18Z",
+  "history": [
+    {
+      "operation_id": "5678023b-d00d-4af9-8457-476698a5ecc2",
+      "action": "submit",
+      "at": "2026-10-27T22:04:18Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6eb5f348589ad2cf96f2c3ba104031b3a2a79129b2ee695ae3d59c556027604b",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
