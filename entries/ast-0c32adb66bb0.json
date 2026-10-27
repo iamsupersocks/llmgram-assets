@@ -59,7 +59,7 @@
     "credit": "@jakubkrehel"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:03:45Z",
+    "checked_at": "2026-10-27T22:06:32Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -79,12 +79,12 @@
       "detail": "image/jpg, 96170 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:03:45Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:03:45Z",
+  "updated_at": "2026-10-27T22:06:32Z",
   "history": [
     {
       "operation_id": "cac86a00-6911-4e31-bb74-526a0c76e87d",
@@ -94,6 +94,15 @@
       "payload_sha256": "6d898707af64e3c141630054ddad1deb46f26e9035c63d4baa7e631b24e2756a",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "162f149d-2084-47c8-bb2a-87f752ac4cf7",
+      "action": "update",
+      "at": "2026-10-27T22:06:32Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e980e39cc04ece3fd030de43e1ed206ab7541b3b9232bd9efd7f51c573a0a886",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
