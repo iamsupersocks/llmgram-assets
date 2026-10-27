@@ -59,7 +59,7 @@
     "credit": "OpenObserve"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:05:04Z",
+    "checked_at": "2026-10-27T22:07:06Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -79,12 +79,12 @@
       "detail": "image/png, 72932 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:05:04Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:05:04Z",
+  "updated_at": "2026-10-27T22:07:06Z",
   "history": [
     {
       "operation_id": "9d926842-25f0-44df-801c-1b3c6d369df2",
@@ -94,6 +94,15 @@
       "payload_sha256": "56510e915216579ff18ae3e7ac62e4588e86cea1130de6285182ae0f64bacbd0",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "76130529-e3fc-4fbd-a9e9-04ba2e00da19",
+      "action": "update",
+      "at": "2026-10-27T22:07:06Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "88d66a315a9af8ea858e7cd57d793d78f487eae7056aa52f8a94feef9c4f378d",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
