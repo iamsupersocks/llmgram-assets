@@ -10,6 +10,7 @@ from pathlib import Path
 
 from llmgram_assets import model
 from llmgram_assets import media
+from llmgram_assets import recheck
 from llmgram_assets.linkcheck import FetchResult, LinkResult
 from llmgram_assets.mcp_server import Handler, RateLimiter, TokenBook, dispatch, make_http_handler
 from llmgram_assets.service import AssetService, ToolError
@@ -361,6 +362,107 @@ class TransportTests(Base):
         finally:
             server.shutdown()
             server.server_close()
+
+
+class RecheckTests(Base):
+    def setUp(self):
+        super().setUp()
+        ticks = iter(range(10, 60))
+        self.service.clock = lambda: f"2026-10-28T06:00:{next(ticks)}Z"
+        self.rid = self.service.submit({"operation_id": op(), "asset": COMPLETE}, "grokbot")["asset_id"]
+
+    def record(self):
+        return self.store.get(self.rid)[0]
+
+    def recheck(self, **kw):
+        return recheck.run(self.service, **kw)
+
+    def test_healthy_catalog_writes_nothing(self):
+        before = self.store.get(self.rid)[1]
+        summary = self.recheck()
+        self.assertEqual((summary["checked"], summary["counts"], summary["changes"]), (1, {"ok": 1}, []))
+        self.assertEqual(self.store.get(self.rid)[1], before)
+
+    def test_dead_link_is_flagged_after_two_failures_then_left_alone(self):
+        self.checker.dead.add("https://example.com/kit/download")
+        first = self.recheck()["changes"][0]
+        self.assertEqual((first["result"], first["status"], first["failed"]), ("failing", "published", ["download_url"]))
+        self.assertEqual(self.record()["verification"]["recheck"]["failures"], 1)
+        self.assertEqual(model.validate_record(self.record()), [])
+
+        second = self.recheck()["changes"][0]
+        self.assertEqual((second["result"], second["status"]), ("flagged", "flagged"))
+        flag = self.record()["flags"][-1]
+        self.assertEqual((flag["reason"], flag["by"], flag["open"]), ("dead_link", recheck.ACTOR, True))
+        self.assertIn("download_url: http error (404)", flag["note"])
+        self.assertEqual(model.validate_record(self.record()), [])
+
+        version = self.store.get(self.rid)[1]
+        self.assertEqual(self.recheck()["changes"][0]["result"], "still_dead")
+        self.assertEqual(self.store.get(self.rid)[1], version)
+
+    def test_recovered_link_closes_own_flag_and_publishes_again(self):
+        self.checker.dead.add("https://example.com/kit/download")
+        self.recheck()
+        self.recheck()
+        self.checker.dead.clear()
+        back = self.recheck()["changes"][0]
+        self.assertEqual((back["result"], back["status"]), ("recovered", "published"))
+        record = self.record()
+        self.assertNotIn("recheck", record["verification"])
+        self.assertFalse(any(f["open"] for f in record["flags"]))
+        self.assertEqual(model.validate_record(record), [])
+
+    def test_single_failure_then_recovery_resets_the_count(self):
+        self.checker.dead.add("https://www.example.com/kit/?utm_source=x")
+        self.checker.dead.add("https://example.com/kit")
+        self.recheck()
+        self.checker.dead.clear()
+        self.assertEqual(self.recheck()["changes"][0]["result"], "recovered")
+        self.assertNotIn("recheck", self.record()["verification"])
+        self.assertEqual(self.recheck()["changes"], [])
+
+    def test_pm_update_clears_the_checker_flag(self):
+        self.checker.dead.add("https://example.com/kit/download")
+        self.recheck()
+        self.recheck()
+        fixed = self.service.update({"operation_id": op(), "asset_id": self.rid,
+                                     "changes": {"download_url": "https://example.com/kit/files"}}, "grokbot")
+        self.assertEqual(fixed["status"], "published")
+        self.assertNotIn("recheck", self.record()["verification"])
+
+    def test_other_flags_and_candidates_are_skipped(self):
+        self.service.flag({"operation_id": op(), "asset_id": self.rid, "reason": "wrong_info"}, "grokbot")
+        other = {**COMPLETE, "resource_url": "https://example.org/pack", "procedure": []}
+        self.service.submit({"operation_id": op(), "asset": other}, "grokbot")
+        self.checker.calls.clear()
+        summary = self.recheck()
+        self.assertEqual((summary["checked"], summary["counts"]), (0, {"skipped": 2}))
+        self.assertEqual(self.checker.calls, [])
+
+    def test_dry_run_writes_nothing(self):
+        self.checker.dead.add("https://example.com/kit/download")
+        version = self.store.get(self.rid)[1]
+        change = self.recheck(strikes=1, dry_run=True)["changes"][0]
+        self.assertEqual((change["result"], change["dry_run"]), ("flagged", True))
+        self.assertEqual(self.store.get(self.rid)[1], version)
+
+    def test_asset_edited_during_the_check_is_left_for_the_next_run(self):
+        service = self.service
+        rid = self.rid
+
+        class EditingChecker(FakeChecker):
+            def __call__(self, url):
+                if not self.calls:
+                    service.checker = FakeChecker()
+                    service.update({"operation_id": op(), "asset_id": rid, "changes": {"summary": "Edited."}}, "grokbot")
+                self.calls.append(url)
+                return LinkResult(False, 404, "http error")
+
+        self.service.checker = EditingChecker()
+        change = recheck.run(service, strikes=1)["changes"][0]
+        self.assertEqual(change["result"], "error")
+        self.assertEqual(self.record()["status"], "published")
 
 
 class EntriesTests(unittest.TestCase):
