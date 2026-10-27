@@ -64,7 +64,7 @@
     "credit": "@akshay_pachaar"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:02:44Z",
+    "checked_at": "2026-10-27T22:06:01Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -78,12 +78,12 @@
       "detail": "image/jpg, 246886 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:02:44Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:02:44Z",
+  "updated_at": "2026-10-27T22:06:01Z",
   "history": [
     {
       "operation_id": "25a6524b-6413-4991-ad6c-7fcd677e8a9e",
@@ -93,6 +93,15 @@
       "payload_sha256": "935b36250d14f9a0cb0728ba5c4961e844763b914d54156558199f252fbb63d8",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "60db19b2-bc6d-4f16-b68a-d1e75cfe6806",
+      "action": "update",
+      "at": "2026-10-27T22:06:01Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "383743b467eb456a37b012e4deb9c65cebbafa0c3eb841437c273d5f57c0ea78",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
