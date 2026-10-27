@@ -1,0 +1,99 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0c32adb66bb0",
+  "name": "/teardown agent skill",
+  "summary": "Agent skill that draws technical illustrations of physical objects or of how things work (exploded views, layers), with customisable parts, colours and annotations, exported as SVG or PNG. Part of jakubkrehel/skills, a collection of interface-design skills.",
+  "category": "tools",
+  "tags": [
+    "agent-skills",
+    "claude-code",
+    "svg",
+    "illustration",
+    "design",
+    "skills"
+  ],
+  "publisher": {
+    "name": "Jakub Krehel",
+    "url": "https://github.com/jakubkrehel"
+  },
+  "resource_url": "https://github.com/jakubkrehel/skills/tree/main/skills/teardown",
+  "download_url": "https://github.com/jakubkrehel/skills",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/jakubkrehel/skills/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": ""
+  },
+  "procedure": [
+    "Install the collection: `npx skills add jakubkrehel/skills`",
+    "Ask your agent for /teardown with an object, photo, CAD model or concept",
+    "Adjust parts, colours and annotations, then export SVG or PNG"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "SKILL.md",
+      "SVG",
+      "PNG"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/jakubkrehel/status/2114379959263502712",
+    "author": "@jakubkrehel",
+    "published_at": "2026-10-25T15:34:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "MIT, one-command install, produces editable vector output; one of 14 skills in a popular collection."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2114369043763273728/img/O74tkngOOHqRFk_6.jpg",
+    "alt": "",
+    "credit": "@jakubkrehel"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:45Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 96170 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:45Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:45Z",
+  "history": [
+    {
+      "operation_id": "cac86a00-6911-4e31-bb74-526a0c76e87d",
+      "action": "submit",
+      "at": "2026-10-27T22:03:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6d898707af64e3c141630054ddad1deb46f26e9035c63d4baa7e631b24e2756a",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
