@@ -1,0 +1,99 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-e79b503e6645",
+  "name": "OpenObserve (open-source observability platform)",
+  "summary": "Self-hostable observability platform for logs, metrics, traces and real-user monitoring, positioned as an open-source alternative to Splunk, Datadog and Elasticsearch. Single binary written in Rust with columnar storage on object storage.",
+  "category": "tools",
+  "tags": [
+    "observability",
+    "logs",
+    "metrics",
+    "tracing",
+    "self-hosted",
+    "rust"
+  ],
+  "publisher": {
+    "name": "OpenObserve",
+    "url": "https://openobserve.ai/"
+  },
+  "resource_url": "https://github.com/openobserve/openobserve",
+  "download_url": "https://openobserve.ai/docs/",
+  "access": {
+    "model": "open-source",
+    "license": "AGPL-3.0",
+    "license_url": "https://github.com/openobserve/openobserve/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 self-hosted; paid cloud and enterprise editions",
+    "notes": "AGPL-3.0: modifications offered as a network service must be published."
+  },
+  "procedure": [
+    "Follow the quickstart at openobserve.ai/docs (Docker or single binary)",
+    "Send logs, metrics and traces via OpenTelemetry or the HTTP ingestion API",
+    "Open the web UI to search, build dashboards and alerts"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "OpenTelemetry",
+      "Docker",
+      "binary"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/bearstech/status/2115117000011837533",
+    "author": "@bearstech",
+    "published_at": "2026-10-27T17:30:14Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Mature AGPL observability stack (22k+ stars) that self-hosts easily."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/5a026c218151635cd38300b6e8337e8cd756b869d6ba11956cd3e798271203be/openobserve/openobserve",
+    "alt": "Open source observability platform for logs, metrics, traces, RUM (web, android, ios), Session replay, pipelines, SLO and LLM observability. A sophisticated, simple and highly performant alternativ...",
+    "credit": "OpenObserve"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:05:04Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 72932 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:05:04Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:05:04Z",
+  "history": [
+    {
+      "operation_id": "9d926842-25f0-44df-801c-1b3c6d369df2",
+      "action": "submit",
+      "at": "2026-10-27T22:05:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "56510e915216579ff18ae3e7ac62e4588e86cea1130de6285182ae0f64bacbd0",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
