@@ -58,7 +58,7 @@
     "credit": "DeepSeek"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:03:04Z",
+    "checked_at": "2026-10-27T22:06:06Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -72,12 +72,12 @@
       "detail": "image/jpg, 466392 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:03:04Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:03:04Z",
+  "updated_at": "2026-10-27T22:06:06Z",
   "history": [
     {
       "operation_id": "6308c78e-a201-4be1-924a-2164bd3d99fe",
@@ -87,6 +87,15 @@
       "payload_sha256": "71a944836e8cbe30f0a60368cbcf1a937669760d3ef065dd4aa112a55d6a6df7",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7b4b7ad9-9455-4474-8e2a-7979263bb13a",
+      "action": "update",
+      "at": "2026-10-27T22:06:06Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "57c3ea7d19cf94a030a6af28900fa61c26c1242ac544a4c36a01cf39439d2c5b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
