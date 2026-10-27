@@ -58,7 +58,7 @@
     "credit": "@mattt"
   },
   "verification": {
-    "checked_at": "2026-10-27T22:04:36Z",
+    "checked_at": "2026-10-27T22:07:00Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -78,12 +78,12 @@
       "detail": "image/jpg, 114708 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-27T22:04:36Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-27T22:04:36Z",
+  "updated_at": "2026-10-27T22:07:00Z",
   "history": [
     {
       "operation_id": "cd952341-75ef-4bff-a3a4-f733264e9f5a",
@@ -93,6 +93,15 @@
       "payload_sha256": "e7aaaa85b4790b9d40d1f8774799ba96be5799a0817e7ad030e238cd9b1192cc",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "4776a9d7-d3ed-490d-b436-df4a023918aa",
+      "action": "update",
+      "at": "2026-10-27T22:07:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c246b186fdb105fa4ae12cb1c6be5ae7eb38383e4838ba8a73a16ad3dbb9d8f9",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
