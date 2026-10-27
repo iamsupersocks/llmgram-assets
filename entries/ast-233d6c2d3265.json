@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-233d6c2d3265",
+  "name": "AnyMove (AI motion capture for any creature)",
+  "summary": "Open-source pipeline that animates any rigged creature (wings, tails, eight legs) from one AI video: a video model films front and side views in one frame, a DINOv2 joint reader trained on that creature finds every joint in both views, and the rig is fitted frame by frame and exported as GLB. Ships agent skills to run it.",
+  "category": "animations-mocap",
+  "tags": [
+    "animation",
+    "mocap",
+    "rigging",
+    "dinov2",
+    "glb",
+    "non-humanoid"
+  ],
+  "publisher": {
+    "name": "patch.gg",
+    "url": "https://github.com/patch-gg"
+  },
+  "resource_url": "https://github.com/patch-gg/anymove",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/patch-gg/anymove/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 code; paid model APIs per clip (about $0.26 per move, $0.40 per mesh per README)",
+    "notes": "Relies on third-party generation APIs (e.g. MiniMax H3 video, Tripo mesh) and Blender."
+  },
+  "procedure": [
+    "Clone https://github.com/patch-gg/anymove",
+    "Generate or import a rigged 3D creature, then generate a front+side video of the move",
+    "Train the joint reader, fit the rig and export the animated GLB as described in the README"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "GLB"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/rehan_shei/status/2115003471015588021",
+    "author": "@rehan_shei",
+    "published_at": "2026-10-27T08:51:37Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/victormustar/status/2115143997907763573",
+      "author": "@victormustar",
+      "published_at": "2026-10-27T18:10:01Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Apache-2.0 answer to non-humanoid animation, a long-standing gap; depends on paid generation APIs."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2115003287779061760/img/cXktxbj59hwCjpRK.jpg",
+    "alt": "",
+    "credit": "@rehan_shei"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:04:43Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 59896 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:04:43Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:04:43Z",
+  "history": [
+    {
+      "operation_id": "31fda8f9-0192-442a-99dd-a6c3d2e94f16",
+      "action": "submit",
+      "at": "2026-10-27T22:04:43Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e7dd2c837cb29b5c6d9eef5b8592340fecada8f27cd20dedfd72a8aa7857dc55",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
