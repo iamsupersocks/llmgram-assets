@@ -1,0 +1,90 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3a0d80397de0",
+  "name": "PDFCraft (open-source PDF editor)",
+  "summary": "Open-source PDF reader and editor written from scratch in Rust by the ArtCraft team, positioned as an Adobe Acrobat alternative with a native Linux build. ZDNet reviewed it as fast and accurate for creating and editing PDFs.",
+  "category": "tools",
+  "tags": [
+    "pdf",
+    "editor",
+    "rust",
+    "linux",
+    "desktop",
+    "acrobat-alternative"
+  ],
+  "publisher": {
+    "name": "ArtCraft (storytold)",
+    "url": "https://github.com/storytold"
+  },
+  "resource_url": "https://github.com/storytold/pdfcraft",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/storytold/pdfcraft/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": ""
+  },
+  "procedure": [
+    "Download a release from https://github.com/storytold/pdfcraft/releases (or via the ArtCraft launcher)",
+    "Open a PDF to read, annotate or edit"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "PDF"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://www.zdnet.fr/actualites/jai-teste-le-clone-gratuit-dadobe-acrobat-et-je-dispose-enfin-dun-editeur-de-pdf-professionnel-sous-linux-506084.htm",
+    "author": "Jack Wallen (ZDNet)",
+    "published_at": "2026-10-19T16:45:00Z",
+    "kind": "article"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Apache-2.0, actively developed, fills a real gap for PDF editing on Linux."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/2f44551e8f16c83e015cf0386a22c88d88a6738015aed5f8ed79e406e36b5009/storytold/pdfcraft",
+    "alt": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust - storytold/pdfcraft",
+    "credit": "ArtCraft (storytold)"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:03:50Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 49435 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:03:50Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:03:50Z",
+  "history": [
+    {
+      "operation_id": "c9f366a1-4d46-4d33-a3e9-dbe4993d84e7",
+      "action": "submit",
+      "at": "2026-10-27T22:03:50Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c8711c184e471edbf080d22665aa869584377d89bcb2f8223594294af3f8109c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
