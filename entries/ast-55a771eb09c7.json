@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-55a771eb09c7",
+  "name": "Unlimited OCR 2 (Baidu)",
+  "summary": "Open-source document-parsing model (about 3.3B parameters) built to read documents of hundreds of pages with nearly constant decode latency and memory, using SR-SWA attention over a fixed set of working references. Baidu reports peak KV cache down from 47 GB to 1.77 GB and state of the art on MPDocBench and MarathonDocBench (vendor-reported).",
+  "category": "models-weights",
+  "tags": [
+    "ocr",
+    "document-parsing",
+    "vlm",
+    "open-weights",
+    "long-context",
+    "baidu"
+  ],
+  "publisher": {
+    "name": "Baidu",
+    "url": "https://huggingface.co/baidu"
+  },
+  "resource_url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+  "download_url": "https://github.com/baidu/Unlimited-OCR",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Benchmarks are vendor-reported. Community MLX (4/6/8-bit) and GGUF conversions exist."
+  },
+  "procedure": [
+    "Download weights from huggingface.co/baidu/Unlimited-OCR-2",
+    "Use the inference code at github.com/baidu/Unlimited-OCR",
+    "On Mac, try mlx-community/Unlimited-OCR-2-6bit"
+  ],
+  "stats": {
+    "count": "",
+    "size": "about 3.3B parameters",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/Baidu_Inc/status/2114910381311512987",
+    "author": "@Baidu_Inc",
+    "published_at": "2026-10-27T02:41:42Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/TeksEdge/status/2115111382765150704",
+      "author": "@TeksEdge",
+      "published_at": "2026-10-27T16:00:25Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 82,
+    "why": "MIT-licensed, small enough to run locally, targets long multi-page documents."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVmbZoiakAAtEgn.jpg?name=orig",
+    "alt": "",
+    "credit": "@Baidu_Inc"
+  },
+  "verification": {
+    "checked_at": "2026-10-27T22:04:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 254520 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-27T22:04:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-27T22:04:31Z",
+  "history": [
+    {
+      "operation_id": "5c393a3f-aa6c-4c68-aea0-2040f51a43fb",
+      "action": "submit",
+      "at": "2026-10-27T22:04:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "445385716635fc727e91980a47abcec27d33a76b6b4416183d831c0e6f2e5219",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
