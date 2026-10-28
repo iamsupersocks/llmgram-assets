@@ -77,7 +77,7 @@
     "credit": "patch-gg/crowdbricks README"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:51:22Z",
+    "checked_at": "2026-10-28T08:51:36Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -97,12 +97,12 @@
       "detail": "image/webp, 4311384 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T08:51:22Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:51:22Z",
+  "updated_at": "2026-10-28T08:51:36Z",
   "history": [
     {
       "operation_id": "3da306a4-7c88-42f2-9705-6e23e3559e39",
@@ -112,6 +112,15 @@
       "payload_sha256": "ee0e76ca57c0368418a37775bda1f8bf9b91e60116a40ea52c6a04b728affaea",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "d47da52e-1339-4173-9f13-955933e45e61",
+      "action": "update",
+      "at": "2026-10-28T08:51:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "35e29a0d91382c44971ce1ca28341042922b2ad760f1da507b1492c101b5e87b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
