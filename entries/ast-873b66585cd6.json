@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-873b66585cd6",
+  "name": "Carbon-X (Hugging Face Bio DNA language model)",
+  "summary": "Open 14.8B model that reads raw DNA in a chat and answers in English: variant effects, regulatory regions, next-base prediction. Averages 66.7% on five DNA benchmarks, 27 points above its Qwen3-14B base. Research only, not for medical decisions.",
+  "category": "models-weights",
+  "tags": [
+    "dna",
+    "genomics",
+    "biology",
+    "llm",
+    "open-weights",
+    "huggingface"
+  ],
+  "publisher": {
+    "name": "Hugging Face Bio",
+    "url": "https://huggingface.co/HuggingFaceBio"
+  },
+  "resource_url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+  "download_url": "https://github.com/huggingface/carbon",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Apache-2.0, but research model: not clinically validated, must not be used for medical decisions. Genetic data is sensitive."
+  },
+  "procedure": [
+    "Download from huggingface.co/HuggingFaceBio/Carbon-X (transformers) or serve with vLLM on one GPU",
+    "Paste DNA inside a chat message; it is tagged automatically",
+    "Verify biological claims; see the card Limitations"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/oaichu95/status/2114531382961557917",
+    "author": "@oaichu95",
+    "published_at": "2026-10-26T01:35:42Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/fffiloni/status/2113699813531279824",
+      "author": "@fffiloni",
+      "published_at": "2026-10-23T18:31:20Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 60,
+    "why": "Credible open science release, but niche for a builder catalog and research-only in practice."
+  },
+  "image": {
+    "url": "https://huggingface.co/HuggingFaceBio/Carbon-X/resolve/main/figures/carbon-x-banner.png",
+    "alt": "Carbon-X banner",
+    "credit": "Hugging Face Bio"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:05:00Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 387091 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:05:00Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:05:00Z",
+  "history": [
+    {
+      "operation_id": "28c9aba7-d4f1-468b-8406-be60429f2791",
+      "action": "submit",
+      "at": "2026-10-28T14:05:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8e61659f1ca18a07352cd54405fbb424ad76e093f3e3706e3311ef3e7c729b12",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
