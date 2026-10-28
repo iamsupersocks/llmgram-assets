@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-588024ef0bd5",
+  "name": "d3-ultra (vLLM Semantic Router decision model)",
+  "summary": "Open 27B multimodal decision model: reads text, images or video once and returns probabilities for choice, yes/no, score, box and track questions instead of generating text. 1 to 255 questions on one photo in 0.3–2.2 s.",
+  "category": "models-weights",
+  "tags": [
+    "decision-model",
+    "routing",
+    "classification",
+    "multimodal",
+    "vllm",
+    "open-weights"
+  ],
+  "publisher": {
+    "name": "vLLM Semantic Router (vllm-sr)",
+    "url": "https://huggingface.co/vllm-sr"
+  },
+  "resource_url": "https://huggingface.co/vllm-sr/d3-ultra",
+  "download_url": "https://decision.vllm-sr.ai/",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/vllm-sr/d3-ultra",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (weights + free API)",
+    "notes": "Not gated. Large model (26B); free hosted API and HF Space to try it."
+  },
+  "procedure": [
+    "Try it free at decision.vllm-sr.ai or the HF Space vllm-sr/d3-ultra",
+    "Download weights from huggingface.co/vllm-sr/d3-ultra (transformers)",
+    "Follow the card Quickstart to send questions with images or video"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/XunzhuoLiu/status/2114915380926017591",
+    "author": "@XunzhuoLiu",
+    "published_at": "2026-10-27T03:01:34Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/KurmaRitish/status/2114983623493578976",
+      "author": "@KurmaRitish",
+      "published_at": "2026-10-27T07:32:44Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "A model that decides instead of writes: cheap routing, safety checks and visual QA in one call, Apache-2.0."
+  },
+  "image": {
+    "url": "https://huggingface.co/vllm-sr/d3-ultra/resolve/main/assets/banner@2x.png",
+    "alt": "d3-ultra banner",
+    "credit": "vLLM Semantic Router"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:25Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 3993427 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:25Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:25Z",
+  "history": [
+    {
+      "operation_id": "23d6e664-c07f-4566-a6fe-d1ccc34ac3c1",
+      "action": "submit",
+      "at": "2026-10-28T14:04:25Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6133c6a654c135bd43394110fa09d4e1cc300035adec64f4daecb774d6936682",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
