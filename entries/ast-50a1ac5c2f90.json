@@ -1,0 +1,121 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-50a1ac5c2f90",
+  "name": "LFM3 model family (Liquid AI)",
+  "summary": "Liquid AI's third-generation Liquid Foundation Models: open weights for six ~2B instances on one tri-hybrid backbone (LFM3-1.7B text, LFM3-VL-2B vision with video, LFM3-Audio-2B, LFM3-Omni-2B, plus d1-2B and d1-Omni-2B decision models), and LFM3-1.7B-Base. Built for on-device and edge use; GGUF, MLX, ONNX, FP8 and NVFP4 variants shipped at launch.",
+  "category": "models-weights",
+  "tags": [
+    "slm",
+    "edge",
+    "on-device",
+    "multimodal",
+    "vision",
+    "audio",
+    "omni",
+    "gguf",
+    "mlx",
+    "onnx",
+    "liquid-ai"
+  ],
+  "publisher": {
+    "name": "Liquid AI",
+    "url": "https://www.liquid.ai/"
+  },
+  "resource_url": "https://huggingface.co/collections/LiquidAI/lfm3",
+  "download_url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+  "access": {
+    "model": "free",
+    "license": "LFM Open License v1.0",
+    "license_url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Free incl. commercial use only for entities under $10M annual revenue; commercial use above that threshold is not licensed (non-profits exempt for research). Apache-style attribution/NOTICE terms. All 7 repos ungated."
+  },
+  "procedure": [
+    "Open the collection https://huggingface.co/collections/LiquidAI/lfm3 and pick a model (no login).",
+    "Download, e.g.: huggingface-cli download LiquidAI/LFM3-1.7B (~3.5 GB), or the -GGUF / -ONNX / -FP8 / -NVFP4 / MLX variants listed on each card.",
+    "Read the LICENSE in the repo and check the $10M revenue threshold before commercial use.",
+    "Run with transformers (custom_code), llama.cpp, LM Studio, MLX or SGLang."
+  ],
+  "stats": {
+    "count": "7 repos (6 instances + 1 base) plus quantized variants",
+    "size": "~3.5 GB (LFM3-1.7B, BF16)",
+    "formats": [
+      "safetensors",
+      "gguf",
+      "mlx",
+      "onnx",
+      "fp8",
+      "nvfp4"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/liquidai/status/2115128329003303107",
+    "author": "@liquidai",
+    "published_at": "2026-10-27T17:07:45Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/NeoAIForecast/status/2115180841093796232",
+      "author": "@NeoAIForecast",
+      "published_at": "2026-10-27T20:36:25Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "author": "Liquid AI",
+      "published_at": null,
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Small, fast multimodal family that runs locally with many formats on day 0. Not OSI open source: the LFM Open License caps commercial use at $10M annual revenue."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2115125357439557633/img/X_jB63rlX-TyinU4.jpg",
+    "alt": "",
+    "credit": "@liquidai"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:46:42Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 35387 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:46:42Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:46:42Z",
+  "history": [
+    {
+      "operation_id": "529d7196-84e3-40ed-87a1-94dab0b4d815",
+      "action": "submit",
+      "at": "2026-10-28T08:46:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9e5e4f1fdf96519ba42437c7dd33e27181e6ceedceb4f3eab6cbd25bd4800db8",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
