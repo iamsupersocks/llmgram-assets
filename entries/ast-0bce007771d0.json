@@ -67,7 +67,7 @@
   ],
   "verdict": {
     "score": 80,
-    "why": "Small, permissively licensed OCR model that runs on a single consumer GPU, with broad runtime support and an SDK; directly useful for document pipelines."
+    "why": "Small, permissively licensed OCR model that runs on a single consumer GPU, with broad runtime support and an SDK; directly useful for document pipelines. Links, license and image checked 2026-10-28."
   },
   "image": {
     "url": "https://pbs.twimg.com/media/HVpufwLasAA2bIg.jpg?name=orig",
@@ -75,7 +75,7 @@
     "credit": "@OpenBMB"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:46:33Z",
+    "checked_at": "2026-10-28T08:48:01Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -95,12 +95,12 @@
       "detail": "image/jpg, 87406 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T08:46:33Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:46:33Z",
+  "updated_at": "2026-10-28T08:48:01Z",
   "history": [
     {
       "operation_id": "74cc20d1-dca4-45ac-9b8b-4dba27a74d35",
@@ -110,6 +110,15 @@
       "payload_sha256": "ab0394593310a995ff320f295b80fbf24ab089c64a6d4c4b9161bbead44264c3",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "fedc6219-cc6e-4c55-b645-4db9704e02f4",
+      "action": "update",
+      "at": "2026-10-28T08:48:01Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b139f762a92a61a73e4e56a8b42b5500ea6a41238c64593045c8d60445400339",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
