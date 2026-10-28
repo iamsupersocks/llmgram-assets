@@ -64,7 +64,7 @@
     "credit": "SenseTime"
   },
   "verification": {
-    "checked_at": "2026-10-28T16:43:41Z",
+    "checked_at": "2026-10-28T16:43:54Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -84,12 +84,12 @@
       "detail": "image/gif, 2929112 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T16:43:41Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T16:43:41Z",
+  "updated_at": "2026-10-28T16:43:54Z",
   "history": [
     {
       "operation_id": "aff030f0-b51a-401a-95e5-a984ad62f82c",
@@ -99,6 +99,15 @@
       "payload_sha256": "bbd89797eae4d079536b6b81ee35485f454d7bb104e16d2732ba85b85b78ec97",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "4a1f5698-1857-47ad-9805-8c795fbcd526",
+      "action": "update",
+      "at": "2026-10-28T16:43:54Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8a53784f5239313cfc54b0f1a10741103ea1976295a8a8199daa354e45c0ad95",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
