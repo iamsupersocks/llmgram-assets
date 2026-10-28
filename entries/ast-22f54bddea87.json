@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-22f54bddea87",
+  "name": "TRELLIS.2 (Microsoft image-to-3D, 4B)",
+  "summary": "Microsoft's open 4B image-to-3D model: one photo in, a textured mesh with full PBR materials out, up to 1536³ resolution (~17 s at 1024³ on an H100). Handles open surfaces and non-manifold geometry.",
+  "category": "models-weights",
+  "tags": [
+    "image-to-3d",
+    "3d",
+    "pbr",
+    "glb",
+    "microsoft",
+    "open-weights"
+  ],
+  "publisher": {
+    "name": "Microsoft",
+    "url": "https://github.com/microsoft"
+  },
+  "resource_url": "https://github.com/microsoft/TRELLIS.2",
+  "download_url": "https://huggingface.co/microsoft/TRELLIS.2-4B",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/microsoft/TRELLIS.2/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code and weights MIT. Needs Linux + NVIDIA GPU with 24 GB+ (community forks run on smaller GPUs)."
+  },
+  "procedure": [
+    "Clone: git clone -b main https://github.com/microsoft/TRELLIS.2.git --recursive",
+    "Run the setup script (conda env trellis2, CUDA 12.4) as described in the README",
+    "Weights download from huggingface.co/microsoft/TRELLIS.2-4B; run the example script on one image to get a GLB"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "GLB"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/Architech_India/status/2113679360406462760",
+    "author": "@Architech_India",
+    "published_at": "2026-10-23T17:10:04Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/prompt48/status/2112224568773599307",
+      "author": "@prompt48",
+      "published_at": "2026-10-19T16:49:15Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 86,
+    "why": "State-of-the-art open image-to-3D under MIT, 2.6M downloads; the base many community 3D tools now build on."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/1/microsoft/TRELLIS.2",
+    "alt": "TRELLIS.2 GitHub social preview",
+    "credit": "GitHub / Microsoft"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:00Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 39268 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:00Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:00Z",
+  "history": [
+    {
+      "operation_id": "55e7f7ec-45e6-491b-8bd9-82c61e2cb220",
+      "action": "submit",
+      "at": "2026-10-28T14:04:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "46c3c65582f0c03e5bdc070002467bf3207c13071dd6e7466eb2b3a3dc71b815",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
