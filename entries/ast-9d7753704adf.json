@@ -52,7 +52,7 @@
   "related_sources": [],
   "verdict": {
     "score": 58,
-    "why": "Genuinely free and installable with MIT code, but it is a marketing funnel to a paid library and the bundled media are not freely redistributable."
+    "why": "Genuinely free and installable with MIT code, but it is a marketing funnel to a paid library and the bundled media are not freely redistributable. Links, license and image checked 2026-10-28."
   },
   "image": {
     "url": "https://pbs.twimg.com/amplify_video_thumb/2115288361292460032/img/Fd5qyEmQ3kLX0PZB.jpg",
@@ -60,7 +60,7 @@
     "credit": "@viktoroddy"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:46:59Z",
+    "checked_at": "2026-10-28T08:48:11Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/jpg, 63186 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T08:46:59Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:46:59Z",
+  "updated_at": "2026-10-28T08:48:11Z",
   "history": [
     {
       "operation_id": "cc1006f0-31ba-49a0-8d58-15efcc4c0365",
@@ -95,6 +95,15 @@
       "payload_sha256": "9abb1232a5c969a21f6166598e2e14ace0869d9a61514b4cb19d686c48650d09",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "a7c4c432-1564-46ba-a91b-b60d72aef650",
+      "action": "update",
+      "at": "2026-10-28T08:48:11Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d33159a0bf50364e8c3df3e3aa2220da4c721dee2c2be1dd3ceb6d973a7cfbff",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
