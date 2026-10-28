@@ -1,0 +1,102 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-fae4b47ae496",
+  "name": "Poly Haven API (CC0 HDRIs, textures, models)",
+  "summary": "Free JSON API to list and download Poly Haven's CC0 HDRIs, PBR textures and 3D models with metadata, tags and file URLs. Now free for everyone including commercial use; handy for agents that build 3D scenes.",
+  "category": "textures-materials",
+  "tags": [
+    "api",
+    "cc0",
+    "hdri",
+    "pbr",
+    "3d-models",
+    "blender"
+  ],
+  "publisher": {
+    "name": "Poly Haven",
+    "url": "https://polyhaven.com/"
+  },
+  "resource_url": "https://polyhaven.com/our-api",
+  "download_url": "https://api.polyhaven.com/assets",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0 (assets); API free incl. commercial",
+    "license_url": "https://polyhaven.com/license",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Only ask: make clear to users that assets come from Poly Haven. Set a custom User-Agent."
+  },
+  "procedure": [
+    "GET https://api.polyhaven.com/assets with a custom User-Agent to list assets",
+    "Use /files/<id> to get download URLs per resolution and format",
+    "Credit Poly Haven in your app"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "HDR",
+      "EXR",
+      "JPG",
+      "PNG",
+      "GLTF",
+      "BLEND"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://polyhaven.com/our-api",
+    "author": "Poly Haven",
+    "published_at": "2026-07-18T00:00:00Z",
+    "kind": "website"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 64,
+    "why": "The best CC0 3D library, now with a free commercial API: a clean asset source for AI 3D pipelines."
+  },
+  "image": {
+    "url": "https://cdn.polyhaven.com/asset_img/thumbs/sunset_jhbcentral.png?width=256&height=256",
+    "alt": "Poly Haven HDRI thumbnail (Joburg Central Sunset)",
+    "credit": "Poly Haven"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:53Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 84371 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:53Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:53Z",
+  "history": [
+    {
+      "operation_id": "28a589ad-ba87-4597-a495-dace747dee89",
+      "action": "submit",
+      "at": "2026-10-28T14:04:53Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c7d8ba34242918d4ae6a57f7b7034e8577077c4d1f27c83cadbbe75e69111222",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
