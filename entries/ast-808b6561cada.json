@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-808b6561cada",
+  "name": "ThinkRail (JetBrains incubator agentic IDE)",
+  "summary": "Early-stage JetBrains incubator IDE built around the open-source pi coding agent. Each task runs in an isolated git-worktree workspace; a graph of SPEC.md 'living specs' gives the agent lasting project knowledge. Includes Monaco editor, terminals, diff review, concurrent pi sessions with cost readout, Agent Skills and GitHub PR workflows. Desktop apps and a CLI for macOS, Linux and Windows.",
+  "category": "tools",
+  "tags": [
+    "ide",
+    "coding-agent",
+    "pi",
+    "worktrees",
+    "specs",
+    "agent-skills",
+    "jetbrains",
+    "desktop-app",
+    "cli"
+  ],
+  "publisher": {
+    "name": "JetBrains",
+    "url": "https://github.com/JetBrains"
+  },
+  "resource_url": "https://github.com/JetBrains/thinkrail",
+  "download_url": "https://github.com/JetBrains/thinkrail/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/JetBrains/thinkrail/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (model/API usage billed by your provider)",
+    "notes": "Incubator project, early stage; nightly channel moves fast. Desktop Linux builds need glibc 2.38+; macOS CLI signed but not notarized. Bring your own model provider."
+  },
+  "procedure": [
+    "Open https://github.com/JetBrains/thinkrail/releases/latest (stable v0.2.0).",
+    "Download the thinkrail-desktop-* asset for your OS (DMG, Linux tarball, Windows zip) and verify against SHA256SUMS.",
+    "Or install the CLI: curl -fsSL https://raw.githubusercontent.com/JetBrains/thinkrail/main/install.sh | bash (PowerShell: install.ps1).",
+    "Open a git repo as a project and configure a model provider for pi."
+  ],
+  "stats": {
+    "count": "Stable v0.2.0 + nightly builds",
+    "size": "",
+    "formats": [
+      "dmg",
+      "tar.gz",
+      "zip",
+      "exe",
+      "binary"
+    ],
+    "cadence": "Nightly pre-releases"
+  },
+  "source": {
+    "url": "https://x.com/7zSushi/status/2115059129425252736",
+    "author": "@7zSushi",
+    "published_at": "2026-10-27T12:32:47Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://thinkrail.ai/",
+      "author": "JetBrains",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Apache-2.0 agent IDE from JetBrains with real releases on all three OSes and ~4.4k stars; early-stage, so expect churn."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/8c84f890c09ce0c8677d85e32028d5502eccca03a1ac1b820d5459bacc416031/JetBrains/thinkrail",
+    "alt": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail",
+    "credit": "JetBrains"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:46:51Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 62864 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:46:51Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:46:51Z",
+  "history": [
+    {
+      "operation_id": "f44c48a8-22f9-4240-a0ac-17a9ca61fb09",
+      "action": "submit",
+      "at": "2026-10-28T08:46:51Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2a790e353b296cb27323e05b16542ea428d1ef471b3524d20a5860be286cfd6b",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
