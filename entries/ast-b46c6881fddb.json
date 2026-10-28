@@ -1,0 +1,102 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b46c6881fddb",
+  "name": "NVIDIA SkillSpector (agent skill security scanner)",
+  "summary": "Scans Claude Code, Codex and MCP skills before you install them: flags prompt injection, data exfiltration, malicious patterns and supply-chain risks. Part of NVIDIA's Verified Skills pipeline.",
+  "category": "tools",
+  "tags": [
+    "agent-skills",
+    "security",
+    "mcp",
+    "claude-code",
+    "codex",
+    "nvidia"
+  ],
+  "publisher": {
+    "name": "NVIDIA",
+    "url": "https://github.com/NVIDIA"
+  },
+  "resource_url": "https://github.com/NVIDIA/SkillSpector",
+  "download_url": "https://docs.nvidia.com/skills/scanning-agent-skills",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/NVIDIA/SkillSpector/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Python 3.12+. Installs third-party OSS dependencies."
+  },
+  "procedure": [
+    "Install: uv tool install git+https://github.com/NVIDIA/skillspector.git",
+    "Point it at a skill folder or repo before installing it",
+    "Read the report; follow NVIDIA's hosted guide to gate installs"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://github.com/NVIDIA/SkillSpector",
+    "author": "NVIDIA",
+    "published_at": null,
+    "kind": "github"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/Cuiszt_Cui/status/2114938204440744384",
+      "author": "@Cuiszt_Cui",
+      "published_at": "2026-10-27T04:32:16Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 84,
+    "why": "Skills are the new supply chain; a free NVIDIA scanner to check one before installing it. 22.9k stars."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/1/NVIDIA/SkillSpector",
+    "alt": "Repo social preview",
+    "credit": "GitHub / NVIDIA"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:19Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 66988 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:19Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:19Z",
+  "history": [
+    {
+      "operation_id": "fcc6e599-e318-4b93-a118-71f240449de9",
+      "action": "submit",
+      "at": "2026-10-28T14:04:19Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "f5dd1144a7b5ef2e9820d9ac346624d7739da34ee6a038e6a9e8afedd22eb70e",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
