@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-e11dfcf7f290",
+  "name": "SenseNova 6.8 Code2Video",
+  "summary": "Open 27B model from SenseTime, fine-tuned from Qwen3.8-27B, that makes short videos by writing executable code that renders them (motion design, math explainers, kinetic type, data stories). 512K context. Ships example agent trajectories and a Claude Code skill with prompts on GitHub.",
+  "category": "models-weights",
+  "tags": [
+    "code-to-video",
+    "motion-design",
+    "video-generation",
+    "agent",
+    "sensetime",
+    "27b"
+  ],
+  "publisher": {
+    "name": "SenseTime (OpenSenseNova)",
+    "url": "https://huggingface.co/sensenova"
+  },
+  "resource_url": "https://huggingface.co/sensenova/SenseNova-6.8-Code2Video",
+  "download_url": "https://huggingface.co/sensenova/SenseNova-6.8-Code2Video/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Ungated. Apache-2.0 is declared in the HF card metadata and README badge; the repo has no separate LICENSE file. Skill and prompts on github.com/OpenSenseNova/SenseNova-6.8-Code2Video."
+  },
+  "procedure": [
+    "Open the Hugging Face repo (no login or gate).",
+    "Download the 12 safetensors shards (about 55 GB) with `huggingface-cli download sensenova/SenseNova-6.8-Code2Video`.",
+    "Get the skill and prompts from github.com/OpenSenseNova/SenseNova-6.8-Code2Video and run the model with transformers or a compatible server."
+  ],
+  "stats": {
+    "count": "27B parameters",
+    "size": "~55 GB",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/SenseTime_AI/status/2115445835068748044",
+    "author": "@SenseTime_AI",
+    "published_at": "2026-10-28T14:09:24Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video",
+      "author": "OpenSenseNova",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "Official SenseTime release, ungated, Apache-2.0 per publisher card, weights download 200. Niche (code-rendered short videos), 27B needs a big GPU, no benchmark beyond the publisher's examples."
+  },
+  "image": {
+    "url": "https://huggingface.co/sensenova/SenseNova-6.8-Code2Video/resolve/main/media/readme/title.gif",
+    "alt": "SenseNova 6.8 Code2Video title animation: Every frame is code",
+    "credit": "SenseTime"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T16:43:41Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/gif, 2929112 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T16:43:41Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T16:43:41Z",
+  "history": [
+    {
+      "operation_id": "aff030f0-b51a-401a-95e5-a984ad62f82c",
+      "action": "submit",
+      "at": "2026-10-28T16:43:41Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bbd89797eae4d079536b6b81ee35485f454d7bb104e16d2732ba85b85b78ec97",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
