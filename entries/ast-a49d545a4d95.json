@@ -18,7 +18,7 @@
     "url": "https://ctan.org/author/pierquet"
   },
   "resource_url": "https://ctan.org/pkg/doodle-icons",
-  "download_url": "https://mirrors.ctan.org/macros/latex/contrib/doodle-icons.zip",
+  "download_url": "https://ctan.org/tex-archive/macros/latex/contrib/doodle-icons",
   "access": {
     "model": "open-source",
     "license": "LPPL-1.3c (package) + CC0-1.0 (icons)",
@@ -30,7 +30,7 @@
   },
   "procedure": [
     "With TeX Live: tlmgr install doodle-icons (or update your distribution).",
-    "Manual: download https://mirrors.ctan.org/macros/latex/contrib/doodle-icons.zip (1.7 MB).",
+    "Manual: open https://ctan.org/tex-archive/macros/latex/contrib/doodle-icons and download the package zip (1.7 MB; mirrors.ctan.org/macros/latex/contrib/doodle-icons.zip redirects to a nearby mirror).",
     "Put doodle-icons.sty and doodleicons-all.pdf in your local texmf tree and run texhash / mktexlsr.",
     "Add \\usepackage{doodle-icons} and use \\doodleicon[height=2em]{name}."
   ],
@@ -67,18 +67,18 @@
     "credit": "@TeXUsersGroup"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:48:08Z",
+    "checked_at": "2026-10-28T08:48:35Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
       "status": 200,
       "detail": "reachable"
     },
-    "download_ok": false,
+    "download_ok": true,
     "download": {
-      "ok": false,
-      "status": null,
-      "detail": "SSLCertVerificationError"
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
     },
     "image_ok": true,
     "image": {
@@ -88,11 +88,11 @@
     }
   },
   "hold": false,
-  "status": "candidate",
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T08:47:07Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:48:08Z",
+  "updated_at": "2026-10-28T08:48:35Z",
   "history": [
     {
       "operation_id": "18648a57-51a6-4adf-af16-cb6c7ff3666b",
@@ -111,6 +111,15 @@
       "payload_sha256": "497712e27b6b33c295cd74030929130b7583821c6907e8268dfab714acc7549d",
       "result": "updated",
       "status": "candidate"
+    },
+    {
+      "operation_id": "2ab59ef8-eba8-4992-bd25-8cfda51eec00",
+      "action": "update",
+      "at": "2026-10-28T08:48:35Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5b700c1f1c89cd48bc1dfb1343de9ce945739b756b911467cb9ceeeef53bde4e",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
