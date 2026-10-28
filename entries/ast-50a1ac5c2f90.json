@@ -73,7 +73,7 @@
   ],
   "verdict": {
     "score": 72,
-    "why": "Small, fast multimodal family that runs locally with many formats on day 0. Not OSI open source: the LFM Open License caps commercial use at $10M annual revenue."
+    "why": "Small, fast multimodal family that runs locally with many formats on day 0. Not OSI open source: the LFM Open License caps commercial use at $10M annual revenue. Links, license and image checked 2026-10-28."
   },
   "image": {
     "url": "https://pbs.twimg.com/amplify_video_thumb/2115125357439557633/img/X_jB63rlX-TyinU4.jpg",
@@ -81,7 +81,7 @@
     "credit": "@liquidai"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:46:42Z",
+    "checked_at": "2026-10-28T08:48:01Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -101,12 +101,12 @@
       "detail": "image/jpg, 35387 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T08:46:42Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:46:42Z",
+  "updated_at": "2026-10-28T08:48:01Z",
   "history": [
     {
       "operation_id": "529d7196-84e3-40ed-87a1-94dab0b4d815",
@@ -116,6 +116,15 @@
       "payload_sha256": "9e5e4f1fdf96519ba42437c7dd33e27181e6ceedceb4f3eab6cbd25bd4800db8",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "419e9f77-0366-4d24-b8ee-4132985481c5",
+      "action": "update",
+      "at": "2026-10-28T08:48:01Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5e52ab91e569d9aa1b26948da71e043dd58dc68cbe90365233bad1833502bf79",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
