@@ -64,7 +64,7 @@
   ],
   "verdict": {
     "score": 70,
-    "why": "Apache-2.0 agent IDE from JetBrains with real releases on all three OSes and ~4.4k stars; early-stage, so expect churn."
+    "why": "Apache-2.0 agent IDE from JetBrains with real releases on all three OSes and ~4.4k stars; early-stage, so expect churn. Links, license and image checked 2026-10-28."
   },
   "image": {
     "url": "https://opengraph.githubassets.com/8c84f890c09ce0c8677d85e32028d5502eccca03a1ac1b820d5459bacc416031/JetBrains/thinkrail",
@@ -72,7 +72,7 @@
     "credit": "JetBrains"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:46:51Z",
+    "checked_at": "2026-10-28T08:48:04Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -92,12 +92,12 @@
       "detail": "image/png, 62864 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T08:46:51Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:46:51Z",
+  "updated_at": "2026-10-28T08:48:04Z",
   "history": [
     {
       "operation_id": "f44c48a8-22f9-4240-a0ac-17a9ca61fb09",
@@ -107,6 +107,15 @@
       "payload_sha256": "2a790e353b296cb27323e05b16542ea428d1ef471b3524d20a5860be286cfd6b",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "148b7ab0-88e4-4462-83f8-302fea9eb3c5",
+      "action": "update",
+      "at": "2026-10-28T08:48:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "28071f7aea99d6f43b8e984e20c335e285d7cebeddfd9016e94f983b57d60114",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
