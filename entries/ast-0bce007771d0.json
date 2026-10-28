@@ -1,0 +1,115 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0bce007771d0",
+  "name": "MiniCPM-OCR 1.0 (OpenBMB)",
+  "summary": "Open 1.3B document-parsing OCR model from OpenBMB (SigLIP encoder + Qwen3.5 LM, built on MiniCPM-V 4.6) for text, tables, formulas, charts, seals and key-information extraction in Chinese and English. Reported 93.68 on Real5-OmniDocBench and 54.7 on OCRBench v2; up to 128 pages/min with the SDK. Runs on vLLM, SGLang, llama.cpp and Ollama. A companion 2B checker, MiniCPM-OCR Jev, scores parse accuracy.",
+  "category": "models-weights",
+  "tags": [
+    "ocr",
+    "document-parsing",
+    "vision-language",
+    "small-model",
+    "tables",
+    "formulas",
+    "vllm",
+    "llama.cpp",
+    "ollama",
+    "openbmb"
+  ],
+  "publisher": {
+    "name": "OpenBMB",
+    "url": "https://github.com/OpenBMB"
+  },
+  "resource_url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+  "download_url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/OpenBMB/MiniCPM-OCR/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0; hosted API on platform.modelbest.ai is separate",
+    "notes": "Weights, code and docs under Apache-2.0 per the model card and repo LICENSE. Not gated."
+  },
+  "procedure": [
+    "Open https://huggingface.co/openbmb/MiniCPM-OCR-1.0 (no login).",
+    "Download: huggingface-cli download openbmb/MiniCPM-OCR-1.0 (~2.6 GB, single model.safetensors).",
+    "Install the minicpmvocr SDK and pipeline from https://github.com/OpenBMB/MiniCPM-OCR (uses PP-DocLayoutV3 for layout).",
+    "Or serve with vLLM, SGLang, llama.cpp or Ollama as documented in the repo."
+  ],
+  "stats": {
+    "count": "1 model (+ MiniCPM-OCR Jev 2B checker)",
+    "size": "~2.6 GB",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/OpenBMB/status/2115124474882469955",
+    "author": "@OpenBMB",
+    "published_at": "2026-10-27T16:52:26Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/hasantoxr/status/2115161952205062355",
+      "author": "@hasantoxr",
+      "published_at": "2026-10-27T19:21:21Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://github.com/OpenBMB/MiniCPM-OCR",
+      "author": "OpenBMB",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Small, permissively licensed OCR model that runs on a single consumer GPU, with broad runtime support and an SDK; directly useful for document pipelines."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVpufwLasAA2bIg.jpg?name=orig",
+    "alt": "",
+    "credit": "@OpenBMB"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:46:33Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 87406 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:46:33Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:46:33Z",
+  "history": [
+    {
+      "operation_id": "74cc20d1-dca4-45ac-9b8b-4dba27a74d35",
+      "action": "submit",
+      "at": "2026-10-28T08:46:33Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ab0394593310a995ff320f295b80fbf24ab089c64a6d4c4b9161bbead44264c3",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
