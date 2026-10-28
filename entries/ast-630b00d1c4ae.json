@@ -1,0 +1,102 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-630b00d1c4ae",
+  "name": "Perplexity SPACE (agent code sandbox)",
+  "summary": "Perplexity's open-source sandbox platform: runs agent and user code in isolated Firecracker microVMs via an HTTP API, with templates, pause/suspend and an E2B-compatible wrapper.",
+  "category": "tools",
+  "tags": [
+    "sandbox",
+    "agents",
+    "firecracker",
+    "code-execution",
+    "self-hosted",
+    "perplexity"
+  ],
+  "publisher": {
+    "name": "Perplexity",
+    "url": "https://github.com/perplexityai"
+  },
+  "resource_url": "https://github.com/perplexityai/SPACE",
+  "download_url": "https://space.docs.perplexity.ai/guide/index.html",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/perplexityai/SPACE/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (self-hosted)",
+    "notes": "Self-hosted: needs a Linux host with KVM; local deployment uses a Kind cluster."
+  },
+  "procedure": [
+    "Follow docs/installation.md to deploy SPACE in a local Kind cluster and authenticate",
+    "Follow docs/first-sandbox.md to create a sandbox and run a command",
+    "Optionally use the E2B compatibility wrapper with the E2B Python SDK"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/hkprogsociety/status/2112146574310859128",
+    "author": "@hkprogsociety",
+    "published_at": "2026-10-19T11:39:19Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/NathanBurg/status/2113436025083330862",
+      "author": "@NathanBurg",
+      "published_at": "2026-10-23T01:03:08Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Production-grade, self-hostable alternative to hosted agent sandboxes, from a team running it at scale."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/1/perplexityai/SPACE",
+    "alt": "Repo social preview",
+    "credit": "GitHub / Perplexity"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:37Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 57411 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:37Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:37Z",
+  "history": [
+    {
+      "operation_id": "716db9d9-06e1-46da-8969-d02b9a2046f6",
+      "action": "submit",
+      "at": "2026-10-28T14:04:37Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "11bc16bcb00b7e929a06fce6e098ebccf26d4e8247e4e2c9cbdc22ff4ee962e9",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
