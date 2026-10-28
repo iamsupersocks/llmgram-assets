@@ -1,0 +1,105 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-1041e33ff2e8",
+  "name": "NVIDIA Nemotron 3.5 Transcribe (30B-A4B)",
+  "summary": "Open-weight offline speech model from NVIDIA: transcription and speech translation in 40 languages, recordings up to one hour, 65,536-token context. Hybrid mixture-of-experts with about 4.3B active parameters; released in BF16, FP8 and NVFP4. Artificial Analysis ranks it tied #1 among open-weight speech-to-text models at 2.8% WER.",
+  "category": "models-weights",
+  "tags": [
+    "speech-to-text",
+    "asr",
+    "translation",
+    "multilingual",
+    "nvidia",
+    "nemo",
+    "moe"
+  ],
+  "publisher": {
+    "name": "NVIDIA",
+    "url": "https://huggingface.co/nvidia"
+  },
+  "resource_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "download_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "OpenMDW-1.1",
+    "license_url": "https://openmdw.ai/license/1-1/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Ungated. Permissive: keep the license and notices when redistributing; patent-litigation termination clause. Third-party notices for Qwen3-ASR and vLLM included."
+  },
+  "procedure": [
+    "Open the Hugging Face repo (no login or gate).",
+    "Download with `huggingface-cli download nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B` (about 67.5 GB, single model.safetensors).",
+    "Serve or fine-tune with NeMo Speech (github.com/NVIDIA-NeMo/Speech); a live demo is on the nvidia/nemotron-transcribe Space."
+  ],
+  "stats": {
+    "count": "40 languages",
+    "size": "~67.5 GB (BF16 repo)",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/ArtificialAnlys/status/2115459886045942161",
+    "author": "@ArtificialAnlys",
+    "published_at": "2026-10-28T15:05:14Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/Techmeme/status/2115463880915010013",
+      "author": "@Techmeme",
+      "published_at": "2026-10-28T15:21:07Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 86,
+    "why": "Official NVIDIA release, ungated, permissive OpenMDW-1.1 read on the repo LICENSE, independent benchmark (2.8% WER). Heavy download (~67.5 GB) and needs a large GPU for BF16."
+  },
+  "image": {
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B/resolve/main/hero.png",
+    "alt": "Nemotron 3.5 Transcribe overview: one speech model transcribing a recording in the style chosen by the instruction",
+    "credit": "NVIDIA"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T16:43:33Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 174864 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T16:43:33Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T16:43:33Z",
+  "history": [
+    {
+      "operation_id": "0687052b-a823-434a-8cb0-4734f5f64856",
+      "action": "submit",
+      "at": "2026-10-28T16:43:33Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "0ae8780d0fb2bb44440796b1677b31c01a3c0db866a750e066a1cee3deb41f3c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
