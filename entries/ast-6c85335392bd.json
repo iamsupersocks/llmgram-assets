@@ -1,0 +1,97 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6c85335392bd",
+  "name": "tstack (Theo's daily agent skills)",
+  "summary": "The agent skills Theo (t3dotgg) uses every day in Claude Code and Codex: council (three models from three providers review until they agree), full-send, babysit-pr and more. Templates meant to be forked.",
+  "category": "tools",
+  "tags": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "code-review",
+    "workflow"
+  ],
+  "publisher": {
+    "name": "Theo (t3dotgg)",
+    "url": "https://github.com/t3dotgg"
+  },
+  "resource_url": "https://github.com/t3dotgg/tstack",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/t3dotgg/tstack/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "full-send can merge PRs on its own; start with full-stop. Some skills depend on others."
+  },
+  "procedure": [
+    "git clone https://github.com/t3dotgg/tstack",
+    "cp -R tstack/skills/* ~/.claude/skills/ (Claude Code) or ~/.codex/skills/ (Codex)",
+    "Install the dependent skills listed in the README"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "SKILL.md"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/vibelancer/status/2114687883197997476",
+    "author": "@vibelancer",
+    "published_at": "2026-10-26T11:57:35Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/LLMpsycho/status/2114270039901876553",
+      "author": "@LLMpsycho",
+      "published_at": "2026-10-25T08:17:13Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Battle-tested skill pack from a high-signal dev, 2.1k stars in days; easy to copy and adapt."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/1/t3dotgg/tstack",
+    "alt": "Repo social preview",
+    "credit": "GitHub"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:32Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 109059 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:32Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:32Z",
+  "history": [
+    {
+      "operation_id": "7ab1fc98-f6ee-4665-97ab-8ce60789e4d6",
+      "action": "submit",
+      "at": "2026-10-28T14:04:32Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "77c6f5f9829ed00ea1f8e46b112ca362642f10215567d0604e89babe3c464f05",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
