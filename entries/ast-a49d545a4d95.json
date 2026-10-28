@@ -59,7 +59,7 @@
   ],
   "verdict": {
     "score": 62,
-    "why": "Small but clean: public-domain icons with a permissive LaTeX wrapper, on CTAN and TeX Live. Niche audience (LaTeX users)."
+    "why": "Small but clean: public-domain icons with a permissive LaTeX wrapper, on CTAN and TeX Live. Niche audience (LaTeX users). Links, license and image checked 2026-10-28."
   },
   "image": {
     "url": "https://pbs.twimg.com/media/HVrHpHSXUAELkUa.png?name=orig",
@@ -67,18 +67,18 @@
     "credit": "@TeXUsersGroup"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:47:07Z",
+    "checked_at": "2026-10-28T08:48:08Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
       "status": 200,
       "detail": "reachable"
     },
-    "download_ok": true,
+    "download_ok": false,
     "download": {
-      "ok": true,
-      "status": 200,
-      "detail": "reachable"
+      "ok": false,
+      "status": null,
+      "detail": "SSLCertVerificationError"
     },
     "image_ok": true,
     "image": {
@@ -87,12 +87,12 @@
       "detail": "image/png, 95302 bytes"
     }
   },
-  "hold": true,
+  "hold": false,
   "status": "candidate",
   "flags": [],
   "added_at": "2026-10-28T08:47:07Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:47:07Z",
+  "updated_at": "2026-10-28T08:48:08Z",
   "history": [
     {
       "operation_id": "18648a57-51a6-4adf-af16-cb6c7ff3666b",
@@ -101,6 +101,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "ab6a2bef7aa7e0778dff754507b545628268d5684a72967d562b7d6472bb6432",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "25341d1d-cf66-4c34-8d12-2aa318493464",
+      "action": "update",
+      "at": "2026-10-28T08:48:08Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "497712e27b6b33c295cd74030929130b7583821c6907e8268dfab714acc7549d",
+      "result": "updated",
       "status": "candidate"
     }
   ]
