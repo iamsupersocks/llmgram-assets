@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-9d7753704adf",
+  "name": "MotionSites Web Builder (free Claude skill)",
+  "summary": "Free Claude skill/plugin for building cinematic landing pages: 40 example prompts, a media shelf (50+ hero videos, 30 3D cut-outs, 29 images), 55+ technique recipes with code (video loops, liquid glass, scroll stories, Three.js), design rules, a spec template and a screenshot-and-fix QA loop. Can also output prompts for Lovable, Bolt, v0, Cursor and others.",
+  "category": "tools",
+  "tags": [
+    "claude-skill",
+    "claude-code",
+    "landing-page",
+    "web-design",
+    "prompts",
+    "frontend",
+    "agent-skills"
+  ],
+  "publisher": {
+    "name": "MotionSites",
+    "url": "https://motionsites.ai/"
+  },
+  "resource_url": "https://github.com/Motionsites-AI/claude-skill",
+  "download_url": "https://github.com/Motionsites-AI/claude-skill/releases/download/v1.0.0/motionsites-web-builder.zip",
+  "access": {
+    "model": "freemium",
+    "license": "MIT (skill code) + proprietary examples/media",
+    "license_url": "https://github.com/Motionsites-AI/claude-skill/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0; larger library with MotionSites Unlimited (paid)",
+    "notes": "Instructions/scripts MIT. Example prompts and media are (c) MotionSites: usable to build sites incl. for clients, but no resale or redistribution as a prompt/media collection. Free sample of a paid library."
+  },
+  "procedure": [
+    "Download motionsites-web-builder.zip from https://github.com/Motionsites-AI/claude-skill/releases/latest.",
+    "Claude.ai/desktop: Customize > Skills > + > Upload a skill, pick the zip, enable it (code execution must be on).",
+    "Claude Code: /plugin marketplace add Motionsites-AI/claude-skill then /plugin install motionsites-web-builder@motionsites.",
+    "Optional: pip install playwright && python -m playwright install chromium for the screenshot QA loop."
+  ],
+  "stats": {
+    "count": "40 prompts, 50+ videos, 30 cut-outs, 29 images, 55+ recipes",
+    "size": "",
+    "formats": [
+      "zip",
+      "md"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/viktoroddy/status/2115288617170157637",
+    "author": "@viktoroddy",
+    "published_at": "2026-10-28T03:44:41Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 58,
+    "why": "Genuinely free and installable with MIT code, but it is a marketing funnel to a paid library and the bundled media are not freely redistributable."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2115288361292460032/img/Fd5qyEmQ3kLX0PZB.jpg",
+    "alt": "",
+    "credit": "@viktoroddy"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:46:59Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 63186 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:46:59Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:46:59Z",
+  "history": [
+    {
+      "operation_id": "cc1006f0-31ba-49a0-8d58-15efcc4c0365",
+      "action": "submit",
+      "at": "2026-10-28T08:46:59Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9abb1232a5c969a21f6166598e2e14ace0869d9a61514b4cb19d686c48650d09",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
