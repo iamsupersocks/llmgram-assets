@@ -1,0 +1,91 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-43e292e2cd16",
+  "name": "product-launch-motion (Claude Code skill for launch videos)",
+  "summary": "Claude Code skill that writes Dribbble-level product launch videos as code: one continuous shape, springs, a cursor driving every change, beat-synced SFX and 60 fps motion blur.",
+  "category": "images-video",
+  "tags": [
+    "motion-design",
+    "video",
+    "claude-code",
+    "agent-skills",
+    "launch-video"
+  ],
+  "publisher": {
+    "name": "Abubakr Chan",
+    "url": "https://github.com/AbubakrChan"
+  },
+  "resource_url": "https://github.com/AbubakrChan/product-launch-motion",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/AbubakrChan/product-launch-motion/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Works with Claude Code; v2 tuned for recent Claude models."
+  },
+  "procedure": [
+    "Run: npx skills add AbubakrChan/product-launch-motion",
+    "Brief your agent on the product; it builds the video from code",
+    "Update later with npx skills update"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "MP4",
+      "SKILL.md"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://github.com/AbubakrChan/product-launch-motion",
+    "author": "Abubakr Chan",
+    "published_at": null,
+    "kind": "github"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 66,
+    "why": "Creative-AI skill with real output quality; turns an agent into a motion designer for launch films."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/1/AbubakrChan/product-launch-motion",
+    "alt": "Repo social preview",
+    "credit": "GitHub"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:48Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 99941 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:48Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:48Z",
+  "history": [
+    {
+      "operation_id": "72e7da80-0ef3-4ffa-938c-5ccd8df48455",
+      "action": "submit",
+      "at": "2026-10-28T14:04:48Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "eafde2eb19eb19416e80563041e8e6528a2b25f9e6ff91ace6fc50bfe12b00f8",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
