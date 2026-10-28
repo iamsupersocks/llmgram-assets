@@ -1,0 +1,95 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6286d61c5d2c",
+  "name": "OpenMausBot (open-source agent desktop with a VM)",
+  "summary": "Open-source desktop app for running a team of bots on your own claude, codex and grok CLIs, with a virtual machine the bots can use. Local-first harness; installs complete teams from one Markdown file.",
+  "category": "tools",
+  "tags": [
+    "agents",
+    "computer-use",
+    "local-first",
+    "claude-code",
+    "codex",
+    "desktop-app"
+  ],
+  "publisher": {
+    "name": "Milind Soni",
+    "url": "https://github.com/milind-soni"
+  },
+  "resource_url": "https://github.com/milind-soni/OpenMausBot",
+  "download_url": "https://github.com/milind-soni/OpenMausBot/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/milind-soni/OpenMausBot/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 app; uses your own CLI subscriptions",
+    "notes": "Bots run on CLIs you already pay for (claude, codex, grok). Connections off until approved."
+  },
+  "procedure": [
+    "Download the latest release (.dmg macOS, Windows x64, Ubuntu 24.04)",
+    "Install and point Settings → Engines at your claude/codex/grok CLIs",
+    "Create bots or import a team from botmrr.io"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/milindlabs/status/2115355703682670950",
+    "author": "@milindlabs",
+    "published_at": "2026-10-28T08:11:15Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 68,
+    "why": "Fast-rising (5.9k stars) local agent workspace; signed builds for all three OSes."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/news_img/2114721886521479168/Vjx0lNA6?format=jpg&name=orig",
+    "alt": "OpenMausBot repo card",
+    "credit": "GitHub via X card"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:43Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 50545 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:43Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:43Z",
+  "history": [
+    {
+      "operation_id": "757f9770-8677-4243-905e-708812a2c1b0",
+      "action": "submit",
+      "at": "2026-10-28T14:04:43Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3c37c300be645323a21486e51cd4d7040169c0de5b00796acd191f257d2822e2",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
