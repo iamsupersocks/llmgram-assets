@@ -1,0 +1,107 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-a49d545a4d95",
+  "name": "doodle-icons (LaTeX package, CTAN)",
+  "summary": "LaTeX package by Cédric Pierquet that exposes the 439 hand-drawn Doodle Icons (by Khushmeen Sidhu) as commands, e.g. \\doodleicon{bottle}. Icons are PDF images from SVG, take the current text colour and scale via a height key; works with pdfLaTeX, LuaLaTeX and XeLaTeX. Included in TeX Live.",
+  "category": "icons-ui",
+  "tags": [
+    "latex",
+    "icons",
+    "doodle",
+    "ctan",
+    "tex-live",
+    "cc0",
+    "typesetting"
+  ],
+  "publisher": {
+    "name": "Cédric Pierquet (CTAN)",
+    "url": "https://ctan.org/author/pierquet"
+  },
+  "resource_url": "https://ctan.org/pkg/doodle-icons",
+  "download_url": "https://mirrors.ctan.org/macros/latex/contrib/doodle-icons.zip",
+  "access": {
+    "model": "open-source",
+    "license": "LPPL-1.3c (package) + CC0-1.0 (icons)",
+    "license_url": "https://ctan.org/pkg/doodle-icons",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Package code LPPL 1.3c or later; icon artwork CC0 1.0 (from Doodle Icons by Khushmeen Sidhu)."
+  },
+  "procedure": [
+    "With TeX Live: tlmgr install doodle-icons (or update your distribution).",
+    "Manual: download https://mirrors.ctan.org/macros/latex/contrib/doodle-icons.zip (1.7 MB).",
+    "Put doodle-icons.sty and doodleicons-all.pdf in your local texmf tree and run texhash / mktexlsr.",
+    "Add \\usepackage{doodle-icons} and use \\doodleicon[height=2em]{name}."
+  ],
+  "stats": {
+    "count": "439 icons",
+    "size": "1.7 MB zip",
+    "formats": [
+      "sty",
+      "pdf"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/TeXUsersGroup/status/2115222563433427164",
+    "author": "@TeXUsersGroup",
+    "published_at": "2026-10-27T23:22:12Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/cpierquet/latex-packages/tree/main/doodle-icons",
+      "author": "cpierquet",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 62,
+    "why": "Small but clean: public-domain icons with a permissive LaTeX wrapper, on CTAN and TeX Live. Niche audience (LaTeX users)."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVrHpHSXUAELkUa.png?name=orig",
+    "alt": "A sample of icons",
+    "credit": "@TeXUsersGroup"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:47:07Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 95302 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:47:07Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:47:07Z",
+  "history": [
+    {
+      "operation_id": "18648a57-51a6-4adf-af16-cb6c7ff3666b",
+      "action": "submit",
+      "at": "2026-10-28T08:47:07Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ab6a2bef7aa7e0778dff754507b545628268d5684a72967d562b7d6472bb6432",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
