@@ -1,0 +1,121 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-fd4016093937",
+  "name": "Ling-3.1-flash-1019 (inclusionAI / Ant Group)",
+  "summary": "Open-weight 560B hybrid-linear MoE LLM (25B active per token, 1M-token context) from Ant Group's inclusionAI, post-trained for reasoning and agent workflows. Scores 44 on the Artificial Analysis Intelligence Index v4.3.2 (up from 41), AutomationBench-AA 62% to 68%. A base model (Ling-3.1-flash-base) is released alongside. Datacenter-class: the recommended SGLang recipe uses 8x H200.",
+  "category": "models-weights",
+  "tags": [
+    "llm",
+    "moe",
+    "open-weights",
+    "1m-context",
+    "agents",
+    "fp8",
+    "sglang",
+    "inclusionai",
+    "ant-group"
+  ],
+  "publisher": {
+    "name": "inclusionAI (Ant Group)",
+    "url": "https://huggingface.co/inclusionAI"
+  },
+  "resource_url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+  "download_url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT declared in the Hugging Face model card metadata (no separate LICENSE file in the repo). Not gated. ~574 GB FP8 weights; 8x H200 (or 4x GB300) recommended."
+  },
+  "procedure": [
+    "Open https://huggingface.co/inclusionAI/Ling-3.1-flash-1019 (no login or gating).",
+    "Download the weights: huggingface-cli download inclusionAI/Ling-3.1-flash-1019 (54 safetensors shards, ~574 GB).",
+    "Serve with the day-0 SGLang image (docker pull lmsysorg/sglang:dev-ling-3.1-flash), TP8+EP8 on 8x H200, per the model card.",
+    "Optional: get the base model at https://huggingface.co/inclusionAI/Ling-3.1-flash-base, also on ModelScope."
+  ],
+  "stats": {
+    "count": "1 model (+ Ling-3.1-flash-base)",
+    "size": "~574 GB (FP8, 54 shards)",
+    "formats": [
+      "safetensors",
+      "fp8"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/AntLingAGI/status/2115062200687878157",
+    "author": "@AntLingAGI",
+    "published_at": "2026-10-27T12:44:59Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/AntLingAGI/status/2115062207180591210",
+      "author": "@AntLingAGI",
+      "published_at": "2026-10-27T12:45:00Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://x.com/oaichu95/status/2115085708654461034",
+      "author": "@oaichu95",
+      "published_at": "2026-10-27T14:18:23Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://x.com/KlauseSchip/status/2115332240288666040",
+      "author": "@KlauseSchip",
+      "published_at": "2026-10-28T06:38:01Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Official, ungated MIT open weights with a base model; strong agentic benchmarks and 1M context. Useful mainly to teams with multi-GPU H200/B200-class hardware; not runnable locally."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HVo1gpZbkAAjWwp.jpg?name=orig",
+    "alt": "",
+    "credit": "@AntLingAGI"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:46:28Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 116935 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:46:28Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:46:28Z",
+  "history": [
+    {
+      "operation_id": "49f08b4d-28a6-429a-814e-f8265358c264",
+      "action": "submit",
+      "at": "2026-10-28T08:46:28Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "cb14a55705a3023b5cd7a893cd3ea389b9065c16633878f3bfb86dafc34264c6",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
