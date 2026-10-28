@@ -85,7 +85,7 @@
     "credit": "NVIDIA / NVlabs MotionBricks project page"
   },
   "verification": {
-    "checked_at": "2026-10-28T08:51:09Z",
+    "checked_at": "2026-10-28T08:51:32Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -105,12 +105,12 @@
       "detail": "image/jpg, 2224901 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-28T08:51:09Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-28T08:51:09Z",
+  "updated_at": "2026-10-28T08:51:32Z",
   "history": [
     {
       "operation_id": "92d6c7fa-e832-405c-8fed-3ef3a265ca64",
@@ -120,6 +120,15 @@
       "payload_sha256": "a9f9020f543c89cab866af38755e9333b205bafd204a1abeed027b609b4d9380",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7302b804-4d3b-4cb2-90bb-ed875a859e15",
+      "action": "update",
+      "at": "2026-10-28T08:51:32Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d98eee0bbc14809bf33b1ceac384387ee9a3d0e1c595019fa26f5505ca54e923",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
