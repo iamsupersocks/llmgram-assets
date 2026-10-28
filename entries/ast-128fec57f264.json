@@ -1,0 +1,92 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-128fec57f264",
+  "name": "awesome-gamedev-agent-skills (77 game-dev skills)",
+  "summary": "77 game-dev Agent Skills for coding agents with a router that loads the right one for your engine: Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Runs in Claude Code, Cursor, Codex, Copilot, Gemini CLI.",
+  "category": "tools",
+  "tags": [
+    "agent-skills",
+    "gamedev",
+    "claude-code",
+    "cursor",
+    "codex",
+    "godot",
+    "unity"
+  ],
+  "publisher": {
+    "name": "gamedev-skills",
+    "url": "https://github.com/gamedev-skills"
+  },
+  "resource_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Needs Node.js 22.20+ for the skills CLI."
+  },
+  "procedure": [
+    "Run: npx skills add gamedev-skills/awesome-gamedev-agent-skills",
+    "Add --list to preview, -g for all projects, or -a <agent> to target one tool",
+    "Ask your agent for a game task; the router picks the matching skill"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "SKILL.md"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/doncoderlione/status/2112638459089150151",
+    "author": "@doncoderlione",
+    "published_at": "2026-10-20T20:13:54Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 82,
+    "why": "One-command install that turns any coding agent into an engine-aware game dev helper; 5.3k stars, actively updated."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/1/gamedev-skills/awesome-gamedev-agent-skills",
+    "alt": "Repo social preview",
+    "credit": "GitHub"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T14:04:14Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 80794 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-10-28T14:04:14Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T14:04:14Z",
+  "history": [
+    {
+      "operation_id": "f99f2252-e7fa-41ae-a9a3-8eafe4350750",
+      "action": "submit",
+      "at": "2026-10-28T14:04:14Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "7d614bba6ea224b0da8210f817ac7c5abdc3eca018500459de739bbe0b37158c",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
