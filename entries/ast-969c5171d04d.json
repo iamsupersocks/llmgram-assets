@@ -1,0 +1,117 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-969c5171d04d",
+  "name": "crowdbricks (batched NVIDIA MotionBricks)",
+  "summary": "Apache-2.0 add-on by Patch that runs NVIDIA MotionBricks with a batch dimension (TensorRT plan + batched SOMA kernels) plus a light crowd runtime (drivers, gaits, obstacles, recorder, web viewer). README benchmark on an RTX 4090 FP16: 389 generations/s one at a time vs 10,307/s at batch 48 (~26x); 192-character horde steps in 2.4 ms. Tests check it matches upstream. Leaves out upstream's hand/foot IK, idle/sit clips and input springs.",
+  "category": "animations-mocap",
+  "tags": [
+    "motion-generation",
+    "crowd-simulation",
+    "character-animation",
+    "tensorrt",
+    "batching",
+    "motionbricks",
+    "nvidia",
+    "game-dev",
+    "real-time"
+  ],
+  "publisher": {
+    "name": "Patch (patch-gg)",
+    "url": "https://patch.gg/"
+  },
+  "resource_url": "https://github.com/patch-gg/crowdbricks",
+  "download_url": "https://github.com/patch-gg/crowdbricks/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/patch-gg/crowdbricks/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code Apache-2.0, but ships no models: needs a MotionBricks checkout and NVIDIA GPU. Weights under NVIDIA Open Model Agreement; gaits/obstacle targets come from sample clips under NVIDIA Sample Data Evaluation License (eval-only), so check before shipping. No hand/foot IK."
+  },
+  "procedure": [
+    "Set up NVlabs/motionbricks first: git clone https://github.com/NVlabs/motionbricks, git lfs pull, uv sync (NVIDIA GPU, Git LFS, uv).",
+    "git clone https://github.com/patch-gg/crowdbricks next to it.",
+    "export PYTHONPATH=$PWD/../motionbricks and run ../motionbricks/.venv/bin/python examples/futures.py --record futures.take (first run builds a TensorRT plan, a few minutes).",
+    "View takes: run viewer/export_character.py once, serve the folder with python3 -m http.server 8000, open /viewer/?take=../futures.take."
+  ],
+  "stats": {
+    "count": "1 repo, single initial commit (Oct 27 2026), no tagged release",
+    "size": "",
+    "formats": [
+      "python",
+      "onnx",
+      "tensorrt",
+      "cbt1-take"
+    ],
+    "cadence": "new (created 2026-10-27)"
+  },
+  "source": {
+    "url": "https://x.com/rehan_shei/status/2115191193890177086",
+    "author": "@rehan_shei",
+    "published_at": "2026-10-27T21:17:33Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/NVlabs/motionbricks",
+      "author": "NVlabs",
+      "published_at": null,
+      "kind": "github"
+    },
+    {
+      "url": "https://huggingface.co/nvidia/MotionBricks",
+      "author": "nvidia",
+      "published_at": null,
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Clear README, reproducible benchmarks and an upstream-match test; real speedup for crowds. Brand new (one commit), needs an NVIDIA GPU and the MotionBricks checkout, no IK, and its out-of-box gaits rely on eval-only sample data, so commercial use is restricted."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/patch-gg/crowdbricks/main/docs/futures.webp",
+    "alt": "One character forks into 48 futures, each future's planned motion drawn ahead of it in pink",
+    "credit": "patch-gg/crowdbricks README"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:51:22Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 4311384 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:51:22Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:51:22Z",
+  "history": [
+    {
+      "operation_id": "3da306a4-7c88-42f2-9705-6e23e3559e39",
+      "action": "submit",
+      "at": "2026-10-28T08:51:22Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ee0e76ca57c0368418a37775bda1f8bf9b91e60116a40ea52c6a04b728affaea",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
