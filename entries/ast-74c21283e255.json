@@ -1,0 +1,125 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-74c21283e255",
+  "name": "NVIDIA MotionBricks (SOMA + Unitree G1 weights)",
+  "summary": "Pretrained SafeTensors weights for MotionBricks (SIGGRAPH 2026), NVIDIA's real-time pose-conditioned motion generator for game characters (SOMA human skeleton) and the Unitree G1 humanoid. Give it recent poses and target poses, it generates the motion between them; Smart Primitives handle navigation and object interactions without retraining. Project page reports 15,000 FPS and 2 ms latency, trained on 350K+ mocap clips (Bones RigPlay 1). Code repo ships ready-to-use ONNX models.",
+  "category": "animations-mocap",
+  "tags": [
+    "motion-generation",
+    "mocap",
+    "character-animation",
+    "humanoid",
+    "unitree-g1",
+    "robotics",
+    "real-time",
+    "safetensors",
+    "onnx",
+    "nvidia",
+    "siggraph-2026"
+  ],
+  "publisher": {
+    "name": "NVIDIA (NVlabs)",
+    "url": "https://github.com/NVlabs/motionbricks"
+  },
+  "resource_url": "https://huggingface.co/nvidia/MotionBricks",
+  "download_url": "https://huggingface.co/nvidia/MotionBricks/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "NVIDIA Open Model Agreement (weights); Apache-2.0 (code)",
+    "license_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Weights: commercial use and derivatives allowed; keep notices, pass the license on, add 'Licensed by NVIDIA Corporation under the NVIDIA Open Model Agreement'. Bundled sample motions in the code repo are evaluation-only (NVIDIA Sample Data Evaluation License). Ungated."
+  },
+  "procedure": [
+    "To try demos: clone https://github.com/NVlabs/motionbricks, install Git LFS and uv, run git lfs pull and uv sync (ONNX models included; TensorRT demo needs an NVIDIA GPU).",
+    "To get the weights: hf download nvidia/MotionBricks --local-dir MotionBricks (add --include \"soma/*\" or \"g1/*\" for one model).",
+    "Verify files with the SHA256SUMS and manifest.json in each model folder.",
+    "Export ONNX with the repo's tools/onnx guide, using the matching family folder."
+  ],
+  "stats": {
+    "count": "2 model families (SOMA ~200M params, G1 ~195M params; 3 networks each)",
+    "size": "~1.6 GB (62 files)",
+    "formats": [
+      "safetensors",
+      "onnx",
+      "yaml",
+      "npy"
+    ],
+    "cadence": "v1 release, Oct 2026"
+  },
+  "source": {
+    "url": "https://x.com/alvarobartt/status/2114720297584574829",
+    "author": "@alvarobartt",
+    "published_at": "2026-10-26T14:06:23Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/NVlabs/motionbricks",
+      "author": "NVlabs",
+      "published_at": null,
+      "kind": "github"
+    },
+    {
+      "url": "https://nvlabs.github.io/motionbricks/",
+      "author": "NVIDIA",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.24833",
+      "author": "",
+      "published_at": null,
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 85,
+    "why": "Official NVIDIA weights, ungated, commercially usable under a permissive model agreement, with Apache-2.0 code and ONNX models ready to run. Real-time motion for game characters and G1. Sample motion clips are eval-only, and robots still need a separate tracking controller."
+  },
+  "image": {
+    "url": "https://nvlabs.github.io/motionbricks/static/images/teaser_image_motionbricks.jpg",
+    "alt": "MotionBricks teaser: characters and a humanoid robot generating motion through target poses",
+    "credit": "NVIDIA / NVlabs MotionBricks project page"
+  },
+  "verification": {
+    "checked_at": "2026-10-28T08:51:09Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 2224901 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-28T08:51:09Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-28T08:51:09Z",
+  "history": [
+    {
+      "operation_id": "92d6c7fa-e832-405c-8fed-3ef3a265ca64",
+      "action": "submit",
+      "at": "2026-10-28T08:51:09Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a9f9020f543c89cab866af38755e9333b205bafd204a1abeed027b609b4d9380",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
