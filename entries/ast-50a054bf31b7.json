@@ -1,0 +1,115 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-50a054bf31b7",
+  "name": "Blender Skills (94 agent skills for Blender MCP)",
+  "summary": "Open-source pack of 94 specialist Blender skills (175+ references) for Cursor, Claude Code, Kiro and Codex. Through the BlenderMCP addon, the agent runs a production pipeline directly in Blender: blockout, hard-surface, UVs, materials, rigging, animation, LODs, collision proxies and export to Unity, Unreal and Godot.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "mcp",
+    "agent-skills",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gamedev",
+    "export"
+  ],
+  "publisher": {
+    "name": "arjun988 (blender-skills contributors)",
+    "url": "https://github.com/arjun988"
+  },
+  "resource_url": "https://github.com/arjun988/blender-skills",
+  "download_url": "https://github.com/arjun988/blender-skills/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/arjun988/blender-skills/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Needs a local Blender plus the BlenderMCP addon (ahujasid/blender-mcp) and uv. Claude marketplace listing still under review; install from GitHub. Last pushed July 2026."
+  },
+  "procedure": [
+    "Install uv and the BlenderMCP addon in Blender",
+    "In Blender press N → BlenderMCP → Connect",
+    "Clone or download https://github.com/arjun988/blender-skills",
+    "Copy the skills dir for your client (.cursor/skills, .claude/skills, Kiro or Codex skills path) and the MCP config",
+    "Restart the agent and start with the blender-director skill"
+  ],
+  "stats": {
+    "count": "94 skills, 175+ references",
+    "size": "",
+    "formats": [
+      "md",
+      "json"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/WaterJ3201/status/2115718878202601586",
+    "author": "@WaterJ3201",
+    "published_at": "2026-10-29T08:14:23Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://blender-skills.vercel.app/",
+      "author": "blender-skills",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://x.com/badboyfoxy/status/2115466644067676450",
+      "author": "@badboyfoxy",
+      "published_at": null,
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 66,
+    "why": "MIT, ~1.4k stars, broad coverage of a real game-asset pipeline with engine exports. It's a prompt/skill pack on top of BlenderMCP, not assets, and quality depends on the agent; viral reposts but the repo itself is the primary page."
+  },
+  "image": {
+    "url": "https://blender-skills.vercel.app/banner.png",
+    "alt": "Blender Skills banner: 94 skills for Cursor, Claude Code, Kiro and Codex",
+    "credit": "blender-skills"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T08:44:13Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 420273 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T08:44:13Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T08:44:13Z",
+  "history": [
+    {
+      "operation_id": "ec919e4f-16c9-4a09-bf59-e36b3f1686f0",
+      "action": "submit",
+      "at": "2026-10-29T08:44:13Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "0a8eb54698a87504d04e160f59447565a2409e44c0a97b715c4f0b736a37b0c8",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
