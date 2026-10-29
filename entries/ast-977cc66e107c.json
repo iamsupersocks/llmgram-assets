@@ -63,7 +63,7 @@
     "credit": "Gobkit"
   },
   "verification": {
-    "checked_at": "2026-10-29T16:52:36Z",
+    "checked_at": "2026-10-29T16:53:04Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -83,12 +83,12 @@
       "detail": "image/jpg, 49366 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T16:52:36Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T16:52:36Z",
+  "updated_at": "2026-10-29T16:53:04Z",
   "history": [
     {
       "operation_id": "34dc5f0d-cdd3-4e2d-8551-be9b6ec51ce4",
@@ -98,6 +98,15 @@
       "payload_sha256": "d3da0f18baad4e91c831b72b65762dbd4e901332c7e25c4ef715887ba2bb126f",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8c6206c0-39bc-4014-b721-6269144eb004",
+      "action": "update",
+      "at": "2026-10-29T16:53:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "07d6d20601a73d8c4e147c7656cefb018b1ac9ef1583dbcf012fac2209a16b61",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
