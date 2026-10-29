@@ -72,7 +72,7 @@
     "credit": "NVIDIA / Hugging Face blog"
   },
   "verification": {
-    "checked_at": "2026-10-29T08:43:46Z",
+    "checked_at": "2026-10-29T08:44:34Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -92,12 +92,12 @@
       "detail": "image/jpg, 34794 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T08:43:46Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T08:43:46Z",
+  "updated_at": "2026-10-29T08:44:34Z",
   "history": [
     {
       "operation_id": "6a812ec4-e461-4b76-98cd-26c71640a762",
@@ -107,6 +107,15 @@
       "payload_sha256": "582d9c3c06c406294a8e87906257027838823752e0a150b50e8cbdc64fc89fee",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "49e8edfe-9751-425f-8fbd-c047b1d9d446",
+      "action": "update",
+      "at": "2026-10-29T08:44:34Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "872397afcb1e24be6c9bd52092861c804a10c7f71024b55a8b3a41a3ad8afb9b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
