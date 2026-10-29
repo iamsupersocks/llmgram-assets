@@ -79,7 +79,7 @@
     "credit": "Tencent Hunyuan / Hugging Face"
   },
   "verification": {
-    "checked_at": "2026-10-29T16:52:26Z",
+    "checked_at": "2026-10-29T16:53:04Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -99,12 +99,12 @@
       "detail": "image/png, 352194 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T16:52:26Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T16:52:26Z",
+  "updated_at": "2026-10-29T16:53:04Z",
   "history": [
     {
       "operation_id": "38e442b5-8596-46b5-8584-ddf7123d1ca7",
@@ -114,6 +114,15 @@
       "payload_sha256": "1bb93733bf57ca2bfa2a562d67cfe8c91ef31894310daa66733963cd05ea7f7c",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7429ca37-3daf-4816-86a9-643697b41910",
+      "action": "update",
+      "at": "2026-10-29T16:53:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e03c9de50289a772b2b78834a6ccdc989085344a3fa54880eff35862f5243081",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
