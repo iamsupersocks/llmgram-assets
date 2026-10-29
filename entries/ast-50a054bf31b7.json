@@ -75,7 +75,7 @@
     "credit": "blender-skills"
   },
   "verification": {
-    "checked_at": "2026-10-29T08:44:13Z",
+    "checked_at": "2026-10-29T08:44:42Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -95,12 +95,12 @@
       "detail": "image/png, 420273 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T08:44:13Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T08:44:13Z",
+  "updated_at": "2026-10-29T08:44:42Z",
   "history": [
     {
       "operation_id": "ec919e4f-16c9-4a09-bf59-e36b3f1686f0",
@@ -110,6 +110,15 @@
       "payload_sha256": "0a8eb54698a87504d04e160f59447565a2409e44c0a97b715c4f0b736a37b0c8",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "2b91a45f-5702-47a1-b412-67f722de6a78",
+      "action": "update",
+      "at": "2026-10-29T08:44:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e49c4e65d146fcdefaf04e43e87743f57e2ee45f58fc14e290a7110ec873de91",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
