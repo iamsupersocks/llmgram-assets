@@ -1,0 +1,122 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-901cf03a7771",
+  "name": "smlibpy / smlibpy-three (open CAD kernel for Python, WASM, three.js)",
+  "summary": "Open-source CAD modeling library on the SMLib NURBS kernel (from NVIDIA-Omniverse/usd-brep): exact B-rep solids and surfaces in Python, in JS via WebAssembly (smlibwasm) and in three.js (smlibpy-three, ops yield THREE.Mesh with selection and raycast). Reads STEP/IGES/USD/DXF, writes STEP/USD/DXF/SVG/STL/glTF/.brep, ships an MCP server so agents can build parts. No account.",
+  "category": "tools",
+  "tags": [
+    "cad",
+    "nurbs",
+    "b-rep",
+    "threejs",
+    "wasm",
+    "python",
+    "mcp",
+    "step",
+    "gltf"
+  ],
+  "publisher": {
+    "name": "AWV Informatik AG (ClassCAD)",
+    "url": "https://smlibpy.classcad.ch/"
+  },
+  "resource_url": "https://github.com/awv-informatik/smlibpy",
+  "download_url": "https://registry.npmjs.org/@classcad/smlibpy-three/-/smlibpy-three-0.6.2.tgz",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (smlibpy, smlibwasm, smlibpy-three); Apache-2.0 (SMLib kernel)",
+    "license_url": "https://github.com/awv-informatik/smlibpy/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Bundled SMLib kernel © NVIDIA under Apache-2.0 (see NOTICE); PyPI metadata also lists OFL-1.1 for a bundled font. v0.6, assemblies and 2D drawing dimensions not yet supported. smlibpy-three needs three r186+."
+  },
+  "procedure": [
+    "Python: pip install smlibpy (add [mcp] for the MCP server)",
+    "three.js: npm install @classcad/smlibpy-three three",
+    "Browser/Node only: npm install @classcad/smlibwasm",
+    "Agents: claude plugin marketplace add awv-informatik/smlibpy, or run uvx --from \"smlibpy[mcp]\" smlibpy-mcp",
+    "Docs and examples at https://smlibpy.classcad.ch/"
+  ],
+  "stats": {
+    "count": "",
+    "size": "wheels 8–11 MB; ~2.9 MB brotli in browser",
+    "formats": [
+      "step",
+      "iges",
+      "usd",
+      "dxf",
+      "stl",
+      "gltf",
+      "svg",
+      "brep"
+    ],
+    "cadence": "v0.6.2, Oct 28, 2026"
+  },
+  "source": {
+    "url": "https://x.com/0xca0a/status/2115481217873432877",
+    "author": "@0xca0a",
+    "published_at": "2026-10-28T16:30:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://smlibpy.classcad.ch/",
+      "author": "AWV Informatik",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://pypi.org/project/smlibpy/",
+      "author": "AWV Informatik",
+      "published_at": null,
+      "kind": "other"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Rare fully open exact-geometry CAD kernel usable in three.js, browser and Python, permissive MIT/Apache licensing, from an established CAD company and announced by the pmndrs lead. Useful for procedural props and agent-built parts with glTF export. Still v0.6."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/awv-informatik/smlibpy/main/docs/readme/renderer.png",
+    "alt": "smlibpy renderer output of a modeled CAD part",
+    "credit": "AWV Informatik AG"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T08:44:04Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 369817 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T08:44:04Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T08:44:04Z",
+  "history": [
+    {
+      "operation_id": "6031fc7e-ea9f-415f-a95e-9fd69faacbc0",
+      "action": "submit",
+      "at": "2026-10-29T08:44:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d0544dfdbe7a2b1b8f3b83cfbfdb1c72fde6074493e4ca75eefff09462b79c00",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
