@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3a7d02797607",
+  "name": "map3d (real-world 3D city maps to GLB)",
+  "summary": "Open-source React-Three-Fiber app that turns OpenStreetMap data into 3D buildings and roads for any area and exports them as GLB, usable as blockout for games, digital twins or drone/GPS scenes. Free hosted version at map.fleet.im; MIT code you can self-host.",
+  "category": "tools",
+  "tags": [
+    "openstreetmap",
+    "3d-map",
+    "city",
+    "glb",
+    "react-three-fiber",
+    "three.js",
+    "digital-twin",
+    "gamedev"
+  ],
+  "publisher": {
+    "name": "cartesiancs",
+    "url": "https://github.com/cartesiancs"
+  },
+  "resource_url": "https://github.com/cartesiancs/map3d",
+  "download_url": "https://map.fleet.im/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/cartesiancs/map3d/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code is MIT. Exported maps are derived from OpenStreetMap data (ODbL): credit OpenStreetMap contributors. Heights can be missing or wrong (README). No building textures yet."
+  },
+  "procedure": [
+    "Open https://map.fleet.im (no account), pick an area and generate the 3D buildings and roads.",
+    "Export the scene as GLB and import it into Blender, Unity, Godot or three.js.",
+    "To self-host, download https://github.com/cartesiancs/map3d/archive/refs/heads/main.zip and run the React app.",
+    "Credit OpenStreetMap contributors in your project."
+  ],
+  "stats": {
+    "count": "",
+    "size": "~0.9 MB source zip",
+    "formats": [
+      "glb"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/zaynmcps/status/2115817431260405892",
+    "author": "@zaynmcps",
+    "published_at": "2026-10-29T14:46:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Free, no-account OSM-to-GLB city generator with MIT code and 2.6k stars; quick real-world blockouts. Older project (2025, last push May 2026) resurfaced today; OSM data needs attribution and heights can be inaccurate."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/cartesiancs/map3d/main/.github/screenshot.png",
+    "alt": "map3d screenshot: 3D city buildings generated from OpenStreetMap",
+    "credit": "cartesiancs/map3d"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T16:52:44Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 709991 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T16:52:44Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T16:52:44Z",
+  "history": [
+    {
+      "operation_id": "0b801e27-5515-46bd-b016-1487728c511d",
+      "action": "submit",
+      "at": "2026-10-29T16:52:44Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "66ffffc5559ff602f1135a128bff79439401e0e7fb5a0baa5ab4558f23e4206c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
