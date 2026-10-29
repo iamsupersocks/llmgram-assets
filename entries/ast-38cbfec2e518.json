@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-38cbfec2e518",
+  "name": "NVIDIA Granary v2 (multilingual speech labels)",
+  "summary": "Open multilingual speech-recognition and speech-translation label set from NVIDIA: 48 languages, 16 source corpora, labels for ~463k hours (~165k h high-quality), plus ~92k h X→en and ~39k h en→X translation pairs. Used to train Nemotron 3.5 Transcribe; useful for fine-tuning ASR/AST models with NeMo. Label manifests only, audio comes from the original corpora.",
+  "category": "datasets",
+  "tags": [
+    "speech",
+    "asr",
+    "speech-translation",
+    "multilingual",
+    "nvidia",
+    "nemo",
+    "dataset"
+  ],
+  "publisher": {
+    "name": "NVIDIA",
+    "url": "https://huggingface.co/nvidia"
+  },
+  "resource_url": "https://huggingface.co/datasets/nvidia/Granary-v2",
+  "download_url": "https://huggingface.co/datasets/nvidia/Granary-v2/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "OpenMDW-1.1 (labels); CC-BY-SA-4.0 (people_speech subset)",
+    "license_url": "https://huggingface.co/datasets/nvidia/Granary-v2/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Ungated HF repo. Labels are OpenMDW-1.1, people_speech subset CC BY-SA 4.0. Contains label manifests only: source audio must be obtained from each distributor under its own terms (some gated, e.g. Common Voice, IMDA NSC)."
+  },
+  "procedure": [
+    "Open https://huggingface.co/datasets/nvidia/Granary-v2 and read the License and Hours-by-corpus tables",
+    "Download the label manifests: hf download nvidia/Granary-v2 --repo-type dataset (or load with the datasets library)",
+    "Obtain the source audio for the corpora you need from their distributors, as listed in the README 'Getting the audio' section",
+    "Check each source corpus license before commercial use"
+  ],
+  "stats": {
+    "count": "48 languages, 16 source corpora, 155 manifest files",
+    "size": "~112 GB of compressed JSONL manifests (labels only)",
+    "formats": [
+      "jsonl"
+    ],
+    "cadence": "v2 release, Oct 2026"
+  },
+  "source": {
+    "url": "https://x.com/NVIDIAAI/status/2115462310668247485",
+    "author": "@NVIDIAAI",
+    "published_at": "2026-10-28T15:14:52Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "author": "NVIDIA",
+      "published_at": null,
+      "kind": "huggingface"
+    },
+    {
+      "url": "https://x.com/nithinraok_/status/2115532308576940542",
+      "author": "@nithinraok_",
+      "published_at": "2026-10-28T19:53:01Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Official NVIDIA release, ungated, permissive label license and very large multilingual coverage. Not a direct gamedev asset, and the audio must be gathered separately under mixed upstream licenses, so commercial use depends on the corpora chosen."
+  },
+  "image": {
+    "url": "https://cdn-uploads.huggingface.co/production/uploads/68127936de624fb6f57d9989/3vFxCEUXz_xJVrTBr4hNr.jpeg",
+    "alt": "Hugging Face blog header for NVIDIA Nemotron Transcribe and Granary v2",
+    "credit": "NVIDIA / Hugging Face blog"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T08:43:46Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 34794 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T08:43:46Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T08:43:46Z",
+  "history": [
+    {
+      "operation_id": "6a812ec4-e461-4b76-98cd-26c71640a762",
+      "action": "submit",
+      "at": "2026-10-29T08:43:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "582d9c3c06c406294a8e87906257027838823752e0a150b50e8cbdc64fc89fee",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
