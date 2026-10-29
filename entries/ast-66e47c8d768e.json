@@ -1,0 +1,114 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-66e47c8d768e",
+  "name": "Kiln (procedural 3D assets via coding agents)",
+  "summary": "Open-source local MCP server, CLI and TypeScript engine that lets a coding agent (Codex, Claude Code, etc.) build and revise procedural 3D assets: editable source, rendered review images and GLB export. Runs locally with no account; your agent supplies the model. v1.6.0 released Oct 27, 2026; the Holodeck demo (CC0 assets) is built with it.",
+  "category": "tools",
+  "tags": [
+    "procedural",
+    "3d",
+    "mcp",
+    "glb",
+    "threejs",
+    "coding-agent",
+    "gamedev",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "Instrukt Labs (Matthew Kissinger)",
+    "url": "https://github.com/instruktlabs"
+  },
+  "resource_url": "https://github.com/instruktlabs/kiln",
+  "download_url": "https://registry.npmjs.org/@instruktlabs/kiln/-/kiln-1.6.0.tgz",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/instruktlabs/kiln/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (local); hosted Kiln is a free invite-only beta",
+    "notes": "Local Kiln is free and account-free. Requires Node.js 22 or 24 LTS. KTX2 texture export needs the optional ktx2-encoder peer (MIT). Hosted Kiln is invite-only via Discord, not required."
+  },
+  "procedure": [
+    "Install Node.js 22 or 24 LTS",
+    "mkdir kiln-install && cd kiln-install && npm init -y && npm install @instruktlabs/kiln",
+    "Run npx --offline --no -- kiln-init ../my-assets --harness codex (or your agent harness)",
+    "Open the asset workspace with your coding agent; Kiln connects over MCP and exports GLB"
+  ],
+  "stats": {
+    "count": "",
+    "size": "npm package ~10 MB",
+    "formats": [
+      "glb",
+      "ts"
+    ],
+    "cadence": "active, v1.6.0 on 2026-10-27"
+  },
+  "source": {
+    "url": "https://x.com/mattmaxbuilds/status/2115571056404582726",
+    "author": "@mattmaxbuilds",
+    "published_at": "2026-10-28T22:26:59Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://kilnstudio.tools/",
+      "author": "Kiln Studio",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://github.com/instruktlabs/holodeck",
+      "author": "instruktlabs",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "MIT, local and account-free, ~300 stars and actively released; directly useful for agent-driven procedural game assets with GLB output. Young project from a small team, so expect API churn."
+  },
+  "image": {
+    "url": "https://kilnstudio.tools/social/home.jpg",
+    "alt": "Kiln Studio social card showing procedural 3D assets",
+    "credit": "Kiln Studio / Instrukt Labs"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T08:43:53Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 92441 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T08:43:53Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T08:43:53Z",
+  "history": [
+    {
+      "operation_id": "d4e1eecc-df41-45da-bdd7-0af0f9fd3d25",
+      "action": "submit",
+      "at": "2026-10-29T08:43:53Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b675bf784f6bfbacc438fdbd1d22d157c7ec1c63561cd846d91a65da800f5874",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
