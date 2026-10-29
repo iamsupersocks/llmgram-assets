@@ -82,7 +82,7 @@
     "credit": "AWV Informatik AG"
   },
   "verification": {
-    "checked_at": "2026-10-29T08:44:04Z",
+    "checked_at": "2026-10-29T08:44:42Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -102,12 +102,12 @@
       "detail": "image/png, 369817 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T08:44:04Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T08:44:04Z",
+  "updated_at": "2026-10-29T08:44:42Z",
   "history": [
     {
       "operation_id": "6031fc7e-ea9f-415f-a95e-9fd69faacbc0",
@@ -117,6 +117,15 @@
       "payload_sha256": "d0544dfdbe7a2b1b8f3b83cfbfdb1c72fde6074493e4ca75eefff09462b79c00",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "f2ce1074-2050-43e9-b34b-10db4d3e6460",
+      "action": "update",
+      "at": "2026-10-29T08:44:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ffc47eccce0bb48570f8c5f8ff83e43a8e75ed3685fa047d11fab7f5edbf89b9",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
