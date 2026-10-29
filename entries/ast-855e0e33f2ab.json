@@ -61,7 +61,7 @@
     "credit": "@Ian_cadle / Humpalumps"
   },
   "verification": {
-    "checked_at": "2026-10-29T16:52:17Z",
+    "checked_at": "2026-10-29T16:53:00Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,12 +81,12 @@
       "detail": "image/jpg, 29318 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T16:52:17Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T16:52:17Z",
+  "updated_at": "2026-10-29T16:53:00Z",
   "history": [
     {
       "operation_id": "22156fae-1eea-4a08-a1c1-3839ea386511",
@@ -96,6 +96,15 @@
       "payload_sha256": "4236dd10372943e78852d717f2aa78853f3597a93bc802a8e6b66c35f3ca7f7f",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "be13ed53-f34c-447f-afac-2747c39518e6",
+      "action": "update",
+      "at": "2026-10-29T16:53:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3db97986c7d81fe2c51ed4f5b1d32a9b793ec88424e27b940c0ece4ce3690802",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
