@@ -1,0 +1,119 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-caf1d5abfb2c",
+  "name": "Hy-Nomas (Tencent interactive video world model)",
+  "summary": "Tencent Hunyuan's open-weights interactive video world model: generates controllable 720×1280 video at 24 fps in 8 steps from a prompt/image plus camera and action inputs. Ships a distilled DiT (FP32 and INT8), cinematic and robotics LoRAs, DCAE-V VAE, PixelUMM decoder (with FP8 variant) and inference code; runs on a single RTX 4090 with INT8 DiT + FP8 decoder + CPU offload. Official demo Space and a benchmark dataset are public.",
+  "category": "models-weights",
+  "tags": [
+    "world-model",
+    "video-generation",
+    "tencent",
+    "hunyuan",
+    "open-weights",
+    "interactive",
+    "robotics",
+    "gamedev"
+  ],
+  "publisher": {
+    "name": "Tencent Hunyuan",
+    "url": "https://huggingface.co/tencent"
+  },
+  "resource_url": "https://huggingface.co/tencent/Hy-Nomas",
+  "download_url": "https://huggingface.co/tencent/Hy-Nomas/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/tencent/Hy-Nomas/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Ungated on Hugging Face. Full repo ~196 GB; pick only the variant you need. Text encoder Qwen2.5-VL-7B-Instruct is pulled separately (its own license). Robotics LoRA trained on RealSource-World data."
+  },
+  "procedure": [
+    "Clone the inference code: https://github.com/Tencent-Hunyuan/Hy-Nomas (or use the Docker image hynomasoss/hynomasoss:cu130).",
+    "Download the weights you need from https://huggingface.co/tencent/Hy-Nomas (e.g. huggingface-cli download tencent/Hy-Nomas --include 'DiT/distilled_int8/*').",
+    "For a single RTX 4090, use the INT8 DiT, FP8 PixelUMM decoder and CPU offload as described in the model card.",
+    "Or try it first in the official demo: https://huggingface.co/spaces/tencent/hy-nomas"
+  ],
+  "stats": {
+    "count": "",
+    "size": "~196 GB full repo",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/hynomas/status/2115567357078999303",
+    "author": "@hynomas",
+    "published_at": "2026-10-28T22:12:17Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/TencentHunyuan/status/2113676827114053892",
+      "author": "@TencentHunyuan",
+      "published_at": null,
+      "kind": "x_post"
+    },
+    {
+      "url": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
+      "author": "Tencent-Hunyuan",
+      "published_at": null,
+      "kind": "github"
+    },
+    {
+      "url": "https://huggingface.co/spaces/tencent/hy-nomas",
+      "author": "tencent",
+      "published_at": null,
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Big-lab interactive world model under Apache-2.0, ungated, with a consumer-GPU (single 4090) path and a free demo Space; 44k downloads. Heavy (~196 GB full) and released 2026-10-21; the in-window news is the official demo Space."
+  },
+  "image": {
+    "url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/tencent/Hy-Nomas.png",
+    "alt": "Hugging Face card for tencent/Hy-Nomas",
+    "credit": "Tencent Hunyuan / Hugging Face"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T16:52:26Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 352194 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T16:52:26Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T16:52:26Z",
+  "history": [
+    {
+      "operation_id": "38e442b5-8596-46b5-8584-ddf7123d1ca7",
+      "action": "submit",
+      "at": "2026-10-29T16:52:26Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1bb93733bf57ca2bfa2a562d67cfe8c91ef31894310daa66733963cd05ea7f7c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
