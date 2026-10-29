@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-977cc66e107c",
+  "name": "Gobkit free CC0 3D packs (305 rigged low-poly GLBs)",
+  "summary": "305 free CC0 game-ready 3D models from Gobkit: 264 rigged, animated low-poly characters (animals, dinosaurs, birds, insects, professions, orcs, knights) with named idle/attack/dead/walk clips, plus 41 static nature props. All glTF 2.0 .glb, downloadable per pack as zip, no account, no attribution; a public JSON index (/api/free) lists every file. New packs are added regularly.",
+  "category": "3d-models",
+  "tags": [
+    "cc0",
+    "glb",
+    "gltf",
+    "low-poly",
+    "rigged",
+    "animated",
+    "characters",
+    "gamedev",
+    "three.js",
+    "godot",
+    "unity"
+  ],
+  "publisher": {
+    "name": "Gobkit",
+    "url": "https://gobkit.com/"
+  },
+  "resource_url": "https://gobkit.com/freebies",
+  "download_url": "https://gobkit.com/freebies/animal007/gobkit-animal007-pack.zip",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (Gobkit's AI monster generator is a separate paid product)",
+    "notes": "CC0 stated on the freebies page and in /api/free for every model. Bundle files into your project; hotlinking only for prototypes."
+  },
+  "procedure": [
+    "Open https://gobkit.com/freebies.",
+    "Click Download pack on any pack (one zip of .glb files), or fetch individual URLs from https://gobkit.com/api/free.",
+    "Import the .glb into Blender, Unity, Godot, Unreal or three.js; play animation clips by name (idle, attack, dead, walk).",
+    "Use SkeletonUtils.clone (three.js) to spawn several copies of a rigged model."
+  ],
+  "stats": {
+    "count": "305 models (264 rigged + 41 props) in 26 packs",
+    "size": "~0.3–4.3 MB per pack zip",
+    "formats": [
+      "glb"
+    ],
+    "cadence": "new packs roughly weekly"
+  },
+  "source": {
+    "url": "https://x.com/Gobkit/status/2115657189801238770",
+    "author": "@Gobkit",
+    "published_at": "2026-10-29T04:09:15Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Large, genuinely CC0 library of rigged, animated low-poly GLBs with no account, per-pack zips and a machine-readable index, handy for prototypes and jams. Small account and low-poly style; it's the publisher's lead magnet for a paid generator."
+  },
+  "image": {
+    "url": "https://gobkit.com/freebies/animal007/cover.jpg",
+    "alt": "Gobkit Animal Pack cover: low-poly chick, dingo, koala and other animals",
+    "credit": "Gobkit"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T16:52:36Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 49366 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T16:52:36Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T16:52:36Z",
+  "history": [
+    {
+      "operation_id": "34dc5f0d-cdd3-4e2d-8551-be9b6ec51ce4",
+      "action": "submit",
+      "at": "2026-10-29T16:52:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d3da0f18baad4e91c831b72b65762dbd4e901332c7e25c4ef715887ba2bb126f",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
