@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-855e0e33f2ab",
+  "name": "Ultra Water (three.js FFT ocean renderer)",
+  "summary": "Open-source real-time ocean renderer for three.js (WebGL2) with a demo island scene: Tessendorf FFT waves (4 cascades), shore breakers on an eikonal travel-time field, textured crest foam, caustics, planar reflections, underwater view and floating props (buoyancy). Author benchmark: ~208–303 fps on an RTX 3060 at 3.3 MP; mobile profile holds 60 fps on a Snapdragon 7+ Gen 3.",
+  "category": "tools",
+  "tags": [
+    "three.js",
+    "webgl2",
+    "ocean",
+    "water",
+    "fft",
+    "shader",
+    "gamedev",
+    "rendering"
+  ],
+  "publisher": {
+    "name": "Humpalumps (Ian Cadle)",
+    "url": "https://github.com/Humpalumps"
+  },
+  "resource_url": "https://github.com/Humpalumps/Ultra-Water",
+  "download_url": "https://github.com/Humpalumps/Ultra-Water/archive/refs/heads/master.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/Humpalumps/Ultra-Water/blob/master/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT: keep the copyright notice. Source code only (no npm package); runs from the repo with Vite."
+  },
+  "procedure": [
+    "Open https://github.com/Humpalumps/Ultra-Water and download the master zip (or git clone).",
+    "Run npm install, then npm run dev.",
+    "Open the printed localhost URL; pick shots from the camera dropdown and tweak quality in the settings panel.",
+    "Reuse src/water/OceanSim.js and OceanSurface.js in your own three.js scene."
+  ],
+  "stats": {
+    "count": "1 renderer + demo island scene",
+    "size": "~98 KB zip",
+    "formats": [
+      "JavaScript",
+      "GLSL"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/Ian_cadle/status/2115489006083596524",
+    "author": "@Ian_cadle",
+    "published_at": "2026-10-28T17:00:57Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 86,
+    "why": "Rare, production-grade open-source ocean for the web: FFT waves, breakers, foam, caustics and underwater at 200+ fps, MIT, no account. 270 stars in a day and 1.4k likes / 1.4k bookmarks on the author's post. Code-only (no prebuilt package)."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2115487124187234304/img/l0gGOSqBLakbKNta.jpg",
+    "alt": "Ultra Water demo: real-time ocean waves rendered in three.js",
+    "credit": "@Ian_cadle / Humpalumps"
+  },
+  "verification": {
+    "checked_at": "2026-10-29T16:52:17Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 29318 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-29T16:52:17Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-29T16:52:17Z",
+  "history": [
+    {
+      "operation_id": "22156fae-1eea-4a08-a1c1-3839ea386511",
+      "action": "submit",
+      "at": "2026-10-29T16:52:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4236dd10372943e78852d717f2aa78853f3597a93bc802a8e6b66c35f3ca7f7f",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
