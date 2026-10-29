@@ -60,7 +60,7 @@
     "credit": "cartesiancs/map3d"
   },
   "verification": {
-    "checked_at": "2026-10-29T16:52:44Z",
+    "checked_at": "2026-10-29T16:53:04Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/png, 709991 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T16:52:44Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T16:52:44Z",
+  "updated_at": "2026-10-29T16:53:04Z",
   "history": [
     {
       "operation_id": "0b801e27-5515-46bd-b016-1487728c511d",
@@ -95,6 +95,15 @@
       "payload_sha256": "66ffffc5559ff602f1135a128bff79439401e0e7fb5a0baa5ab4558f23e4206c",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "0340c53e-e9ab-4baf-8a4d-5eb3b38af026",
+      "action": "update",
+      "at": "2026-10-29T16:53:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "866381cd04f5bbd647dc6a3095bd8db14bbb1dc2dc3824bd2d60ffbacc3e6e20",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
