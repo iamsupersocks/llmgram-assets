@@ -74,7 +74,7 @@
     "credit": "Kiln Studio / Instrukt Labs"
   },
   "verification": {
-    "checked_at": "2026-10-29T08:43:53Z",
+    "checked_at": "2026-10-29T08:44:35Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -94,12 +94,12 @@
       "detail": "image/jpg, 92441 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-29T08:43:53Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-29T08:43:53Z",
+  "updated_at": "2026-10-29T08:44:35Z",
   "history": [
     {
       "operation_id": "d4e1eecc-df41-45da-bdd7-0af0f9fd3d25",
@@ -109,6 +109,15 @@
       "payload_sha256": "b675bf784f6bfbacc438fdbd1d22d157c7ec1c63561cd846d91a65da800f5874",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "087d5661-5b50-437c-90e4-1ae5db1e9667",
+      "action": "update",
+      "at": "2026-10-29T08:44:35Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bdb7b26e2ec99ebc90cf3de7af72ccac5849169c26b9f346bc5b409f3e40fc04",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
