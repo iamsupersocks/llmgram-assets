@@ -1,0 +1,113 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-e6a7bbbea6d4",
+  "name": "SimReady GLB (2,595 NVIDIA SimReady models, web-optimized)",
+  "summary": "Web-ready glTF binary copies of all 2,595 NVIDIA SimReady 3D models: 228 GB of Blender exports compressed to ~3.2 GB with meshopt geometry and WebP textures, loading directly in three.js, Babylon.js or model-viewer. Includes 512 px thumbnails, per-asset metadata/manifest and a browser viewer Space.",
+  "category": "3d-models",
+  "tags": [
+    "glb",
+    "gltf",
+    "three.js",
+    "web",
+    "nvidia",
+    "simready",
+    "cc-by-4.0",
+    "props"
+  ],
+  "publisher": {
+    "name": "codepawl (models by NVIDIA SimReady)",
+    "url": "https://huggingface.co/codepawl"
+  },
+  "resource_url": "https://huggingface.co/datasets/codepawl/simready-glb",
+  "download_url": "https://huggingface.co/datasets/codepawl/simready-glb/tree/main/glb",
+  "access": {
+    "model": "free",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Credit NVIDIA as original author and link nvidia/simready-assets. Uses EXT_meshopt_compression + EXT_texture_webp (set MeshoptDecoder in three.js)."
+  },
+  "procedure": [
+    "Browse/search the set in the viewer: huggingface.co/spaces/codepawl/simready-glb-viewer.",
+    "Download all (~3.2 GB): `hf download codepawl/simready-glb --repo-type dataset --local-dir simready-glb`, or one category with --include \"glb/food_*\".",
+    "Load in three.js with GLTFLoader + MeshoptDecoder; credit NVIDIA SimReady (CC BY 4.0)."
+  ],
+  "stats": {
+    "count": "2,595 models",
+    "size": "~3.2 GB",
+    "formats": [
+      "glb",
+      "webp"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/anxuanng/status/2115494696097394947",
+    "author": "@anxuanng",
+    "published_at": "2026-10-28T17:23:34Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://huggingface.co/datasets/nvidia/simready-assets",
+      "author": "NVIDIA",
+      "published_at": null,
+      "kind": "huggingface"
+    },
+    {
+      "url": "https://x.com/SanemBuilds/status/2115824262393008196",
+      "author": "@SanemBuilds",
+      "published_at": "2026-10-29T15:13:00Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Turns the already-listed NVIDIA SimReady set into a practical web-ready library (225 GB -> ~3 GB), same CC BY 4.0 terms, ungated, with viewer; strong traction (~390 likes)."
+  },
+  "image": {
+    "url": "https://huggingface.co/datasets/codepawl/simready-glb/resolve/main/assets/hero.webp",
+    "alt": "Grid of SimReady 3D models rendered from the GLB dataset",
+    "credit": "codepawl / NVIDIA SimReady (CC BY 4.0)"
+  },
+  "verification": {
+    "checked_at": "2026-10-30T08:45:24Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 73476 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-30T08:45:24Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-30T08:45:24Z",
+  "history": [
+    {
+      "operation_id": "ccc0cfc4-d91d-455e-860b-70068cbe0aa9",
+      "action": "submit",
+      "at": "2026-10-30T08:45:24Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2dcd0fcbd898f752f011a6d09a2fec077c8f99362c87493b98d6896857e61dad",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
