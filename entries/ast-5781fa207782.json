@@ -77,7 +77,7 @@
     "credit": "jtydhr88 / ComfyArt"
   },
   "verification": {
-    "checked_at": "2026-10-30T08:45:34Z",
+    "checked_at": "2026-10-30T08:46:06Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -97,12 +97,12 @@
       "detail": "image/webp, 118036 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-30T08:45:34Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-30T08:45:34Z",
+  "updated_at": "2026-10-30T08:46:06Z",
   "history": [
     {
       "operation_id": "877f6464-4e1d-4a8d-969b-38844377fc9e",
@@ -112,6 +112,15 @@
       "payload_sha256": "a7a4cabbedbb4b57ffe4c56be689a5711310cc5c62e6ef68151ffa4f1028331b",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "806930f9-7cdb-4445-9dd1-ee52132bcb7d",
+      "action": "update",
+      "at": "2026-10-30T08:46:06Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "06406f8a6807e6d95368d9a1b597151478a873d276be068480f86527c9a73aaf",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
