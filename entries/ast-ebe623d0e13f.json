@@ -73,7 +73,7 @@
     "credit": "Speridlabs"
   },
   "verification": {
-    "checked_at": "2026-10-30T08:45:07Z",
+    "checked_at": "2026-10-30T08:45:59Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -93,12 +93,12 @@
       "detail": "image/webp, 3439788 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-30T08:45:07Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-30T08:45:07Z",
+  "updated_at": "2026-10-30T08:45:59Z",
   "history": [
     {
       "operation_id": "acbdc9db-d76f-4ad6-867c-370a58a54059",
@@ -108,6 +108,15 @@
       "payload_sha256": "6e7375911230f3be1bc8ffa06fef5d9586afa529ab120b687da85a7c1d9a38aa",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "05c76a9f-b740-4e0c-b537-1204d326b733",
+      "action": "update",
+      "at": "2026-10-30T08:45:59Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9259894bb9ba7b59e2e818a70fab4d4628e40f23c34b19fbafc8ed516d8a3226",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
