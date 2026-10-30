@@ -1,0 +1,117 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-5781fa207782",
+  "name": "ComfyArt (open-source local AI design canvas for ComfyUI)",
+  "summary": "MIT-licensed infinite design canvas (tldraw + React) that installs as a ComfyUI custom node: image/video generation and editing, mockups, Edit Elements (poster to editable layers), music, voiceover, SFX and image-to-3D, all running as local ComfyUI workflows, plus an MCP design agent usable from Claude Code, Codex, Cursor or a local LLM. No account or credits needed locally.",
+  "category": "tools",
+  "tags": [
+    "comfyui",
+    "design-canvas",
+    "image",
+    "video",
+    "audio",
+    "3d",
+    "mcp",
+    "mit",
+    "local"
+  ],
+  "publisher": {
+    "name": "jtydhr88",
+    "url": "https://comfyart.org/"
+  },
+  "resource_url": "https://github.com/jtydhr88/ComfyArt",
+  "download_url": "https://github.com/jtydhr88/ComfyArt/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/jtydhr88/ComfyArt/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 local; optional Comfy Cloud mode needs a paid Comfy plan",
+    "notes": "Local use needs a capable GPU and the listed ComfyUI models (each under its own license). Agent needs your own Claude Code/Codex/Qwen login or a local LLM."
+  },
+  "procedure": [
+    "git clone https://github.com/jtydhr88/ComfyArt into ComfyUI/custom_nodes/.",
+    "pip install -r requirements.txt in ComfyUI's environment; restart ComfyUI.",
+    "Click ComfyArt in the top bar or open http://127.0.0.1:8188/comfyart/; download the models listed in the README workflows table.",
+    "Docs with screenshots: comfyart.org."
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "png",
+      "jpg",
+      "pdf",
+      "pptx"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/jtydhr88/status/2115984149022433651",
+    "author": "@jtydhr88",
+    "published_at": "2026-10-30T01:48:28Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://www.reddit.com/r/comfyui/comments/1xj1ud3/comfyart_a_free_local_lovart_for_comfyui_canvas/",
+      "author": "",
+      "published_at": null,
+      "kind": "other"
+    },
+    {
+      "url": "https://comfyart.org/",
+      "author": "jtydhr88",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Real, actively developed MIT tool (390 GitHub stars) bringing a Lovart-style creative canvas fully local on ComfyUI, covering image, video, audio and 3D. Paid only if you opt into Comfy Cloud."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/jtydhr88/ComfyArt/main/docs-site/images/agent-result.webp",
+    "alt": "ComfyArt canvas with the agent building an Instagram post",
+    "credit": "jtydhr88 / ComfyArt"
+  },
+  "verification": {
+    "checked_at": "2026-10-30T08:45:34Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 118036 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-30T08:45:34Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-30T08:45:34Z",
+  "history": [
+    {
+      "operation_id": "877f6464-4e1d-4a8d-969b-38844377fc9e",
+      "action": "submit",
+      "at": "2026-10-30T08:45:34Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a7a4cabbedbb4b57ffe4c56be689a5711310cc5c62e6ef68151ffa4f1028331b",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
