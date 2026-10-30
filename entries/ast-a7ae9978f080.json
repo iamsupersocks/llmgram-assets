@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-a7ae9978f080",
+  "name": "Playful Inputs UI Kit (CC0 controller & keyboard prompts)",
+  "summary": "Free CC0 input-prompt kit for games: Xbox, PlayStation, Switch, Steam Deck, keyboard & mouse, joysticks, touchpads and generic elements (356 unique elements) in dark and light themes, SVG plus PNG at 32-512 px (6,000+ files). Human-made, no generative AI.",
+  "category": "icons-ui",
+  "tags": [
+    "cc0",
+    "input-prompts",
+    "controller",
+    "ui",
+    "icons",
+    "svg",
+    "png",
+    "gamedev",
+    "itch.io"
+  ],
+  "publisher": {
+    "name": "AmauryH",
+    "url": "https://amauryh.itch.io/"
+  },
+  "resource_url": "https://amauryh.itch.io/playful-inputs-ui-kit",
+  "download_url": "https://amauryh.itch.io/playful-inputs-ui-kit",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Asset license declared CC0 1.0 on the itch.io page; no attribution required. Direct download without an itch account."
+  },
+  "procedure": [
+    "Open amauryh.itch.io/playful-inputs-ui-kit.",
+    "Click Download (no account needed) and grab 'Playful Inputs UI-Kit V1' (22 MB zip).",
+    "Use the SVG or PNG (32-512 px) prompts in any project; CC0, no credit required."
+  ],
+  "stats": {
+    "count": "356 elements, 6,000+ files",
+    "size": "22 MB",
+    "formats": [
+      "svg",
+      "png"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/AmauryH_/status/2115853309361709073",
+    "author": "@AmauryH_",
+    "published_at": "2026-10-29T17:08:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 66,
+    "why": "Genuinely free CC0 game UI input prompts with broad platform coverage and vector sources; fresh release, no signup. Low social traction so far, but license and download verified."
+  },
+  "image": {
+    "url": "https://img.itch.zone/aW1nLzMxNTA3MDYyLnBuZw==/original/ibAJNI.png",
+    "alt": "Playful Inputs UI Kit cover showing controller and keyboard prompt icons",
+    "credit": "AmauryH"
+  },
+  "verification": {
+    "checked_at": "2026-10-30T08:45:41Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 403,
+      "detail": "reachable, access restricted"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 403,
+      "detail": "reachable, access restricted"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 73288 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-30T08:45:41Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-30T08:45:41Z",
+  "history": [
+    {
+      "operation_id": "cd0d9420-263e-4d61-8419-6b2ed9996e4d",
+      "action": "submit",
+      "at": "2026-10-30T08:45:41Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "06228840d779ede11a4fd513cae90eb86924172c7f452730abf82f6cdfe93d3a",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
