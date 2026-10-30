@@ -1,0 +1,97 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b2f7052b7388",
+  "name": "Ming-3.0-tts-0.5B",
+  "summary": "Ant Group's (inclusionAI) open-weight 0.5B text-to-speech model built on Qwen2.5-0.5B: zero-shot voice cloning from a short clip, voice design from a text description, 14 inline paralinguistic tags (breath, laugh, sigh, cough…), emotion/speed/pitch/volume control, 44.1 kHz output, 7 languages including French.",
+  "category": "models-weights",
+  "tags": [
+    "tts",
+    "voice-cloning",
+    "speech",
+    "open-weights",
+    "multilingual",
+    "inclusionai"
+  ],
+  "publisher": {
+    "name": "inclusionAI (Ant Group)",
+    "url": "https://huggingface.co/inclusionAI"
+  },
+  "resource_url": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B",
+  "download_url": "https://github.com/inclusionAI/Ming-3.0-tts",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/inclusionAI/Ming-3.0-tts/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Not gated. Inference code lives in the GitHub repo; the HF repo only distributes the checkpoint. Voice cloning: respect consent of the voice owner."
+  },
+  "procedure": [
+    "Clone https://github.com/inclusionAI/Ming-3.0-tts and install its requirements",
+    "Download the checkpoint from huggingface.co/inclusionAI/Ming-3.0-tts-0.5B",
+    "Run infer.py or the ming_tts.MingTTS Python API with a built-in voice or a reference clip"
+  ],
+  "stats": {
+    "count": "0.5B parameters; tiny variant also available",
+    "size": "~3 GB checkpoint",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/warrenzp8/status/2115992617720991843",
+    "author": "@warrenzp8",
+    "published_at": "2026-10-30T02:22:07Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "MIT open weights, small enough for a consumer GPU, cloning + voice design + paralinguistic tags cover game/video VO needs; French supported. Released Sept 22, resurfacing now with deployment guides."
+  },
+  "image": {
+    "url": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B/resolve/main/figures/ming_3.0_tts.png",
+    "alt": "Ming-3.0-tts architecture diagram",
+    "credit": "inclusionAI"
+  },
+  "verification": {
+    "checked_at": "2026-10-30T16:48:15Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 629806 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-30T16:48:15Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-30T16:48:15Z",
+  "history": [
+    {
+      "operation_id": "6d976a82-ae5d-4163-bcfa-79d6a65df30e",
+      "action": "submit",
+      "at": "2026-10-30T16:48:15Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "388add50683be46bb1e6546e90509cc28cd39e01fb4965718386fec0689f7442",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
