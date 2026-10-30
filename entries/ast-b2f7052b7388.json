@@ -57,7 +57,7 @@
     "credit": "inclusionAI"
   },
   "verification": {
-    "checked_at": "2026-10-30T16:48:15Z",
+    "checked_at": "2026-10-30T16:48:38Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -77,12 +77,12 @@
       "detail": "image/png, 629806 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-30T16:48:15Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-30T16:48:15Z",
+  "updated_at": "2026-10-30T16:48:38Z",
   "history": [
     {
       "operation_id": "6d976a82-ae5d-4163-bcfa-79d6a65df30e",
@@ -92,6 +92,15 @@
       "payload_sha256": "388add50683be46bb1e6546e90509cc28cd39e01fb4965718386fec0689f7442",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "977ccf66-2a53-4351-b2cd-a0bbd4e54176",
+      "action": "update",
+      "at": "2026-10-30T16:48:38Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "eb5ced4dd60cecdb17c31bb4566e16eb4fda22dcf97b73076869b7b85c10babf",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
