@@ -67,7 +67,7 @@
     "credit": "PlayCanvas"
   },
   "verification": {
-    "checked_at": "2026-10-30T16:48:08Z",
+    "checked_at": "2026-10-30T16:48:34Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -87,12 +87,12 @@
       "detail": "image/png, 420072 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-30T16:48:08Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-30T16:48:08Z",
+  "updated_at": "2026-10-30T16:48:34Z",
   "history": [
     {
       "operation_id": "b443b09f-038d-45ff-9905-9d5613917e83",
@@ -102,6 +102,15 @@
       "payload_sha256": "ae7504ee8cf7334db171153fc7a2a0361e768b14567fc1acfec6768311f41a44",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "dbe44ddd-be72-45fe-96ae-4ced4f29902e",
+      "action": "update",
+      "at": "2026-10-30T16:48:34Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "7dfb21f2fee606f04002a6c88eda2ae4119e6199939d8f924c9847691a20428b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
