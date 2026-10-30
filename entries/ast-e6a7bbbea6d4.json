@@ -73,7 +73,7 @@
     "credit": "codepawl / NVIDIA SimReady (CC BY 4.0)"
   },
   "verification": {
-    "checked_at": "2026-10-30T08:45:24Z",
+    "checked_at": "2026-10-30T08:46:06Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -93,12 +93,12 @@
       "detail": "image/webp, 73476 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-30T08:45:24Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-30T08:45:24Z",
+  "updated_at": "2026-10-30T08:46:06Z",
   "history": [
     {
       "operation_id": "ccc0cfc4-d91d-455e-860b-70068cbe0aa9",
@@ -108,6 +108,15 @@
       "payload_sha256": "2dcd0fcbd898f752f011a6d09a2fec077c8f99362c87493b98d6896857e61dad",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8f8b9811-2d96-41be-897c-937a2822cc85",
+      "action": "update",
+      "at": "2026-10-30T08:46:06Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "deb360b57937b3bd0e15ba86d0f97da803ffba75f1ad2ceb4a487f73ffce1e7e",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
