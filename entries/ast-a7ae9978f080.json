@@ -61,7 +61,7 @@
     "credit": "AmauryH"
   },
   "verification": {
-    "checked_at": "2026-10-30T08:45:41Z",
+    "checked_at": "2026-10-30T08:46:06Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,12 +81,12 @@
       "detail": "image/png, 73288 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-30T08:45:41Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-30T08:45:41Z",
+  "updated_at": "2026-10-30T08:46:06Z",
   "history": [
     {
       "operation_id": "cd0d9420-263e-4d61-8419-6b2ed9996e4d",
@@ -96,6 +96,15 @@
       "payload_sha256": "06228840d779ede11a4fd513cae90eb86924172c7f452730abf82f6cdfe93d3a",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8f0dcae9-bff0-4e12-8f38-ddb4df68f7e5",
+      "action": "update",
+      "at": "2026-10-30T08:46:06Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "92f755012863213ac598a9b0d2f5f6242cdaafbf0c3e765f8534e688e505bdba",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
