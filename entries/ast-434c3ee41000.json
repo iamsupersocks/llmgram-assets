@@ -1,0 +1,106 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-434c3ee41000",
+  "name": "Audio8-TTS-Realistic-0.6B (open-weight voice-cloning TTS)",
+  "summary": "Edge0's 601M-parameter text-to-speech model with zero-shot voice cloning from a short reference clip, 23 languages and a bundled 44.1 kHz neural codec. Builds on Audio8-TTS-Preview with more realistic prosody; ships full checkpoint, codec, tokenizer and Transformers code, plus a free HF playground. Useful for game/video voiceover prototyping locally.",
+  "category": "models-weights",
+  "tags": [
+    "tts",
+    "voice-cloning",
+    "speech",
+    "audio",
+    "open-weights",
+    "apache-2.0",
+    "multilingual"
+  ],
+  "publisher": {
+    "name": "Edge0",
+    "url": "https://github.com/Edge0-AI/Audio8_TTS"
+  },
+  "resource_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b",
+  "download_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Not gated. Voice cloning: only clone voices you have rights/consent for. Playground runs on HF ZeroGPU daily quota."
+  },
+  "procedure": [
+    "Open huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b (no login needed).",
+    "Download with `hf download Edge0/Audio8-TTS-Realistic-0.6b` or load via Transformers with trust_remote_code as shown on the card.",
+    "Optionally test in the HF Space playground: huggingface.co/spaces/Edge0/Audio8-TTS-Realistic-0.6b."
+  ],
+  "stats": {
+    "count": "601M params, 23 languages",
+    "size": "~2.6 GB",
+    "formats": [
+      "safetensors",
+      "pth"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/SamuelZengML/status/2115881491645554870",
+    "author": "@SamuelZengML",
+    "published_at": "2026-10-29T19:00:33Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/Edge0-AI/Audio8_TTS",
+      "author": "Edge0-AI",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "Small Apache-2.0 TTS with voice cloning, ungated, strong launch reception (~1.1k likes) and #1 claim on HF TTS Arena; directly useful for creative/game audio pipelines."
+  },
+  "image": {
+    "url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b/resolve/main/audio8-banner.jpeg",
+    "alt": "Audio8 TTS banner",
+    "credit": "Edge0"
+  },
+  "verification": {
+    "checked_at": "2026-10-30T08:45:15Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 72581 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-30T08:45:15Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-30T08:45:15Z",
+  "history": [
+    {
+      "operation_id": "9f9d4d37-44c4-4716-87d7-88e528ce5282",
+      "action": "submit",
+      "at": "2026-10-30T08:45:15Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "dacb7d4090e5108955845149232bf664fc17afc3fa37f07b860a0cded857831e",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
