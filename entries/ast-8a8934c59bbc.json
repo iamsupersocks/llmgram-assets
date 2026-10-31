@@ -1,0 +1,85 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-8a8934c59bbc",
+  "name": "Mebius Free Charts kit (62 chart components)",
+  "summary": "Free kit of 62 chart components for dashboards and analytics UIs from Keitoto Studio (mebius.design), offered in Figma, as code, or through an MCP connection.",
+  "category": "icons-ui",
+  "tags": [
+    "charts",
+    "figma",
+    "ui-kit",
+    "dashboard",
+    "data-visualization",
+    "mcp"
+  ],
+  "publisher": {
+    "name": "Keitoto Studio (mebius.design)",
+    "url": "https://mebius.design/"
+  },
+  "resource_url": "https://mebius.design/freebies/charts",
+  "download_url": null,
+  "access": {
+    "model": "unknown",
+    "license": "mebius.design License (to confirm for freebies)",
+    "license_url": "https://mebius.design/license",
+    "commercial_use": "unknown",
+    "signup_required": null,
+    "price": "Announced as 100% free; to confirm",
+    "notes": "HELD: site-wide license forbids redistribution and turning components into UI kits/libraries; not confirmed whether freebies follow it or whether signup is required to download."
+  },
+  "procedure": [],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/malikyoloo/status/2115675118357909597",
+    "author": "@malikyoloo",
+    "published_at": "2026-10-29T05:20:30Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Strong traction (5k+ bookmarks) and useful UI resource, but free access terms and download path not verified on the publisher page yet."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2115674848961896448/img/tXLWsaH00mBbLPhg.jpg",
+    "alt": "",
+    "credit": "@malikyoloo"
+  },
+  "verification": {
+    "checked_at": "2026-10-31T16:50:11Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 29024 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-31T16:50:11Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-31T16:50:11Z",
+  "history": [
+    {
+      "operation_id": "7901b5b8-445f-449b-8bab-9f4170f4753d",
+      "action": "submit",
+      "at": "2026-10-31T16:50:11Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1dcaf9bc2092363c798c64a6164e2fa13bbfb41c0c0072b1d750690584ccec37",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
