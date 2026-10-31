@@ -1,0 +1,108 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3f0362d837b8",
+  "name": "StableGen (Blender add-on) v0.4.0",
+  "summary": "Free open-source Blender add-on that textures meshes and whole scenes with diffusion models via a local or networked ComfyUI, and since v0.4.0 builds rigged characters from one prompt: TRELLIS.2 makes the mesh, SkinTokens adds skeleton and skin weights, generated views are projected as texture. Bakes PBR maps, retargets Mixamo animations, exports glTF/FBX.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "add-on",
+    "comfyui",
+    "texturing",
+    "text-to-3d",
+    "rigging",
+    "trellis",
+    "pbr"
+  ],
+  "publisher": {
+    "name": "sakalond",
+    "url": "https://github.com/sakalond"
+  },
+  "resource_url": "https://github.com/sakalond/StableGen",
+  "download_url": "https://github.com/sakalond/StableGen/releases/tag/v0.4.0",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/sakalond/StableGen/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Add-on code GPL-3.0; generated assets follow the licences of the models used in ComfyUI (SDXL, TRELLIS.2, etc.). Needs ComfyUI and at least 8 GB VRAM for SDXL texturing. Blender 4.2-4.5 or 5.1+."
+  },
+  "procedure": [
+    "Download the zip for your OS from the v0.4.0 release page",
+    "Install it in Blender via Preferences > Add-ons > Install from disk",
+    "Set up a ComfyUI server (local or on your network) following the Installation wiki",
+    "Place cameras, write a prompt, click Generate; or use the prompt-to-rigged-character flow"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "glTF",
+      "FBX"
+    ],
+    "cadence": "active; v0.4.0 released 2026-10-28"
+  },
+  "source": {
+    "url": "https://x.com/hasantoxr/status/2116457666403029040",
+    "author": "@hasantoxr",
+    "published_at": "2026-10-31T09:10:04Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/WojakTheDev/status/2116495398776737836",
+      "author": "@WojakTheDev",
+      "published_at": null,
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Mature add-on (1.1k+ GitHub stars, since 2025) with a substantial new release: prompt to rigged, textured, exportable character inside Blender, free and local. Minus: heavy ComfyUI setup, output licence depends on chosen models."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/sakalond/stablegen-media/main/readme/hero-light.webp",
+    "alt": "Untextured clay bedroom scene used as the StableGen texturing example",
+    "credit": "StableGen / sakalond"
+  },
+  "verification": {
+    "checked_at": "2026-10-31T16:46:36Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": 200,
+      "detail": "too large"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-31T16:46:36Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-31T16:46:36Z",
+  "history": [
+    {
+      "operation_id": "40ac327e-059b-4164-8d31-2e8d5dff4f84",
+      "action": "submit",
+      "at": "2026-10-31T16:46:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "fb38ccea285e513e86b5d7259d26d3acf2e17fbe75feb62752831f384dc54e10",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
