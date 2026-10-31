@@ -58,7 +58,7 @@
     "credit": "AIdeaLab / Hugging Face"
   },
   "verification": {
-    "checked_at": "2026-10-31T08:47:23Z",
+    "checked_at": "2026-10-31T08:47:31Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -78,12 +78,12 @@
       "detail": "image/png, 2166329 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-31T08:47:23Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-31T08:47:23Z",
+  "updated_at": "2026-10-31T08:47:31Z",
   "history": [
     {
       "operation_id": "c35ec540-4a41-489e-8047-20bec93019b8",
@@ -93,6 +93,15 @@
       "payload_sha256": "34ad49e633ee1f032a39a73e65ea34e00971b34efec40cf09b06f3a1bf62dc09",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "a2df6e5e-1aa2-4b8e-9fc7-e69390ea7872",
+      "action": "update",
+      "at": "2026-10-31T08:47:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9af7971a270986cd5e556bbc0da616403e5d2c8c61c2477776f7d585523b5b4b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
