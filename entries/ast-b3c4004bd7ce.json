@@ -68,7 +68,7 @@
     "credit": "HairDeck authors"
   },
   "verification": {
-    "checked_at": "2026-10-31T16:46:30Z",
+    "checked_at": "2026-10-31T16:47:13Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -88,12 +88,12 @@
       "detail": "image/jpg, 1112805 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-31T16:46:30Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-31T16:46:30Z",
+  "updated_at": "2026-10-31T16:47:13Z",
   "history": [
     {
       "operation_id": "47fbc27e-1592-4f8c-82e2-1412efc677fb",
@@ -103,6 +103,15 @@
       "payload_sha256": "e00ff54ee1413ed8a2d65f76c4daf2759bbac9e01868596bd66ded27caefdb7a",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "b162b853-3f5d-44e5-a521-3ff77bfff7ab",
+      "action": "update",
+      "at": "2026-10-31T16:47:13Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ed84825a0a2a20d8ce46bade269bf16a21ff14ec9fb4bdf5863c7bce03f357ae",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
