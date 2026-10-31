@@ -63,12 +63,12 @@
     "why": "Mature add-on (1.1k+ GitHub stars, since 2025) with a substantial new release: prompt to rigged, textured, exportable character inside Blender, free and local. Minus: heavy ComfyUI setup, output licence depends on chosen models."
   },
   "image": {
-    "url": "https://raw.githubusercontent.com/sakalond/stablegen-media/main/readme/hero-light.webp",
-    "alt": "Untextured clay bedroom scene used as the StableGen texturing example",
-    "credit": "StableGen / sakalond"
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2116457640599646208/img/3s3iRgD_iRPsmUds.jpg",
+    "alt": "StableGen GitHub README showing a stone-walled bedroom scene textured by the add-on",
+    "credit": "@hasantoxr video frame / StableGen"
   },
   "verification": {
-    "checked_at": "2026-10-31T16:46:36Z",
+    "checked_at": "2026-10-31T16:47:09Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,19 +81,19 @@
       "status": 200,
       "detail": "reachable"
     },
-    "image_ok": false,
+    "image_ok": true,
     "image": {
-      "ok": false,
+      "ok": true,
       "status": 200,
-      "detail": "too large"
+      "detail": "image/jpg, 131835 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-10-31T16:46:36Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-31T16:46:36Z",
+  "updated_at": "2026-10-31T16:47:09Z",
   "history": [
     {
       "operation_id": "40ac327e-059b-4164-8d31-2e8d5dff4f84",
@@ -103,6 +103,15 @@
       "payload_sha256": "fb38ccea285e513e86b5d7259d26d3acf2e17fbe75feb62752831f384dc54e10",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "97940651-828c-40d9-b244-7b0c165315ae",
+      "action": "update",
+      "at": "2026-10-31T16:47:09Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "f02466bf0168961606806271c4f9b2a44ec31d6ba44a76b847f9c60645baae63",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
