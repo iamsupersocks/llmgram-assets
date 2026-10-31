@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-37b724561ca0",
+  "name": "AnimeGen I2V (open anime image-to-video model)",
+  "summary": "Image-to-video model from AIdeaLab specialised in Japanese anime-style motion, character rendering and colour consistency. Fine-tune of Wan 2.2 I2V A14B, released with Diffusers inference and frame-interpolation examples. Useful for animating anime keyframes locally under a permissive license.",
+  "category": "models-weights",
+  "tags": [
+    "image-to-video",
+    "anime",
+    "wan-2.2",
+    "diffusers",
+    "video-generation",
+    "open-weights"
+  ],
+  "publisher": {
+    "name": "AIdeaLab, Inc.",
+    "url": "https://huggingface.co/aidealab"
+  },
+  "resource_url": "https://huggingface.co/aidealab/AnimeGen-I2V",
+  "download_url": "https://huggingface.co/aidealab/AnimeGen-I2V/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/aidealab/AnimeGen-I2V/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Not gated. Needs the Wan 2.2 I2V A14B Diffusers VAE/pipeline (separate repo); RTX 4090-class GPU recommended."
+  },
+  "procedure": [
+    "Install torch, diffusers, transformers, accelerate, peft, safetensors, imageio-ffmpeg.",
+    "Load transformer and transformer_2 from aidealab/AnimeGen-I2V and the VAE from Wan-AI/Wan2.2-I2V-A14B-Diffusers.",
+    "Run WanImageToVideoPipeline with an input image (example code on the model card, 480p or 720p, 16 fps)."
+  ],
+  "stats": {
+    "count": "",
+    "size": "14B-class (two transformers, sharded safetensors)",
+    "formats": [
+      "safetensors",
+      "diffusers"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/tvcdave/status/2116163986295332947",
+    "author": "@tvcdave",
+    "published_at": "2026-10-30T13:43:05Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Permissive Apache-2.0 with commercial use, not gated, real weights and working example code; niche anime focus and heavy GPU needs limit reach."
+  },
+  "image": {
+    "url": "https://huggingface.co/aidealab/AnimeGen-I2V/resolve/main/sample.png",
+    "alt": "Anime-style girl on a rooftop at sunset, sample input frame from the AnimeGen I2V model card",
+    "credit": "AIdeaLab / Hugging Face"
+  },
+  "verification": {
+    "checked_at": "2026-10-31T08:47:23Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 2166329 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-10-31T08:47:23Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-10-31T08:47:23Z",
+  "history": [
+    {
+      "operation_id": "c35ec540-4a41-489e-8047-20bec93019b8",
+      "action": "submit",
+      "at": "2026-10-31T08:47:23Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "34ad49e633ee1f032a39a73e65ea34e00971b34efec40cf09b06f3a1bf62dc09",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
