@@ -1,0 +1,96 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3f34563e5126",
+  "name": "Stageshow (agent skill for faux product UI)",
+  "summary": "Agent skill that teaches coding agents to build believable faux product UI in React and plain CSS: stills, feature cards, bento grids and cursor-driven demo animations. Ships a component kit, gold examples, framing/motion references and tools that film the result so the agent can check its own work.",
+  "category": "tools",
+  "tags": [
+    "agent-skill",
+    "ui",
+    "react",
+    "css",
+    "animation",
+    "mockups",
+    "claude-code"
+  ],
+  "publisher": {
+    "name": "Benji Taylor",
+    "url": "https://benji.org/stageshow"
+  },
+  "resource_url": "https://github.com/benjitaylor/skills/tree/main/stageshow",
+  "download_url": "https://github.com/benjitaylor/skills",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/benjitaylor/skills/blob/main/stageshow/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT covers Stageshow source; bundled app icons are not covered and stay with their owners; product names/marks in examples grant no trademark rights (see NOTICE.md)."
+  },
+  "procedure": [
+    "Run: npx skills add benjitaylor/skills --skill stageshow",
+    "Or copy the stageshow/ folder from github.com/benjitaylor/skills into your agent's skills directory.",
+    "Ask your agent for a faux UI still, hero demo or bento grid; read benji.org/stageshow for how it works."
+  ],
+  "stats": {
+    "count": "186 GitHub stars at review",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/benjitaylor/status/2116593247854453244",
+    "author": "@benjitaylor",
+    "published_at": "2026-10-31T18:08:49Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Real MIT-licensed skill with kit, examples and self-check tooling; high signal launch post (446k views, 11.7k bookmarks). Niche: UI illustration for marketing/docs, not a 3D/media asset."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/benjitaylor/skills/main/.github/assets/stageshow.png",
+    "alt": "Grid of faux product UI made with Stageshow: controls panel, revenue dashboard, Japanese keyboard, app icons and a music player",
+    "credit": "Benji Taylor"
+  },
+  "verification": {
+    "checked_at": "2026-11-01T08:48:35Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 313790 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-01T08:48:35Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-01T08:48:35Z",
+  "history": [
+    {
+      "operation_id": "9d1c2f7e-3a41-4b8e-9f62-5c7a0e1b2d44",
+      "action": "submit",
+      "at": "2026-11-01T08:48:35Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5a911969bbfe44ed166f1e8c094a0afd2027bb00e1fcb3ac72d3eeeb70bd8f8e",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
