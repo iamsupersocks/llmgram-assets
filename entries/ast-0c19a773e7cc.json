@@ -1,0 +1,111 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0c19a773e7cc",
+  "name": "SculptForge",
+  "summary": "Free, open-source digital sculpting app pitched as a ZBrush alternative, native on Linux, macOS and Windows. ZBrush-style brushes, symmetry and navigation, LOD generation, blend shapes, Send to Unreal, Gaussian splats and OpenUSD, plus built-in AI brush creator and image/text-to-3D with no account (or bring Claude, fal.ai, Meshy or local models).",
+  "category": "tools",
+  "tags": [
+    "sculpting",
+    "zbrush-alternative",
+    "3d",
+    "open-source",
+    "unreal",
+    "openusd",
+    "gaussian-splats",
+    "image-to-3d"
+  ],
+  "publisher": {
+    "name": "islandmed",
+    "url": "https://github.com/islandmed"
+  },
+  "resource_url": "https://github.com/islandmed/SculptForge",
+  "download_url": "https://github.com/islandmed/SculptForge/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0-or-later",
+    "license_url": "https://github.com/islandmed/SculptForge/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "GPL-3.0: you can use it commercially and sell your sculpts; modified redistributions of the app must stay GPL. Optional third-party AI providers have their own terms."
+  },
+  "procedure": [
+    "Open the latest release page on GitHub",
+    "Download the build for your OS (Windows .exe/.zip, macOS universal .dmg, Linux AppImage/flatpak/deb/rpm/tar.gz)",
+    "Install and launch; no account needed. Guide at https://sculptforge.app/guide/"
+  ],
+  "stats": {
+    "count": "v0.10.2 (released 2026-11-01)",
+    "size": "",
+    "formats": [
+      "exe",
+      "dmg",
+      "AppImage",
+      "flatpak",
+      "deb",
+      "rpm"
+    ],
+    "cadence": "Frequent releases; repo created 2026-10-21, ~313 GitHub stars"
+  },
+  "source": {
+    "url": "https://x.com/wessketches/status/2116594908735664618",
+    "author": "@wessketches",
+    "published_at": "2026-10-31T18:15:25Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://sculptforge.app/",
+      "author": "islandmed",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 76,
+    "why": "Real cross-platform sculpting app with active releases and a clear GPL license; strong fit for 3D/game artists. Young project (10 days old), so maturity vs ZBrush is unproven."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/islandmed/SculptForge/HEAD/docs/images/sculpt-demo.gif",
+    "alt": "A lion head bust being sculpted and turned to stone in SculptForge",
+    "credit": "SculptForge README"
+  },
+  "verification": {
+    "checked_at": "2026-11-01T16:40:42Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/gif, 3111661 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-11-01T16:40:42Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-01T16:40:42Z",
+  "history": [
+    {
+      "operation_id": "4c9d0e6b-2a7f-4b13-8e55-5f0110112026",
+      "action": "submit",
+      "at": "2026-11-01T16:40:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5c59fa73d929648ee6cce24bbfa4d6b088310a12bad643635fa9d4c33bf05912",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
