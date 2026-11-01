@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-21de4e70b0de",
+  "name": "SolidCraft (open-source parametric 3D CAD)",
+  "summary": "Parametric 3D CAD app written in pure Rust: sketch, constrain and build solids on a feature timeline that rebuilds when a dimension changes. Runs as a desktop app, in the browser, or driven by AI agents through a built-in MCP server. Ships near-daily releases (v0.29.0 on Nov 1, 2026).",
+  "category": "tools",
+  "tags": [
+    "cad",
+    "parametric",
+    "rust",
+    "mcp",
+    "3d-modeling",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "Tangency Labs",
+    "url": "https://solidcraft.io/"
+  },
+  "resource_url": "https://github.com/tangency-labs/solidcraft",
+  "download_url": "https://solidcraft.io/download",
+  "access": {
+    "model": "open-source",
+    "license": "MIT OR Apache-2.0",
+    "license_url": "https://github.com/tangency-labs/solidcraft/blob/main/LICENSE-APACHE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Dual-licensed MIT or Apache-2.0 at your option; third-party code and assets keep their own licenses (see THIRD-PARTY-LICENSES). Results must be checked by a qualified person per DISCLAIMER."
+  },
+  "procedure": [
+    "Open solidcraft.io/download and pick the installer for Windows, macOS or Linux (AppImage, deb, rpm, flatpak, snap), or grab it from GitHub Releases.",
+    "Or try it with no install at solidcraft.io/app in the browser.",
+    "For agent use, enable the built-in MCP server (see docs.solidcraft.io)."
+  ],
+  "stats": {
+    "count": "~12.7k GitHub stars",
+    "size": "",
+    "formats": [
+      "AppImage",
+      "deb",
+      "rpm",
+      "flatpak",
+      "msi",
+      "dmg"
+    ],
+    "cadence": "near-daily releases (v0.27.1 to v0.29.0 between Oct 30 and Nov 1, 2026)"
+  },
+  "source": {
+    "url": "https://x.com/js4226/status/2116575416936735081",
+    "author": "@js4226",
+    "published_at": "2026-10-31T16:57:58Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://solidcraft.io/",
+      "author": "Tangency Labs",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Real, actively released open-source CAD with permissive dual license, desktop + browser builds and MCP for agents; early-stage but very active (12.7k stars in under a month)."
+  },
+  "image": {
+    "url": "https://solidcraft.io/brand/social-banner.png",
+    "alt": "SolidCraft logo banner: open-source parametric CAD built in Rust, Desktop, Browser, MCP for AI agents",
+    "credit": "Tangency Labs"
+  },
+  "verification": {
+    "checked_at": "2026-11-01T08:47:28Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 38597 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-01T08:47:28Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-01T08:47:28Z",
+  "history": [
+    {
+      "operation_id": "b30cb66d-d15e-4e60-8104-7f8f2d4d1350",
+      "action": "submit",
+      "at": "2026-11-01T08:47:28Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c90293aa33df98ad02468e14fe5784ad69b1b01eed5a2389e9b18f0cc5c87596",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
