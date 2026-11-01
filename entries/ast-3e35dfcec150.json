@@ -1,0 +1,110 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3e35dfcec150",
+  "name": "Primal VAE (Ostris, 2x1 / 2x2)",
+  "summary": "Small (~80M params) image autoencoder that only downsamples 2x into 1 or 2 channels; with a 4x4 patch in the DiT it matches the Flux.1 (16 ch @ 8x) or Flux.2 (32 ch @ 8x) latent shape. Latent is trained to be unit-normal, so no scaling/shift factors. Author reports it beats the FLUX.2 VAE on reconstruction. Loads in diffusers and from ai-toolkit checkpoints.",
+  "category": "models-weights",
+  "tags": [
+    "vae",
+    "autoencoder",
+    "diffusion",
+    "diffusers",
+    "flux",
+    "image-generation"
+  ],
+  "publisher": {
+    "name": "Ostris",
+    "url": "https://huggingface.co/ostris"
+  },
+  "resource_url": "https://huggingface.co/ostris/primal_vae",
+  "download_url": "https://huggingface.co/ostris/primal_vae/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/ostris/primal_vae/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Not gated. Needs trust_remote_code=True in diffusers (custom modeling_primal_vae.py). Image sides must be multiples of 16. Experimental release."
+  },
+  "procedure": [
+    "Open huggingface.co/ostris/primal_vae and read the README.",
+    "pip install diffusers torch, then AutoModel.from_pretrained('ostris/primal_vae', variant='2x1' or '2x2', trust_remote_code=True).",
+    "Use vae.patchify(vae.encode(x), compression=8) to get a Flux.1/Flux.2-shaped latent; decode with vae.decode(vae.unpatchify(tokens))."
+  ],
+  "stats": {
+    "count": "2 variants (2x1, 2x2), ~80M params each",
+    "size": "~321 MB per safetensors file",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/ostrisai/status/2116285109573988712",
+    "author": "@ostrisai",
+    "published_at": "2026-10-30T21:44:23Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/ostrisai/status/2116528099848593748",
+      "author": "@ostrisai",
+      "published_at": "2026-10-31T13:49:56Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://x.com/cutetoxicguy/status/2116545753350889712",
+      "author": "@cutetoxicguy",
+      "published_at": "2026-10-31T15:00:05Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Primary HF repo, Apache-2.0 LICENSE file, not gated, real weights; useful building block for people training diffusion models. Reconstruction claim is the author's own and early."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HV9qtN-a8AAbE9r.jpg",
+    "alt": "Sample image (red-haired woman playing chess in a park) from Ostris's overnight MOSS Image run trained on the Primal VAE 2x1 latent",
+    "credit": "@ostrisai"
+  },
+  "verification": {
+    "checked_at": "2026-11-01T08:47:36Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 256024 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-01T08:47:36Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-01T08:47:36Z",
+  "history": [
+    {
+      "operation_id": "e37e244f-055e-4ece-8dbe-b5653b8d7fd2",
+      "action": "submit",
+      "at": "2026-11-01T08:47:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d19c60bf785e656fe4f7446bd81c5231fd07c7cabc8efa29e1237dedf8cbf4d8",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
