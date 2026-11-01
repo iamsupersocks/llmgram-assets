@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-fa60557663db",
+  "name": "pyfwg (Python Future Weather Generator)",
+  "summary": "Python workflow manager for the Future Weather Generator CLI: batch-morphs EnergyPlus weather (EPW) files into future-climate scenarios, with parameter validation, Excel-driven parametric runs and tidy .epw/.stat output. v0.4.0 supports FWG Global 5.x, Europe 3.x and CORDEX regional distributions.",
+  "category": "simulation",
+  "tags": [
+    "energyplus",
+    "epw",
+    "climate-scenarios",
+    "building-simulation",
+    "python",
+    "weather-data"
+  ],
+  "publisher": {
+    "name": "dsanchez-garcia",
+    "url": "https://github.com/dsanchez-garcia"
+  },
+  "resource_url": "https://github.com/dsanchez-garcia/pyfwg",
+  "download_url": "https://pypi.org/project/pyfwg/",
+  "access": {
+    "model": "open-source",
+    "license": "unclear: GPL-3.0 (repo LICENSE) vs MIT (README, PyPI)",
+    "license_url": "https://github.com/dsanchez-garcia/pyfwg/blob/main/LICENSE",
+    "commercial_use": "unknown",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "License conflict between the repo LICENSE file (GPL-3.0) and README/PyPI (MIT). Needs the separate Future Weather Generator JAR (future-weather-generator.adai.pt) with its own terms."
+  },
+  "procedure": [
+    "pip install pyfwg",
+    "Download the Future Weather Generator JAR (Global, Europe or CORDEX) from future-weather-generator.adai.pt",
+    "Point pyfwg at the JAR and your EPW files; use morph_epw_global / MorphingWorkflowGlobal (docs: pyfwg.readthedocs.io)"
+  ],
+  "stats": {
+    "count": "v0.4.0",
+    "size": "",
+    "formats": [
+      "epw",
+      "stat"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://github.com/dsanchez-garcia/pyfwg",
+    "author": "dsanchez-garcia",
+    "published_at": null,
+    "kind": "github"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Real, maintained niche tool for building-energy simulation under future climates; outside the core 3D/game focus and license is contradictory, so held."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/bd0d7f81f552ca33685a5b6115cf76420e570b23cd04c9504b35ea6d7f98b943/dsanchez-garcia/pyfwg",
+    "alt": "A Python workflow manager for the FutureWeatherGenerator tool. - dsanchez-garcia/pyfwg",
+    "credit": "dsanchez-garcia"
+  },
+  "verification": {
+    "checked_at": "2026-11-01T16:41:48Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 94829 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-01T16:41:48Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-01T16:41:48Z",
+  "history": [
+    {
+      "operation_id": "9a46582c-5da6-4610-9922-18b202dfd002",
+      "action": "submit",
+      "at": "2026-11-01T16:41:48Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4510be5dfe0832275c9b5d320bbe0098564ad9f2ba9bad2c8bcac1685163cb5e",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
