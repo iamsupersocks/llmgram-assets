@@ -70,7 +70,7 @@
     "credit": "@ostrisai"
   },
   "verification": {
-    "checked_at": "2026-11-01T08:47:36Z",
+    "checked_at": "2026-11-01T08:47:49Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -90,12 +90,12 @@
       "detail": "image/jpg, 256024 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-01T08:47:36Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-01T08:47:36Z",
+  "updated_at": "2026-11-01T08:47:49Z",
   "history": [
     {
       "operation_id": "e37e244f-055e-4ece-8dbe-b5653b8d7fd2",
@@ -105,6 +105,15 @@
       "payload_sha256": "d19c60bf785e656fe4f7446bd81c5231fd07c7cabc8efa29e1237dedf8cbf4d8",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "58d0a33f-5736-48d8-b84a-7349469e100e",
+      "action": "update",
+      "at": "2026-11-01T08:47:49Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "644823c7567cca6bccca4a0886fb1618931cacdeebb3c53e699bb16503dd937b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
