@@ -56,7 +56,7 @@
     "credit": "Benji Taylor"
   },
   "verification": {
-    "checked_at": "2026-11-01T08:48:35Z",
+    "checked_at": "2026-11-01T08:48:49Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -76,12 +76,12 @@
       "detail": "image/png, 313790 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-01T08:48:35Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-01T08:48:35Z",
+  "updated_at": "2026-11-01T08:48:49Z",
   "history": [
     {
       "operation_id": "9d1c2f7e-3a41-4b8e-9f62-5c7a0e1b2d44",
@@ -91,6 +91,15 @@
       "payload_sha256": "5a911969bbfe44ed166f1e8c094a0afd2027bb00e1fcb3ac72d3eeeb70bd8f8e",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "6b2e8f14-71c9-4d3a-a5e0-2f9c4b7d1e83",
+      "action": "update",
+      "at": "2026-11-01T08:48:49Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "cac4afcd89aaa82ed02674027c9a7903a9822cc5ed1fec1590ff58c66ceebc53",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
