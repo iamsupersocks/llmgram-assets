@@ -69,7 +69,7 @@
     "credit": "Tangency Labs"
   },
   "verification": {
-    "checked_at": "2026-11-01T08:47:28Z",
+    "checked_at": "2026-11-01T08:47:45Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -89,12 +89,12 @@
       "detail": "image/png, 38597 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-01T08:47:28Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-01T08:47:28Z",
+  "updated_at": "2026-11-01T08:47:45Z",
   "history": [
     {
       "operation_id": "b30cb66d-d15e-4e60-8104-7f8f2d4d1350",
@@ -104,6 +104,15 @@
       "payload_sha256": "c90293aa33df98ad02468e14fe5784ad69b1b01eed5a2389e9b18f0cc5c87596",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "3ea2b768-bace-40a9-a53e-ab4de1367334",
+      "action": "update",
+      "at": "2026-11-01T08:47:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a0dd4ed83c7749d582d8edb83270bd19fc2ee7a536c48c4c73a9c154c97e386c",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
