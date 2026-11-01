@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-91fd2d5f65f8",
+  "name": "Looseleaf (shadcn/ui, drawn by hand)",
+  "summary": "Open-source React + Tailwind v4 + Radix component library and shadcn registry where every component looks hand-drawn on paper. 123 accessible components with the same parts, props and data-slot names as shadcn/ui, 61 blocks, 160 icons, 48 doodles, 88 stickers/stamps, a pencil mascot and the Kevin Sans typeface, all drawn in code as seeded SVG.",
+  "category": "icons-ui",
+  "tags": [
+    "ui-kit",
+    "react",
+    "shadcn",
+    "tailwind",
+    "radix",
+    "hand-drawn",
+    "icons",
+    "font",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "Kevin Ngo",
+    "url": "https://github.com/kevintngo"
+  },
+  "resource_url": "https://kevintngo.github.io/looseleaf/",
+  "download_url": "https://github.com/kevintngo/looseleaf",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/kevintngo/looseleaf/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT covers code, art and the Kevin Sans font; bundled IBM Plex Mono is SIL OFL 1.1."
+  },
+  "procedure": [
+    "Add the registry to components.json: \"registries\": { \"@looseleaf\": \"https://kevintngo.github.io/looseleaf/r/{name}.json\" }",
+    "Add components or blocks: npx shadcn@latest add @looseleaf/button (or @looseleaf/login-01, @looseleaf/looseleaf for the theme).",
+    "Wrap your app in InkProvider; components land in your repo as source. Or clone github.com/kevintngo/looseleaf."
+  ],
+  "stats": {
+    "count": "123 components, 61 blocks, 160 icons, 88 stickers",
+    "size": "",
+    "formats": [
+      "tsx",
+      "svg",
+      "css"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/kevin_t_ngo/status/2116743334735851819",
+    "author": "@kevin_t_ngo",
+    "published_at": "2026-11-01T04:05:12Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/kevin_t_ngo/status/2116761857193381920",
+      "author": "@kevin_t_ngo",
+      "published_at": "2026-11-01T05:18:48Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Complete, MIT (code + art + font), drop-in shadcn registry that works today; strong launch post (15.8k views, 422 bookmarks). Repo is brand new (created 2026-11-01, 5 stars) so maturity is unproven."
+  },
+  "image": {
+    "url": "https://kevintngo.github.io/looseleaf/og.png",
+    "alt": "Looseleaf banner: hand-drawn tabs, switch, slider and buttons on a paper card beside the pencil-stub mascot",
+    "credit": "Kevin Ngo"
+  },
+  "verification": {
+    "checked_at": "2026-11-01T10:57:45Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 504596 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-11-01T10:57:45Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-01T10:57:45Z",
+  "history": [
+    {
+      "operation_id": "c4e1a7d2-5b3f-4e86-9a10-7d2f8b6c3e51",
+      "action": "submit",
+      "at": "2026-11-01T10:57:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "35842bb3684330c02c55eacd8fe3642eaeaee1495f24ad3ebe101d8361805339",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
