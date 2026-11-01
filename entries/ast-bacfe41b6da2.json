@@ -1,0 +1,114 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-bacfe41b6da2",
+  "name": "FloodDiffusion 2",
+  "summary": "Open-source streaming text-to-motion model from AlayaLab: generates continuous 3D human motion from changing text prompts, with root-path control of the trajectory. KV-cached partial attention gives ~2.3 ms/step on an RTX 4090 per the authors. Code, checkpoints, prepared datasets and a live HF demo are public.",
+  "category": "animations-mocap",
+  "tags": [
+    "motion-generation",
+    "text-to-motion",
+    "streaming",
+    "path-control",
+    "humanml3d",
+    "diffusion",
+    "animation"
+  ],
+  "publisher": {
+    "name": "AlayaLab",
+    "url": "https://github.com/AlayaLab"
+  },
+  "resource_url": "https://github.com/AlayaLab/FloodDiffusion2",
+  "download_url": "https://huggingface.co/AlayaLab/FloodDiffusion2",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (code); checkpoints carry no license tag",
+    "license_url": "https://github.com/AlayaLab/FloodDiffusion2/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code MIT. HF checkpoints have no explicit license; trained on HumanML3D/BABEL/SEED, which keep their own terms. Mesh rendering needs SMPL-H from mano.is.tue.mpg.de (separate license, not bundled)."
+  },
+  "procedure": [
+    "git clone https://github.com/AlayaLab/FloodDiffusion2 and create a Python 3.10 env",
+    "Run python setup_project.py: installs deps and downloads the four paper checkpoints plus UMT5/T2M/GloVe assets from Hugging Face",
+    "Optional: --with-data for prepared datasets, --smplh <path> to import a licensed SMPL-H model for mesh rendering",
+    "Or try it in the browser: https://huggingface.co/spaces/AlayaLab/FloodDiffusion2-Live"
+  ],
+  "stats": {
+    "count": "8 checkpoints (6 FD2 + LDF/VAE 263D)",
+    "size": "Inference tested on RTX 4090; Linux + NVIDIA recommended",
+    "formats": [
+      "ckpt",
+      "npy",
+      "yaml"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/mgdw0/status/2116822429234577465",
+    "author": "@mgdw0",
+    "published_at": "2026-11-01T09:19:30Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://arxiv.org/abs/2609.33167",
+      "author": "",
+      "published_at": null,
+      "kind": "article"
+    },
+    {
+      "url": "https://alayalab.github.io/FloodDiffusion2/",
+      "author": "AlayaLab",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "Real, complete release (code, weights, data, demo) for streaming, path-controllable character motion, directly useful for game/animation prototyping. Docked for unlicensed checkpoints and SMPL-H dependency for meshes."
+  },
+  "image": {
+    "url": "https://alayalab.github.io/FloodDiffusion2/assets/posters/demo-v45.jpg",
+    "alt": "FloodDiffusion 2 demo poster: two animated characters moving in a warehouse scene, path arrows on the floor",
+    "credit": "AlayaLab project page"
+  },
+  "verification": {
+    "checked_at": "2026-11-01T16:40:07Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 323282 bytes"
+    }
+  },
+  "hold": false,
+  "status": "published",
+  "flags": [],
+  "added_at": "2026-11-01T16:40:07Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-01T16:40:07Z",
+  "history": [
+    {
+      "operation_id": "b7e1c2a4-5f3d-4e8a-9c21-fd2a11012026",
+      "action": "submit",
+      "at": "2026-11-01T16:40:07Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "80b708a000511ba0cc76acc3c4be61bfa453e8f33707c7121a29752cebbcf9d2",
+      "result": "created",
+      "status": "published"
+    }
+  ]
+}
