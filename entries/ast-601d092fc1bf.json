@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-601d092fc1bf",
+  "name": "SplatThumb",
+  "summary": "Windows Explorer thumbnail handler for 3D Gaussian Splatting .ply files (INRIA and PlayCanvas/SuperSplat compressed) and Spatialograph Maker .spgm projects. Renders a sample of 50k-400k splats per file, lets you set a per-file turntable view stored in your profile, reads files only, no network or telemetry.",
+  "category": "tools",
+  "tags": [
+    "gaussian-splatting",
+    "3dgs",
+    "ply",
+    "windows",
+    "thumbnails",
+    "shell-extension"
+  ],
+  "publisher": {
+    "name": "VoxelKei",
+    "url": "https://github.com/VoxelKei"
+  },
+  "resource_url": "https://github.com/VoxelKei/SplatThumb",
+  "download_url": "https://github.com/VoxelKei/SplatThumb/releases",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/VoxelKei/SplatThumb/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Preview release (v0.4.0). Windows 10/11 x64 only. Installer is not code-signed, so SmartScreen may warn."
+  },
+  "procedure": [
+    "Open the Releases page on GitHub.",
+    "Download SplatThumb-0.4.0-x64.msi (per-user install, no admin rights).",
+    "Run it, then open a folder of 3DGS .ply files in Explorer with large icons.",
+    "Right-click a file > Set view with SplatThumb to pick its thumbnail angle."
+  ],
+  "stats": {
+    "count": "",
+    "size": "614 KB installer",
+    "formats": [
+      "ply",
+      "spgm",
+      "msi"
+    ],
+    "cadence": "v0.3.0 and v0.4.0 released 2026-11-01"
+  },
+  "source": {
+    "url": "https://x.com/VoxelKei/status/2117266137293730007",
+    "author": "@VoxelKei",
+    "published_at": "2026-11-02T14:42:38Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Small but real utility for anyone managing splat libraries on Windows: MIT, free, working MSI, careful untrusted-file handling. Early preview with 13 stars and Windows-only, so moderate score."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/VoxelKei/SplatThumb/main/docs/media/demo.webp",
+    "alt": "Windows Explorer folder showing Gaussian splat .ply files rendered as scene thumbnails",
+    "credit": "VoxelKei / SplatThumb README"
+  },
+  "verification": {
+    "checked_at": "2026-11-02T16:45:13Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 1964420 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-02T16:45:13Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-02T16:45:13Z",
+  "history": [
+    {
+      "operation_id": "6b0f2a64-3c1e-4d7a-9a51-2f8e0c7d1b93",
+      "action": "submit",
+      "at": "2026-11-02T16:45:13Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5c67178798ce59f17870e8b45c6d9ec94f8a17863d1089a58dadff703b77d829",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
