@@ -67,7 +67,7 @@
     "credit": "Pika Labs (Hugging Face model card)"
   },
   "verification": {
-    "checked_at": "2026-11-02T08:40:53Z",
+    "checked_at": "2026-11-02T08:41:05Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -87,12 +87,12 @@
       "detail": "image/jpg, 27780 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-02T08:40:53Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-02T08:40:53Z",
+  "updated_at": "2026-11-02T08:41:05Z",
   "history": [
     {
       "operation_id": "9489e420-7e2e-4279-8f98-e51ef9a0b1bf",
@@ -102,6 +102,15 @@
       "payload_sha256": "bdabb2c61048e15cc5140247b2bef711d85c4429cb3a9935e39976f1b074683c",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "a050b465-6132-4be9-bc92-dfcfda6ec628",
+      "action": "update",
+      "at": "2026-11-02T08:41:05Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "233f5b24a65d76aef6dba47af20215a5e90e82bf1e8756d2591aa81b1c99af0a",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
