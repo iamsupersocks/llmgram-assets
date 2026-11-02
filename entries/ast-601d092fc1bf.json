@@ -60,7 +60,7 @@
     "credit": "VoxelKei / SplatThumb README"
   },
   "verification": {
-    "checked_at": "2026-11-02T16:45:13Z",
+    "checked_at": "2026-11-02T16:45:25Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/webp, 1964420 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-02T16:45:13Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-02T16:45:13Z",
+  "updated_at": "2026-11-02T16:45:25Z",
   "history": [
     {
       "operation_id": "6b0f2a64-3c1e-4d7a-9a51-2f8e0c7d1b93",
@@ -95,6 +95,15 @@
       "payload_sha256": "5c67178798ce59f17870e8b45c6d9ec94f8a17863d1089a58dadff703b77d829",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "c2d84e17-90ab-4f6e-b3a2-7e5d1f9c0a48",
+      "action": "update",
+      "at": "2026-11-02T16:45:25Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6751bca6b9b4b669641033e92478fc4a359c6dd6829716a738d945de6c720f3b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
