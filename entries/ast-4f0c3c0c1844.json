@@ -1,0 +1,107 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-4f0c3c0c1844",
+  "name": "Pika H3 Flex (open-weight video + audio model)",
+  "summary": "Pika's post-trained adapter on MiniMax-H3 that generates video with synchronized stereo audio in six sampling steps. Local weights cover text-to-video, first/last-frame conditioning and multi-reference (up to 9 images, 3 videos, 3 audio clips) at native 480p/768p, 5-15 s, 24 fps. 1080p-4K, audio stems and prompt rewriting stay on Pika's paid API.",
+  "category": "models-weights",
+  "tags": [
+    "video-generation",
+    "audio",
+    "text-to-video",
+    "image-to-video",
+    "diffusers",
+    "comfyui",
+    "lora",
+    "minimax-h3"
+  ],
+  "publisher": {
+    "name": "Pika Labs",
+    "url": "https://pika.art/"
+  },
+  "resource_url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+  "download_url": "https://github.com/Pika-Labs/Pika-H3-Flex",
+  "access": {
+    "model": "free",
+    "license": "MiniMax H3 Community License (weights); Apache-2.0 (code)",
+    "license_url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0 for local weights; 1080p/2K/4K, stems and prompt rewriter via paid Pika API",
+    "notes": "License excludes the EU, UK, US and South Korea (no use there without a separate MiniMax license). Commercial use must display 'MiniMax H3'; >$20M yearly revenue needs written authorization; acceptable-use policy applies."
+  },
+  "procedure": [
+    "Check the MiniMax H3 Community License covers your country (EU/UK/US/KR are excluded).",
+    "Follow the Install quickstart in the GitHub repo; the package pulls the pinned MiniMax-H3 base and the Pika adapter from Hugging Face.",
+    "Run a task (t2va, i2va, l2va, fl2va or ref2va) via the CLI or the bundled ComfyUI nodes."
+  ],
+  "stats": {
+    "count": "2 adapters (FL2VA, Ref2VA)",
+    "size": "~220 GB repo on Hugging Face",
+    "formats": [
+      "safetensors",
+      "mp4"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/pika_labs/status/2115860471215788262",
+    "author": "@pika_labs",
+    "published_at": "2026-10-29T17:37:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/AIKiwiDaily/status/2117006264517464344",
+      "author": "@AIKiwiDaily",
+      "published_at": "2026-11-01T21:30:00Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Major-lab open-weight video+audio model, not gated, documented modes and specs. Big caveats: ~220 GB and H100-class hardware, top resolutions API-only, and the base license excludes EU/UK/US/KR."
+  },
+  "image": {
+    "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex/resolve/main/assets/showcases/camera-rally.jpg",
+    "alt": "Pika H3 Flex showcase frame: overhead shot of a table-tennis rally in a drained pool, one player in a frog mask",
+    "credit": "Pika Labs (Hugging Face model card)"
+  },
+  "verification": {
+    "checked_at": "2026-11-02T08:40:53Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 27780 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-02T08:40:53Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-02T08:40:53Z",
+  "history": [
+    {
+      "operation_id": "9489e420-7e2e-4279-8f98-e51ef9a0b1bf",
+      "action": "submit",
+      "at": "2026-11-02T08:40:53Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bdabb2c61048e15cc5140247b2bef711d85c4429cb3a9935e39976f1b074683c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
