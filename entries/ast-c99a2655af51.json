@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c99a2655af51",
+  "name": "Holo4D (video reshooting along a new camera path)",
+  "summary": "NeurIPS 2026 model from Oxford VGG / NTU: reshoots a monocular video along a new camera path. It reconstructs persistent 3D point tracks from the source video and uses them as a scaffold to guide a Wan video diffusion model, so only newly visible regions are generated. 14B and 5B checkpoints, prepared examples, long-video rollout and evaluation tools are released.",
+  "category": "models-weights",
+  "tags": [
+    "video-diffusion",
+    "novel-view-synthesis",
+    "camera-control",
+    "4d-reconstruction",
+    "wan",
+    "neurips-2026"
+  ],
+  "publisher": {
+    "name": "Yushi Lan et al. (University of Oxford VGG / NTU)",
+    "url": "https://nirvanalan.github.io/projects/holo4d/"
+  },
+  "resource_url": "https://github.com/NIRVANALAN/Holo4D",
+  "download_url": "https://huggingface.co/yslan/Holo4D-2026",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/NIRVANALAN/Holo4D/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code and HF checkpoints Apache-2.0; Wan base weights, third-party code and example videos (DAVIS, DROID...) keep their own licenses. A separate '5b-commercial' checkpoint trained on a commercial data mixture is provided."
+  },
+  "procedure": [
+    "git clone https://github.com/NIRVANALAN/Holo4D and create a Python 3.12 conda env",
+    "pip install -r requirements/cu130.txt then pip install -e .",
+    "Run EXAMPLE=davis_bear bash inference/demo_examples.sh (14B) or MODEL=5b-commercial ... (5B); checkpoints, Wan base and examples download from Hugging Face on first run",
+    "Unquantized 14B with dense conditions can exceed 80 GB VRAM (authors sample on one H200)"
+  ],
+  "stats": {
+    "count": "14B + 5B checkpoints (V2V, I2V continuation)",
+    "size": "5B checkpoints ~3.4 GB each",
+    "formats": [
+      "safetensors",
+      "mp4"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/Machinedelusion/status/2117311526029893734",
+    "author": "@Machinedelusion",
+    "published_at": "2026-11-02T17:43:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://arxiv.org/abs/2610.25276",
+      "author": "",
+      "published_at": null,
+      "kind": "article"
+    },
+    {
+      "url": "https://nirvanalan.github.io/projects/holo4d/",
+      "author": "",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Real research release with weights and code, clear mechanism (3D tracks as scaffold for a video diffusion prior), useful for previs and camera re-takes; heavy GPU needs and mixed upstream licenses keep it below top score."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/NIRVANALAN/Holo4D/main/media/docs/teaser.jpg",
+    "alt": "Holo4D teaser: input videos, reconstructed 3D tracks with source and target cameras, and reshot views along new camera arcs",
+    "credit": "Holo4D authors (GitHub README)"
+  },
+  "verification": {
+    "checked_at": "2026-11-03T08:41:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 350388 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-03T08:41:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-03T08:41:31Z",
+  "history": [
+    {
+      "operation_id": "3086b1ec-542a-4b83-80ff-76baeb5919bc",
+      "action": "submit",
+      "at": "2026-11-03T08:41:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b0cf26628af24bd411cfe397a56edba8a7f8a8e4be52eb643bbc856dd5eae32c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
