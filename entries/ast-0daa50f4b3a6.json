@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0daa50f4b3a6",
+  "name": "PiVo-1.4M (CPU text-to-speech, vocoder included)",
+  "summary": "English text-to-speech stack with 1,401,562 learned parameters including a FARGAN-derived vocoder, two synthetic voices (Pi, Vo), 16 kHz mono output. Runs offline on a CPU with NumPy and ONNX Runtime, no PyTorch. Streams 10 ms frames; reported WER 0.53% on its own test split (intelligibility only, some metallic texture).",
+  "category": "models-weights",
+  "tags": [
+    "tts",
+    "text-to-speech",
+    "onnx",
+    "cpu",
+    "tiny-model",
+    "offline",
+    "audio"
+  ],
+  "publisher": {
+    "name": "Empero Research (Leon Lehmann)",
+    "url": "https://huggingface.co/empero-ai"
+  },
+  "resource_url": "https://huggingface.co/empero-ai/PiVo-1.4M",
+  "download_url": "https://modelscope.ai/models/empero-ai/PiVo-1.4M",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/empero-ai/PiVo-1.4M/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Research model. FARGAN vocoder weights derive from Xiph/Opus (BSD-3-Clause, keep patent notices); CMU dict permissive notice included. Voices are synthetic (trained on Qwen3-TTS outputs). English only."
+  },
+  "procedure": [
+    "Clone the Hugging Face (or ModelScope) repo empero-ai/PiVo-1.4M",
+    "python -m venv .venv && pip install -r requirements.txt (Python 3.11+)",
+    "python inference.py synthesize --model-dir . --voice Pi --text \"...\" --output pi.wav"
+  ],
+  "stats": {
+    "count": "2 voices",
+    "size": "1.4M parameters",
+    "formats": [
+      "onnx",
+      "pt",
+      "wav"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/ModelScope2022/status/2117195229203730936",
+    "author": "@ModelScope2022",
+    "published_at": "2026-11-02T10:00:52Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Genuinely tiny, fully offline TTS with permissive license and honest model card; good for game prototypes and embedded voice. Quality is research-grade (robotic texture), English only."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/ext_tw_video_thumb/2117195222140567553/pu/img/V5gjXXvOLgM7iMuF.jpg",
+    "alt": "",
+    "credit": "@ModelScope2022"
+  },
+  "verification": {
+    "checked_at": "2026-11-03T08:41:11Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 22929 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-03T08:41:11Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-03T08:41:11Z",
+  "history": [
+    {
+      "operation_id": "a3e9d7b4-1c62-4f08-8e51-7d4b2c90f5a2",
+      "action": "submit",
+      "at": "2026-11-03T08:41:11Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9c86b839149b68507bb151a3a07a5787247461bffb51cb836a80d3185ed2d9ea",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
