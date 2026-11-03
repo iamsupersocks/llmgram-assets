@@ -72,7 +72,7 @@
     "credit": "Holo4D authors (GitHub README)"
   },
   "verification": {
-    "checked_at": "2026-11-03T08:41:31Z",
+    "checked_at": "2026-11-03T08:41:54Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -92,12 +92,12 @@
       "detail": "image/jpg, 350388 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-03T08:41:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-03T08:41:31Z",
+  "updated_at": "2026-11-03T08:41:54Z",
   "history": [
     {
       "operation_id": "3086b1ec-542a-4b83-80ff-76baeb5919bc",
@@ -107,6 +107,15 @@
       "payload_sha256": "b0cf26628af24bd411cfe397a56edba8a7f8a8e4be52eb643bbc856dd5eae32c",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "9dfaf5f9-62cf-4fa7-a810-f46c293bd669",
+      "action": "update",
+      "at": "2026-11-03T08:41:54Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "14eb60b2905d1f96c3e45a7f58ed64a26a17aa9ac1f26ce6f3e39849ae065746",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
