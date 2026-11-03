@@ -56,11 +56,11 @@
   },
   "image": {
     "url": "https://pbs.twimg.com/ext_tw_video_thumb/2117195222140567553/pu/img/V5gjXXvOLgM7iMuF.jpg",
-    "alt": "",
+    "alt": "PiVo-1.4M title card: 1.4M parameter local TTS, two English voices, CPU, ONNX Runtime",
     "credit": "@ModelScope2022"
   },
   "verification": {
-    "checked_at": "2026-11-03T08:41:11Z",
+    "checked_at": "2026-11-03T08:41:48Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/jpg, 22929 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-03T08:41:11Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-03T08:41:11Z",
+  "updated_at": "2026-11-03T08:41:48Z",
   "history": [
     {
       "operation_id": "a3e9d7b4-1c62-4f08-8e51-7d4b2c90f5a2",
@@ -95,6 +95,15 @@
       "payload_sha256": "9c86b839149b68507bb151a3a07a5787247461bffb51cb836a80d3185ed2d9ea",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "31778590-f034-44e6-a8f3-8cab0b757637",
+      "action": "update",
+      "at": "2026-11-03T08:41:48Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3ce19d4203c39b6dacda270f64e28f17f090efc864bcc48f5855d6a7aa017263",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
