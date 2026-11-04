@@ -1,0 +1,110 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-838904028af9",
+  "name": "Chimera (prompt to rig-ready skeletal animation)",
+  "summary": "ComfyUI web app that turns a 3D model plus a short action prompt into editable skeletal animation: LTX-2.5 renders a motion video of the model, then Chimera fits the model's own rig to it and exports GLB, FBX and BVH (root-motion and in-place). Works on unanimated custom rigs; unrigged models can be rigged with SkinTokens. All inference is local on open weights.",
+  "category": "animations-mocap",
+  "tags": [
+    "animation",
+    "rigging",
+    "comfyui",
+    "ltx-2.5",
+    "glb",
+    "fbx",
+    "bvh",
+    "open-weights"
+  ],
+  "publisher": {
+    "name": "Calle (0xC4LL3)",
+    "url": "https://github.com/0xC4LL3"
+  },
+  "resource_url": "https://github.com/0xC4LL3/chimera",
+  "download_url": "https://0xc4ll3.github.io/chimera/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/0xC4LL3/chimera/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": true,
+    "price": "$0",
+    "notes": "Code MIT. Required LTX-2.5 weights need a Hugging Face account and acceptance of Lightricks' access terms; model licenses apply to generated use. About 53 GB of model files; tested on RTX 5080 16 GB."
+  },
+  "procedure": [
+    "Clone https://github.com/0xC4LL3/chimera",
+    "Follow SETUP.md to install ComfyUI and the custom nodes",
+    "Accept the LTX-2.5 terms on Hugging Face and download the five files listed in MODELS.md (~53 GB)",
+    "Run ./run.sh and open http://127.0.0.1:8000",
+    "Upload a GLB or FBX, describe a move, click Animate, then download GLB/FBX/BVH"
+  ],
+  "stats": {
+    "count": "",
+    "size": "~53 GB of model weights",
+    "formats": [
+      "GLB",
+      "FBX",
+      "BVH"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/anim_final_v2/status/2117749175395762279",
+    "author": "@anim_final_v2",
+    "published_at": "2026-11-03T22:42:03Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://animfinalv2.com/featured/",
+      "author": "anim_final_v2",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Real, documented pipeline with downloadable example GLB/FBX/BVH and an Unreal check; MIT code. Brand-new repo with no traction yet, heavy 16 GB VRAM / 53 GB weight requirement and LTX-2.5 gated terms."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/4a7586227acaf6b9d77529c3283f7a030cd399a2c72ef086f2586b73748c4f18/0xC4LL3/chimera",
+    "alt": "Turn a 3D model and a text prompt into editable skeletal animation with ComfyUI. - 0xC4LL3/chimera",
+    "credit": "Calle (0xC4LL3)"
+  },
+  "verification": {
+    "checked_at": "2026-11-04T16:41:52Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": 429,
+      "detail": "http error"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-04T16:41:52Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-04T16:41:52Z",
+  "history": [
+    {
+      "operation_id": "3f0c2a8e-6b1d-4c7e-9a52-0d4e1b7c9a11",
+      "action": "submit",
+      "at": "2026-11-04T16:41:52Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "90ed21a8a6da8bf623a88011020561a799515fc6776052369057ead614d556d5",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
