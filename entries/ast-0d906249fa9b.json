@@ -1,0 +1,116 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0d906249fa9b",
+  "name": "TextureCraft (open-source 3D texture painting, pure Rust)",
+  "summary": "Free, open-source 3D texture painting app from the ArtCraft team: paint PBR materials onto models in layers with masks and generators, bake AO/curvature/thickness on the GPU, smart materials, UDIM, 8K texture sets, and export presets for any engine. Runs on macOS, Windows, Linux, FreeBSD and in the browser; every tool is also a command (CLI, JSON channel, MCP server) so agents can paint, bake and export.",
+  "category": "tools",
+  "tags": [
+    "texture-painting",
+    "pbr",
+    "substance-alternative",
+    "rust",
+    "baking",
+    "udim",
+    "gltf",
+    "fbx",
+    "mcp",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "ArtCraft (storytold)",
+    "url": "https://getartcraft.com/"
+  },
+  "resource_url": "https://github.com/storytold/texturecraft",
+  "download_url": "https://github.com/storytold/texturecraft/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "MIT OR Apache-2.0",
+    "license_url": "https://github.com/storytold/texturecraft/blob/main/LICENSE-APACHE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Dual-licensed MIT or Apache-2.0 at your option (LICENSE-MIT, LICENSE-APACHE, NOTICE); bundled assets listed in ATTRIBUTION.md. In active development (v0.3.0, 2026-11-03)."
+  },
+  "procedure": [
+    "Open getartcraft.com/apps/texturecraft and download the ArtCraft Launcher (recommended), or grab a TextureCraft build directly from GitHub Releases (Windows MSI/portable, macOS, Linux AppImage/rpm/flatpak, FreeBSD).",
+    "Verify the download against SHA256SUMS.txt in the release if you want.",
+    "Import a mesh (glTF, FBX, USD, OBJ...), bake mesh maps, paint layers, and export textures with an engine preset."
+  ],
+  "stats": {
+    "count": "",
+    "size": "370 GitHub stars",
+    "formats": [
+      "glTF",
+      "FBX",
+      "USD",
+      "Alembic",
+      "OBJ",
+      "PNG",
+      "EXR",
+      "TGA",
+      "TIFF"
+    ],
+    "cadence": "frequent releases (v0.2.0 then v0.3.0 on 2026-11-03)"
+  },
+  "source": {
+    "url": "https://x.com/JorgePedra88/status/2117703018074505667",
+    "author": "@JorgePedra88",
+    "published_at": "2026-11-03T19:38:39Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://getartcraft.com/apps/texturecraft",
+      "author": "ArtCraft",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Real downloadable, permissively licensed Substance Painter-style texture painter with GPU baking and an MCP/CLI surface; still early (v0.3) and young repo, so expect rough edges."
+  },
+  "image": {
+    "url": "https://getartcraft.com/images/apps/texturecraft/og.jpg",
+    "alt": "TextureCraft workspace painting a retro portable TV with layered PBR materials",
+    "credit": "ArtCraft"
+  },
+  "verification": {
+    "checked_at": "2026-11-04T08:40:40Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 104070 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-04T08:40:40Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-04T08:40:40Z",
+  "history": [
+    {
+      "operation_id": "c41e8b27-3d9a-4f1c-a6e0-8b52d7f39a14",
+      "action": "submit",
+      "at": "2026-11-04T08:40:40Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b3c08e9a1cf614d47ad680d50243483e55f985ff7f55943d3cb3cf6d87469d93",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
