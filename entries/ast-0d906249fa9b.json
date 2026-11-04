@@ -76,7 +76,7 @@
     "credit": "ArtCraft"
   },
   "verification": {
-    "checked_at": "2026-11-04T08:40:40Z",
+    "checked_at": "2026-11-04T08:40:48Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -96,12 +96,12 @@
       "detail": "image/jpg, 104070 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-04T08:40:40Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-04T08:40:40Z",
+  "updated_at": "2026-11-04T08:40:48Z",
   "history": [
     {
       "operation_id": "c41e8b27-3d9a-4f1c-a6e0-8b52d7f39a14",
@@ -111,6 +111,15 @@
       "payload_sha256": "b3c08e9a1cf614d47ad680d50243483e55f985ff7f55943d3cb3cf6d87469d93",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "9b7d2e40-1c6f-4a85-b3e9-f0a4c6d81e27",
+      "action": "update",
+      "at": "2026-11-04T08:40:48Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bdb6ffacfe5eb0accdf83fcdcfef19885178050b7b0c53a6a38d10912d1fc7e1",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
