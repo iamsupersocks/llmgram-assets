@@ -1,0 +1,95 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-da9ebeee909d",
+  "name": "Video-to-3D Mocap Studio (multi-person, Blender/FBX export)",
+  "summary": "Local tool that turns ordinary video of one or several people into 3D motion capture: YOLOv11-pose + BoT-SORT tracking, 3D joint solve, inferred legs when the lower body is out of frame, temporal smoothing, and export of skinned mannequins with a 59-joint Mixamo-compatible rig as FBX/.blend plus BVH/NPZ motion.",
+  "category": "animations-mocap",
+  "tags": [
+    "mocap",
+    "video-to-3d",
+    "blender",
+    "fbx",
+    "bvh",
+    "multi-person"
+  ],
+  "publisher": {
+    "name": "cg960",
+    "url": "https://github.com/cg960"
+  },
+  "resource_url": "https://github.com/cg960/video-to-3d-mocap",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/cg960/video-to-3d-mocap/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Repo code MIT, but it depends on ultralytics (AGPL-3.0) for pose detection, which constrains commercial distribution. README mostly in Chinese."
+  },
+  "procedure": [
+    "Clone https://github.com/cg960/video-to-3d-mocap",
+    "pip install -r requirements.txt (Python 3.10+, Blender 3.6-5.x for export)",
+    "Run the web app (app.py) or cli.py on a video",
+    "Export FBX/.blend mannequins and BVH/NPZ motion"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "FBX",
+      "BLEND",
+      "BVH",
+      "NPZ"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/GreatCreations_/status/2117965123700867311",
+    "author": "@GreatCreations_",
+    "published_at": "2026-11-04T13:00:10Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Promising feature set and MIT code, but repo created Nov 4 with 1 star and no independent test yet; AGPL ultralytics dependency. Held until it gets traction or a test."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/1534dda83307e5f04fd3f88a70ca1b0e032d8aa312da52d99d7efea8b973d32c/cg960/video-to-3d-mocap",
+    "alt": "🕺 Open-source Multi-Person AI Video-to-3D Motion Capture & Blender White Mannequin Studio (支持1~N人视频转3D动作捕捉、半身自动脑补下肢、一键导出Blender/FBX/BVH人体白模) - cg960/video-to-3d-mocap",
+    "credit": "cg960"
+  },
+  "verification": {
+    "checked_at": "2026-11-04T16:41:59Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": 429,
+      "detail": "http error"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-04T16:41:59Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-04T16:41:59Z",
+  "history": [
+    {
+      "operation_id": "9b7e4d21-3a6f-4f0b-8c1e-5e2a7d9f4b33",
+      "action": "submit",
+      "at": "2026-11-04T16:41:59Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "58792526b9e560486b200825feabcd7ff7796d501676642010219fe6b2f3dec9",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
