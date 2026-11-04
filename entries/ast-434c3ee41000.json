@@ -1,7 +1,7 @@
 {
   "schema_version": "llmgram-asset/v1",
   "id": "ast-434c3ee41000",
-  "name": "Audio8-TTS-Realistic-0.6B (open-weight voice-cloning TTS)",
+  "name": "Audio8-TTS-Realistic-Air (0.6B open-weight voice-cloning TTS)",
   "summary": "Edge0's 601M-parameter text-to-speech model with zero-shot voice cloning from a short reference clip, 23 languages and a bundled 44.1 kHz neural codec. Builds on Audio8-TTS-Preview with more realistic prosody; ships full checkpoint, codec, tokenizer and Transformers code, plus a free HF playground. Useful for game/video voiceover prototyping locally.",
   "category": "models-weights",
   "tags": [
@@ -18,20 +18,20 @@
     "url": "https://github.com/Edge0-AI/Audio8_TTS"
   },
   "resource_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b",
-  "download_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b/tree/main",
+  "download_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air/tree/main",
   "access": {
     "model": "open-source",
     "license": "Apache-2.0",
-    "license_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b/blob/main/LICENSE",
+    "license_url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air/blob/main/LICENSE",
     "commercial_use": "yes",
     "signup_required": false,
     "price": "$0",
-    "notes": "Not gated. Voice cloning: only clone voices you have rights/consent for. Playground runs on HF ZeroGPU daily quota."
+    "notes": "HF repo renamed from Edge0/Audio8-TTS-Realistic-0.6b to Edge0/Audio8-TTS-Realistic-Air (old URL redirects). Not gated."
   },
   "procedure": [
-    "Open huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b (no login needed).",
-    "Download with `hf download Edge0/Audio8-TTS-Realistic-0.6b` or load via Transformers with trust_remote_code as shown on the card.",
-    "Optionally test in the HF Space playground: huggingface.co/spaces/Edge0/Audio8-TTS-Realistic-0.6b."
+    "Open huggingface.co/Edge0/Audio8-TTS-Realistic-Air (not gated, no login needed); also mirrored at modelscope.ai/models/Edge0/Audio8-TTS-Realistic-Air.",
+    "Download with `hf download Edge0/Audio8-TTS-Realistic-Air` or load via Transformers with trust_remote_code as shown on the card.",
+    "Optionally test in the HF Space playground: huggingface.co/spaces/Edge0/Audio8-TTS-Realistic-Air (ZeroGPU daily quota)."
   ],
   "stats": {
     "count": "601M params, 23 languages",
@@ -54,6 +54,18 @@
       "author": "Edge0-AI",
       "published_at": null,
       "kind": "github"
+    },
+    {
+      "url": "https://x.com/ModelScope2022/status/2117514399468667067",
+      "author": "@ModelScope2022",
+      "published_at": "2026-11-03T07:09:09Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://modelscope.ai/models/Edge0/Audio8-TTS-Realistic-Air",
+      "author": "ModelScope",
+      "published_at": null,
+      "kind": "website"
     }
   ],
   "verdict": {
@@ -66,7 +78,7 @@
     "credit": "Edge0"
   },
   "verification": {
-    "checked_at": "2026-10-30T08:46:00Z",
+    "checked_at": "2026-11-04T08:39:15Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -91,7 +103,7 @@
   "flags": [],
   "added_at": "2026-10-30T08:45:15Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-10-30T08:46:00Z",
+  "updated_at": "2026-11-04T08:39:15Z",
   "history": [
     {
       "operation_id": "9f9d4d37-44c4-4716-87d7-88e528ce5282",
@@ -108,6 +120,15 @@
       "at": "2026-10-30T08:46:00Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "22c5c1db6fc56112ef3276836239a4112dcf8be34f8ff924e93dde5c561225d3",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "a3c9e1f4-6b2d-4f80-8e17-5d4c2b9a0e63",
+      "action": "update",
+      "at": "2026-11-04T08:39:15Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1f8e8e048ed0204119ab33fba8718be8a939b94b8ffcf2385d73b2137a9e04c6",
       "result": "updated",
       "status": "published"
     }
