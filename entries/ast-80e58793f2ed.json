@@ -1,0 +1,118 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-80e58793f2ed",
+  "name": "Scenario 3D OS (open-source agent skills for a full 3D pipeline)",
+  "summary": "MIT-licensed Agent Skills repo from Scenario that gives Claude Code, Codex, Cursor and other agents ~80 skills across animation, art, modeling, look dev, worlds and pipeline (rigging, video-to-motion, image-to-3D, PBR retexturing, skyboxes/splats, retopo/UV, engine-ready export), plus expert skill teams that drive local Blender, Maya, ZBrush, Unreal, Unity, Godot and Roblox Studio.",
+  "category": "tools",
+  "tags": [
+    "agent-skills",
+    "3d",
+    "blender",
+    "unreal",
+    "unity",
+    "godot",
+    "rigging",
+    "pbr",
+    "game-assets",
+    "mcp",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Scenario",
+    "url": "https://www.scenario.com/"
+  },
+  "resource_url": "https://github.com/scenario-labs/skills",
+  "download_url": "https://github.com/scenario-labs/skills/archive/refs/heads/main.zip",
+  "access": {
+    "model": "freemium",
+    "license": "MIT",
+    "license_url": "https://github.com/scenario-labs/skills/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "Skills $0 (MIT); Scenario generation: 50 free daily credits, plans $15/$45/$75 per month",
+    "notes": "Skills are free; generation skills call the Scenario MCP and need a Scenario account (free tier 50 credits/day, no card). DCC/engine expert skills need only the local app (Blender, Maya, Unreal...)."
+  },
+  "procedure": [
+    "Install all Scenario skills: npx skills add scenario-labs/skills (pick groups in the menu) or a single one with --skill <name>.",
+    "For generation skills, connect the Scenario MCP: claude mcp add --transport http scenario https://mcp.scenario.com/mcp, then sign in with a Scenario account (free tier available).",
+    "For expert tools (Blender, Maya, ZBrush, Unreal, Unity, Godot, Roblox), install the family from its README in skills/dcc or skills/game-engines; they drive the app installed on your machine.",
+    "Optional: pin a reviewed release with npx skills@1.7.4 add scenario-labs/skills#<commit>."
+  ],
+  "stats": {
+    "count": "174 SKILL.md files (~80 skills in the 3D OS set)",
+    "size": "",
+    "formats": [
+      "SKILL.md",
+      "py",
+      "js"
+    ],
+    "cadence": "release-please releases (latest skills-v0.60.1, 2026-10-29)"
+  },
+  "source": {
+    "url": "https://x.com/Scenario_gg/status/2117273548217524720",
+    "author": "@Scenario_gg",
+    "published_at": "2026-11-02T15:12:05Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/goldybin/status/2117624489701748881",
+      "author": "@goldybin",
+      "published_at": "2026-11-03T14:26:36Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://www.scenario.com/pricing",
+      "author": "Scenario",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Official first-party open-source release (MIT, ~2k stars, 1k+ likes on launch) that wires agents into real 3D/game DCCs and engines; DCC/engine skills run free and local, generation part is freemium via Scenario credits."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2117273416172515328/img/wAYQIdEG3FnvUyrl.jpg",
+    "alt": "",
+    "credit": "@Scenario_gg"
+  },
+  "verification": {
+    "checked_at": "2026-11-04T08:39:00Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 31055 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-04T08:39:00Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-04T08:39:00Z",
+  "history": [
+    {
+      "operation_id": "ed16b0ec-99f0-4243-9a63-fbae7dff91d3",
+      "action": "submit",
+      "at": "2026-11-04T08:39:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2bddfa216a255513a229a945e173262f3fceb9a686daad21f1cd44cfccb548dc",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
