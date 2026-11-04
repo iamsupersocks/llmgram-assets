@@ -74,11 +74,11 @@
   },
   "image": {
     "url": "https://pbs.twimg.com/amplify_video_thumb/2117273416172515328/img/wAYQIdEG3FnvUyrl.jpg",
-    "alt": "",
+    "alt": "Launch card: 'Open-sourced as agent skills' over the 3D OS / skills public GitHub repo",
     "credit": "@Scenario_gg"
   },
   "verification": {
-    "checked_at": "2026-11-04T08:39:00Z",
+    "checked_at": "2026-11-04T08:39:27Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -98,12 +98,12 @@
       "detail": "image/jpg, 31055 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-04T08:39:00Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-04T08:39:00Z",
+  "updated_at": "2026-11-04T08:39:27Z",
   "history": [
     {
       "operation_id": "ed16b0ec-99f0-4243-9a63-fbae7dff91d3",
@@ -113,6 +113,15 @@
       "payload_sha256": "2bddfa216a255513a229a945e173262f3fceb9a686daad21f1cd44cfccb548dc",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "5e2b7c1d-9f40-4a3e-b8d6-0c7f1e2a4b95",
+      "action": "update",
+      "at": "2026-11-04T08:39:27Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "7ff8687978451cd65ff2cebbe43656a043b4d13a8fe374c3b45d5ccf600d2e7f",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
