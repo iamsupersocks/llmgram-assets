@@ -34,11 +34,11 @@
     "Unzip and install the static or variable fonts on your system, or self-host them for the web."
   ],
   "stats": {
-    "count": "8 weights + variable (100-800), ~800 glyphs",
+    "count": "8 weights (OTF/TTF/WOFF2) + variable WOFF2 (100-800), ~800 glyphs",
     "size": "1.2 MB zip (v1.000)",
     "formats": [
-      "TTF",
       "OTF",
+      "TTF",
       "WOFF2",
       "variable"
     ],
@@ -60,7 +60,7 @@
   ],
   "verdict": {
     "score": 74,
-    "why": "Polished, well-maintained mono font from a known design-tool company (1.5k GitHub stars, v1.000 released Oct 7 2026), OFL so free for commercial use with no signup. Popular repo and good coverage; formats not individually checked inside the zip."
+    "why": "Polished, well-maintained mono font from a known design-tool company (1.5k GitHub stars, v1.000 released Oct 7 2026), OFL-1.1 read in repo, free for commercial use, no signup. Zip downloaded and checked: 8 OTF, 8 TTF, 9 WOFF2 incl. variable."
   },
   "image": {
     "url": "https://paper.design/mono/opengraph-image.jpg",
@@ -68,7 +68,7 @@
     "credit": "Paper (paper.design)"
   },
   "verification": {
-    "checked_at": "2026-11-05T16:43:00Z",
+    "checked_at": "2026-11-05T16:43:15Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -88,12 +88,12 @@
       "detail": "image/jpg, 130831 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-05T16:43:00Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-05T16:43:00Z",
+  "updated_at": "2026-11-05T16:43:15Z",
   "history": [
     {
       "operation_id": "4ee3fc48-a93b-47a7-9fc3-bfd619fa8537",
@@ -103,6 +103,15 @@
       "payload_sha256": "af106654b59f2d30538b3619129579d42b9d7a3db2d5681a945c9e8931dacf58",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7bef9b48-a10e-4291-b69d-d6f1e21af919",
+      "action": "update",
+      "at": "2026-11-05T16:43:15Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "66ec7868ac72963ad258274b4f3bbad7a21a8092ada93a38e108d413bb1c3182",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
