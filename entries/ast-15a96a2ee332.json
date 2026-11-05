@@ -1,0 +1,102 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-15a96a2ee332",
+  "name": "Obel Mono (monospace font with API-key masking build)",
+  "summary": "Free monospace typeface from Typographic Systems, weights 100-900 roman + italic, variable and static. Ships a second build, Obel Mono Masked, whose glyph substitutions visually hide API keys and secrets (205 key prefixes from 82 issuers) behind dots in terminals and screen shares; copying still yields the real text.",
+  "category": "fonts",
+  "tags": [
+    "font",
+    "monospace",
+    "coding-font",
+    "variable-font",
+    "ofl",
+    "terminal",
+    "screen-sharing"
+  ],
+  "publisher": {
+    "name": "Typographic Systems",
+    "url": "https://typographic.systems/"
+  },
+  "resource_url": "https://typographic.systems/obel-mono",
+  "download_url": "https://typographic.systems/download/ObelMono-1.001.zip",
+  "access": {
+    "model": "free",
+    "license": "OFL-1.1",
+    "license_url": "https://typographic.systems/license",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "SIL OFL 1.1: free personal/commercial use; cannot sell the font by itself; derivatives stay OFL. Masking is visual only, not a security control."
+  },
+  "procedure": [
+    "Open https://typographic.systems/obel-mono",
+    "Download ObelMono-1.001.zip (all formats) or the -ttf / -woff2 / Masked zips",
+    "Or run: curl -fsSL https://typographic.systems/install.sh | sh",
+    "Install the TTF/OTF, or self-host the WOFF2 on the web"
+  ],
+  "stats": {
+    "count": "2 families (Obel Mono, Obel Mono Masked), weights 100-900 + italics",
+    "size": "10.9 MB full zip",
+    "formats": [
+      "TTF",
+      "OTF",
+      "WOFF2",
+      "Variable TTF"
+    ],
+    "cadence": "v1.001"
+  },
+  "source": {
+    "url": "https://x.com/codycollier/status/2117973199384416637",
+    "author": "@codycollier",
+    "published_at": "2026-11-04T13:32:15Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 82,
+    "why": "Original, genuinely useful twist (secret masking for streams/screenshares) on a full-featured OFL coding font; strong reception (2k likes); direct download, no signup. First fonts entry in the catalog."
+  },
+  "image": {
+    "url": "https://typographic.systems/og/obel-mono.png",
+    "alt": "Typographic Systems card reading Obel / OBEL MONO over a dark glyph background",
+    "credit": "Typographic Systems"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T08:50:36Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 223665 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T08:50:36Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T08:50:36Z",
+  "history": [
+    {
+      "operation_id": "1f07d2fd-55ef-4e0d-b561-f973973947c9",
+      "action": "submit",
+      "at": "2026-11-05T08:50:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c11489cd0a2dd9cc9242730b3bfd8c29c2085cd6af0de5ddcedb8b0897ad22a2",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
