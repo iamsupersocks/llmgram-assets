@@ -60,7 +60,7 @@
     "credit": "ZJU3DV / PhysStudio"
   },
   "verification": {
-    "checked_at": "2026-11-05T08:50:42Z",
+    "checked_at": "2026-11-05T08:51:34Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/gif, 2870725 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-05T08:50:42Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-05T08:50:42Z",
+  "updated_at": "2026-11-05T08:51:34Z",
   "history": [
     {
       "operation_id": "0e8d02b4-a2a5-45c1-8c1b-ffbc5ecc1838",
@@ -95,6 +95,15 @@
       "payload_sha256": "ba44b7d6c7d7c9397850f039368cd87e7b9fb39595911cb22c55e9085da9d851",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "3d2744e2-68b0-4c8e-8597-c20dfc88ac93",
+      "action": "update",
+      "at": "2026-11-05T08:51:34Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "47c8e13eb3e8b10952794e85ab664bf6c556dc596a3c47446111d77e9395bbd1",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
