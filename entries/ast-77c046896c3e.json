@@ -1,0 +1,108 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-77c046896c3e",
+  "name": "Paper Mono (open-source monospace font family)",
+  "summary": "Monospace font family by Paper (paper.design), based on Geist Mono: 8 weights plus a variable axis (100-800), ~800 glyphs, 100+ languages, stylistic sets for coding ligatures, duospace glyphs, narrow space, small arrows, single-story a and slashed zero. Usable for headlines, UI, body text and code.",
+  "category": "fonts",
+  "tags": [
+    "font",
+    "monospace",
+    "variable-font",
+    "coding-ligatures",
+    "ofl",
+    "typography",
+    "ui"
+  ],
+  "publisher": {
+    "name": "Paper (Lost Coast Labs, Inc.)",
+    "url": "https://paper.design/"
+  },
+  "resource_url": "https://paper.design/mono",
+  "download_url": "https://github.com/paper-design/paper-mono/releases/download/v1.000/paper-mono-v1.000.zip",
+  "access": {
+    "model": "open-source",
+    "license": "OFL-1.1",
+    "license_url": "https://github.com/paper-design/paper-mono/blob/main/OFL.txt",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "SIL OFL 1.1: free to use, embed and bundle commercially; the font can't be sold on its own; derivatives stay OFL and can't use reserved names."
+  },
+  "procedure": [
+    "Open https://paper.design/mono and click Download, or go to the GitHub releases page (github.com/paper-design/paper-mono/releases/latest).",
+    "Download paper-mono-v1.000.zip (about 1.2 MB).",
+    "Unzip and install the static or variable fonts on your system, or self-host them for the web."
+  ],
+  "stats": {
+    "count": "8 weights + variable (100-800), ~800 glyphs",
+    "size": "1.2 MB zip (v1.000)",
+    "formats": [
+      "TTF",
+      "OTF",
+      "WOFF2",
+      "variable"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/dsgn_cmpss/status/2118161376791375889",
+    "author": "@dsgn_cmpss",
+    "published_at": "2026-11-05T02:00:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/paper-design/paper-mono",
+      "author": "paper-design",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Polished, well-maintained mono font from a known design-tool company (1.5k GitHub stars, v1.000 released Oct 7 2026), OFL so free for commercial use with no signup. Popular repo and good coverage; formats not individually checked inside the zip."
+  },
+  "image": {
+    "url": "https://paper.design/mono/opengraph-image.jpg",
+    "alt": "Paper Mono specimen: 'paper mono' set large next to glyph cards for P, a, e, p and r",
+    "credit": "Paper (paper.design)"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T16:43:00Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 130831 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T16:43:00Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T16:43:00Z",
+  "history": [
+    {
+      "operation_id": "4ee3fc48-a93b-47a7-9fc3-bfd619fa8537",
+      "action": "submit",
+      "at": "2026-11-05T16:43:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "af106654b59f2d30538b3619129579d42b9d7a3db2d5681a945c9e8931dacf58",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
