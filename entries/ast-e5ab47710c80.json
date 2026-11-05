@@ -61,7 +61,7 @@
     "credit": "CraftPix.net"
   },
   "verification": {
-    "checked_at": "2026-11-05T16:43:57Z",
+    "checked_at": "2026-11-05T16:44:12Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,12 +81,12 @@
       "detail": "image/jpg, 97342 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-05T16:43:57Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-05T16:43:57Z",
+  "updated_at": "2026-11-05T16:44:12Z",
   "history": [
     {
       "operation_id": "81f4e1c6-2037-43ab-8bfa-ccb93ee95a78",
@@ -96,6 +96,15 @@
       "payload_sha256": "13a8200df49779e4afd7caf00f93db6faaaae4c4e6d32299c812d5ebae9b5b38",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "29d90b18-fad5-49d2-8339-fc8bb867e3df",
+      "action": "update",
+      "at": "2026-11-05T16:44:12Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ec9953b5affdb5172bf915f00ec10fb8f0793782879838c85df1ea73441272f6",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
