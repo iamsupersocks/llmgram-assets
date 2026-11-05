@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-e5ab47710c80",
+  "name": "Free Sci-Fi Wasteland Game Music and Sound Effects Pack (CraftPix)",
+  "summary": "Free game audio pack from CraftPix with a desert sci-fi / cyberpunk wasteland theme: 5 original music tracks (main, alternative, battle, ambient, mecha battle, several loopable) and 31 sound effects (machine guns, lasers, mecha steps and flight, engines, pumps, valves, wind generator, armor, zipper). Separate files for mixing; aimed at survival, strategy, RPG and action games.",
+  "category": "audio-sfx",
+  "tags": [
+    "sfx",
+    "game-music",
+    "sci-fi",
+    "cyberpunk",
+    "mecha",
+    "gamedev",
+    "loops",
+    "wav",
+    "mp3"
+  ],
+  "publisher": {
+    "name": "CraftPix.net",
+    "url": "https://craftpix.net/"
+  },
+  "resource_url": "https://craftpix.net/freebies/free-sci-fi-wasteland-game-music-and-sound-effects-pack/",
+  "download_url": "https://craftpix.net/download/118884/",
+  "access": {
+    "model": "free-with-signup",
+    "license": "CraftPix Freebie License",
+    "license_url": "https://craftpix.net/file-licenses/",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0 (free account required to download)",
+    "notes": "Freebie license: personal and commercial projects, games can be sold, no attribution required. No reselling or redistributing the source files on their own or in a form other users can extract."
+  },
+  "procedure": [
+    "Open the freebie page on craftpix.net.",
+    "Click Free Download; sign in or create a free CraftPix account (browser login only, not via third-party services).",
+    "Download the pack and use the MP3/WAV files in your game."
+  ],
+  "stats": {
+    "count": "5 music tracks + 31 sound effects",
+    "size": "",
+    "formats": [
+      "MP3",
+      "WAV"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/craftpix_net/status/2118273668753264790",
+    "author": "@craftpix_net",
+    "published_at": "2026-11-05T09:26:12Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 58,
+    "why": "Fresh (created Nov 5 2026), exclusive, themed and coherent pack from an established asset shop, clear freebie license allowing commercial use without credit. Needs a free account; files not auditioned."
+  },
+  "image": {
+    "url": "https://img.craftpix.net/2026/11/Free-Sci-Fi-Wasteland-Game-Music-and-Sound-Effects-Pack.jpg",
+    "alt": "Pixel-art desert scene with mecha and waveform labels under the title 'Music and Sounds 9'",
+    "credit": "CraftPix.net"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T16:43:57Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 97342 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T16:43:57Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T16:43:57Z",
+  "history": [
+    {
+      "operation_id": "81f4e1c6-2037-43ab-8bfa-ccb93ee95a78",
+      "action": "submit",
+      "at": "2026-11-05T16:43:57Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "13a8200df49779e4afd7caf00f93db6faaaae4c4e6d32299c812d5ebae9b5b38",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
