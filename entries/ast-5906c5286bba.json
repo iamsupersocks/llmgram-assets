@@ -76,7 +76,7 @@
     "credit": "Google Open Source Blog"
   },
   "verification": {
-    "checked_at": "2026-11-05T08:51:03Z",
+    "checked_at": "2026-11-05T08:51:37Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -96,12 +96,12 @@
       "detail": "image/png, 674038 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-05T08:51:03Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-05T08:51:03Z",
+  "updated_at": "2026-11-05T08:51:37Z",
   "history": [
     {
       "operation_id": "44e7a3f4-0633-4e02-ac11-fa9c864e4af1",
@@ -111,6 +111,15 @@
       "payload_sha256": "b018e5fb6b26cf2e93333abcbea898ccccd3389ae1c3ca7301d960027ce29af7",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7c4ab9b0-5dbf-4c77-8d86-1299d2534a2e",
+      "action": "update",
+      "at": "2026-11-05T08:51:37Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b29b0f84a8ea8987a35b31fe136d3b3dac2c75e70cce7ca5b72d867a30119389",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
