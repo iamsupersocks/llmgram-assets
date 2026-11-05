@@ -70,7 +70,7 @@
     "credit": "Lightning Pixel / modly3d.app"
   },
   "verification": {
-    "checked_at": "2026-11-05T08:51:12Z",
+    "checked_at": "2026-11-05T08:51:37Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -90,12 +90,12 @@
       "detail": "image/png, 791605 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-05T08:51:12Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-05T08:51:12Z",
+  "updated_at": "2026-11-05T08:51:37Z",
   "history": [
     {
       "operation_id": "b196855a-747c-4a80-acb6-317d107720ab",
@@ -105,6 +105,15 @@
       "payload_sha256": "0dc18f0edbe5810865e42605947385fe9bf8d641c6319fc9bc9db7086bc9f76b",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7fc5b292-83fd-408f-9801-3345a9cf5a26",
+      "action": "update",
+      "at": "2026-11-05T08:51:37Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1586dc19dcd944c8a7fd5a478ed34ec2629e21b98d9b9ce8c64eccabd11634bb",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
