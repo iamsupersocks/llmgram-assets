@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-dc4decaa22eb",
+  "name": "Denki Chip / でんきチップ (x8y12pxDenkiChip) pixel font",
+  "summary": "Bold, compact Japanese pixel font (8x12 px grid, proportional Latin) for pixel-art games and MVs. v1.100 (2026-11-01) adds all 2,965 JIS level-1 kanji on top of kana and Latin; supports vertical writing and an ss01 stylistic set.",
+  "category": "fonts",
+  "tags": [
+    "pixel-font",
+    "japanese",
+    "kanji",
+    "bitmap",
+    "game-dev",
+    "ofl",
+    "pixel-art"
+  ],
+  "publisher": {
+    "name": "患者長ひっく / x0y0pxFreeFont",
+    "url": "https://hicchicc.github.io/00ff/"
+  },
+  "resource_url": "https://hicchicc.github.io/00ff/",
+  "download_url": "https://github.com/hicchicc/x8y12pxDenkiChip/releases/latest/download/x8y12pxDenkiChip.zip",
+  "access": {
+    "model": "free",
+    "license": "OFL-1.1",
+    "license_url": "https://github.com/hicchicc/x8y12pxDenkiChip/blob/main/OFL.txt",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "SIL OFL 1.1, no Reserved Font Name; no standalone sale; author asks that modified fonts published alone use a name not mistaken for the original. Other fonts lower on the site still use a custom license."
+  },
+  "procedure": [
+    "Open https://hicchicc.github.io/00ff/",
+    "Click [Download] x8y12pxDenkiChip.zip (GitHub release v1.100)",
+    "Install the TTF, or use the WOFF2 on the web; keep OFL.txt with embedded copies"
+  ],
+  "stats": {
+    "count": "kana + Latin + 2,965 JIS level-1 kanji",
+    "size": "334 KB zip",
+    "formats": [
+      "TTF",
+      "WOFF2"
+    ],
+    "cadence": "v1.100 (2026-11-01)"
+  },
+  "source": {
+    "url": "https://x.com/madonomori/status/2118163915561648282",
+    "author": "@madonomori",
+    "published_at": "2026-11-05T02:10:05Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://forest.watch.impress.co.jp/docs/news/2153762.html",
+      "author": "窓の杜",
+      "published_at": "2026-11-05T00:00:00Z",
+      "kind": "article"
+    },
+    {
+      "url": "https://x.com/hicchicc/status/2116866308751114669",
+      "author": "@hicchicc",
+      "published_at": "2026-11-01T12:13:52Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "Rare free Japanese pixel font with full JIS level-1 kanji, OFL with commercial use, direct GitHub download; strong reception (author post 2.3k likes, covered by 窓の杜)."
+  },
+  "image": {
+    "url": "https://hicchicc.github.io/00ff/img/x8y12pxDenkiChip-v1.100.png",
+    "alt": "Denki Chip specimen: pixel logo でんきチップ, 12px grid metrics and sample JIS kanji, v1.100 badge",
+    "credit": "患者長ひっく (@hicchicc)"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T08:50:51Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 9731 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T08:50:51Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T08:50:51Z",
+  "history": [
+    {
+      "operation_id": "1357c096-9470-4bb4-8301-a2b6d6919ee4",
+      "action": "submit",
+      "at": "2026-11-05T08:50:51Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b034215195bef806b98284ef4989ac3f5d91bc497a46e6811c563b03764b7a35",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
