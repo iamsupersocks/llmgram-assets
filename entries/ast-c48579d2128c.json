@@ -1,0 +1,115 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c48579d2128c",
+  "name": "Phonon 31M (on-device English TTS model)",
+  "summary": "Small text-to-speech model from Gradium, built on Kyutai's Pocket TTS and Mimi codec: 31M parameters, 24 kHz English speech, streams audio while generating, 64.5 MB q8 GGUF. Runs on a laptop CPU, phone, Raspberry Pi or in a browser tab (WebGPU), via Python (ptts), a CLI binary or npm (phonon-tts). Useful for offline narration and voice in apps.",
+  "category": "models-weights",
+  "tags": [
+    "tts",
+    "text-to-speech",
+    "on-device",
+    "webgpu",
+    "gguf",
+    "audio",
+    "voice",
+    "apache-2.0"
+  ],
+  "publisher": {
+    "name": "Gradium",
+    "url": "https://gradium.ai/"
+  },
+  "resource_url": "https://huggingface.co/gradium/phonon-31m-en",
+  "download_url": "https://huggingface.co/gradium/phonon-31m-en/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Only the 31M English model is Apache-2.0. The 40M models (en, fr, de, es, pt, multilingual) are CC BY-NC 4.0, so no commercial use. Runtime xn-ptts is Apache-2.0."
+  },
+  "procedure": [
+    "Try it in the browser: https://huggingface.co/spaces/gradium/phonon",
+    "CLI: uvx ptts --lang en --quant q8 --voice Easton \"Hello from Phonon.\" -o speech.wav (or brew install gradium-ai/tap/ptts)",
+    "Python: pip install ptts, then ptts.TTS(\"hf://gradium/phonon-31m-en\", lang=\"en\", quant=\"q8\")",
+    "Browser/JS: npm package phonon-tts (WebGPU)",
+    "Weights download automatically from Hugging Face, no account or gating"
+  ],
+  "stats": {
+    "count": "1 model (31M params) + voices repo",
+    "size": "64.5 MB (q8 GGUF)",
+    "formats": [
+      "GGUF",
+      "safetensors"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/GradiumAI/status/2118341762200584228",
+    "author": "@GradiumAI",
+    "published_at": "2026-11-05T13:56:47Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/GlobalFeedAI/status/2118354465300324430",
+      "author": "@GlobalFeedAI",
+      "published_at": "2026-11-05T14:47:16Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://github.com/gradium-ai/xn-ptts",
+      "author": "gradium-ai",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Tiny, genuinely on-device TTS with a permissive license on the English 31M model (Apache-2.0 per model card), ~139k downloads, runtime repo 438 stars. Released Oct 19 but resurfaced today; watch the NC license on the 40M siblings."
+  },
+  "image": {
+    "url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/gradium/phonon.png",
+    "alt": "Phonon card: 'Text-to-speech that runs in your browser'",
+    "credit": "Gradium / Hugging Face"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T16:43:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 62839 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T16:43:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T16:43:31Z",
+  "history": [
+    {
+      "operation_id": "890109d0-85d1-485b-b034-608529958751",
+      "action": "submit",
+      "at": "2026-11-05T16:43:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8fc6e36927ec76e8e4e1acc5074526b76e3ad4367d4d0b91263a93748e36f783",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
