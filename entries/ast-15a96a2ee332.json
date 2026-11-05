@@ -62,7 +62,7 @@
     "credit": "Typographic Systems"
   },
   "verification": {
-    "checked_at": "2026-11-05T08:50:36Z",
+    "checked_at": "2026-11-05T08:51:30Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -82,12 +82,12 @@
       "detail": "image/png, 223665 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-05T08:50:36Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-05T08:50:36Z",
+  "updated_at": "2026-11-05T08:51:30Z",
   "history": [
     {
       "operation_id": "1f07d2fd-55ef-4e0d-b561-f973973947c9",
@@ -97,6 +97,15 @@
       "payload_sha256": "c11489cd0a2dd9cc9242730b3bfd8c29c2085cd6af0de5ddcedb8b0897ad22a2",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "15bc228c-b624-4f4c-95a7-22b329e0a42c",
+      "action": "update",
+      "at": "2026-11-05T08:51:30Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "f0115cceb404f6093b24694624ee6cbde34362c6a568eaf37118ddb3bd9b8c45",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
