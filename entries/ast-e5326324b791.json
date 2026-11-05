@@ -1,0 +1,110 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-e5326324b791",
+  "name": "Modly (local AI image-to-3D desktop app)",
+  "summary": "Free open-source desktop app (Windows, Linux, Apple Silicon macOS) that turns a photo into a textured 3D mesh entirely on your own GPU, using pluggable open models (Hunyuan3D 2 Mini variants, TripoSG, TRELLIS.2 GGUF). No account or credits, works offline, exports GLB/OBJ/STL/PLY; has a CLI for agents.",
+  "category": "tools",
+  "tags": [
+    "image-to-3d",
+    "3d-generation",
+    "local-ai",
+    "desktop-app",
+    "hunyuan3d",
+    "trellis",
+    "triposg",
+    "glb"
+  ],
+  "publisher": {
+    "name": "Lightning Pixel",
+    "url": "https://github.com/lightningpixel"
+  },
+  "resource_url": "https://github.com/lightningpixel/modly",
+  "download_url": "https://github.com/lightningpixel/modly/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (with attribution clause)",
+    "license_url": "https://github.com/lightningpixel/modly/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "App code MIT plus a clause: forks/derived apps must credit Modly in UI or docs. Each model extension keeps its own license (Hunyuan3D 2 uses Tencent's community license, not MIT); check before commercial use. Needs a capable GPU."
+  },
+  "procedure": [
+    "Download the installer from https://github.com/lightningpixel/modly/releases/latest (.exe, .AppImage or arm64 .dmg)",
+    "Launch Modly and install a model extension (Hunyuan3D 2 Mini, TripoSG or TRELLIS.2)",
+    "Drop in an image and click Generate 3D Model",
+    "Export as GLB, OBJ, STL or PLY"
+  ],
+  "stats": {
+    "count": "",
+    "size": "~200 MB installer + model downloads",
+    "formats": [
+      "GLB",
+      "OBJ",
+      "STL",
+      "PLY"
+    ],
+    "cadence": "v0.4.3 (2026-10-04), repo active"
+  },
+  "source": {
+    "url": "https://x.com/partnerinai/status/2117908459387797681",
+    "author": "@partnerinai",
+    "published_at": "2026-11-04T09:15:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://modly3d.app/",
+      "author": "Lightning Pixel",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 76,
+    "why": "Mature, popular (8.5k stars) local image-to-3D app with real installers for 3 OSes, no account, offline. Commercial use depends on the chosen model's license; source post is small but the project itself is well established."
+  },
+  "image": {
+    "url": "https://modly3d.app/app-screenshot.png",
+    "alt": "Modly desktop app generating a textured low-poly green dragon 3D model from a reference image (TRELLIS.2 workflow)",
+    "credit": "Lightning Pixel / modly3d.app"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T08:51:12Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 791605 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T08:51:12Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T08:51:12Z",
+  "history": [
+    {
+      "operation_id": "b196855a-747c-4a80-acb6-317d107720ab",
+      "action": "submit",
+      "at": "2026-11-05T08:51:12Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "0dc18f0edbe5810865e42605947385fe9bf8d641c6319fc9bc9db7086bc9f76b",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
