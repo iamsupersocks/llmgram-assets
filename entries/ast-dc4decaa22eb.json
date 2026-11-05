@@ -72,7 +72,7 @@
     "credit": "患者長ひっく (@hicchicc)"
   },
   "verification": {
-    "checked_at": "2026-11-05T08:50:51Z",
+    "checked_at": "2026-11-05T08:51:34Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -92,12 +92,12 @@
       "detail": "image/png, 9731 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-05T08:50:51Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-05T08:50:51Z",
+  "updated_at": "2026-11-05T08:51:34Z",
   "history": [
     {
       "operation_id": "1357c096-9470-4bb4-8301-a2b6d6919ee4",
@@ -107,6 +107,15 @@
       "payload_sha256": "b034215195bef806b98284ef4989ac3f5d91bc497a46e6811c563b03764b7a35",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "3ec9f836-d0c6-4e64-8252-8d23d3791f5a",
+      "action": "update",
+      "at": "2026-11-05T08:51:34Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "fc7236757573e2b77ba8ffcd9e5ae2f92d9a2cdf2f31d68148408249e740e322",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
