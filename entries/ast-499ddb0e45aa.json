@@ -1,0 +1,97 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-499ddb0e45aa",
+  "name": "Quixel Megascans library (free again on Fab)",
+  "summary": "Epic/Quixel says the full Megascans library of photoscanned 3D assets, surfaces and decals is going free again on Fab, with AI-training use allowed under new terms. Anyone who bought Megascans since Jan 1, 2025 gets a refund to their Epic balance. Listings are switching to free gradually until Nov 12, 2026.",
+  "category": "3d-models",
+  "tags": [
+    "megascans",
+    "quixel",
+    "photogrammetry",
+    "pbr",
+    "textures",
+    "3d-scans",
+    "fab",
+    "unreal"
+  ],
+  "publisher": {
+    "name": "Quixel (Epic Games)",
+    "url": "https://quixel.com/"
+  },
+  "resource_url": "https://quixel.com/news/update-megascans-are-going-free-again",
+  "download_url": "https://www.fab.com/sellers/Quixel%20Megascans",
+  "access": {
+    "model": "free-with-signup",
+    "license": "Fab Standard License",
+    "license_url": "https://www.fab.com/eula",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0 announced (gradual rollout until Nov 12, 2026; price per listing not confirmed)",
+    "notes": "Needs an Epic account. Fab license: commercial use OK, no credit, no resale. AI-training clause not found in EULA text. HOLD until after Nov 12: confirm $0 per listing, the AI clause and a real image."
+  },
+  "procedure": [
+    "Sign in to fab.com with an Epic account.",
+    "Open the Quixel Megascans seller page and add free listings to your library.",
+    "Download, or use them in Unreal / Bridge."
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/quixeltools/status/2118346475528994821",
+    "author": "@quixeltools",
+    "published_at": "2026-11-05T14:15:31Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 85,
+    "why": "Huge, high-quality official library that's free again, with commercial use. HELD: free rollout runs until Nov 12, $0 per listing and the AI-training clause aren't confirmed, Fab returns 403 to curl, and the only image is a logo."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HWXg5GwawAApqBb.jpg?name=orig",
+    "alt": "",
+    "credit": "@quixeltools"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T16:44:53Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 403,
+      "detail": "reachable, access restricted"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 34233 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T16:44:53Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T16:44:53Z",
+  "history": [
+    {
+      "operation_id": "12add142-0238-45af-a81d-7b2393429617",
+      "action": "submit",
+      "at": "2026-11-05T16:44:53Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9d67e0d58466c0fd53e7e1ab6dde110f791550d8bd0c2d8b4ec80be8c61bc340",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
