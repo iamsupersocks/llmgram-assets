@@ -1,0 +1,116 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-5906c5286bba",
+  "name": "Three-Live (AI-generated Three.js to native 3D, AR & WebXR)",
+  "summary": "Open-source library + sandboxed on-device compiler from Google that runs LLM-generated procedural Three.js safely and renders it natively: WebGL2/WebXR on web, Filament/Scene Viewer on Android, RealityKit/Quick Look on iOS, with GLB/USDZ export. Includes browser playgrounds (<three-live> studio, <xr-live> spatial studio).",
+  "category": "tools",
+  "tags": [
+    "threejs",
+    "webxr",
+    "ar",
+    "3d",
+    "gltf",
+    "usdz",
+    "ai-generated",
+    "google"
+  ],
+  "publisher": {
+    "name": "Google (not an officially supported product)",
+    "url": "https://github.com/google"
+  },
+  "resource_url": "https://github.com/google/three-live",
+  "download_url": "https://github.com/google/three-live/releases",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/google/three-live/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Developer Preview (alpha); not an officially supported Google product."
+  },
+  "procedure": [
+    "Try the playground at https://google.github.io/three-live/ (no build)",
+    "Get the JS bundles, CLI binaries or Android AAR from GitHub Releases (also on npm / crates.io)",
+    "Load three-live.min.js and put AI-written code in <script type=\"text/three\">",
+    "Export GLB/USDZ or launch AR from the studio"
+  ],
+  "stats": {
+    "count": "",
+    "size": "<61 KB gz core",
+    "formats": [
+      "GLB",
+      "USDZ",
+      "SPZ",
+      "JS"
+    ],
+    "cadence": "frequent releases (v1.2.4 on 2026-11-05)"
+  },
+  "source": {
+    "url": "https://x.com/studio_yebisu/status/2118183918184841630",
+    "author": "@studio_yebisu",
+    "published_at": "2026-11-05T03:29:34Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://opensource.googleblog.com/2026/11/introducing-three-live-ai-generated-3d-ar-webxr.html",
+      "author": "Google Open Source Blog",
+      "published_at": "2026-11-03T00:00:00Z",
+      "kind": "article"
+    },
+    {
+      "url": "https://x.com/cnvvlty/status/2118221571827634463",
+      "author": "@cnvvlty",
+      "published_at": "2026-11-05T05:59:12Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Google-backed Apache-2.0 tool bridging AI-generated 3D code to native AR on iOS/Android/web, with a live playground and GLB/USDZ export. Alpha status and developer-oriented, so useful mainly for builders."
+  },
+  "image": {
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicVnawvU2wNMNMemlGTdmQ0lERS9IupQ4HCSTUDQsm7BAarw2YSunm4XK_QbZuF3NgHTe56q1cBYnPbVj4YK6vXftiv44SvgYGOuS0eWeHaWhhv3WRRgys-sHmEVUVlbXbVx3CWPHgz9Yi4S8S-2MQVSEEwTiOJger-yAToVWGxyrG1CRwTTK3DU5UM9E/s1600/image.png",
+    "alt": "Three-Live studio in a browser: PBR scene with sphere and rings, preset scenes, mesh inspector, Launch AR / Save .usdz / Save .glb",
+    "credit": "Google Open Source Blog"
+  },
+  "verification": {
+    "checked_at": "2026-11-05T08:51:03Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 674038 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-05T08:51:03Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-05T08:51:03Z",
+  "history": [
+    {
+      "operation_id": "44e7a3f4-0633-4e02-ac11-fa9c864e4af1",
+      "action": "submit",
+      "at": "2026-11-05T08:51:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b018e5fb6b26cf2e93333abcbea898ccccd3389ae1c3ca7301d960027ce29af7",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
