@@ -59,7 +59,7 @@
   ],
   "verdict": {
     "score": 88,
-    "why": "Mature free GPL trainer with 2k+ stars, real cross-platform binaries, and a high-engagement Steam Frame workflow post. Clear license and download path."
+    "why": "Verified 2026-11-06 PM: repo/releases/LICENSE/banner 200; GPL-3.0; 2184 stars; Win/Linux/macOS Vulkan binaries on v2026.10.30. Released."
   },
   "image": {
     "url": "https://github.com/harry7557558/spirula-studio/raw/master/assets/banner.png",
@@ -67,7 +67,7 @@
     "credit": "harry7557558 / Spirula Studio"
   },
   "verification": {
-    "checked_at": "2026-11-06T16:48:43Z",
+    "checked_at": "2026-11-06T16:49:30Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -87,12 +87,12 @@
       "detail": "image/png, 195905 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T16:48:43Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T16:48:43Z",
+  "updated_at": "2026-11-06T16:49:30Z",
   "history": [
     {
       "operation_id": "af7879e6-e3f3-4590-9c9f-0ef90364ca1a",
@@ -102,6 +102,15 @@
       "payload_sha256": "2694a154fef3bf992836cf4df974b216da6d2e728ef513d6ece7dfa49fc339b7",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8cdf95bc-2875-4ffc-a287-2f892a0731a5",
+      "action": "update",
+      "at": "2026-11-06T16:49:30Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "450590153edbd0618a39b274be1c92eca275f723fdbecf80794f201b4ce96359",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
