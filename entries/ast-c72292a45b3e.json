@@ -55,7 +55,7 @@
   "related_sources": [],
   "verdict": {
     "score": 92,
-    "why": "Primary publisher drop with Apache-2.0 library + CC-BY-4.0 programs, commercial OK with attribution, HF+GitHub live, strong traction."
+    "why": "Verified 2026-11-06: sandflow.ai + HF collection 200, GitHub Apache-2.0 LICENSE, HF card CC-BY-4.0 + attribution rules read, og.png 200."
   },
   "image": {
     "url": "https://sandflow.ai/og.png",
@@ -63,7 +63,7 @@
     "credit": "Sandflow"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:57:31Z",
+    "checked_at": "2026-11-06T08:58:03Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -83,12 +83,12 @@
       "detail": "image/png, 147894 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T08:57:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:57:31Z",
+  "updated_at": "2026-11-06T08:58:03Z",
   "history": [
     {
       "operation_id": "e33a0cfa-6e3c-458d-80b3-3076be1e4519",
@@ -98,6 +98,15 @@
       "payload_sha256": "63eca5b44cdecf89f834ad0a682caa5abd3e257594fb83cec2bac572024d93b4",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "149046ce-3192-420f-b072-561f3ee8b585",
+      "action": "update",
+      "at": "2026-11-06T08:58:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b450c7ef26be53c1b23acf485f501495743e4c52f59cc492c3ce6794884a5533",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
