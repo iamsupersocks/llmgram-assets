@@ -1,0 +1,98 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-926539125a89",
+  "name": "CounterSplat",
+  "summary": "Rust + WebGPU game engine that turns Gaussian-splat (SOG) scans into playable first-person browser worlds with Lua gameplay, voxel collision and a live demo of The Barn. MIT-licensed, early project.",
+  "category": "tools",
+  "tags": [
+    "gaussian-splatting",
+    "webgpu",
+    "rust",
+    "game-engine",
+    "lua",
+    "sog",
+    "mit"
+  ],
+  "publisher": {
+    "name": "monstercameron",
+    "url": "https://github.com/monstercameron"
+  },
+  "resource_url": "https://github.com/monstercameron/CounterSplat",
+  "download_url": "https://monstercameron.github.io/CounterSplat/game/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/monstercameron/CounterSplat/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Brand-new repo (created 2026-11-05), 0 stars at submit. Needs WebGPU browser. Local assets for full builds are not in git."
+  },
+  "procedure": [
+    "Play the browser demo: https://monstercameron.github.io/CounterSplat/game/",
+    "Or clone https://github.com/monstercameron/CounterSplat and follow the README (Rust 1.96+, wasm target)"
+  ],
+  "stats": {
+    "count": "0 GitHub stars",
+    "size": "",
+    "formats": [
+      "WebGPU WASM",
+      "SOG v2"
+    ],
+    "cadence": "created 2026-11-05"
+  },
+  "source": {
+    "url": "https://x.com/GreatCreations_/status/2118480707534414061",
+    "author": "@GreatCreations_",
+    "published_at": "2026-11-05T23:08:54Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 52,
+    "why": "Interesting MIT splat-to-gameplay engine with a live demo, but zero stars and very low post engagement — keep held until traction."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/monstercameron/CounterSplat/main/docs/social-card.png",
+    "alt": "CounterSplat social card: first-person WebGPU game inside a Gaussian splat scan",
+    "credit": "monstercameron / CounterSplat"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T16:48:53Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 809338 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T16:48:53Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T16:48:53Z",
+  "history": [
+    {
+      "operation_id": "f4a06242-b1df-4e80-bb9b-6a5bb3b4302f",
+      "action": "submit",
+      "at": "2026-11-06T16:48:53Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "59cfc7500676907267c98807e6485f76de85c6dcf7f723ffca6170883af6c043",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
