@@ -51,7 +51,7 @@
   "related_sources": [],
   "verdict": {
     "score": 78,
-    "why": "Genuine open-source Blender-core texturing app with clear GPL-3.0, working Gumroad builds, and strong launch engagement. Score tempered by $15 paid alpha builds, young repo (2 stars), and platform caveats."
+    "why": "Verified 2026-11-06 PM: github/gumroad/LICENSE/image all HTTP 200; GPL-3.0 confirmed; $15 Gumroad alpha builds + free source build path. Released."
   },
   "image": {
     "url": "https://raw.githubusercontent.com/mattiaslind93/mpainter/main/docs/marketing/2026-11-06-mpainter-launch.jpg",
@@ -59,7 +59,7 @@
     "credit": "Mattias Lind / mPainter"
   },
   "verification": {
-    "checked_at": "2026-11-06T16:48:38Z",
+    "checked_at": "2026-11-06T16:49:29Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -79,12 +79,12 @@
       "detail": "image/jpg, 213351 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T16:48:38Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T16:48:38Z",
+  "updated_at": "2026-11-06T16:49:29Z",
   "history": [
     {
       "operation_id": "ac410060-e67f-48d4-800b-d8da851cf635",
@@ -94,6 +94,15 @@
       "payload_sha256": "3e2d024989445b1bedd535892350be94e35d92285cc0737c7249a30d8c5038ed",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "60c6db6d-7cab-439a-adfb-2a719d1af337",
+      "action": "update",
+      "at": "2026-11-06T16:49:29Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8a943776a962f44bc506b2263b0ff2c1b9f54cff04fea24c7139e43856758713",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
