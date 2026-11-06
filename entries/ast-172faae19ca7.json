@@ -68,7 +68,7 @@
   ],
   "verdict": {
     "score": 90,
-    "why": "High-signal free CC-BY product GLB pack; HF ungated; 7,953 models with PBR; source post 2k+ likes. License and banner verified this run."
+    "why": "Verified 2026-11-06 PM: HF dataset ungated 200, card license cc-by-4.0 + LICENSE-CC-BY-4.0.txt, banner.jpg 200, README credit/attribution read. Released."
   },
   "image": {
     "url": "https://huggingface.co/datasets/codepawl/abo-glb/resolve/main/assets/banner.jpg",
@@ -76,7 +76,7 @@
     "credit": "CodePawl / Amazon Berkeley Objects"
   },
   "verification": {
-    "checked_at": "2026-11-06T16:50:39Z",
+    "checked_at": "2026-11-06T16:50:47Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -96,12 +96,12 @@
       "detail": "image/jpg, 168699 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T16:50:39Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T16:50:39Z",
+  "updated_at": "2026-11-06T16:50:47Z",
   "history": [
     {
       "operation_id": "125473d9-18b8-407f-aa38-4c0dc60beff7",
@@ -111,6 +111,15 @@
       "payload_sha256": "d63c06e10882123962b90bfd3c43861fc75fd8537f2437f2a72e82eb8e5dea7c",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "d92ee281-14b3-4751-89bc-b61985a364cf",
+      "action": "update",
+      "at": "2026-11-06T16:50:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "75fef6b3ea639a415a61b57bb9f2d6dded0bc8d7c728fec59175472c81f376dd",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
