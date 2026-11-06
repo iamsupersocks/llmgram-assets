@@ -1,0 +1,99 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-e322f077a600",
+  "name": "mPainter (Early Access Alpha)",
+  "summary": "Open-source layer-based 3D texture painting app by Mattias Lind: Qt workspace with Blender rendering in-process, layers/masks, texture sets and UDIMs, import of Blender materials, Material Presets and Mask Generators, editable .blend projects. Early Access Alpha; Linux is the locally tested platform.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "texture-painting",
+    "pbr",
+    "layers",
+    "udim",
+    "gpl",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "Mattias Lind",
+    "url": "https://github.com/mattiaslind93"
+  },
+  "resource_url": "https://github.com/mattiaslind93/mpainter",
+  "download_url": "https://mattiaslind.gumroad.com/l/mpainter",
+  "access": {
+    "model": "freemium",
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/mattiaslind93/mpainter/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 build from source; Early Access Alpha ready-made builds $15 on Gumroad",
+    "notes": "GPL-3.0 copyleft applies if you distribute modified builds. README: Linux tested; Windows CI prepared but unverified; macOS native viewport not claimed working yet. Alpha software."
+  },
+  "procedure": [
+    "For ready builds: buy/download the Early Access Alpha from https://mattiaslind.gumroad.com/l/mpainter",
+    "Or clone https://github.com/mattiaslind93/mpainter and follow docs/building.md",
+    "Launch mPainter; import textures or Blender materials; paint with layers/masks; save as .blend"
+  ],
+  "stats": {
+    "count": "2 GitHub stars at submit; strong X launch (~150 likes)",
+    "size": "",
+    "formats": [
+      "BLEND",
+      "texture maps"
+    ],
+    "cadence": "launched 2026-11-06"
+  },
+  "source": {
+    "url": "https://x.com/mattiaslind93/status/2118698783106080788",
+    "author": "@mattiaslind93",
+    "published_at": "2026-11-06T13:35:28Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "Genuine open-source Blender-core texturing app with clear GPL-3.0, working Gumroad builds, and strong launch engagement. Score tempered by $15 paid alpha builds, young repo (2 stars), and platform caveats."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/mattiaslind93/mpainter/main/docs/marketing/2026-11-06-mpainter-launch.jpg",
+    "alt": "mPainter launch still: layer-based 3D texture painting UI over a hydrant model",
+    "credit": "Mattias Lind / mPainter"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T16:48:38Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 213351 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T16:48:38Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T16:48:38Z",
+  "history": [
+    {
+      "operation_id": "ac410060-e67f-48d4-800b-d8da851cf635",
+      "action": "submit",
+      "at": "2026-11-06T16:48:38Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3e2d024989445b1bedd535892350be94e35d92285cc0737c7249a30d8c5038ed",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
