@@ -1,0 +1,97 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-19a34e630fe0",
+  "name": "Grecs du Roi Fine",
+  "summary": "Free OpenType revival of Claude Garamond's 1550 Greek type (Grecs du Roi), with historical ligatures and contractions. Live preview page plus a one-click OTF zip. CC BY 4.0: commercial use OK with credit.",
+  "category": "fonts",
+  "tags": [
+    "greek",
+    "garamond",
+    "otf",
+    "cc-by",
+    "typography"
+  ],
+  "publisher": {
+    "name": "stobaeus.ai",
+    "url": "https://stobaeus.ai/"
+  },
+  "resource_url": "https://stobaeus.ai/grecs-du-roi/",
+  "download_url": "https://stobaeus.ai/api/v1/download/grecs-du-roi-fine.zip",
+  "access": {
+    "model": "free",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Credit required when sharing the font or embedding it: \"Grecs du Roi Fine by stobaeus.ai\" with link."
+  },
+  "procedure": [
+    "Open https://stobaeus.ai/grecs-du-roi/",
+    "Optionally paste Ancient Greek to preview ligatures",
+    "Download the OTF zip",
+    "Install the OTF; keep LICENSE.txt credit when redistributing"
+  ],
+  "stats": {
+    "count": "1 style (Gros Parangon Fine)",
+    "size": "~140 KB zip / ~405 KB OTF",
+    "formats": [
+      "OTF"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/stobaeus_books/status/2118564335194898863",
+    "author": "@stobaeus_books",
+    "published_at": "2026-11-06T04:41:13Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 76,
+    "why": "License file inside zip read (CC BY 4.0 commercial+credit), zip 200, niche but clean primary page. Low X traction."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HWam8LtaoAA9ujE.jpg?name=orig",
+    "alt": "Grecs du Roi Fine sample of Ancient Greek with historical ligatures",
+    "credit": "@stobaeus_books"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T08:56:16Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 223069 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T08:56:16Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T08:56:16Z",
+  "history": [
+    {
+      "operation_id": "ecac4e55-1f3e-4829-ba2a-f8ed8c472dca",
+      "action": "submit",
+      "at": "2026-11-06T08:56:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "26f55c779c62e272658803a64a0a3064f4298f9c139721ccd9cd86d537c4d4b9",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
