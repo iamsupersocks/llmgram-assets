@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c72292a45b3e",
+  "name": "Sand3D (100K+ 3D-as-code objects)",
+  "summary": "Sandflow's open Sand3D Python library (Apache-2.0) plus Hugging Face datasets of 3D objects written as editable programs with parameters and joints. Flagship sand3d-objaverse has 66,887 objects (programs, OpenUSD, renders); more CAD/SimReady/articulated sets are in the Sand3D collection. Change a dimension in code and rebuild for Blender, Three.js or glTF.",
+  "category": "datasets",
+  "tags": [
+    "sand3d",
+    "3d-as-code",
+    "openusd",
+    "cad",
+    "articulated",
+    "huggingface",
+    "blender",
+    "llm"
+  ],
+  "publisher": {
+    "name": "Sandflow",
+    "url": "https://sandflow.ai/"
+  },
+  "resource_url": "https://sandflow.ai/sand3d/",
+  "download_url": "https://huggingface.co/collections/Sandflow/sand3d",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0 + CC-BY-4.0",
+    "license_url": "https://huggingface.co/datasets/Sandflow/sand3d-objaverse",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Library Apache-2.0; dataset programs/USD/renders CC-BY-4.0 plus per-object source licence/attribution (CC-BY/Apache/CC0 only)."
+  },
+  "procedure": [
+    "Open https://sandflow.ai/sand3d/",
+    "pip install sand3d (and bpy to rebuild in Blender)",
+    "Browse https://huggingface.co/collections/Sandflow/sand3d",
+    "Load e.g. Sandflow/sand3d-objaverse; keep row attribution when reusing"
+  ],
+  "stats": {
+    "count": "66,887 in sand3d-objaverse; more in sibling sets (~100K+ marketed)",
+    "size": "",
+    "formats": [
+      "Python",
+      "USDA",
+      "USD",
+      "renders"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/Sandflow_ai/status/2118269672500138062",
+    "author": "@Sandflow_ai",
+    "published_at": "2026-11-05T09:10:20Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 92,
+    "why": "Primary publisher drop with Apache-2.0 library + CC-BY-4.0 programs, commercial OK with attribution, HF+GitHub live, strong traction."
+  },
+  "image": {
+    "url": "https://sandflow.ai/og.png",
+    "alt": "Sand3D marketing still of code-driven 3D objects",
+    "credit": "Sandflow"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T08:57:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 147894 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T08:57:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T08:57:31Z",
+  "history": [
+    {
+      "operation_id": "e33a0cfa-6e3c-458d-80b3-3076be1e4519",
+      "action": "submit",
+      "at": "2026-11-06T08:57:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "63eca5b44cdecf89f834ad0a682caa5abd3e257594fb83cec2bac572024d93b4",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
