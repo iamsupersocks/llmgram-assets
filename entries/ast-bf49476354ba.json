@@ -56,7 +56,7 @@
   ],
   "verdict": {
     "score": 90,
-    "why": "Major MIT architectural editor with MCP/CLI, live site 200, LICENSE MIT confirmed. Oddly absent from catalog until now."
+    "why": "Verified 2026-11-06: MIT LICENSE, editor.pascal.app + og image 200, ~25k stars."
   },
   "image": {
     "url": "https://editor.pascal.app/og-default.webp",
@@ -64,7 +64,7 @@
     "credit": "Pascal"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:56:23Z",
+    "checked_at": "2026-11-06T08:57:42Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -84,12 +84,12 @@
       "detail": "image/webp, 43696 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T08:56:23Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:56:23Z",
+  "updated_at": "2026-11-06T08:57:42Z",
   "history": [
     {
       "operation_id": "ba4a0acf-4ada-40e0-a23f-6bb4f6236fdc",
@@ -99,6 +99,15 @@
       "payload_sha256": "a684e83d110a09466a49253d7edde331cc0fc48d7c34656558e94d5fe7462564",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8f6b600d-c072-4b75-8e5e-7c61492180ed",
+      "action": "update",
+      "at": "2026-11-06T08:57:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "da405937b325e59414a19ad7e489c73e95f86be9f924aec5b59c75f4617ce8cd",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
