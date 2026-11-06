@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3e93d485f27c",
+  "name": "ShramkoGSFPV",
+  "summary": "Open-source browser FPV drone simulator for 3D Gaussian Splatting scans (SuperSplat): Betaflight-style rates/PID, swept voxel wall collisions, EdgeTX radio over WebHID, gamepad or touch. WebGPU + PlayCanvas. Nothing to install — fly at gsfpv.flyreelstudio.eu.",
+  "category": "simulation",
+  "tags": [
+    "gaussian-splatting",
+    "fpv",
+    "drone",
+    "supersplat",
+    "webgpu",
+    "playcanvas",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Andrii Shramko",
+    "url": "https://github.com/AndriiShramko"
+  },
+  "resource_url": "https://github.com/AndriiShramko/ShramkoGSFPV",
+  "download_url": "https://gsfpv.flyreelstudio.eu/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/AndriiShramko/ShramkoGSFPV/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Alpha. Needs a WebGPU browser and GPU. Real EdgeTX radio path tested with simulated radio so far."
+  },
+  "procedure": [
+    "Open https://gsfpv.flyreelstudio.eu in a WebGPU browser (Chrome/Edge)",
+    "Pick a SuperSplat scene or load one",
+    "Fly with keyboard/gamepad/touch, or connect an EdgeTX radio over WebHID",
+    "Optional: clone the MIT repo to self-host or extend"
+  ],
+  "stats": {
+    "count": "13 GitHub stars",
+    "size": "",
+    "formats": [
+      "browser WebGPU app",
+      "SOG/SuperSplat scenes"
+    ],
+    "cadence": "alpha live since Sep 2026"
+  },
+  "source": {
+    "url": "https://x.com/verukhimov/status/2118746483520651691",
+    "author": "@verukhimov",
+    "published_at": "2026-11-06T16:45:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Solid MIT browser FPV sim for real splat scans with a live demo and measured README. Moderate stars; today's X post itself was tiny."
+  },
+  "image": {
+    "url": "https://github.com/AndriiShramko/ShramkoGSFPV/raw/main/apps/site/public/media/hero-poster.jpg",
+    "alt": "ShramkoGSFPV hero: bot pilot flying a Tunis old-town Gaussian splat scan",
+    "credit": "Andrii Shramko / ShramkoGSFPV"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T16:48:48Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 77129 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T16:48:48Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T16:48:48Z",
+  "history": [
+    {
+      "operation_id": "54a6e91b-67ad-4d37-92e9-294de3f6624a",
+      "action": "submit",
+      "at": "2026-11-06T16:48:48Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "90a53226204c8e8a232fc6cb134adbaaa0a7b81075eaafb9efb306c02e0be809",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
