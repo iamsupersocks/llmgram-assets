@@ -52,7 +52,7 @@
   "related_sources": [],
   "verdict": {
     "score": 78,
-    "why": "MIT, clear safety model (no model-run Python), tests CI, real gallery. Needs Codex login and is experimental/Windows-first."
+    "why": "Verified 2026-11-06: repo/LICENSE MIT 200, README experimental+Codex login noted, showcase GIF 200."
   },
   "image": {
     "url": "https://raw.githubusercontent.com/blixvip/BlendClone/main/docs/media/showcase/turntable.gif",
@@ -60,7 +60,7 @@
     "credit": "blixvip/BlendClone"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:55:54Z",
+    "checked_at": "2026-11-06T08:57:35Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/gif, 2616980 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T08:55:54Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:55:54Z",
+  "updated_at": "2026-11-06T08:57:35Z",
   "history": [
     {
       "operation_id": "c9ee045e-44d5-458a-8ff3-ba64b64fc1e3",
@@ -95,6 +95,15 @@
       "payload_sha256": "7c4ba3571030a4714157857e992e93b826c8b181f38f59f4b91a3ef58881bd63",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "5fab7d81-4e2f-43b3-8c21-92b694f11595",
+      "action": "update",
+      "at": "2026-11-06T08:57:35Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ad510aca9a66eaf37f42847d15fe7980c996ecc6875c33c9512b0c9584f552a7",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
