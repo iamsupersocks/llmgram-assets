@@ -1,0 +1,99 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-48cc4cc6ec2d",
+  "name": "SuperSplat Blender extension",
+  "summary": "Official PlayCanvas MIT Blender 5.3+ extension to import downloadable SuperSplat Gaussian-splat scenes by link and publish your own splats back to SuperSplat. Import needs the scene owner to allow downloads; Publish needs a PlayCanvas API token.",
+  "category": "tools",
+  "tags": [
+    "gaussian-splat",
+    "blender",
+    "supersplat",
+    "playcanvas",
+    "mit"
+  ],
+  "publisher": {
+    "name": "PlayCanvas",
+    "url": "https://playcanvas.com/"
+  },
+  "resource_url": "https://github.com/playcanvas/supersplat-blender-extension",
+  "download_url": "https://github.com/playcanvas/supersplat-blender-extension/releases/download/v0.1.0/supersplat-0.1.0.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/playcanvas/supersplat-blender-extension/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0",
+    "notes": "Blender 5.3+, Allow Online Access. Free PlayCanvas account/API token required for Import/Publish. Imported scene licences stay with their authors (shown in Attribution panel)."
+  },
+  "procedure": [
+    "Download supersplat-0.1.0.zip from Releases",
+    "Blender: Edit > Preferences > Get Extensions > Install from Disk",
+    "Enable Preferences > System > Network > Allow Online Access",
+    "Add a PlayCanvas API token under Add-ons > SuperSplat > Manage API Keys",
+    "Paste a downloadable superspl.at scene link and Import, or Publish a selected splat"
+  ],
+  "stats": {
+    "count": "3 GitHub stars at check; v0.1.0 released 2026-11-05",
+    "size": "~60 KB zip",
+    "formats": [
+      "PLY/SSOG via SuperSplat",
+      "Blender extension zip"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/GreatCreations_/status/2118361447847919668",
+    "author": "@GreatCreations_",
+    "published_at": "2026-11-05T15:15:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 80,
+    "why": "First-party PlayCanvas extension next to existing SuperSplat catalog entry; MIT; release zip verified 200. Young repo (3 stars) but official."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/playcanvas/supersplat-blender-extension/main/docs/hero.gif",
+    "alt": "Importing a SuperSplat scene into Blender",
+    "credit": "PlayCanvas (demo scene Fruit Bowl by SuperDelphi, CC BY 4.0)"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T08:56:09Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": 200,
+      "detail": "too large"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T08:56:09Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T08:56:09Z",
+  "history": [
+    {
+      "operation_id": "c3b35d89-67b7-43d8-b40a-0503aafedf53",
+      "action": "submit",
+      "at": "2026-11-06T08:56:09Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d436a6744c1b5e95a54902a16600599f828527d589d897af3f885b8301d1dabb",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
