@@ -59,7 +59,7 @@
   ],
   "verdict": {
     "score": 84,
-    "why": "MIT, project page + releases with side-by-side demos, clear honesty about not being photogrammetry. Useful archviz/agent pipeline."
+    "why": "Verified 2026-11-06: MIT LICENSE, project page + social-preview 200, releases present."
   },
   "image": {
     "url": "https://yunfanye.github.io/openhouse-3d/media/social-preview.jpg",
@@ -67,7 +67,7 @@
     "credit": "Yunfan Ye / OpenHouse 3D"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:56:00Z",
+    "checked_at": "2026-11-06T08:57:42Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -87,12 +87,12 @@
       "detail": "image/jpg, 141135 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T08:56:00Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:56:00Z",
+  "updated_at": "2026-11-06T08:57:42Z",
   "history": [
     {
       "operation_id": "1d2f6a33-3bdb-41da-acd7-5df95f7d8007",
@@ -102,6 +102,15 @@
       "payload_sha256": "8e1614b6b9a34d9ab3894cf376b7855b616fabfc6f78daf1e7314a26f18b3cb4",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "6867c234-06bd-4c19-a0b6-9b741bb293a4",
+      "action": "update",
+      "at": "2026-11-06T08:57:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3f7410464777d460dc7669335fbd64b42a541e169796b0b4394cc6390e2d28f6",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
