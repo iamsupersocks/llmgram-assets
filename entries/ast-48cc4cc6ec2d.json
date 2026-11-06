@@ -54,12 +54,12 @@
     "why": "First-party PlayCanvas extension next to existing SuperSplat catalog entry; MIT; release zip verified 200. Young repo (3 stars) but official."
   },
   "image": {
-    "url": "https://raw.githubusercontent.com/playcanvas/supersplat-blender-extension/main/docs/hero.gif",
-    "alt": "Importing a SuperSplat scene into Blender",
-    "credit": "PlayCanvas (demo scene Fruit Bowl by SuperDelphi, CC BY 4.0)"
+    "url": "https://pbs.twimg.com/news_img/2118341363452526593/mgPgwamt?format=jpg&name=orig",
+    "alt": "SuperSplat Blender extension importing a splat scene",
+    "credit": "PlayCanvas / GreatCreations_"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:56:09Z",
+    "checked_at": "2026-11-06T08:57:34Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -72,11 +72,11 @@
       "status": 200,
       "detail": "reachable"
     },
-    "image_ok": false,
+    "image_ok": true,
     "image": {
-      "ok": false,
+      "ok": true,
       "status": 200,
-      "detail": "too large"
+      "detail": "image/jpg, 46319 bytes"
     }
   },
   "hold": true,
@@ -84,7 +84,7 @@
   "flags": [],
   "added_at": "2026-11-06T08:56:09Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:56:09Z",
+  "updated_at": "2026-11-06T08:57:34Z",
   "history": [
     {
       "operation_id": "c3b35d89-67b7-43d8-b40a-0503aafedf53",
@@ -93,6 +93,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "d436a6744c1b5e95a54902a16600599f828527d589d897af3f885b8301d1dabb",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "b4a5846f-09f7-4f0a-97b7-ebc36b114c96",
+      "action": "update",
+      "at": "2026-11-06T08:57:34Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "77b30b5b1f462dc4de32f3b38de805158cfeac934169ef1a9a10a88ca3ad0b93",
+      "result": "updated",
       "status": "candidate"
     }
   ]
