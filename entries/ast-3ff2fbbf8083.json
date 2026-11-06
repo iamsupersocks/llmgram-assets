@@ -1,0 +1,107 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3ff2fbbf8083",
+  "name": "Spirula Studio",
+  "summary": "Free self-contained 3D Gaussian Splatting trainer: video/photos to splat to textured mesh in one binary. No Python/PyTorch or separate COLMAP. Runs on NVIDIA, AMD, Intel and Apple GPUs via Vulkan (or CUDA), with native fisheye/360 support and packaged Windows/Linux/macOS builds.",
+  "category": "tools",
+  "tags": [
+    "gaussian-splatting",
+    "3dgs",
+    "splat",
+    "trainer",
+    "vulkan",
+    "photogrammetry",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "harry7557558",
+    "url": "https://github.com/harry7557558"
+  },
+  "resource_url": "https://github.com/harry7557558/spirula-studio",
+  "download_url": "https://github.com/harry7557558/spirula-studio/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/harry7557558/spirula-studio/blob/master/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "GPL-3.0 copyleft if you distribute modified builds. Needs a Vulkan-capable GPU. Also referenced by Arcturus Vision Steam Frame workflow."
+  },
+  "procedure": [
+    "Download the ZIP/DMG for your OS from https://github.com/harry7557558/spirula-studio/releases/latest",
+    "Unzip / install and open Spirula Studio",
+    "Drop in a video or photos, prepare the dataset, train, then export PLY/SOG or mesh"
+  ],
+  "stats": {
+    "count": "2184 GitHub stars",
+    "size": "",
+    "formats": [
+      "PLY",
+      "SOG",
+      "mesh"
+    ],
+    "cadence": "latest release v2026.10.30"
+  },
+  "source": {
+    "url": "https://x.com/Azadux/status/2118541128559399141",
+    "author": "@Azadux",
+    "published_at": "2026-11-06T03:09:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://arcturus.vision/apps",
+      "author": "Arcturus Vision",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 88,
+    "why": "Mature free GPL trainer with 2k+ stars, real cross-platform binaries, and a high-engagement Steam Frame workflow post. Clear license and download path."
+  },
+  "image": {
+    "url": "https://github.com/harry7557558/spirula-studio/raw/master/assets/banner.png",
+    "alt": "Spirula Studio banner: 3D Gaussian Splatting trainer",
+    "credit": "harry7557558 / Spirula Studio"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T16:48:43Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 195905 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T16:48:43Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T16:48:43Z",
+  "history": [
+    {
+      "operation_id": "af7879e6-e3f3-4590-9c9f-0ef90364ca1a",
+      "action": "submit",
+      "at": "2026-11-06T16:48:43Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2694a154fef3bf992836cf4df974b216da6d2e728ef513d6ece7dfa49fc339b7",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
