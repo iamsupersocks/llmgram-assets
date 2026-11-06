@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-bf49476354ba",
+  "name": "Pascal Editor",
+  "summary": "Open-source local-first 3D architectural editor (React Three Fiber / WebGPU) with browser app, CLI packages and MCP tools so humans and AI agents edit the same building scene. MIT. Live editor at editor.pascal.app; large GitHub project (~25k stars).",
+  "category": "tools",
+  "tags": [
+    "architecture",
+    "webgpu",
+    "mcp",
+    "bim",
+    "mit",
+    "three"
+  ],
+  "publisher": {
+    "name": "Pascal Group Inc.",
+    "url": "https://pascal.app/"
+  },
+  "resource_url": "https://github.com/pascalorg/editor",
+  "download_url": "https://editor.pascal.app/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/pascalorg/editor/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Hosted \"Pascal Next\" demo at /next is a preview direction, not the OSS release. Demo footage is separately CC BY 4.0."
+  },
+  "procedure": [
+    "Use https://editor.pascal.app in the browser, or",
+    "Clone https://github.com/pascalorg/editor and follow README for local/CLI/MCP packages (@pascal-app/core, viewer, cli)"
+  ],
+  "stats": {
+    "count": "~25,357 GitHub stars (2026-11-06)",
+    "size": "",
+    "formats": [
+      "npm packages",
+      "WebGPU editor"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/plattypuus/status/2118611341971739035",
+    "author": "@plattypuus",
+    "published_at": "2026-11-06T07:48:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://editor.pascal.app/",
+      "author": "",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 90,
+    "why": "Major MIT architectural editor with MCP/CLI, live site 200, LICENSE MIT confirmed. Oddly absent from catalog until now."
+  },
+  "image": {
+    "url": "https://editor.pascal.app/og-default.webp",
+    "alt": "Pascal Editor open-source 3D building editor",
+    "credit": "Pascal"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T08:56:23Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 43696 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T08:56:23Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T08:56:23Z",
+  "history": [
+    {
+      "operation_id": "ba4a0acf-4ada-40e0-a23f-6bb4f6236fdc",
+      "action": "submit",
+      "at": "2026-11-06T08:56:23Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a684e83d110a09466a49253d7edde331cc0fc48d7c34656558e94d5fe7462564",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
