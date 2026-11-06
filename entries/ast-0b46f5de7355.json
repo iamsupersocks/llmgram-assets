@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0b46f5de7355",
+  "name": "BlendClone",
+  "summary": "Local MIT tool that turns a short reference video into an editable Blender project: AI planner describes the scene, a declarative compiler builds native Blender objects (no model-written Python runs), side-by-side fidelity scoring, plain-English refine, then .blend / MP4 / ZIP export.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "video-to-3d",
+    "scene-rebuild",
+    "mit",
+    "experimental"
+  ],
+  "publisher": {
+    "name": "wasely / blixvip",
+    "url": "https://github.com/blixvip"
+  },
+  "resource_url": "https://github.com/blixvip/BlendClone",
+  "download_url": "https://github.com/blixvip/BlendClone",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/blixvip/BlendClone/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0 code; planner needs Codex CLI / ChatGPT login",
+    "notes": "README marks status experimental. Quick start targets Windows + Python 3.12 + Blender 5.1+ + Codex CLI (`codex login`)."
+  },
+  "procedure": [
+    "Clone https://github.com/blixvip/BlendClone",
+    "Install Python 3.12, Blender 5.1+, FFmpeg, Codex CLI and log in.",
+    "Run .\\start.ps1 (or uvicorn as in README) and open http://127.0.0.1:4331",
+    "Import a clip section, analyse, compile, compare, export .blend"
+  ],
+  "stats": {
+    "count": "44 GitHub stars (as of 2026-11-06)",
+    "size": "",
+    "formats": [
+      "BLEND",
+      "MP4",
+      "JSON",
+      "ZIP"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/GreatCreations_/status/2118586506168451495",
+    "author": "@GreatCreations_",
+    "published_at": "2026-11-06T06:09:19Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "MIT, clear safety model (no model-run Python), tests CI, real gallery. Needs Codex login and is experimental/Windows-first."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/blixvip/BlendClone/main/docs/media/showcase/turntable.gif",
+    "alt": "Studio turntable scene compiled by BlendClone",
+    "credit": "blixvip/BlendClone"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T08:55:54Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/gif, 2616980 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T08:55:54Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T08:55:54Z",
+  "history": [
+    {
+      "operation_id": "c9ee045e-44d5-458a-8ff3-ba64b64fc1e3",
+      "action": "submit",
+      "at": "2026-11-06T08:55:54Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "7c4ba3571030a4714157857e992e93b826c8b181f38f59f4b91a3ef58881bd63",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
