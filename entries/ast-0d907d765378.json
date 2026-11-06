@@ -1,0 +1,97 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0d907d765378",
+  "name": "Mat-Baker",
+  "summary": "Free offline Blender add-on that bakes procedural materials into PBR texture packs in one click, with engine presets for Unreal, Unity, glTF and Godot plus ORM/mask packing, normal, height, AO and curvature maps.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "pbr",
+    "texture-bake",
+    "addon",
+    "gpl"
+  ],
+  "publisher": {
+    "name": "sanjaya3d",
+    "url": "https://github.com/sanjaya3d"
+  },
+  "resource_url": "https://github.com/sanjaya3d/Mat-Baker",
+  "download_url": "https://github.com/sanjaya3d/Mat-Baker/releases/download/v1.1.0/mat_baker-1.1.0.zip",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0-or-later",
+    "license_url": "https://github.com/sanjaya3d/Mat-Baker/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "GPL-3.0-or-later: distributing modified add-on must keep GPL. Young repo (~2 stars)."
+  },
+  "procedure": [
+    "Download mat_baker-1.1.0.zip from Releases",
+    "Install in Blender as an add-on from the zip",
+    "Select materials and bake to the chosen engine preset"
+  ],
+  "stats": {
+    "count": "2 GitHub stars; release v1.1.0 on 2026-11-04",
+    "size": "~36 KB zip",
+    "formats": [
+      "PNG/texture packs",
+      "Blender add-on zip"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/SdLSanjaya_/status/2118427391945257156",
+    "author": "@SdLSanjaya_",
+    "published_at": "2026-11-05T19:37:03Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 58,
+    "why": "Zip and LICENSE verified, useful bake niche, but very low traction — keep held until more stars/tests."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HWYpkCLa0AAmWiL.jpg?name=orig",
+    "alt": "Mat-Baker Blender UI baking procedural materials to PBR packs",
+    "credit": "@SdLSanjaya_"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T08:56:32Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 89517 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T08:56:32Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T08:56:32Z",
+  "history": [
+    {
+      "operation_id": "97398927-a7f0-4a75-8beb-fb4ef6cf551e",
+      "action": "submit",
+      "at": "2026-11-06T08:56:32Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "08e6833f9f98f64a6d616b2025fc04e3fe4b0dc4e71cb569bbe4c2c2410fc0d0",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
