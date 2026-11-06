@@ -1,0 +1,107 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-e0cb46c57912",
+  "name": "OpenHouse 3D",
+  "summary": "Open-source MIT toolkit that rebuilds a house as a procedural Blender model from real-estate listing photos, then renders a cinematic walkthrough with headless Cycles: camera solving, bpy modeling, virtual staging, photo-vs-render comparison films. Toolkit for a person or coding agent, not one-click photogrammetry.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "archviz",
+    "walkthrough",
+    "real-estate",
+    "bpy",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Yunfan Ye",
+    "url": "https://github.com/yunfanye"
+  },
+  "resource_url": "https://github.com/yunfanye/openhouse-3d",
+  "download_url": "https://github.com/yunfanye/openhouse-3d/releases",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/yunfanye/openhouse-3d/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Listing photos usually belong to a photographer/agency — get permission before rebuilding a real listing. Needs Blender 5.2 and Python 3.9+."
+  },
+  "procedure": [
+    "Clone https://github.com/yunfanye/openhouse-3d",
+    "Follow README / project page for house package + Blender 5.2 setup",
+    "Solve cameras from listing photos, build the procedural house package",
+    "Render walkthrough and optional comparison film headless"
+  ],
+  "stats": {
+    "count": "60 GitHub stars (as of 2026-11-06)",
+    "size": "Demo MP4s in releases (27–184 MB)",
+    "formats": [
+      "BLEND",
+      "MP4",
+      "PNG"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/QibazX/status/2118370314170015801",
+    "author": "@QibazX",
+    "published_at": "2026-11-05T15:50:14Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://yunfanye.github.io/openhouse-3d/",
+      "author": "Yunfan Ye",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 84,
+    "why": "MIT, project page + releases with side-by-side demos, clear honesty about not being photogrammetry. Useful archviz/agent pipeline."
+  },
+  "image": {
+    "url": "https://yunfanye.github.io/openhouse-3d/media/social-preview.jpg",
+    "alt": "Side-by-side OpenHouse 3D walkthrough of Stanford Drive listing",
+    "credit": "Yunfan Ye / OpenHouse 3D"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T08:56:00Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 141135 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T08:56:00Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T08:56:00Z",
+  "history": [
+    {
+      "operation_id": "1d2f6a33-3bdb-41da-acd7-5df95f7d8007",
+      "action": "submit",
+      "at": "2026-11-06T08:56:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8e1614b6b9a34d9ab3894cf376b7855b616fabfc6f78daf1e7314a26f18b3cb4",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
