@@ -52,7 +52,7 @@
   "related_sources": [],
   "verdict": {
     "score": 72,
-    "why": "Solid MIT browser FPV sim for real splat scans with a live demo and measured README. Moderate stars; today's X post itself was tiny."
+    "why": "Verified 2026-11-06 PM: github, live demo gsfpv.flyreelstudio.eu, MIT LICENSE and hero image all 200. Released."
   },
   "image": {
     "url": "https://github.com/AndriiShramko/ShramkoGSFPV/raw/main/apps/site/public/media/hero-poster.jpg",
@@ -60,7 +60,7 @@
     "credit": "Andrii Shramko / ShramkoGSFPV"
   },
   "verification": {
-    "checked_at": "2026-11-06T16:48:48Z",
+    "checked_at": "2026-11-06T16:49:33Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/jpg, 77129 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T16:48:48Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T16:48:48Z",
+  "updated_at": "2026-11-06T16:49:33Z",
   "history": [
     {
       "operation_id": "54a6e91b-67ad-4d37-92e9-294de3f6624a",
@@ -95,6 +95,15 @@
       "payload_sha256": "90a53226204c8e8a232fc6cb134adbaaa0a7b81075eaafb9efb306c02e0be809",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "b7cf4dfb-0293-43fe-bca3-f30e2d15d891",
+      "action": "update",
+      "at": "2026-11-06T16:49:33Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "944ce3d6ae5fc8d4518c4324492ba46dc996dac4593fc77389d6832ce484534a",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
