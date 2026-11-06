@@ -52,7 +52,7 @@
   "related_sources": [],
   "verdict": {
     "score": 60,
-    "why": "Fresh exclusive freebie from an established shop with a clear commercial-friendly freebie license. Needs a free account; low X engagement; files not auditioned."
+    "why": "Verified 2026-11-06 PM: freebie page, download/118956, Freebie License §2, and cover image all 200. Released (signup required)."
   },
   "image": {
     "url": "https://img.craftpix.net/2026/11/Free-City-Life-Game-Music-and-Sound-Effects-Pack.jpg",
@@ -60,7 +60,7 @@
     "credit": "CraftPix.net"
   },
   "verification": {
-    "checked_at": "2026-11-06T16:48:54Z",
+    "checked_at": "2026-11-06T16:49:37Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/jpg, 117543 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T16:48:54Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T16:48:54Z",
+  "updated_at": "2026-11-06T16:49:37Z",
   "history": [
     {
       "operation_id": "1b38740c-65ec-42f9-9f65-cbf95e00aa5c",
@@ -95,6 +95,15 @@
       "payload_sha256": "00d2c27f8aa5143c06999d26c8d64691f1114b2cb7f0cf666167568f7becddd3",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "1dbdd103-0d38-4c97-a632-2015a11ed6b1",
+      "action": "update",
+      "at": "2026-11-06T16:49:37Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c8156a5e4c3a89ed31c9df618f9afcc23a875c7a3fb6d300cbbc32d5b1113071",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
