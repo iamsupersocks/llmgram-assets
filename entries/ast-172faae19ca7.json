@@ -1,0 +1,116 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-172faae19ca7",
+  "name": "Amazon Berkeley Objects GLB (abo-glb)",
+  "summary": "7,953 Amazon product 3D models from Amazon Berkeley Objects, repacked as browser-ready GLB with PBR (WebP or KTX2), LODs and collision meshes. ~12 GB total vs Amazon's original 165 GB; real-world scale in metres for three.js, WebGPU and games.",
+  "category": "3d-models",
+  "tags": [
+    "glb",
+    "gltf",
+    "amazon",
+    "abo",
+    "pbr",
+    "three.js",
+    "webgpu",
+    "furniture",
+    "products"
+  ],
+  "publisher": {
+    "name": "CodePawl",
+    "url": "https://huggingface.co/codepawl"
+  },
+  "resource_url": "https://huggingface.co/datasets/codepawl/abo-glb",
+  "download_url": "https://huggingface.co/datasets/codepawl/abo-glb",
+  "access": {
+    "model": "free",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Attribution required (CC BY 4.0). Models/images/listing text by Amazon.com from ABO; CodePawl re-encode not affiliated with Amazon. Brand names remain trademarked. Cite ABO CVPR 2022 paper for publications."
+  },
+  "procedure": [
+    "Open https://huggingface.co/datasets/codepawl/abo-glb (no account required)",
+    "Download objects/ GLBs (WebP) or objects_ktx2/ for GPU-ready KTX2, plus lods/ and collision/ as needed",
+    "Load in three.js / WebGPU / Godot / other engines at real size (metres, Y-up)",
+    "Attribute Amazon Berkeley Objects / CC BY 4.0 when you redistribute or publish"
+  ],
+  "stats": {
+    "count": "7,953 models",
+    "size": "~12.2 GB (WebP pack); KTX2 + LODs extra",
+    "formats": [
+      "GLB",
+      "KTX2",
+      "WebP"
+    ],
+    "cadence": "dataset updated 2026-11-05"
+  },
+  "source": {
+    "url": "https://x.com/anxuanng/status/2118136591738925395",
+    "author": "@anxuanng",
+    "published_at": "2026-11-05T00:21:31Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://amazon-berkeley-objects.s3.amazonaws.com/index.html",
+      "author": "Amazon / UC Berkeley",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://github.com/codepawl/67.js",
+      "author": "@anxuanng",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 90,
+    "why": "High-signal free CC-BY product GLB pack; HF ungated; 7,953 models with PBR; source post 2k+ likes. License and banner verified this run."
+  },
+  "image": {
+    "url": "https://huggingface.co/datasets/codepawl/abo-glb/resolve/main/assets/banner.jpg",
+    "alt": "7,953 Amazon products on one floor rendered as GLB",
+    "credit": "CodePawl / Amazon Berkeley Objects"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T16:50:39Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 168699 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T16:50:39Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T16:50:39Z",
+  "history": [
+    {
+      "operation_id": "125473d9-18b8-407f-aa38-4c0dc60beff7",
+      "action": "submit",
+      "at": "2026-11-06T16:50:39Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d63c06e10882123962b90bfd3c43861fc75fd8537f2437f2a72e82eb8e5dea7c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
