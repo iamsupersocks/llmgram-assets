@@ -49,7 +49,7 @@
   "related_sources": [],
   "verdict": {
     "score": 76,
-    "why": "License file inside zip read (CC BY 4.0 commercial+credit), zip 200, niche but clean primary page. Low X traction."
+    "why": "Verified 2026-11-06: zip 200, LICENSE.txt CC BY 4.0 commercial+credit read, page 200."
   },
   "image": {
     "url": "https://pbs.twimg.com/media/HWam8LtaoAA9ujE.jpg?name=orig",
@@ -57,7 +57,7 @@
     "credit": "@stobaeus_books"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:56:16Z",
+    "checked_at": "2026-11-06T08:57:42Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -67,7 +67,7 @@
     "download_ok": true,
     "download": {
       "ok": true,
-      "status": 200,
+      "status": 206,
       "detail": "reachable"
     },
     "image_ok": true,
@@ -77,12 +77,12 @@
       "detail": "image/jpg, 223069 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T08:56:16Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:56:16Z",
+  "updated_at": "2026-11-06T08:57:42Z",
   "history": [
     {
       "operation_id": "ecac4e55-1f3e-4829-ba2a-f8ed8c472dca",
@@ -92,6 +92,15 @@
       "payload_sha256": "26f55c779c62e272658803a64a0a3064f4298f9c139721ccd9cd86d537c4d4b9",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "10df5bc3-0327-4f13-9e59-2a858c15df6b",
+      "action": "update",
+      "at": "2026-11-06T08:57:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "100a6ce8b41c43d1617ee8deaa0357888adfe7406cf9308a492f808991c4ff6f",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
