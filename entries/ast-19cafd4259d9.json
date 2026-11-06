@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-19cafd4259d9",
+  "name": "Free City Life Game Music and Sound Effects Pack (CraftPix)",
+  "summary": "Free CraftPix audio pack for city-building, RPG and life-sim games: 5 original urban/jazz-leaning music tracks plus 30 sound effects for streets, construction and everyday city life. Separate files for mixing.",
+  "category": "audio-sfx",
+  "tags": [
+    "sfx",
+    "game-music",
+    "city",
+    "urban",
+    "gamedev",
+    "wav",
+    "mp3",
+    "freebie"
+  ],
+  "publisher": {
+    "name": "CraftPix.net",
+    "url": "https://craftpix.net/"
+  },
+  "resource_url": "https://craftpix.net/freebies/free-city-life-game-music-and-sound-effects-pack/",
+  "download_url": "https://craftpix.net/download/118956/",
+  "access": {
+    "model": "free-with-signup",
+    "license": "CraftPix Freebie License",
+    "license_url": "https://craftpix.net/file-licenses/",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0 (free account required to download)",
+    "notes": "Freebie license: personal and commercial projects, games can be sold, no attribution required. No reselling or redistributing the source files on their own."
+  },
+  "procedure": [
+    "Open the freebie page on craftpix.net",
+    "Click Free Download; sign in or create a free CraftPix account (browser login)",
+    "Download the pack and use the MP3/WAV files in your game"
+  ],
+  "stats": {
+    "count": "5 music tracks + 30 sound effects",
+    "size": "",
+    "formats": [
+      "MP3",
+      "WAV"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/craftpix_net/status/2118631708694372590",
+    "author": "@craftpix_net",
+    "published_at": "2026-11-06T09:08:56Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 60,
+    "why": "Fresh exclusive freebie from an established shop with a clear commercial-friendly freebie license. Needs a free account; low X engagement; files not auditioned."
+  },
+  "image": {
+    "url": "https://img.craftpix.net/2026/11/Free-City-Life-Game-Music-and-Sound-Effects-Pack.jpg",
+    "alt": "CraftPix City Life music and SFX pack cover art",
+    "credit": "CraftPix.net"
+  },
+  "verification": {
+    "checked_at": "2026-11-06T16:48:54Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 117543 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-06T16:48:54Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-06T16:48:54Z",
+  "history": [
+    {
+      "operation_id": "1b38740c-65ec-42f9-9f65-cbf95e00aa5c",
+      "action": "submit",
+      "at": "2026-11-06T16:48:54Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "00d2c27f8aa5143c06999d26c8d64691f1114b2cb7f0cf666167568f7becddd3",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
