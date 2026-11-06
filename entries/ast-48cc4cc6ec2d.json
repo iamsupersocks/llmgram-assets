@@ -51,7 +51,7 @@
   "related_sources": [],
   "verdict": {
     "score": 80,
-    "why": "First-party PlayCanvas extension next to existing SuperSplat catalog entry; MIT; release zip verified 200. Young repo (3 stars) but official."
+    "why": "Verified 2026-11-06: MIT LICENSE, v0.1.0 zip 200, PlayCanvas signup for API token noted, static image 200."
   },
   "image": {
     "url": "https://pbs.twimg.com/news_img/2118341363452526593/mgPgwamt?format=jpg&name=orig",
@@ -59,7 +59,7 @@
     "credit": "PlayCanvas / GreatCreations_"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:57:34Z",
+    "checked_at": "2026-11-06T08:58:06Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -79,12 +79,12 @@
       "detail": "image/jpg, 46319 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T08:56:09Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:57:34Z",
+  "updated_at": "2026-11-06T08:58:06Z",
   "history": [
     {
       "operation_id": "c3b35d89-67b7-43d8-b40a-0503aafedf53",
@@ -103,6 +103,15 @@
       "payload_sha256": "77b30b5b1f462dc4de32f3b38de805158cfeac934169ef1a9a10a88ca3ad0b93",
       "result": "updated",
       "status": "candidate"
+    },
+    {
+      "operation_id": "d028c362-c0d3-4b27-bd05-8e5c313c87e2",
+      "action": "update",
+      "at": "2026-11-06T08:58:06Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "11dc0bdad9a37bc05c3d633f0aca1381d12ec05d042ccb6c6e50530ee8e86a66",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
