@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-4a3287b8da45",
+  "name": "Mesh2Motion (open-source Mixamo alternative)",
+  "summary": "Free browser tool to rig and animate 3D characters: import a GLB/glTF, pick a skeleton (human, fox/quadruped, bird, dragon, kaiju, spider, snake, fish, horse), fit it to the mesh, preview animations from the 170+ library and export the animated model. Runs in the browser without an account; can also be self-hosted. Code MIT, all models/rigs/animations CC0.",
+  "category": "animations-mocap",
+  "tags": [
+    "rigging",
+    "animation",
+    "mixamo-alternative",
+    "glb",
+    "gltf",
+    "cc0",
+    "creatures",
+    "web-app"
+  ],
+  "publisher": {
+    "name": "Scott Petrovic (Mesh2Motion)",
+    "url": "https://mesh2motion.org/"
+  },
+  "resource_url": "https://mesh2motion.org/",
+  "download_url": "https://app.mesh2motion.org/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (code) + CC0-1.0 (models, rigs, animations)",
+    "license_url": "https://github.com/Mesh2Motion/mesh2motion-app/blob/main/LICENSE-CC0.MD",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Import/export currently GLB/glTF only. Donations optional."
+  },
+  "procedure": [
+    "Open https://app.mesh2motion.org/ in a browser.",
+    "Import a GLB/glTF model (or explore the built-in CC0 characters).",
+    "Choose a skeleton type and fit it inside the mesh.",
+    "Preview and select animations, then Download the GLB with the chosen animations.",
+    "Optional: self-host from github.com/Mesh2Motion/mesh2motion-app (Node.js)."
+  ],
+  "stats": {
+    "count": "170+ animations, 9 rig families",
+    "size": "",
+    "formats": [
+      "GLB",
+      "glTF"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/cutetoxicguy/status/2119097555984457987",
+    "author": "@cutetoxicguy",
+    "published_at": "2026-11-07T16:00:02Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/Mesh2Motion/mesh2motion-app",
+      "author": "",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 85,
+    "why": "Mature project (3.6k stars, active commits), fully free with no signup, MIT code + CC0 animation library verified in repo LICENSE files; fills the Mixamo gap including non-humanoid creatures."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/Mesh2Motion/mesh2motion-app/main/readme.png",
+    "alt": "Mesh2Motion web app showing a low-poly fox rig with its CC0 animation library panel",
+    "credit": "Mesh2Motion README"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T16:46:12Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 661616 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T16:46:12Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T16:46:12Z",
+  "history": [
+    {
+      "operation_id": "b9f16d22-6cc7-4595-bbbf-75c783132f79",
+      "action": "submit",
+      "at": "2026-11-07T16:46:12Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "85f5721e0fba2ae766662adc717b12fca246147c71fe5e2a6f5f21d307d2282e",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
