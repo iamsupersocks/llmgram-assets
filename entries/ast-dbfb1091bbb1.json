@@ -1,0 +1,105 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-dbfb1091bbb1",
+  "name": "Material Painter (PBR texture painter)",
+  "summary": "Free, open-source desktop PBR texture painter (Rust + wgpu) for game and film assets. Paint layers, smart materials and masks on 3D models, bake mesh maps (AO, curvature, thickness), build tiling materials in a node graph with custom WGSL nodes, and add weathering bakes (rain streaks, rust, snow, grime). Opens Substance 3D Painter projects, ships ~2,900 CC0 materials from Poly Haven and ambientCG, export presets for Unreal, Unity, Godot, glTF, Roblox, Blender.",
+  "category": "tools",
+  "tags": [
+    "pbr",
+    "texturing",
+    "substance-alternative",
+    "materials",
+    "baking",
+    "rust",
+    "wgpu",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "alla2001",
+    "url": "https://github.com/alla2001"
+  },
+  "resource_url": "https://github.com/alla2001/material-painter",
+  "download_url": "https://github.com/alla2001/material-painter/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/alla2001/material-painter/blob/master/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "App code GPL-3.0 (copyleft if you redistribute modified builds); bundled Poly Haven/ambientCG materials are CC0. Textures you paint are yours. Early release (v0.1.x)."
+  },
+  "procedure": [
+    "Open the GitHub Releases page (latest is v0.1.5, 2026-11-04).",
+    "Download the Windows installer/zip, the Linux x64 tar.gz or the macOS universal dmg.",
+    "Unpack/install and run; Windows 10/11 64-bit or Linux x64 (glibc 2.35+).",
+    "Optionally build from source with stable Rust (see README)."
+  ],
+  "stats": {
+    "count": "~2,900 built-in CC0 materials",
+    "size": "~80-98 MB per build",
+    "formats": [
+      "exe",
+      "zip",
+      "tar.gz",
+      "dmg",
+      "spp import",
+      "glTF export"
+    ],
+    "cadence": "frequent releases (v0.1.3 to v0.1.5 in 4 days)"
+  },
+  "source": {
+    "url": "https://x.com/dextune/status/2118886157253742851",
+    "author": "@dextune",
+    "published_at": "2026-11-07T02:00:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 80,
+    "why": "Rare free Substance Painter-style tool that opens .spp projects; 122 stars in a week, active releases with binaries for 3 OSes, GPL-3.0 verified, 191 likes/186 bookmarks on the source post. Early version, expect rough edges."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/alla2001/material-painter/master/assets/ui/welcome.jpg",
+    "alt": "Five spheres painted with different smart materials (gold, red paint, rusted copper, wood, green paint) in Material Painter",
+    "credit": "alla2001 / Material Painter README"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T16:45:55Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 96483 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T16:45:55Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T16:45:55Z",
+  "history": [
+    {
+      "operation_id": "493c3bfc-dcba-47b4-8b58-797a2c767598",
+      "action": "submit",
+      "at": "2026-11-07T16:45:55Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "24d34da7af3d1b3f0bd627565d753e99f4d785471b36d327819161a32ae55ce9",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
