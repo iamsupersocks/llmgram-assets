@@ -75,7 +75,7 @@
     "credit": "Voyager / vork (crow model by Alexei Ostapenko, CC BY 4.0)"
   },
   "verification": {
-    "checked_at": "2026-11-07T08:48:38Z",
+    "checked_at": "2026-11-07T08:49:16Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -95,12 +95,12 @@
       "detail": "image/jpg, 253575 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-07T08:48:38Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-07T08:48:38Z",
+  "updated_at": "2026-11-07T08:49:16Z",
   "history": [
     {
       "operation_id": "47f98c77-915b-42ec-9ab7-8223b96d1526",
@@ -110,6 +110,15 @@
       "payload_sha256": "aa0608aa24cd21abe32c7cd9c48da09645dfccf98505f6c02c8c5efdce26a7d7",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "752f13d0-123a-47c0-a300-6595c0c7013f",
+      "action": "update",
+      "at": "2026-11-07T08:49:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "497e6f9ae68463377c719a98986a19f64b881acbb1942b7ae0656757527bf6a5",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
