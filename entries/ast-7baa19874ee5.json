@@ -71,7 +71,7 @@
     "credit": "Innerscene Free Parts Library (CC0)"
   },
   "verification": {
-    "checked_at": "2026-11-07T08:48:47Z",
+    "checked_at": "2026-11-07T08:49:16Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -91,12 +91,12 @@
       "detail": "image/jpg, 14183 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-07T08:48:47Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-07T08:48:47Z",
+  "updated_at": "2026-11-07T08:49:16Z",
   "history": [
     {
       "operation_id": "0c90bf6e-68c5-4962-bc6a-fadf9889d0c3",
@@ -106,6 +106,15 @@
       "payload_sha256": "33a5b9c79cf04ef9e7978f8575153d446cd2de869afd46c3b96a705e7b514852",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "6091d9f1-1b50-4730-93cf-3f8a73c6b3fa",
+      "action": "update",
+      "at": "2026-11-07T08:49:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a614b02b2320ade99f1526429e32c6ef1135c24647da17fe12e537be577f7dbe",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
