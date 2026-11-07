@@ -1,0 +1,105 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-a78510e1f93f",
+  "name": "Objaverse Clean GLB (6,015 CC0/CC BY models)",
+  "summary": "Curated subset of Allen AI's Objaverse 1.0: 6,015 of 798,759 models kept (CC0 and CC BY only, broken files, fan art, brands and scans filtered, quality-ranked, max 40 per author), rescaled and rebuilt as web/game/engine-ready GLB with LODs, a mobile tier, KTX2 variants and convex collision hulls. Every model credits its Sketchfab author in LICENSES.md and metadata.jsonl. For three.js, WebGPU, Godot, Blender.",
+  "category": "3d-models",
+  "tags": [
+    "glb",
+    "objaverse",
+    "cc0",
+    "cc-by",
+    "threejs",
+    "webgpu",
+    "lod",
+    "collision",
+    "game-assets"
+  ],
+  "publisher": {
+    "name": "CodePawl (models from Objaverse 1.0 / Sketchfab authors)",
+    "url": "https://huggingface.co/codepawl"
+  },
+  "resource_url": "https://huggingface.co/datasets/codepawl/objaverse-clean-glb",
+  "download_url": "https://huggingface.co/datasets/codepawl/objaverse-clean-glb/tree/main",
+  "access": {
+    "model": "free",
+    "license": "Per model CC-BY-4.0 or CC0-1.0 (Objaverse ODC-By 1.0)",
+    "license_url": "https://huggingface.co/datasets/codepawl/objaverse-clean-glb/blob/main/LICENSES.md",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "CC BY models require credit (author, link, licence, 'changed'), listed in LICENSES.md. Fan-art/brand filter is not a legal review: check a model before selling. Ungated."
+  },
+  "procedure": [
+    "Open the Hugging Face dataset page (ungated, no login needed).",
+    "Browse in the viewer Space (huggingface.co/spaces/codepawl/objaverse-clean-glb-viewer) or the Dataset Viewer.",
+    "Download the tier you need: objects/ (web, meshopt+WebP), objects_ktx2/, lods/, mobile/, engine/ (plain GLB for Blender), collision/.",
+    "Or: huggingface-cli download codepawl/objaverse-clean-glb --repo-type dataset --include 'objects/*'",
+    "Copy each used model's credit line from LICENSES.md / metadata.jsonl."
+  ],
+  "stats": {
+    "count": "6,015 models",
+    "size": "2.51 GB web tier (14.63 GB engine tier)",
+    "formats": [
+      "GLB",
+      "KTX2",
+      "WebP",
+      "jsonl"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/anxuanng/status/2119087925174632840",
+    "author": "@anxuanng",
+    "published_at": "2026-11-07T15:21:46Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 82,
+    "why": "Turns Objaverse into a usable, commercially-safe-ish GLB pack with per-model credits and engine tiers; same publisher as our ABO GLB/SimReady GLB records; card, LICENSES.md, sample GLB (valid glTF) and banner all verified, ungated."
+  },
+  "image": {
+    "url": "https://huggingface.co/datasets/codepawl/objaverse-clean-glb/resolve/main/assets/banner.jpg",
+    "alt": "Grid of 100 sample models from Objaverse Clean GLB: props, characters, furniture, weapons, plants",
+    "credit": "CodePawl / Objaverse Clean GLB"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T16:46:33Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 186775 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T16:46:33Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T16:46:33Z",
+  "history": [
+    {
+      "operation_id": "bee32d96-180d-4510-9d66-6c9086a830eb",
+      "action": "submit",
+      "at": "2026-11-07T16:46:33Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "17ca53f5c7dc339f93f001d6843688ab97393bf7e4b6a38f1c1283e017abfd5b",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
