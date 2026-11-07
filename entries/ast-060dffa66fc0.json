@@ -65,7 +65,7 @@
     "credit": "elithril / blender-kiln"
   },
   "verification": {
-    "checked_at": "2026-11-07T16:46:03Z",
+    "checked_at": "2026-11-07T16:47:07Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -85,12 +85,12 @@
       "detail": "image/png, 409003 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-07T16:46:03Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-07T16:46:03Z",
+  "updated_at": "2026-11-07T16:47:07Z",
   "history": [
     {
       "operation_id": "eb982658-529b-4793-b329-a9863b3d8380",
@@ -100,6 +100,15 @@
       "payload_sha256": "fae9b721cedde2bcb95d848af9618f94db53ead8625d705b48f92c0dab9eb10f",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "ef03fce8-5d78-4d8b-bd04-5298950d650e",
+      "action": "update",
+      "at": "2026-11-07T16:47:07Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "103411da9a1ea4d44d21b654122506ba10216c786251a025d0592a9ea0639999",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
