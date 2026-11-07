@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-23dc010a0962",
+  "name": "Gaussian Splat Patch (Blender extension to clean and edit splat scans)",
+  "summary": "Blender 5.3+ extension to erase, clone-stamp, heal, bridge and restore 3D Gaussian splat scans with brush tools, using Blender's native PLY/SPZ splat import. v0.2.0 adds Mesh to Splats: converts polygon meshes into splats via Cycles bakes (no training) so they can be merged with scans and exported as one PLY.",
+  "category": "tools",
+  "tags": [
+    "gaussian-splatting",
+    "blender",
+    "extension",
+    "3dgs",
+    "ply",
+    "retouch",
+    "gpl"
+  ],
+  "publisher": {
+    "name": "Tim Fennell",
+    "url": "https://github.com/timfennell"
+  },
+  "resource_url": "https://github.com/timfennell/blender-splat-patch",
+  "download_url": "https://github.com/timfennell/blender-splat-patch/releases/download/v0.2.0/gs_patch-0.2.0.zip",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/timfennell/blender-splat-patch/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "GPL-3.0: modified redistributions must stay GPL. Requires Blender 5.3+. Light from Scan mode needs the separate Spirula Render engine."
+  },
+  "procedure": [
+    "Download gs_patch-0.2.0.zip from GitHub Releases",
+    "Blender > Edit > Preferences > Get Extensions > Install from Disk, pick the zip",
+    "Import a splat (File > Import > PLY/SPZ), open 3D Viewport > N > Splat Patch"
+  ],
+  "stats": {
+    "count": "9 GitHub stars at check",
+    "size": "70 KB zip",
+    "formats": [
+      "Blender extension zip",
+      "PLY",
+      "SPZ"
+    ],
+    "cadence": "v0.2.0 on 2026-11-04"
+  },
+  "source": {
+    "url": "https://x.com/GreatCreations_/status/2118701746323325405",
+    "author": "@GreatCreations_",
+    "published_at": "2026-11-06T13:47:14Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 60,
+    "why": "Release zip and GPL-3.0 LICENSE answer 200, README documents the tools with before/after images. Niche splat-cleanup tool with modest traction (9 stars), from the author of the Spirula splat tools."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/timfennell/blender-splat-patch/HEAD/docs/images/overview.jpg",
+    "alt": "Blender with the Splat Patch sidebar open on a Gaussian splat scan of a pinned bee",
+    "credit": "Tim Fennell / blender-splat-patch"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T08:48:55Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 207927 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T08:48:55Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T08:48:55Z",
+  "history": [
+    {
+      "operation_id": "6715bce1-55a3-4769-976e-717990728a65",
+      "action": "submit",
+      "at": "2026-11-07T08:48:55Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2caa0b91ed257a3696b5888463f294e5da75008f04192c38738e68d23f6bc675",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
