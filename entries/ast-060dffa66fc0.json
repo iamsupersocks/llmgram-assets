@@ -1,0 +1,105 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-060dffa66fc0",
+  "name": "blender-kiln (Claude Code plugin: photo or text to Blender model)",
+  "summary": "Open-source Claude Code plugin that builds real-size, editable 3D models in Blender from a text brief or a photo: sourcing, scripted modelling, cleanup, CC0 scan texturing, optimization and validation. Exports GLB, FBX, USDZ or STL with Draco/WebP compression; default path is Claude scripting Blender via an MCP server, no GPU or AI model needed. Logs the licence of every source it pulls (Poly Haven, Sketchfab, optional generators).",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "claude-code",
+    "mcp",
+    "3d-modeling",
+    "agent",
+    "glb",
+    "usdz",
+    "3d-printing"
+  ],
+  "publisher": {
+    "name": "Nicolas Dolphens (elithril)",
+    "url": "https://github.com/elithril"
+  },
+  "resource_url": "https://github.com/elithril/blender-kiln",
+  "download_url": "https://github.com/elithril/blender-kiln/releases",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/elithril/blender-kiln/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (needs Claude Code and Blender; model usage billed by your Claude plan)",
+    "notes": "Plugin is MIT. Optional generators carry their own terms (e.g. UniMate checkpoints CC BY-NC, Hunyuan3D not licensed in EU/UK/KR); README documents them and kiln asks before using them."
+  },
+  "procedure": [
+    "Install Blender and a Blender MCP server (mcp-for-blender or official Blender Lab MCP).",
+    "In Claude Code: /plugin marketplace add elithril/blender-kiln",
+    "/plugin install blender-kiln@blender-kiln",
+    "Run /kiln setup to detect Blender, the MCP server and optional tools (gltf-transform recommended).",
+    "Ask: /kiln <object description> or give it a photo."
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "GLB",
+      "FBX",
+      "USDZ",
+      "STL",
+      "blend"
+    ],
+    "cadence": "v3.0.0 2026-10-30"
+  },
+  "source": {
+    "url": "https://x.com/dextune/status/2118923903909118000",
+    "author": "@dextune",
+    "published_at": "2026-11-07T04:30:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Well-documented agent workflow for Blender with careful per-source licence tracking; 163 stars, v3.0 release, MIT verified; source post 283 likes/409 bookmarks. Requires a paid Claude plan to actually use."
+  },
+  "image": {
+    "url": "https://repository-images.githubusercontent.com/1198528891/a3811eac-bbec-4364-9eae-e7d118444752",
+    "alt": "blender-kiln banner: 'A photo or a sentence. Get the object.' next to a glowing 3D brazier",
+    "credit": "elithril / blender-kiln"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T16:46:03Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 409003 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T16:46:03Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T16:46:03Z",
+  "history": [
+    {
+      "operation_id": "eb982658-529b-4793-b329-a9863b3d8380",
+      "action": "submit",
+      "at": "2026-11-07T16:46:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "fae9b721cedde2bcb95d848af9618f94db53ead8625d705b48f92c0dab9eb10f",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
