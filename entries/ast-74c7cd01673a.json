@@ -1,0 +1,117 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-74c7cd01673a",
+  "name": "P-JiT 21K (2B pixel-space text-to-image model, open weights)",
+  "summary": "Linum's 2.18B-parameter text-to-image DiT that works directly in pixel space (no VAE), trained from scratch on 660M samples for about $21K of compute. Apache-2.0 weights plus inference code and prompt upsampler. Research checkpoint: cannot render text/posters, weak on full bodies and crowds; a useful base for efficient-training experiments and fine-tunes.",
+  "category": "models-weights",
+  "tags": [
+    "text-to-image",
+    "diffusion",
+    "pixel-space",
+    "open-weights",
+    "apache-2.0",
+    "dit",
+    "research"
+  ],
+  "publisher": {
+    "name": "Linum",
+    "url": "https://www.linum.ai/"
+  },
+  "resource_url": "https://huggingface.co/Linum-AI/pjit-21k",
+  "download_url": "https://huggingface.co/Linum-AI/pjit-21k/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/Linum-AI/pjit-21k",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Not gated. Needs Qwen3.5-4B text encoder (separate download, own license). Optional prompt upsampler calls Claude via OpenRouter (API key); --no_upsample keeps prompts local. Research checkpoint, rough edges."
+  },
+  "procedure": [
+    "git clone https://github.com/Linum-AI/pjit-21k && cd pjit-21k && pip install -e .",
+    "Weights (model.safetensors, 8.7 GB fp32) download from Hugging Face Linum-AI/pjit-21k",
+    "Run python generate.py --no_upsample --prompt \"<50-80 word caption>\" (NVIDIA GPU)"
+  ],
+  "stats": {
+    "count": "2.18B params; 46 HF likes, 49 GitHub stars at check",
+    "size": "8.7 GB (fp32 safetensors)",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": "released 2026-11-03"
+  },
+  "source": {
+    "url": "https://x.com/alizeh_ai/status/2118766963069710600",
+    "author": "@alizeh_ai",
+    "published_at": "2026-11-06T18:06:23Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://www.linum.ai/field-notes/pjit-21k",
+      "author": "Linum",
+      "published_at": null,
+      "kind": "article"
+    },
+    {
+      "url": "https://github.com/Linum-AI/pjit-21k",
+      "author": "Linum-AI",
+      "published_at": null,
+      "kind": "github"
+    },
+    {
+      "url": "https://x.com/dogadze/status/2118708865416188338",
+      "author": "@dogadze",
+      "published_at": "2026-11-06T14:15:31Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Genuine open weights under Apache-2.0 (card + repo LICENSE read), ungated 8.7 GB file answers 200, reproducible samples. Research-grade quality and no text rendering limit production use."
+  },
+  "image": {
+    "url": "https://huggingface.co/Linum-AI/pjit-21k/resolve/main/assets/samples.jpg",
+    "alt": "Five P-JiT 21K samples: elderly woman portrait, man blowing birthday candles, bear and rabbit illustration, panda, alpine meadow",
+    "credit": "Linum"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T08:48:28Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 702182 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T08:48:28Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T08:48:28Z",
+  "history": [
+    {
+      "operation_id": "58363eaa-00c9-4b66-b224-ebbee775743c",
+      "action": "submit",
+      "at": "2026-11-07T08:48:28Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d2ddffe6a1e3e9e9c1e2a8c9796c0131758b11c3a2f01893eb810749b46b9873",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
