@@ -1,0 +1,115 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0d3f97a8e6e3",
+  "name": "vork (headless 3D/VFX engine for agents)",
+  "summary": "Voyager's Rust + Slang rendering kernel: a headless 3D and VFX engine where coding agents write scenes, shaders, materials, cameras, simulation and compositing as code, render a preview, inspect it and iterate. Hardware ray tracing on Vulkan/Metal; examples include a million-bird murmuration, VFX on real footage and a black hole. Source-available, free during the research preview.",
+  "category": "tools",
+  "tags": [
+    "3d-engine",
+    "vfx",
+    "agents",
+    "rendering",
+    "rust",
+    "vulkan",
+    "metal",
+    "headless",
+    "source-available"
+  ],
+  "publisher": {
+    "name": "Voyager (Nullframe, Inc.)",
+    "url": "https://voyager.so/vork"
+  },
+  "resource_url": "https://github.com/voyager-so/vork",
+  "download_url": "https://github.com/voyager-so/vork/releases",
+  "access": {
+    "model": "free",
+    "license": "vork Preview License (source-available)",
+    "license_url": "https://github.com/voyager-so/vork/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 during research preview; later versions may be paid",
+    "notes": "Not open source: no resale, no distributing modified versions, no hosted render service. Your renders are yours. Blender bridge is GPL-3.0+. Needs NVIDIA RT GPU (Linux/Windows) or Apple Silicon macOS 26."
+  },
+  "procedure": [
+    "Download vork-0.1.0 for your OS from GitHub Releases (or run install.sh / install.ps1)",
+    "Keep the whole install folder together",
+    "Tell your agent: read `vork help`, make a small scene, render a preview and inspect it"
+  ],
+  "stats": {
+    "count": "539 GitHub stars at check",
+    "size": "~140-165 MB per platform archive",
+    "formats": [
+      "darwin-arm64 tar.gz",
+      "linux-x64 tar.gz",
+      "windows-x64 zip"
+    ],
+    "cadence": "v0.1.0 on 2026-11-06"
+  },
+  "source": {
+    "url": "https://x.com/ravisparikh/status/2118744950825275680",
+    "author": "@ravisparikh",
+    "published_at": "2026-11-06T16:38:55Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://voyager.so/vork",
+      "author": "Voyager",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://x.com/alfy01241/status/2118928144535290189",
+      "author": "@alfy01241",
+      "published_at": "2026-11-07T04:46:52Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Strong traction (~4K likes on launch post, 539 stars in a day), release binaries answer 200, license read: free incl. commercial use for this version. Docked for source-available terms and research-preview status."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/voyager-so/vork/HEAD/docs/images/birds-sun-ribbon.jpg",
+    "alt": "vork render: a ribbon of a million simulated starlings crossing the low sun above a lagoon",
+    "credit": "Voyager / vork (crow model by Alexei Ostapenko, CC BY 4.0)"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T08:48:38Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 253575 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T08:48:38Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T08:48:38Z",
+  "history": [
+    {
+      "operation_id": "47f98c77-915b-42ec-9ab7-8223b96d1526",
+      "action": "submit",
+      "at": "2026-11-07T08:48:38Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "aa0608aa24cd21abe32c7cd9c48da09645dfccf98505f6c02c8c5efdce26a7d7",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
