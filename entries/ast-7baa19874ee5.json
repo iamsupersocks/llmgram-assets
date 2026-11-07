@@ -1,0 +1,111 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-7baa19874ee5",
+  "name": "Innerscene Free Parts Library (CC0 3D parts & CAD drawings)",
+  "summary": "Browser library of ~5,150 3D parts (mechanical hardware, T-slot fittings, enclosures, furniture, props) and ~1,650 2D CAD drawings (DWG/DXF blocks, plan symbols, details), all released CC0 or US-government public domain. Preview in 3D in the browser, then download without an account.",
+  "category": "3d-models",
+  "tags": [
+    "cc0",
+    "public-domain",
+    "cad",
+    "step",
+    "stl",
+    "glb",
+    "dwg",
+    "dxf",
+    "mechanical-parts",
+    "3d-printing"
+  ],
+  "publisher": {
+    "name": "Innerscene",
+    "url": "https://www.innerscene.com/"
+  },
+  "resource_url": "https://www.innerscene.com/tools/library",
+  "download_url": "https://www.innerscene.com/tools/library/3d-parts",
+  "access": {
+    "model": "free",
+    "license": "CC0 1.0 (some parts US federal public domain)",
+    "license_url": "https://www.innerscene.com/tools/library/terms",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "User-contributed under a CC0 contributor agreement, reviewed before listing; check each part page for its status. CC0 grants no trademark/patent rights. Files are kept 1-5 years. Optional AI generator uses your own API key."
+  },
+  "procedure": [
+    "Open https://www.innerscene.com/tools/library and pick 3D Parts or Drawings",
+    "Search or browse, open a part to rotate it in the 3D viewer",
+    "Click Download (e.g. GLB) on the part page; no signup"
+  ],
+  "stats": {
+    "count": "5,153 3D parts + 1,646 drawings (page counts at check)",
+    "size": "",
+    "formats": [
+      "STEP",
+      "STL",
+      "GLB",
+      "OBJ",
+      "3MF",
+      "SKP",
+      "IFC",
+      "DWG",
+      "DXF",
+      "PDF",
+      "SVG"
+    ],
+    "cadence": "community uploads, reviewed"
+  },
+  "source": {
+    "url": "https://x.com/innersceneHQ/status/2118751702124056620",
+    "author": "@innersceneHQ",
+    "published_at": "2026-11-06T17:05:44Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 62,
+    "why": "Real CC0 library: terms page read, sample part GLB downloaded (200, valid glTF), no signup. Docked: source post had no traction, contributions are user-uploaded so provenance per file relies on Innerscene review."
+  },
+  "image": {
+    "url": "https://www.innerscene.com/api/library/t-slot-inside-corner-connector-series-30-slot-8-f198cf91/preview",
+    "alt": "Library part preview: a 30-series T-slot inside corner connector bracket rendered in grey",
+    "credit": "Innerscene Free Parts Library (CC0)"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T08:48:47Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 14183 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T08:48:47Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T08:48:47Z",
+  "history": [
+    {
+      "operation_id": "0c90bf6e-68c5-4962-bc6a-fadf9889d0c3",
+      "action": "submit",
+      "at": "2026-11-07T08:48:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "33a5b9c79cf04ef9e7978f8575153d446cd2de869afd46c3b96a705e7b514852",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
