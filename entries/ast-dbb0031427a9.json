@@ -1,0 +1,90 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-dbb0031427a9",
+  "name": "ThreeJS Assets Icons (780 free game/UI SVG icons)",
+  "summary": "Icon library from ThreeJS Assets: 3,872 single-path SVG icons at one optical weight (interface, editor tools, game systems, items, combat, food, weather...), coloured with currentColor. 780 are free for any signed-in user, usable in personal and commercial end products without attribution; the other 3,092 are a one-time $39.",
+  "category": "icons-ui",
+  "tags": [
+    "icons",
+    "svg",
+    "game-ui",
+    "free-with-signup",
+    "currentcolor"
+  ],
+  "publisher": {
+    "name": "ThreeJS Assets",
+    "url": "https://threejsassets.com/"
+  },
+  "resource_url": "https://threejsassets.com/icons",
+  "download_url": null,
+  "access": {
+    "model": "free-with-signup",
+    "license": "ThreeJS Assets Icons License v1",
+    "license_url": "https://threejsassets.com/license",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0 for 780 icons with a free account; full 3,872 for $39 once",
+    "notes": "No attribution. Icons must be embedded in end products: no redistribution of the SVG/PNG files, no icon libraries/UI kits/source repos, no use in logos/trademarks."
+  },
+  "procedure": [
+    "Open threejsassets.com/icons.",
+    "Create a free account / sign in.",
+    "Pick icons marked Free and download the SVGs."
+  ],
+  "stats": {
+    "count": "780 free of 3,872",
+    "size": "",
+    "formats": [
+      "SVG"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/threejsassets/status/2119068106655994352",
+    "author": "@threejsassets",
+    "published_at": "2026-11-07T14:03:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Usable free commercial icon set with clear license, but publisher self-promo with upsell, account required, and redistribution restrictions; download not tested (needs an account)."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2119068072744992768/img/wmVyUfytKzKD9sVR.jpg",
+    "alt": "",
+    "credit": "@threejsassets"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T16:46:39Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 35696 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T16:46:39Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T16:46:39Z",
+  "history": [
+    {
+      "operation_id": "a5152683-2669-44ac-8221-45ff7b3ba5a7",
+      "action": "submit",
+      "at": "2026-11-07T16:46:39Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "63580dd29e476c2a39d46f12dda645aa43138a0410766a36469d77942c03ef29",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
