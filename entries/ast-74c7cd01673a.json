@@ -77,7 +77,7 @@
     "credit": "Linum"
   },
   "verification": {
-    "checked_at": "2026-11-07T08:48:28Z",
+    "checked_at": "2026-11-07T08:49:11Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -97,12 +97,12 @@
       "detail": "image/jpg, 702182 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-07T08:48:28Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-07T08:48:28Z",
+  "updated_at": "2026-11-07T08:49:11Z",
   "history": [
     {
       "operation_id": "58363eaa-00c9-4b66-b224-ebbee775743c",
@@ -112,6 +112,15 @@
       "payload_sha256": "d2ddffe6a1e3e9e9c1e2a8c9796c0131758b11c3a2f01893eb810749b46b9873",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "c595c6fc-fdc0-4aef-9986-33e28eb07b92",
+      "action": "update",
+      "at": "2026-11-07T08:49:11Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "52c3bfd806e745e4d1976168f617e402008b58a989331d82d98194e78d025614",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
