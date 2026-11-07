@@ -60,7 +60,7 @@
     "credit": "Tim Fennell / blender-splat-patch"
   },
   "verification": {
-    "checked_at": "2026-11-07T08:48:55Z",
+    "checked_at": "2026-11-07T08:49:16Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/jpg, 207927 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-07T08:48:55Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-07T08:48:55Z",
+  "updated_at": "2026-11-07T08:49:16Z",
   "history": [
     {
       "operation_id": "6715bce1-55a3-4769-976e-717990728a65",
@@ -95,6 +95,15 @@
       "payload_sha256": "2caa0b91ed257a3696b5888463f294e5da75008f04192c38738e68d23f6bc675",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "3fd09ffa-2ca9-4ffb-9008-19d6b88f7fe2",
+      "action": "update",
+      "at": "2026-11-07T08:49:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a887c807a8ae1ab4a27f840fb0c19489d689c4296cf0ec14315d60f6fa1cc7b3",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
