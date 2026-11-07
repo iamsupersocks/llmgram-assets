@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import copy
 import re
+import uuid
 from typing import Any, Callable
 
 from . import media, model
@@ -20,6 +21,7 @@ from .store import Conflict, StoreError
 _UUID = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
 FIXED_BY_UPDATE = {"dead_link", "now_paid", "license_changed", "wrong_info"}
 HISTORY_KEEP = 50
+RECHECK_STRIKES = 2
 
 
 class ToolError(Exception):
@@ -221,6 +223,93 @@ class AssetService:
             return "flagged", record
 
         return self._mutate(asset_id, op, digest, actor, "flag", mutate)
+
+    # ---- scheduled recheck -------------------------------------------
+
+    def recheck(self, record: dict, actor: str, *, strikes: int = RECHECK_STRIKES, dry_run: bool = False) -> dict:
+        """Check the links of a listed asset again and act on the result.
+
+        Published assets and assets this checker flagged are covered. A
+        failure is counted in ``verification.recheck``; after ``strikes``
+        consecutive failures the asset gets a ``dead_link`` flag, which hides
+        it. If the links answer again, that flag is closed. The picture is not
+        checked: the site keeps its own copy. Nothing is written when nothing
+        changes, so a healthy catalog adds no commits.
+        """
+        asset_id = record["id"]
+        own = self._own_dead_link(record, actor)
+        if record.get("status") != "published" and not (record.get("status") == "flagged" and own):
+            return {"asset_id": asset_id, "result": "skipped", "status": record.get("status")}
+
+        now = self.clock()
+        failed = {}
+        resource = self.checker(record["resource_url"])
+        if not resource.ok:
+            failed["resource_url"] = resource.as_dict()
+        download = None
+        if record.get("download_url"):
+            download = self.checker(record["download_url"])
+            if not download.ok:
+                failed["download_url"] = download.as_dict()
+        previous = (record.get("verification") or {}).get("recheck") or {}
+
+        if not failed:
+            if not previous and not own:
+                return {"asset_id": asset_id, "result": "ok", "status": record.get("status")}
+            action = "recovered"
+        elif own:
+            return {"asset_id": asset_id, "result": "still_dead", "status": record.get("status"), "failed": sorted(failed)}
+        elif previous.get("failures", 0) + 1 >= strikes:
+            action = "flagged"
+        else:
+            action = "failing"
+        if dry_run:
+            return {"asset_id": asset_id, "result": action, "status": record.get("status"), "failed": sorted(failed),
+                    "dry_run": True}
+
+        def mutate(current: dict, at: str) -> tuple[str, dict]:
+            if current.get("updated_at") != record.get("updated_at"):
+                raise ToolError("asset changed during the check; the next run decides")
+            check = current.setdefault("verification", {})
+            if action == "recovered":
+                check.pop("recheck", None)
+                check.update(checked_at=at, resource_ok=True, resource=resource.as_dict())
+                if download is not None:
+                    check.update(download_ok=True, download=download.as_dict())
+                for flag in self._own_dead_link(current, actor):
+                    flag.update(open=False, closed_at=at)
+                if current.get("status") == "flagged" and not any(f.get("open") for f in current.get("flags", [])):
+                    current["status"] = "candidate"
+                current["status"] = model.compute_status(current)
+                return "recovered", current
+            last = check.get("recheck") or {}
+            failures = last.get("failures", 0) + 1
+            check["recheck"] = {"failures": failures, "first_failed_at": last.get("first_failed_at", at),
+                                "last_failed_at": at, "failed": failed}
+            if action == "flagged":
+                detail = "; ".join(f"{k}: {v['detail']}" + (f" ({v['status']})" if v["status"] else "")
+                                   for k, v in failed.items())
+                current.setdefault("flags", []).append({
+                    "reason": "dead_link", "note": f"{failures} failed daily checks: {detail}"[:300], "at": at,
+                    "by": actor, "open": True})
+                current["status"] = "flagged"
+                return "flagged", current
+            return "failing", current
+
+        op = str(uuid.uuid4())
+        digest = model.payload_hash({"action": "recheck", "asset_id": asset_id, "at": now, "result": action})
+        try:
+            receipt = self._mutate(asset_id, op, digest, actor, "recheck", mutate)
+        except ToolError as exc:
+            return {"asset_id": asset_id, "result": "error", "detail": str(exc)}
+        return {**receipt, "failed": sorted(failed)}
+
+    @staticmethod
+    def _own_dead_link(record: dict, actor: str) -> list[dict]:
+        """Open dead_link flags raised by the checker, or [] if any other flag is open."""
+        open_flags = [f for f in record.get("flags", []) if f.get("open")]
+        own = [f for f in open_flags if f.get("reason") == "dead_link" and f.get("by") == actor]
+        return own if own and len(own) == len(open_flags) else []
 
     # ---- helpers -----------------------------------------------------
 
