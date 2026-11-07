@@ -1,0 +1,102 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-89a46d307922",
+  "name": "vk_gltf_renderer v2026.11.2 (NVIDIA Vulkan RTX path tracer & glTF editor)",
+  "summary": "NVIDIA's open-source Vulkan ray-tracing renderer and PBR material reference for glTF 2.0, with a built-in scene editor (hierarchy, materials, gizmo, save back to glTF), RTX path tracer, DLSS Ray Reconstruction / OptiX / OIDN denoising and 36+ glTF extensions. v2026.11.2 adds beta caustics, a texture isolate view, a universal path-tracer shader and faster start-up. Prebuilt Windows and Linux binaries.",
+  "category": "tools",
+  "tags": [
+    "gltf",
+    "vulkan",
+    "path-tracing",
+    "rtx",
+    "pbr",
+    "renderer",
+    "nvidia",
+    "scene-editor"
+  ],
+  "publisher": {
+    "name": "NVIDIA (nvpro-samples)",
+    "url": "https://github.com/nvpro-samples"
+  },
+  "resource_url": "https://github.com/nvpro-samples/vk_gltf_renderer",
+  "download_url": "https://github.com/nvpro-samples/vk_gltf_renderer/releases/tag/v2026.11.2",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/nvpro-samples/vk_gltf_renderer/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Needs a Vulkan 1.4 GPU with ray tracing (RTX recommended); Windows or Linux only. DLSS/OptiX features depend on NVIDIA hardware."
+  },
+  "procedure": [
+    "Open the v2026.11.2 release page on GitHub.",
+    "Download vk_gltf_renderer-2026.11.2-windows-x64.zip or -linux-x64.tar.gz (~100 MB).",
+    "Unpack and run; drag a .gltf/.glb scene into the window.",
+    "Or build from source with CMake (see README Requirements)."
+  ],
+  "stats": {
+    "count": "",
+    "size": "~100-105 MB per binary",
+    "formats": [
+      "glTF",
+      "GLB",
+      "HDR"
+    ],
+    "cadence": "release 2026-11-05"
+  },
+  "source": {
+    "url": "https://x.com/doragonhanta/status/2119001041920561313",
+    "author": "@doragonhanta",
+    "published_at": "2026-11-07T09:36:32Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Reference-grade glTF path tracer from NVIDIA, Apache-2.0 verified, fresh release with downloadable binaries (446 stars). Niche: best for look-dev / material checks, needs an RTX-class GPU."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/nvpro-samples/vk_gltf_renderer/main/docs/images/gltf_renderer.jpg",
+    "alt": "vk_gltf_renderer UI path-tracing a Paris bistro street scene with settings, scene browser and inspector panels",
+    "credit": "NVIDIA nvpro-samples README"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T16:46:22Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 407686 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T16:46:22Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T16:46:22Z",
+  "history": [
+    {
+      "operation_id": "cf035287-dee1-4d4e-86cf-7164f96e34ec",
+      "action": "submit",
+      "at": "2026-11-07T16:46:22Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "0503a08b1079bc671c9a71a2d84e8d3336583b75450e33f3886f6febef70c7a6",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
