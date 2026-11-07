@@ -1,0 +1,105 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-cd4cd815aa88",
+  "name": "CoLa3D (single image to decomposed 3D scene, NeurIPS 2026)",
+  "summary": "Research code and models that generate a 3D scene from one image and split it into separate object meshes in a shared coordinate frame, with free, point or mask prompts. Ships training/inference code, data-prep tools, an evaluation package, Hugging Face weights, benchmarks and training data. Built on TRELLIS.2.",
+  "category": "models-weights",
+  "tags": [
+    "image-to-3d",
+    "scene-decomposition",
+    "mesh",
+    "neurips-2026",
+    "trellis",
+    "research",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Xudong Cai et al. (Renmin University of China, NTU)",
+    "url": "https://master-cai.github.io/CoLa3D/"
+  },
+  "resource_url": "https://github.com/Master-cai/CoLa3D",
+  "download_url": "https://huggingface.co/mastercai/CoLa3D",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (code)",
+    "license_url": "https://github.com/Master-cai/CoLa3D/blob/main/LICENSE",
+    "commercial_use": "unknown",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Repo LICENSE is MIT (inherited Microsoft TRELLIS copyright). HF model and dataset cards state no license; training data provenance not documented. Linux + NVIDIA GPU, CUDA 12.8."
+  },
+  "procedure": [
+    "git clone https://github.com/Master-cai/CoLa3D",
+    "./setup.sh --new-env --all --eval --moge, then conda activate \"$PWD/.env\"",
+    "python scripts/inference/demo.py --mode free|mask|point"
+  ],
+  "stats": {
+    "count": "22 GitHub stars at check",
+    "size": "",
+    "formats": [
+      "mesh (GLB/OBJ outputs)"
+    ],
+    "cadence": "repo created 2026-11-03"
+  },
+  "source": {
+    "url": "https://x.com/SanemBuilds/status/2118742625658278038",
+    "author": "@SanemBuilds",
+    "published_at": "2026-11-06T16:29:40Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://arxiv.org/abs/2611.03533",
+      "author": "",
+      "published_at": null,
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 55,
+    "why": "Code MIT and links verified, teaser image viewed. Held: weights/dataset licenses not stated on Hugging Face, commercial status of weights unclear, low traction."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/Master-cai/CoLa3D/main/assets/teaser.png",
+    "alt": "CoLa3D teaser: living-room photo reconstructed into a 3D scene and decomposed into separate furniture meshes",
+    "credit": "CoLa3D authors"
+  },
+  "verification": {
+    "checked_at": "2026-11-07T08:49:03Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 613992 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-07T08:49:03Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-07T08:49:03Z",
+  "history": [
+    {
+      "operation_id": "cd9efb60-f495-4d58-8b86-4572490b9a12",
+      "action": "submit",
+      "at": "2026-11-07T08:49:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "0a30571e166bd06b0895df49cf49c4a77e897475f948f06e44ba10c71175294f",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
