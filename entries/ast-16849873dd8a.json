@@ -65,7 +65,7 @@
   ],
   "verdict": {
     "score": 80,
-    "why": "First-party launch (92 likes, 75 bookmarks). GPL-3.0-or-later and NOTICE.md read (outputs need no credit; redistribution must keep the author line). Release zip 200, valid add-on contents, before/after image viewed."
+    "why": "Verified 2026-11-08 17:45 Paris: repo 200, v1.1.1 zip 200 with add-on files, GPL-3.0-or-later and NOTICE.md read (outputs need no credit), before/after image viewed."
   },
   "image": {
     "url": "https://raw.githubusercontent.com/kanaworksai-hue/painterly-25d/main/docs/images/hero_before_after.jpg",
@@ -73,7 +73,7 @@
     "credit": "KanaWorks_AI / Tokyo AI Visuals LLC"
   },
   "verification": {
-    "checked_at": "2026-11-08T16:46:13Z",
+    "checked_at": "2026-11-08T16:46:39Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -93,12 +93,12 @@
       "detail": "image/jpg, 203280 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-08T16:46:13Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T16:46:13Z",
+  "updated_at": "2026-11-08T16:46:39Z",
   "history": [
     {
       "operation_id": "047f7362-bfcd-4e04-8bfd-e16763b5d169",
@@ -108,6 +108,15 @@
       "payload_sha256": "98157fd832b4006e3eae96349b61b44a6fba7855fd0aee16f087cb3992558acd",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "416118b8-e636-4dd7-9e8f-b2adade5d1c5",
+      "action": "update",
+      "at": "2026-11-08T16:46:39Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c9af8bc4b90f129a0cee11c264b92bfe271c96d7769ed2bc95bc65ce7a58d436",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
