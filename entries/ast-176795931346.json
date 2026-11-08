@@ -70,7 +70,7 @@
   ],
   "verdict": {
     "score": 78,
-    "why": "First-party launch (117 likes, 128 bookmarks). MIT license read. Data zip verified: 36,287 records and NOTICE.txt. Direct downloads are Poly Haven/ambientCG; Megascans are Fab links only and kits need ingest. 3 GitHub stars because the repo is hours old; X traction is the proof."
+    "why": "Verified 2026-11-08 17:45 Paris: repo and data zip 200, MIT LICENSE read, 36,287-record index and NOTICE.txt checked, banner image viewed. Megascans remain Fab-link-only; Kenney/Quaternius need kit ingest."
   },
   "image": {
     "url": "https://raw.githubusercontent.com/kanaworksai-hue/sozai-search-mcp/main/docs/assets/banner-en.jpg",
@@ -78,7 +78,7 @@
     "credit": "KanaWorks_AI / Tokyo AI Visuals LLC"
   },
   "verification": {
-    "checked_at": "2026-11-08T16:46:27Z",
+    "checked_at": "2026-11-08T16:46:36Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -98,12 +98,12 @@
       "detail": "image/jpg, 215073 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-08T16:46:27Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T16:46:27Z",
+  "updated_at": "2026-11-08T16:46:36Z",
   "history": [
     {
       "operation_id": "fc9605af-609b-453c-9546-6b8f826b06ff",
@@ -113,6 +113,15 @@
       "payload_sha256": "1ad9ba5be0c0335d8f37bc7328be8b82df83dbc5fd7a15fb6e2d397756860c49",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "6f773243-34cc-469e-a33b-6f129dcc87a4",
+      "action": "update",
+      "at": "2026-11-08T16:46:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e5639a1da7fff3e22901bdd9eb80a27cacfc95c704049abbae9108dedfa7edb7",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
