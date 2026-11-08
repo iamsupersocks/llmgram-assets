@@ -1,0 +1,124 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-a7ea5f149663",
+  "name": "ComfyUI-InstantHMR (fast 3D human bodies from photo, video or live camera)",
+  "summary": "ComfyUI node pack for InstantHMR (NaturalPad / LAAS-CNRS): recovers each person's 3D body (pose, shape, 70 2D/3D keypoints, full MHR mesh) from images, video or a live webcam/phone feed at ~2.5 ms per person. Outputs the same MHR body as ComfyUI's SAM 3D Body nodes for smoothing, rendering and animated GLB/BVH export, and can drive Mixamo/VRM characters or stream to Blender via VMC.",
+  "category": "animations-mocap",
+  "tags": [
+    "comfyui",
+    "mocap",
+    "human-mesh-recovery",
+    "mhr",
+    "sam-3d-body",
+    "live-capture",
+    "glb",
+    "bvh",
+    "vmc",
+    "blender"
+  ],
+  "publisher": {
+    "name": "jtydhr88 (ComfyUI pack); InstantHMR by NaturalPad / LAAS-CNRS",
+    "url": "https://github.com/jtydhr88"
+  },
+  "resource_url": "https://github.com/jtydhr88/ComfyUI-InstantHMR",
+  "download_url": "https://huggingface.co/jtydhr88/ComfyUI-InstantHMR",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0 (code); SAM License (weights)",
+    "license_url": "https://huggingface.co/jtydhr88/ComfyUI-InstantHMR/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "nano/tiny/small/medium weights: non-commercial only. medium_commercial weights allow commercial use under SAM License terms (trade controls, no military use). MHR body model Apache-2.0. Ungated HF downloads."
+  },
+  "procedure": [
+    "Install via ComfyUI Manager or git clone https://github.com/jtydhr88/ComfyUI-InstantHMR into custom_nodes",
+    "Download a checkpoint from https://huggingface.co/jtydhr88/ComfyUI-InstantHMR into models/detection (use instanthmr_medium_commercial.safetensors for commercial work)",
+    "Load example_workflows/instanthmr_video.json or instanthmr_live.json",
+    "Export animated GLB/BVH via the native SAM 3D Body nodes"
+  ],
+  "stats": {
+    "count": "5 checkpoints (20-32M params)",
+    "size": "~180 MB per checkpoint",
+    "formats": [
+      "safetensors",
+      "onnx",
+      "GLB",
+      "BVH"
+    ],
+    "cadence": "released Nov 7, 2026 alongside InstantHMR v1.0"
+  },
+  "source": {
+    "url": "https://x.com/jtydhr88/status/2119059807529214024",
+    "author": "@jtydhr88",
+    "published_at": "2026-11-07T13:30:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/Naturalpad-studio/InstantHMR",
+      "author": "NaturalPad",
+      "published_at": null,
+      "kind": "github"
+    },
+    {
+      "url": "https://x.com/adjelmohamed/status/2119109175515226329",
+      "author": "@adjelmohamed",
+      "published_at": "2026-11-07T16:46:00Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://x.com/wildmindai/status/2119140071718986136",
+      "author": "@wildmindai",
+      "published_at": "2026-11-07T18:48:00Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Rechecked after yesterday's deferral: licenses now explicit (code Apache-2.0, weights SAM License, one commercial-OK checkpoint, MHR Apache-2.0). Traction up to 27 stars in a day, launch post ~208 likes; upstream InstantHMR ~298 stars. Fast real-time mocap in ComfyUI."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/jtydhr88/ComfyUI-InstantHMR/main/docs/live_capture.jpg",
+    "alt": "InstantHMR Live Capture node: camera feed with 2D skeleton next to a 3D character driven by the pose",
+    "credit": "jtydhr88 / ComfyUI-InstantHMR"
+  },
+  "verification": {
+    "checked_at": "2026-11-08T08:51:26Z",
+    "resource_ok": false,
+    "resource": {
+      "ok": false,
+      "status": null,
+      "detail": "TimeoutError"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 60172 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-08T08:51:26Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-08T08:51:26Z",
+  "history": [
+    {
+      "operation_id": "b5048147-5168-42c4-b715-bbfb034254a6",
+      "action": "submit",
+      "at": "2026-11-08T08:51:26Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "29a995705c04d93d4362b8542ff790581cf6bf308c898249512020400eb76650",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
