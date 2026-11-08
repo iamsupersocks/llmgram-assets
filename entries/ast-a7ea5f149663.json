@@ -75,8 +75,8 @@
     }
   ],
   "verdict": {
-    "score": 70,
-    "why": "Licenses now explicit (code Apache-2.0, weights SAM License, medium_commercial checkpoint OK for commercial use, MHR Apache-2.0); 27 stars, launch post ~208 likes; HF weights 200, image viewed. HOLD: github.com web returned 504 throughout the 2026-11-08 morning run; release once the repo page answers."
+    "score": 78,
+    "why": "GitHub repo page now returns 200 (was timeout/504 this morning). Licenses, HF weights and live-capture image rechecked 2026-11-08 17:45 Paris; 41 stars."
   },
   "image": {
     "url": "https://raw.githubusercontent.com/jtydhr88/ComfyUI-InstantHMR/main/docs/live_capture.jpg",
@@ -84,12 +84,12 @@
     "credit": "jtydhr88 / ComfyUI-InstantHMR"
   },
   "verification": {
-    "checked_at": "2026-11-08T08:55:04Z",
-    "resource_ok": false,
+    "checked_at": "2026-11-08T16:46:39Z",
+    "resource_ok": true,
     "resource": {
-      "ok": false,
-      "status": null,
-      "detail": "TimeoutError"
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
     },
     "download_ok": true,
     "download": {
@@ -104,12 +104,12 @@
       "detail": "image/jpg, 60172 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-08T08:51:26Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T08:55:04Z",
+  "updated_at": "2026-11-08T16:46:39Z",
   "history": [
     {
       "operation_id": "b5048147-5168-42c4-b715-bbfb034254a6",
@@ -128,6 +128,15 @@
       "payload_sha256": "d6718c88a9d236e03283f8d19d3c76be1b34d47fb96731838502124f58a44c5f",
       "result": "updated",
       "status": "candidate"
+    },
+    {
+      "operation_id": "74b480e9-ab47-4645-b29b-43259ced0850",
+      "action": "update",
+      "at": "2026-11-08T16:46:39Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2f189c5cea0e99a10d15c2c8c31570fb3705b5c3c27e22d9ee09eab3be9def78",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
