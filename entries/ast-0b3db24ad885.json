@@ -64,7 +64,7 @@
   ],
   "verdict": {
     "score": 80,
-    "why": "First-party Kenney page, CC0 read in the zip's License.txt, no signup, direct download tested (200, 233 files). Well-known trusted publisher; v2.0 adds more characters and accessories."
+    "why": "Verified 2026-11-08 morning: kenney.nl page 200, signed download 200 (4.0 MB zip, 233 files), CC0 read in License.txt (v2.0, built 07-11-2026), no signup, preview image viewed. Trusted first-party publisher."
   },
   "image": {
     "url": "https://kenney.nl/media/pages/assets/mini-characters/357d1a9452-1794046878/preview.png",
@@ -72,7 +72,7 @@
     "credit": "Kenney (CC0)"
   },
   "verification": {
-    "checked_at": "2026-11-08T08:50:13Z",
+    "checked_at": "2026-11-08T08:52:15Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -92,12 +92,12 @@
       "detail": "image/png, 151483 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-08T08:50:13Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T08:50:13Z",
+  "updated_at": "2026-11-08T08:52:15Z",
   "history": [
     {
       "operation_id": "1418e91f-8965-4494-9f90-76378bac9cfe",
@@ -107,6 +107,15 @@
       "payload_sha256": "476abe9b78d322b8d4d00848eafbdc75f9f1dce5aa057aab111fcc911774a5bc",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "2de16501-1e2e-4458-811a-7ea9460ce1ed",
+      "action": "update",
+      "at": "2026-11-08T08:52:15Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4533c42af9c59cc15b8e51e7aa376de33b49ccc097bbf4479563f18de575bc70",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
