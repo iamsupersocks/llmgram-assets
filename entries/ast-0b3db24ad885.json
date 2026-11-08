@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0b3db24ad885",
+  "name": "Mini Characters 2.0 (Kenney, CC0)",
+  "summary": "Kenney's Mini Characters pack updated to v2.0 (built Nov 7, 2026): 46 low-poly chibi characters and accessories (people, robots, wheelchairs, props) in GLB, FBX and OBJ with preview renders, plus 40 animation files. CC0, so it can go straight into prototypes and commercial games without a character pipeline.",
+  "category": "3d-models",
+  "tags": [
+    "kenney",
+    "cc0",
+    "low-poly",
+    "characters",
+    "animated",
+    "glb",
+    "fbx",
+    "gamedev",
+    "prototyping",
+    "accessibility"
+  ],
+  "publisher": {
+    "name": "Kenney",
+    "url": "https://kenney.nl/"
+  },
+  "resource_url": "https://kenney.nl/assets/mini-characters",
+  "download_url": "https://kenney.nl/assets/mini-characters",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (optional donation; All-in-1 bundle sold separately on itch.io)",
+    "notes": "No attribution required (crediting Kenney is appreciated). Download button issues a fresh signed link; 'Continue without donating' works."
+  },
+  "procedure": [
+    "Open https://kenney.nl/assets/mini-characters",
+    "Click Download, then 'Continue without donating...'",
+    "Unzip kenney_mini-characters.zip: Models/GLB, Models/FBX, Models/OBJ and Previews",
+    "Read License.txt (CC0)"
+  ],
+  "stats": {
+    "count": "46 models per format; 40 animation files",
+    "size": "~4 MB zip (23 MB unzipped)",
+    "formats": [
+      "GLB",
+      "FBX",
+      "OBJ",
+      "PNG"
+    ],
+    "cadence": "v2.0 update (v1.0 was 2024)"
+  },
+  "source": {
+    "url": "https://x.com/ArcyDev/status/2119334844672958723",
+    "author": "@ArcyDev",
+    "published_at": "2026-11-08T07:42:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://gamedev.net/news/7001-mini-characters/",
+      "author": "GameDev.net",
+      "published_at": null,
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "First-party Kenney page, CC0 read in the zip's License.txt, no signup, direct download tested (200, 233 files). Well-known trusted publisher; v2.0 adds more characters and accessories."
+  },
+  "image": {
+    "url": "https://kenney.nl/media/pages/assets/mini-characters/357d1a9452-1794046878/preview.png",
+    "alt": "Grid of Kenney Mini Characters: chibi people, robots, wheelchairs and small accessories",
+    "credit": "Kenney (CC0)"
+  },
+  "verification": {
+    "checked_at": "2026-11-08T08:50:13Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 151483 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-08T08:50:13Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-08T08:50:13Z",
+  "history": [
+    {
+      "operation_id": "1418e91f-8965-4494-9f90-76378bac9cfe",
+      "action": "submit",
+      "at": "2026-11-08T08:50:13Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "476abe9b78d322b8d4d00848eafbdc75f9f1dce5aa057aab111fcc911774a5bc",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
