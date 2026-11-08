@@ -1,0 +1,118 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-176795931346",
+  "name": "Sozai Search MCP",
+  "summary": "MCP server for Claude Code, Codex, Cursor and other MCP clients: search an index of 36,287 free 3D assets (Poly Haven, ambientCG, Kenney, Quaternius, plus Quixel Megascans Fab listings) by keywords or meaning, preview them, and download GLB/PBR/HDRI files at real-world scale in metres. No GPU, API key or account. The tool hosts no files; downloads come from the official libraries.",
+  "category": "tools",
+  "tags": [
+    "mcp",
+    "3d-models",
+    "pbr",
+    "hdri",
+    "polyhaven",
+    "ambientcg",
+    "kenney",
+    "quaternius",
+    "cc0"
+  ],
+  "publisher": {
+    "name": "KanaWorks_AI (Tokyo AI Visuals LLC)",
+    "url": "https://github.com/kanaworksai-hue"
+  },
+  "resource_url": "https://github.com/kanaworksai-hue/sozai-search-mcp",
+  "download_url": "https://github.com/kanaworksai-hue/sozai-search-mcp/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://raw.githubusercontent.com/kanaworksai-hue/sozai-search-mcp/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code MIT. Assets keep own licences (mostly CC0). 22,696 of 36,287 index rows are Megascans (Fab link only; Epic account, no redistribution). Kenney/Quaternius need local kit-zip ingest. Direct fetch: Poly Haven + ambientCG. Brand/logo not MIT."
+  },
+  "procedure": [
+    "Install uv, then in your project register the server: claude mcp add sozai -s project -- uvx --from git+https://github.com/kanaworksai-hue/sozai-search-mcp sozai (Codex/Cursor take the same uvx command).",
+    "Start a new session and search for e.g. \"wooden crate\"; the first search downloads the published data index (~13.4 MB zip, 36,287 records).",
+    "Use fetch_asset to download from Poly Haven or ambientCG into a folder you name. For Kenney or Quaternius, download the official kit zip first and run sozai ingest.",
+    "Optional: run sozai semantic-setup (~350 MB EmbeddingGemma 2) for meaning search in any language."
+  ],
+  "stats": {
+    "count": "36,287 indexed (22,696 Megascans Fab-only)",
+    "size": "repo zip ~2.6 MB; data zip 13.4 MB",
+    "formats": [
+      "GLB",
+      "PBR maps",
+      "HDR",
+      "EXR",
+      "MCP"
+    ],
+    "cadence": "first release 2026-11-08; data-2026.11.08"
+  },
+  "source": {
+    "url": "https://x.com/KanaWorks_AI/status/2119437439467201005",
+    "author": "@KanaWorks_AI",
+    "published_at": "2026-11-08T14:30:37Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/KanaWorks_AI/status/2119437618014470641",
+      "author": "@KanaWorks_AI",
+      "published_at": "2026-11-08T14:31:20Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://github.com/kanaworksai-hue/sozai-search-mcp/releases/download/data-2026.11.08/sozai-data-2026.11.08.zip",
+      "author": "KanaWorks_AI",
+      "published_at": "2026-11-08T13:27:34Z",
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "First-party launch (117 likes, 128 bookmarks). MIT license read. Data zip verified: 36,287 records and NOTICE.txt. Direct downloads are Poly Haven/ambientCG; Megascans are Fab links only and kits need ingest. 3 GitHub stars because the repo is hours old; X traction is the proof."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/kanaworksai-hue/sozai-search-mcp/main/docs/assets/banner-en.jpg",
+    "alt": "Sozai Search MCP banner: free 3D assets with real-world sizes for Claude Code, Cursor and any MCP client, 36,000 free assets, mostly CC0, no API key",
+    "credit": "KanaWorks_AI / Tokyo AI Visuals LLC"
+  },
+  "verification": {
+    "checked_at": "2026-11-08T16:46:27Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 215073 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-08T16:46:27Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-08T16:46:27Z",
+  "history": [
+    {
+      "operation_id": "fc9605af-609b-453c-9546-6b8f826b06ff",
+      "action": "submit",
+      "at": "2026-11-08T16:46:27Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1ad9ba5be0c0335d8f37bc7328be8b82df83dbc5fd7a15fb6e2d397756860c49",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
