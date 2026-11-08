@@ -1,0 +1,110 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-04c3cd83ed86",
+  "name": "RGB MoCap (toyxyz, video-to-3D motion capture for Windows)",
+  "summary": "Native Windows app that turns ordinary video into editable 3D human animation using local AI solvers (FlowHMR, ExMR, GVHMR; optional PromptHMR, MAMMA multi-view). Mark foot/palm contacts on a timeline to fix sliding, retarget to Mixamo, VRM or PMX characters, and export FBX or VMD (MMD). Runs on an NVIDIA GPU.",
+  "category": "animations-mocap",
+  "tags": [
+    "mocap",
+    "markerless",
+    "video-to-animation",
+    "fbx",
+    "vmd",
+    "mixamo",
+    "vrm",
+    "windows",
+    "nvidia",
+    "retargeting"
+  ],
+  "publisher": {
+    "name": "toyxyz",
+    "url": "https://github.com/toyxyz"
+  },
+  "resource_url": "https://github.com/toyxyz/toyxyz_RGBMocap",
+  "download_url": "https://github.com/toyxyz/toyxyz_RGBMocap",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (app code); third-party solvers and weights under their own terms",
+    "license_url": "https://github.com/toyxyz/toyxyz_RGBMocap/blob/main/THIRD_PARTY_NOTICES.md",
+    "commercial_use": "restricted",
+    "signup_required": null,
+    "price": "$0",
+    "notes": "GVHMR/ExMR/PromptHMR/MAMMA are research/non-commercial; Ultralytics YOLO and HTD-Refine are AGPL-3.0; SMPL/SMPL-X body models need registration. FlowHMR code Apache-2.0 but uses SAM 3D Body/DINOv3 assets."
+  },
+  "procedure": [
+    "Install Git for Windows and clone https://github.com/toyxyz/toyxyz_RGBMocap",
+    "Run install.cmd (prepares ExMR, FlowHMR, GVHMR support)",
+    "Fetch model files in Model Manager; some need provider registration",
+    "Launch RGBMoCap.cmd, load a video, fix contacts, export FBX/VMD"
+  ],
+  "stats": {
+    "count": "",
+    "size": "~68 GB installed models and runtimes",
+    "formats": [
+      "FBX",
+      "VMD"
+    ],
+    "cadence": "active (pushed Nov 8, 2026)"
+  },
+  "source": {
+    "url": "https://x.com/TheSoloFactory/status/2119284770446447037",
+    "author": "@TheSoloFactory",
+    "published_at": "2026-11-08T04:23:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/SLT_OFFICIAL_JP/status/2119229765295145302",
+      "author": "@SLT_OFFICIAL_JP",
+      "published_at": "2026-11-08T00:45:00Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 66,
+    "why": "Very strong traction (~936 stars in 2 weeks) and widely used in JP/CN creator circles. App code MIT, license notices read, but the default solvers are non-commercial and several deps are AGPL; held for a PM call on mixed-license mocap tools."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/toyxyz/toyxyz_RGBMocap/main/docs/images/rgbmocap-workspace.png",
+    "alt": "RGB MoCap workspace: dancer video with tracking box beside a 3D body preview and contact timeline",
+    "credit": "toyxyz / RGB MoCap"
+  },
+  "verification": {
+    "checked_at": "2026-11-08T08:50:58Z",
+    "resource_ok": false,
+    "resource": {
+      "ok": false,
+      "status": null,
+      "detail": "TimeoutError"
+    },
+    "download_ok": false,
+    "download": {
+      "ok": false,
+      "status": 504,
+      "detail": "http error"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 775295 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-08T08:50:58Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-08T08:50:58Z",
+  "history": [
+    {
+      "operation_id": "3c57ee7a-9d16-4ba3-a8bb-e01436d4d38a",
+      "action": "submit",
+      "at": "2026-11-08T08:50:58Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3bed7b0ffc8c2f280f698b05a1472cea2196608e05276a6dbb626afc96529b10",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
