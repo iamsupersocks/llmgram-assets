@@ -1,0 +1,120 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-5f29852c9928",
+  "name": "PLATEAU Japan City Tiles GLB (Tokyo, Osaka, Yokohama, Nagoya, Sapporo)",
+  "summary": "Japan's government PLATEAU 3D city models cut into 797 streamable ~1 km GLB tiles: all of Tokyo's 23 wards plus central Osaka, Yokohama, Nagoya and Sapporo. Textured LOD2 buildings where available, LOD1 blocks, terrain and roads, in web (meshopt/WebP), KTX2, LOD, mobile, engine (plain glTF for Blender) and collision tiers, with tiles.json for streaming in three.js, Godot or Unity.",
+  "category": "datasets",
+  "tags": [
+    "plateau",
+    "japan",
+    "tokyo",
+    "city",
+    "buildings",
+    "glb",
+    "gltf",
+    "ktx2",
+    "threejs",
+    "godot",
+    "streaming",
+    "cc-by"
+  ],
+  "publisher": {
+    "name": "CodePawl (modified copy of MLIT Project PLATEAU data)",
+    "url": "https://huggingface.co/codepawl"
+  },
+  "resource_url": "https://huggingface.co/datasets/codepawl/plateau-city-glb",
+  "download_url": "https://huggingface.co/datasets/codepawl/plateau-city-glb/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "CC-BY-4.0 (PLATEAU Site Policy, CC BY compatible)",
+    "license_url": "https://www.mlit.go.jp/plateau/site-policy/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Credit 'Source: MLIT Project PLATEAU 3D city models' and the local governments. Not made or endorsed by MLIT; not for survey use (Survey Act limits on public survey results). Ungated on Hugging Face."
+  },
+  "procedure": [
+    "Open https://huggingface.co/datasets/codepawl/plateau-city-glb",
+    "Pick a tier: objects/ (web), objects_ktx2/ (games), lods/, mobile/, engine/ (Blender), collision/",
+    "Download tiles by mesh code, or the whole folder with huggingface-cli download --repo-type dataset codepawl/plateau-city-glb",
+    "Use tiles.json offsets to place tiles in metres; keep the PLATEAU credit"
+  ],
+  "stats": {
+    "count": "797 city tiles, 6,490 files",
+    "size": "758 MB web tier; 3.8 GB engine tier; 1.24 GB collision",
+    "formats": [
+      "GLB",
+      "KTX2",
+      "WebP",
+      "JSON"
+    ],
+    "cadence": "first release Nov 6-7, 2026"
+  },
+  "source": {
+    "url": "https://x.com/ganfanren_ai/status/2119329792935985434",
+    "author": "@ganfanren_ai",
+    "published_at": "2026-11-08T07:22:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/Vladysl71773581/status/2119132478296527353",
+      "author": "@Vladysl71773581",
+      "published_at": "2026-11-07T18:18:00Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://huggingface.co/spaces/codepawl/plateau-city-glb-viewer",
+      "author": "codepawl",
+      "published_at": null,
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Real government open data repackaged into ready-to-stream game/Blender GLB tiers with collision and LODs; CC BY license confirmed on MLIT's site policy; ungated, tile download tested. 24 likes / 111 downloads in 2 days."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2118779954242719744/img/InMC-ywA5NgocUh4.jpg",
+    "alt": "Textured PLATEAU GLB tiles of Shinjuku's skyscrapers, including the Tokyo Metropolitan Government Building",
+    "credit": "Video still via @ganfanren_ai on X; data MLIT Project PLATEAU"
+  },
+  "verification": {
+    "checked_at": "2026-11-08T08:50:24Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 104831 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-08T08:50:24Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-08T08:50:24Z",
+  "history": [
+    {
+      "operation_id": "116b58e2-c83f-4d92-be1b-530d25e63912",
+      "action": "submit",
+      "at": "2026-11-08T08:50:24Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3cf3743c1b33e551dfa5472de8a4401333a727be7b7d70f221ea662fc55c8889",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
