@@ -76,7 +76,7 @@
   ],
   "verdict": {
     "score": 70,
-    "why": "Rechecked after yesterday's deferral: licenses now explicit (code Apache-2.0, weights SAM License, one commercial-OK checkpoint, MHR Apache-2.0). Traction up to 27 stars in a day, launch post ~208 likes; upstream InstantHMR ~298 stars. Fast real-time mocap in ComfyUI."
+    "why": "Licenses now explicit (code Apache-2.0, weights SAM License, medium_commercial checkpoint OK for commercial use, MHR Apache-2.0); 27 stars, launch post ~208 likes; HF weights 200, image viewed. HOLD: github.com web returned 504 throughout the 2026-11-08 morning run; release once the repo page answers."
   },
   "image": {
     "url": "https://raw.githubusercontent.com/jtydhr88/ComfyUI-InstantHMR/main/docs/live_capture.jpg",
@@ -84,7 +84,7 @@
     "credit": "jtydhr88 / ComfyUI-InstantHMR"
   },
   "verification": {
-    "checked_at": "2026-11-08T08:51:26Z",
+    "checked_at": "2026-11-08T08:55:04Z",
     "resource_ok": false,
     "resource": {
       "ok": false,
@@ -109,7 +109,7 @@
   "flags": [],
   "added_at": "2026-11-08T08:51:26Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T08:51:26Z",
+  "updated_at": "2026-11-08T08:55:04Z",
   "history": [
     {
       "operation_id": "b5048147-5168-42c4-b715-bbfb034254a6",
@@ -118,6 +118,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "29a995705c04d93d4362b8542ff790581cf6bf308c898249512020400eb76650",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "8e3df470-12a4-4e9a-b3a9-0eb80b9d9342",
+      "action": "update",
+      "at": "2026-11-08T08:55:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d6718c88a9d236e03283f8d19d3c76be1b34d47fb96731838502124f58a44c5f",
+      "result": "updated",
       "status": "candidate"
     }
   ]
