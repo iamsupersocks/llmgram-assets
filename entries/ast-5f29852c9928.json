@@ -72,7 +72,7 @@
   ],
   "verdict": {
     "score": 74,
-    "why": "Real government open data repackaged into ready-to-stream game/Blender GLB tiers with collision and LODs; CC BY license confirmed on MLIT's site policy; ungated, tile download tested. 24 likes / 111 downloads in 2 days."
+    "why": "Verified 2026-11-08 morning: HF dataset page and tree 200, sample KTX2 tile GLB 200 (129 KB), card + LICENSES.md say CC-BY-4.0, MLIT PLATEAU site policy read (CC BY compatible), ungated, image viewed. Real government open data in ready-to-stream game tiers."
   },
   "image": {
     "url": "https://pbs.twimg.com/amplify_video_thumb/2118779954242719744/img/InMC-ywA5NgocUh4.jpg",
@@ -80,7 +80,7 @@
     "credit": "Video still via @ganfanren_ai on X; data MLIT Project PLATEAU"
   },
   "verification": {
-    "checked_at": "2026-11-08T08:50:24Z",
+    "checked_at": "2026-11-08T08:52:19Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -100,12 +100,12 @@
       "detail": "image/jpg, 104831 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-08T08:50:24Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T08:50:24Z",
+  "updated_at": "2026-11-08T08:52:19Z",
   "history": [
     {
       "operation_id": "116b58e2-c83f-4d92-be1b-530d25e63912",
@@ -115,6 +115,15 @@
       "payload_sha256": "3cf3743c1b33e551dfa5472de8a4401333a727be7b7d70f221ea662fc55c8889",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "34b341cb-80e7-4b9c-bd88-1c3f0dab53a4",
+      "action": "update",
+      "at": "2026-11-08T08:52:19Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4bf2c17c29e1bcc0ff4112b616182f453d80affa5dc8669527c0a4aefba4129a",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
