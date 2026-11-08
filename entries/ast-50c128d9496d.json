@@ -76,7 +76,7 @@
   ],
   "verdict": {
     "score": 68,
-    "why": "Distinct from the catalogued 3D-Coder (ast-9776402b09ce): GLB-export focus for game assets. Apache-2.0 read on the raw LICENSE, ungated, GGUF download answers 200; strong HF traction (~265 likes, ~24k downloads). Solo independent fine-tune."
+    "why": "Verified 2026-11-08 morning: HF model page and tree 200, Q4_K_M GGUF resolve 200, raw LICENSE Apache-2.0, ungated, card image viewed. Distinct from catalogued 3D-Coder ast-9776402b09ce (GLB-export focus). ~265 likes, ~24k downloads; solo independent fine-tune."
   },
   "image": {
     "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder/resolve/main/images/coral-armored-lighthouse-keeper.png",
@@ -84,7 +84,7 @@
     "credit": "CCORE"
   },
   "verification": {
-    "checked_at": "2026-11-08T08:50:48Z",
+    "checked_at": "2026-11-08T08:52:23Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -104,12 +104,12 @@
       "detail": "image/png, 426730 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-08T08:50:48Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T08:50:48Z",
+  "updated_at": "2026-11-08T08:52:23Z",
   "history": [
     {
       "operation_id": "cdf6e688-4c04-432e-98c0-ae1f185e687f",
@@ -119,6 +119,15 @@
       "payload_sha256": "2e16d6c0fbd5ffe8d310d2f952f8091a98a37bb4e309c7ed46e3532f18420a35",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "c7c42e9c-4ed1-4bea-a023-955078c282ec",
+      "action": "update",
+      "at": "2026-11-08T08:52:23Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "58857a059603772ebd0a071636737183373f9d78c83cad00648aba91972334f3",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
