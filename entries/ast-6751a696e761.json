@@ -1,0 +1,121 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6751a696e761",
+  "name": "BenchUp (ex-KetchUp3D) — open-source 3D woodworking & furniture modeler",
+  "summary": "Free, open-source SketchUp-style modeler for woodworking, written in Rust (wgpu/WebGPU), running in the browser or as a native Windows/macOS/Linux app. Push/Pull, components, tags, dimensions, wood joinery (mortise-tenon, dovetail, finger...), grain direction, cut lists and cutting-plan PDF export; imports .skp, exports .obj. No account needed.",
+  "category": "tools",
+  "tags": [
+    "3d-modeling",
+    "woodworking",
+    "furniture",
+    "sketchup-alternative",
+    "rust",
+    "webgpu",
+    "cad",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "BenchUp contributors (BenchUp3D)",
+    "url": "https://github.com/BenchUp3D"
+  },
+  "resource_url": "https://github.com/BenchUp3D/editor",
+  "download_url": "https://github.com/BenchUp3D/editor/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/BenchUp3D/editor/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Browser version autosaves locally only; .skp import is geometry only (no textures/scenes). Self-described as vibe-coded, young project (created 2026-10-23), pilot before relying on it."
+  },
+  "procedure": [
+    "Try it in the browser at https://benchup3d.github.io/editor/play/.",
+    "Or download the installer for Windows, macOS (Apple Silicon) or Linux AppImage from GitHub Releases.",
+    "Save projects as .bup files; use File → Import/Export for .skp/.obj."
+  ],
+  "stats": {
+    "count": "556 GitHub stars at check",
+    "size": "~15–23 MB installers",
+    "formats": [
+      "BUP",
+      "SKP (import)",
+      "OBJ (export)",
+      "PDF"
+    ],
+    "cadence": "v0.6.6 released 2026-11-09"
+  },
+  "source": {
+    "url": "https://x.com/menarawed/status/2119733549763117412",
+    "author": "@menarawed",
+    "published_at": "2026-11-09T10:07:15Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://servicta.com/insights/ketchup-open-source-3d-modeling-woodworkers/",
+      "author": "Servicta",
+      "published_at": "2026-11-08T00:00:00Z",
+      "kind": "article"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50418176",
+      "author": "Hacker News",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://benchup3d.github.io/editor/",
+      "author": "BenchUp",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 66,
+    "why": "Genuine MIT 3D modeler with browser + native builds, releases and license verified, HN traction (556 stars in ~2 weeks). Niche (woodworking), young and self-described vibe-coded."
+  },
+  "image": {
+    "url": "https://benchup3d.github.io/editor/assets/screenshots/benchup.jpg?v=0.6.6",
+    "alt": "BenchUp editor screenshot: wooden loft-bed frame with a desk and a highlighted stair cabinet, dimension label and properties panel",
+    "credit": "BenchUp contributors"
+  },
+  "verification": {
+    "checked_at": "2026-11-09T16:50:46Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 263878 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-09T16:50:46Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-09T16:50:46Z",
+  "history": [
+    {
+      "operation_id": "9e8cf5eb-2f75-41cd-a97c-9c37e19a8d69",
+      "action": "submit",
+      "at": "2026-11-09T16:50:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "57b4b73f8c48cf7e3dd6014cdb7fa78246cc978c872664f6338b7f427144094a",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
