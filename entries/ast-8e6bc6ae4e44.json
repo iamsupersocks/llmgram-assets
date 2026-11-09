@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-8e6bc6ae4e44",
+  "name": "CC0Tree — free low-poly game assets (CC0)",
+  "summary": "Public-domain library of gradient-shaded low-poly, game-ready 3D props (tools, weapons props, electronics, garden, trees, misc) by SkyWolf Game Studios, at real-world scale, with new models weekly. Just launched on the Godot Asset Store; latest drop is an ammo box and bullet. Every FBX downloads free from GitHub; .blend sources and packaged zip are Patreon perks.",
+  "category": "3d-models",
+  "tags": [
+    "low-poly",
+    "cc0",
+    "game-ready",
+    "fbx",
+    "godot",
+    "props",
+    "public-domain"
+  ],
+  "publisher": {
+    "name": "SkyWolf Game Studios",
+    "url": "https://skywolfgamestudios.github.io/CC0Tree/"
+  },
+  "resource_url": "https://skywolfgamestudios.github.io/CC0Tree/",
+  "download_url": "https://github.com/SkywolfGameStudios/CC0Tree/archive/refs/heads/main.zip",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://github.com/SkywolfGameStudios/CC0Tree/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0; .blend sources + packaged FBX zip for Patreon/itch supporters",
+    "notes": "No attribution required. Small one-person library, repo has ~5 stars."
+  },
+  "procedure": [
+    "Open the CC0Tree site and browse the library, or open the GitHub repo.",
+    "Download individual FBX files from 'All Models/<category>/', or grab the whole repo zip (~15 MB).",
+    "Godot users can also install it from the Godot Asset Store listing."
+  ],
+  "stats": {
+    "count": "~35 models (66 FBX files across All/New/Updated folders)",
+    "size": "~15 MB repo",
+    "formats": [
+      "FBX",
+      "PNG renders"
+    ],
+    "cadence": "at least weekly"
+  },
+  "source": {
+    "url": "https://x.com/SkyWolfGameStds/status/2119495072106647857",
+    "author": "@SkyWolfGameStds",
+    "published_at": "2026-11-08T18:19:38Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://store.godotengine.org/asset/skywolfgamestudios/cc0tree/",
+      "author": "SkyWolf Game Studios",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://github.com/SkywolfGameStudios/CC0Tree",
+      "author": "",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 62,
+    "why": "Genuine CC0 low-poly props with direct no-signup downloads and weekly cadence, new Godot Asset Store launch. Small library and low visibility so far."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HWn1LRTXcAATIb4.jpg",
+    "alt": "Low-poly green ammo box with three yellow bullets on a black background",
+    "credit": "SkyWolf Game Studios"
+  },
+  "verification": {
+    "checked_at": "2026-11-09T08:42:16Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 31068 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-09T08:42:16Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-09T08:42:16Z",
+  "history": [
+    {
+      "operation_id": "3400b8af-5a27-4ae0-9fa5-804db65ff174",
+      "action": "submit",
+      "at": "2026-11-09T08:42:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "84bbc25cde2cbebe3f7b0664aa13847fad07726f472eb7ec092530c792130150",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
