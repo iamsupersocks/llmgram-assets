@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b6dad27b130f",
+  "name": "DARKNESS — free horror escape backgrounds & props (2D)",
+  "summary": "All background art and props from etomo-studio's small Unity horror escape game DARKNESS: 4 concrete/iron-door/pipe corridor backgrounds at 1672×941 plus transparent props (rusty key, lever, crack overlay), an eye close-up, a memo note and the title illustration. Handy for escape-room, visual-novel or horror jam games.",
+  "category": "images-video",
+  "tags": [
+    "2d",
+    "backgrounds",
+    "horror",
+    "escape-game",
+    "props",
+    "png",
+    "itch.io",
+    "game-assets"
+  ],
+  "publisher": {
+    "name": "etomo-studio",
+    "url": "https://etomo-studio.itch.io/"
+  },
+  "resource_url": "https://etomo-studio.itch.io/darkness",
+  "download_url": "https://etomo-studio.itch.io/darkness",
+  "access": {
+    "model": "free",
+    "license": "etomo-studio terms (commercial use OK, credit optional)",
+    "license_url": "https://etomo-studio.itch.io/darkness",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (name your own price, minimum $0)",
+    "notes": "Terms stated on the itch page only, no license file in zip. Itch flags graphics as AI-assisted. Game and sound effects not included."
+  },
+  "procedure": [
+    "Open https://etomo-studio.itch.io/darkness.",
+    "Click Download Now, then 'No thanks, just take me to the downloads' (or pay what you want).",
+    "Download darkness_backgrounds_props.zip (12 MB) and unzip."
+  ],
+  "stats": {
+    "count": "10 files (4 backgrounds, 6 props/illustrations)",
+    "size": "12 MB zip",
+    "formats": [
+      "PNG",
+      "JPG"
+    ],
+    "cadence": "one-off, published 2026-11-09"
+  },
+  "source": {
+    "url": "https://x.com/etomostudio/status/2119819059680407905",
+    "author": "@etomostudio",
+    "published_at": "2026-11-09T15:47:02Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 58,
+    "why": "Fresh, genuinely free pack with commercial use allowed, download verified (10 files). Small, AI-assisted art and terms only on the itch page, so modest score."
+  },
+  "image": {
+    "url": "https://img.itch.zone/aW1nLzMyMDI2MDE1LmpwZw==/original/BdeXhR.jpg",
+    "alt": "Dark concrete corridor with a shaft of light and a man in a coat holding an umbrella walking toward a lit stairway",
+    "credit": "etomo-studio"
+  },
+  "verification": {
+    "checked_at": "2026-11-09T16:50:38Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 403,
+      "detail": "reachable, access restricted"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 403,
+      "detail": "reachable, access restricted"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 677174 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-09T16:50:38Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-09T16:50:38Z",
+  "history": [
+    {
+      "operation_id": "a111403b-a677-4488-ab73-d41ee0264d41",
+      "action": "submit",
+      "at": "2026-11-09T16:50:38Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "7ce0e9a2499dea8fe6cf2c54bf938b61c0b0dba7a8cf63ed8a55c228f19f75e9",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
