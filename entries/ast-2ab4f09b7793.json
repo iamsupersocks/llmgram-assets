@@ -62,7 +62,7 @@
     "credit": "Daniel Jankulovski"
   },
   "verification": {
-    "checked_at": "2026-11-09T08:42:24Z",
+    "checked_at": "2026-11-09T08:43:00Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -82,12 +82,12 @@
       "detail": "image/png, 272692 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-09T08:42:24Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-09T08:42:24Z",
+  "updated_at": "2026-11-09T08:43:00Z",
   "history": [
     {
       "operation_id": "6a734f3f-462e-403f-8561-105a485ab4bb",
@@ -97,6 +97,15 @@
       "payload_sha256": "42a8a46f12503c01100bf301ef938d1e706e7d3ef77f68d1964466b625d5fa74",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8ca5bb1a-5f60-4f56-96b9-0e2d1383b343",
+      "action": "update",
+      "at": "2026-11-09T08:43:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9831f23e4f7b482227a54c447109738fa2397eba301dbdc8d1a9a45105d5faf2",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
