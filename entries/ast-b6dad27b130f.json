@@ -60,7 +60,7 @@
     "credit": "etomo-studio"
   },
   "verification": {
-    "checked_at": "2026-11-09T16:50:38Z",
+    "checked_at": "2026-11-09T16:51:03Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/jpg, 677174 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-09T16:50:38Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-09T16:50:38Z",
+  "updated_at": "2026-11-09T16:51:03Z",
   "history": [
     {
       "operation_id": "a111403b-a677-4488-ab73-d41ee0264d41",
@@ -95,6 +95,15 @@
       "payload_sha256": "7ce0e9a2499dea8fe6cf2c54bf938b61c0b0dba7a8cf63ed8a55c228f19f75e9",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "5162c37c-5eb4-40c3-914f-3022d586d06a",
+      "action": "update",
+      "at": "2026-11-09T16:51:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "772ce416863bdb60334a46930fa3572a0d26070009d4bdf114a7f3bf252e17ca",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
