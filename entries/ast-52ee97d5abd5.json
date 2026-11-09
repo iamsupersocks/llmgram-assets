@@ -82,7 +82,7 @@
     "credit": "@nachat_dayo"
   },
   "verification": {
-    "checked_at": "2026-11-09T16:50:31Z",
+    "checked_at": "2026-11-09T16:51:00Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -102,12 +102,12 @@
       "detail": "image/jpg, 80829 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-09T16:50:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-09T16:50:31Z",
+  "updated_at": "2026-11-09T16:51:00Z",
   "history": [
     {
       "operation_id": "10f7456c-6b06-4fde-8e56-f64b0f8a5831",
@@ -117,6 +117,15 @@
       "payload_sha256": "7e87ae130060ea44aafc529263d7ec8b5f742e8f39aa55772407ec0d7a83f453",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "b08f1aef-0f1f-4d5f-9955-d37e19b3366c",
+      "action": "update",
+      "at": "2026-11-09T16:51:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "23cf3bf8524b54a89670137508e55010d12013453fd02b0a7e7876bb2d9ea9db",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
