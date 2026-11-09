@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-4ee1168958ca",
+  "name": "Pixel Art Atlas — 1.4M synthetic 16×16 sprites (CC0)",
+  "summary": "Hugging Face dataset of 1,409,404 AI-generated 16×16 pixel-art sprites with transparent backgrounds and English captions, covering 6,194 subjects (items, creatures, props, fantasy objects). Generated with Krea 2 Turbo + a pixel-art LoRA. Useful as a huge placeholder/icon sprite library or for training small sprite generators. Captions are approximate.",
+  "category": "datasets",
+  "tags": [
+    "pixel-art",
+    "sprites",
+    "16x16",
+    "cc0",
+    "synthetic",
+    "game-assets",
+    "text-to-image",
+    "huggingface"
+  ],
+  "publisher": {
+    "name": "Angais",
+    "url": "https://huggingface.co/Angais"
+  },
+  "resource_url": "https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m",
+  "download_url": "https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m/resolve/main/pixel-art-16x16-1.4m.zip",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0 (dataset); Krea 2 Community License applies to outputs",
+    "license_url": "https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Angais waives its rights under CC0 but not third-party rights. Sprites are Krea 2 outputs; Krea license §2.3 limits commercial use of outputs to entities under $1M annual revenue. AI-generated; captions unreviewed."
+  },
+  "procedure": [
+    "Open the dataset page on Hugging Face (no login, not gated).",
+    "Either stream with datasets: load_dataset('Angais/pixel-art-atlas-1.4m', split='train', streaming=True), or download the Parquet shards in data/.",
+    "Or download pixel-art-16x16-1.4m.zip (~259 MB): tokens.npy (palette indices), palette.npy, captions.json, objects.json, split.npy; decode with the snippet on the card."
+  ],
+  "stats": {
+    "count": "1,409,404 sprites (1,405,308 train + 4,096 val), 6,194 subjects",
+    "size": "~694 MB repo total; zip 259 MB",
+    "formats": [
+      "parquet",
+      "npy",
+      "json",
+      "png"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/sonuv_dev/status/2119636439201661421",
+    "author": "@sonuv_dev",
+    "published_at": "2026-11-09T03:41:22Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m",
+      "author": "Angais",
+      "published_at": "2026-11-06T12:37:24Z",
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "Massive, ungated, clearly licensed CC0 sprite set (108 likes, 1.7k downloads in 3 days); honest card on provenance. Docked for AI-generated content, approximate captions and Krea revenue-threshold caveat on commercial use."
+  },
+  "image": {
+    "url": "https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m/resolve/main/banner.png",
+    "alt": "Pixel Art Atlas banner: gold pixel title '1.4M sprites 16x16' beside sprites of a chest, kingfisher, strawberry, campfire, sailboat, goldfish",
+    "credit": "Angais / Hugging Face"
+  },
+  "verification": {
+    "checked_at": "2026-11-09T08:42:47Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 85609 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-09T08:42:47Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-09T08:42:47Z",
+  "history": [
+    {
+      "operation_id": "82d1e9cd-8be9-4168-883f-c0804e63bc31",
+      "action": "submit",
+      "at": "2026-11-09T08:42:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3cdf3711aadd2c01bc14d321f5473689907e4a798bee7ca0dd977e25103e498c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
