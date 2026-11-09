@@ -81,7 +81,7 @@
     "credit": "BenchUp contributors"
   },
   "verification": {
-    "checked_at": "2026-11-09T16:50:46Z",
+    "checked_at": "2026-11-09T16:51:03Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -101,12 +101,12 @@
       "detail": "image/jpg, 263878 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-09T16:50:46Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-09T16:50:46Z",
+  "updated_at": "2026-11-09T16:51:03Z",
   "history": [
     {
       "operation_id": "9e8cf5eb-2f75-41cd-a97c-9c37e19a8d69",
@@ -116,6 +116,15 @@
       "payload_sha256": "57b4b73f8c48cf7e3dd6014cdb7fa78246cc978c872664f6338b7f427144094a",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "4b31c519-3236-47f8-a035-33cab99db532",
+      "action": "update",
+      "at": "2026-11-09T16:51:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c5ab9421e10c57b0a7dcaf9abcd1416f9b7945448c39dc48cb5123a2cf0724f6",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
