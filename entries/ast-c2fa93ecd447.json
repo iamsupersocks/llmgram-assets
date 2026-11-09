@@ -1,0 +1,89 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c2fa93ecd447",
+  "name": "Stylized World — free stylized textures, 3D assets and SFX",
+  "summary": "Stylized hand-painted look PBR textures (stone, wood, temple walls, roofs, ground), low-poly 3D assets and game sound effects. The library moved off Patreon to its own site and all assets are now free with an account; 61 assets listed at launch, more announced.",
+  "category": "textures-materials",
+  "tags": [
+    "stylized",
+    "textures",
+    "low-poly",
+    "game-assets",
+    "sound-effects",
+    "royalty-free"
+  ],
+  "publisher": {
+    "name": "Stylized World",
+    "url": "https://stylizedworld.com/"
+  },
+  "resource_url": "https://stylizedworld.com/",
+  "download_url": null,
+  "access": {
+    "model": "free-with-signup",
+    "license": "Stylized World License (royalty-free, attribution required)",
+    "license_url": "https://stylizedworld.com/licenses",
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0",
+    "notes": "Credit 'Textures by Stylized World — stylizedworld.com' required; no redistribution/resale of raw files or inclusion in other libraries. Verified-email account needed."
+  },
+  "procedure": [
+    "Create a free Stylized World account and verify your email.",
+    "Browse /assets by type (textures, 3D assets, sounds, VFX) or software.",
+    "Download, then credit Stylized World in your project."
+  ],
+  "stats": {
+    "count": "61 assets (at relaunch)",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/izzetalsan/status/2119500783154807016",
+    "author": "@izzetalsan",
+    "published_at": "2026-11-08T18:42:19Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Nice stylized materials now free for commercial use with credit. Account-gated download, so files and formats not verified; small library."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HWn6jpjWEAAjoeW.jpg",
+    "alt": "Stylized World site screenshot: grid of stylized material spheres (rock with soil, temple walls, stone, wood floors) and banners for roof textures and sound effects",
+    "credit": "Stylized World"
+  },
+  "verification": {
+    "checked_at": "2026-11-09T08:42:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 140903 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-09T08:42:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-09T08:42:31Z",
+  "history": [
+    {
+      "operation_id": "4da5602f-a4f1-4443-913f-8467e95217f5",
+      "action": "submit",
+      "at": "2026-11-09T08:42:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a87fb69fd99278ef9f4fd37219096ca33538c1bd69ee0fb68a0b47ad3712df90",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
