@@ -1,0 +1,102 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-2ab4f09b7793",
+  "name": "Noxe Pixel Engine — 3D dioramas rendered as pixel art (three.js)",
+  "summary": "MIT-licensed browser engine that renders procedural three.js dioramas as pixel art (toon lighting, outlines, dithered palette, pixel-snapped ortho camera), with time of day, weather (rain, storm, snow, fog), planar reflections, synthesized ambient sound, and offline 60 fps MP4 export with audio (16:9 up to 4K, square, portrait). No build step; ships 8+ scenes.",
+  "category": "tools",
+  "tags": [
+    "pixel-art",
+    "three.js",
+    "renderer",
+    "diorama",
+    "procedural",
+    "webcodecs",
+    "mp4-export",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Daniel Jankulovski (Noxe Studio)",
+    "url": "https://github.com/danieljan-design"
+  },
+  "resource_url": "https://github.com/danieljan-design/noxe-pixel-engine",
+  "download_url": "https://github.com/danieljan-design/noxe-pixel-engine/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/danieljan-design/noxe-pixel-engine/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Keep MIT notice. MP4 export needs Chrome/Edge (WebCodecs). Live demo at pixel.noxestudio.com."
+  },
+  "procedure": [
+    "Try the live demo at https://pixel.noxestudio.com/ (Chrome or Edge on desktop).",
+    "git clone https://github.com/danieljan-design/noxe-pixel-engine.git",
+    "cd noxe-pixel-engine && python3 tools/serve.py, then open http://localhost:5184",
+    "Keys 1-4 time of day, 5-0 weather, G renders the demo clip to MP4, P saves a PNG."
+  ],
+  "stats": {
+    "count": "8+ scenes (Alpine, Streetcar, Studio, Ferry, Campsite, Lookout, Motel, Cove)",
+    "size": "",
+    "formats": [
+      "JS",
+      "MP4",
+      "PNG"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/danjan_design/status/2119573179773436153",
+    "author": "@danjan_design",
+    "published_at": "2026-11-08T23:30:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 64,
+    "why": "Fresh open-sourcing (repo created Nov 5, opened Nov 8), polished pixel-art look and built-in MP4 export, MIT. Young project with ~20 stars."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/danieljan-design/noxe-pixel-engine/main/docs/media/hero.png",
+    "alt": "Pixel-art isometric alpine diorama: mountains, waterfall, lake with reflections, cabin with campfire and pine forest",
+    "credit": "Daniel Jankulovski"
+  },
+  "verification": {
+    "checked_at": "2026-11-09T08:42:24Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 272692 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-09T08:42:24Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-09T08:42:24Z",
+  "history": [
+    {
+      "operation_id": "6a734f3f-462e-403f-8561-105a485ab4bb",
+      "action": "submit",
+      "at": "2026-11-09T08:42:24Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "42a8a46f12503c01100bf301ef938d1e706e7d3ef77f68d1964466b625d5fa74",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
