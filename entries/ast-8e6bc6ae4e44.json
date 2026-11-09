@@ -72,7 +72,7 @@
     "credit": "SkyWolf Game Studios"
   },
   "verification": {
-    "checked_at": "2026-11-09T08:42:16Z",
+    "checked_at": "2026-11-09T08:43:00Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -92,12 +92,12 @@
       "detail": "image/jpg, 31068 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-09T08:42:16Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-09T08:42:16Z",
+  "updated_at": "2026-11-09T08:43:00Z",
   "history": [
     {
       "operation_id": "3400b8af-5a27-4ae0-9fa5-804db65ff174",
@@ -107,6 +107,15 @@
       "payload_sha256": "84bbc25cde2cbebe3f7b0664aa13847fad07726f472eb7ec092530c792130150",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7f5f0027-766a-4038-b156-6fc931d54201",
+      "action": "update",
+      "at": "2026-11-09T08:43:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d34ac88a4e124b72c1ad84af203506bd04790c1300ccae1f52f46f10fe4540e8",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
