@@ -2,7 +2,7 @@
   "schema_version": "llmgram-asset/v1",
   "id": "ast-0d907d765378",
   "name": "Mat-Baker",
-  "summary": "Free offline Blender add-on that bakes procedural materials into PBR texture packs in one click, with engine presets for Unreal, Unity, glTF and Godot plus ORM/mask packing, normal, height, AO and curvature maps.",
+  "summary": "Free offline Blender add-on that bakes procedural materials into PBR texture packs in one click, with engine presets for Unreal, Unity, glTF and Godot plus ORM/mask packing, normal, height, AO and curvature maps. v1.2.0 (2026-11-09) adds UDIM baking: one texture file per UV tile.",
   "category": "tools",
   "tags": [
     "blender",
@@ -16,7 +16,7 @@
     "url": "https://github.com/sanjaya3d"
   },
   "resource_url": "https://github.com/sanjaya3d/Mat-Baker",
-  "download_url": "https://github.com/sanjaya3d/Mat-Baker/releases/download/v1.1.0/mat_baker-1.1.0.zip",
+  "download_url": "https://github.com/SANJAYA3D/Mat-Baker/releases/download/v1.2.0/mat_baker-1.2.0.zip",
   "access": {
     "model": "open-source",
     "license": "GPL-3.0-or-later",
@@ -24,21 +24,23 @@
     "commercial_use": "yes",
     "signup_required": false,
     "price": "$0",
-    "notes": "GPL-3.0-or-later: distributing modified add-on must keep GPL. Young repo (~2 stars)."
+    "notes": "GPL-3.0-or-later (manifest SPDX): distributing a modified add-on must keep GPL; baked textures are yours. Listed on official Blender Extensions (610 downloads)."
   },
   "procedure": [
-    "Download mat_baker-1.1.0.zip from Releases",
-    "Install in Blender as an add-on from the zip",
-    "Select materials and bake to the chosen engine preset"
+    "In Blender 4.2+: Get Extensions, search Mat-Baker, install (or drag from extensions.blender.org/add-ons/mat-baker/)",
+    "Or download mat_baker-1.2.0.zip from GitHub Releases and Install from Disk",
+    "Pick an engine preset and resolution, press Export Texture Pack"
   ],
   "stats": {
-    "count": "2 GitHub stars; release v1.1.0 on 2026-11-04",
-    "size": "~36 KB zip",
+    "count": "610 Blender Extensions downloads; 2 GitHub stars",
+    "size": "~40 KB zip",
     "formats": [
-      "PNG/texture packs",
+      "PNG",
+      "TIFF",
+      "OpenEXR",
       "Blender add-on zip"
     ],
-    "cadence": ""
+    "cadence": "v1.1.0 11-04, v1.2.0 11-09"
   },
   "source": {
     "url": "https://x.com/SdLSanjaya_/status/2118427391945257156",
@@ -46,18 +48,31 @@
     "published_at": "2026-11-05T19:37:03Z",
     "kind": "x_post"
   },
-  "related_sources": [],
+  "related_sources": [
+    {
+      "url": "https://x.com/SdLSanjaya_/status/2120061700368142394",
+      "author": "@SdLSanjaya_",
+      "published_at": "2026-11-10T07:51:12Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://extensions.blender.org/add-ons/mat-baker/",
+      "author": "SANJAYA3D",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
   "verdict": {
-    "score": 58,
-    "why": "Zip and LICENSE verified, useful bake niche, but very low traction — keep held until more stars/tests."
+    "score": 66,
+    "why": "Now on official Blender Extensions with 610 downloads and a fresh v1.2.0 (UDIM); zip, GPL manifest and LICENSE verified. Niche but useful bake tool; GitHub stars still low."
   },
   "image": {
-    "url": "https://pbs.twimg.com/media/HWYpkCLa0AAmWiL.jpg?name=orig",
-    "alt": "Mat-Baker Blender UI baking procedural materials to PBR packs",
+    "url": "https://pbs.twimg.com/media/HWv4w4jaMAAHtL6.jpg",
+    "alt": "Mat-Baker v1.2.0 banner: UDIM support, four brick texture tiles 1001-1012 baked from procedural materials",
     "credit": "@SdLSanjaya_"
   },
   "verification": {
-    "checked_at": "2026-11-06T08:56:32Z",
+    "checked_at": "2026-11-10T08:51:42Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -74,15 +89,15 @@
     "image": {
       "ok": true,
       "status": 200,
-      "detail": "image/jpg, 89517 bytes"
+      "detail": "image/jpg, 83819 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-06T08:56:32Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-06T08:56:32Z",
+  "updated_at": "2026-11-10T08:51:42Z",
   "history": [
     {
       "operation_id": "97398927-a7f0-4a75-8beb-fb4ef6cf551e",
@@ -92,6 +107,15 @@
       "payload_sha256": "08e6833f9f98f64a6d616b2025fc04e3fe4b0dc4e71cb569bbe4c2c2410fc0d0",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8e86752a-6077-4b77-9f05-b630de2357a3",
+      "action": "update",
+      "at": "2026-11-10T08:51:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "034ce2e1b3f9ab30222c5c689cfaf756942e4fd03057e326b5ce3197d0df3db7",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
