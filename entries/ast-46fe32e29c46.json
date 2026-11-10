@@ -1,0 +1,108 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-46fe32e29c46",
+  "name": "MuJoCo 4.0 (physics engine) + MuJoCo Playground 1.0",
+  "summary": "Google DeepMind's open-source physics simulator, major 4.0 release (2026-11-06): speculative contacts against tunneling, plasticity for wires, clay, paper and foil, Filament PBR rendering and hot-reload in MuJoCo Studio, zero-install browser viewer (MuJoCo Live). Playground 1.0 adds GPU-accelerated robot learning environments. Useful for robotics, physics sims and procedural animation.",
+  "category": "simulation",
+  "tags": [
+    "physics",
+    "simulation",
+    "robotics",
+    "mujoco",
+    "deepmind",
+    "apache-2.0",
+    "webassembly"
+  ],
+  "publisher": {
+    "name": "Google DeepMind",
+    "url": "https://mujoco.org/"
+  },
+  "resource_url": "https://github.com/google-deepmind/mujoco",
+  "download_url": "https://github.com/google-deepmind/mujoco/releases/tag/4.0.0",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/google-deepmind/mujoco/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Apache-2.0 for engine and Playground; keep license/NOTICE when redistributing."
+  },
+  "procedure": [
+    "pip install mujoco (4.0.0) or download the platform build from the 4.0.0 GitHub release",
+    "Try models in the browser at live.mujoco.org",
+    "For learning environments: pip install playground (1.0.x) from google-deepmind/mujoco_playground"
+  ],
+  "stats": {
+    "count": "17k GitHub stars; Playground 2.3k stars",
+    "size": "~35 MB linux x86_64 tarball",
+    "formats": [
+      "MJCF XML",
+      "Python",
+      "C/C++",
+      "WASM"
+    ],
+    "cadence": "regular releases (3.16 10-14, 3.17 10-22, 4.0 11-06)"
+  },
+  "source": {
+    "url": "https://x.com/DynamicWebPaige/status/2119840060212167121",
+    "author": "@DynamicWebPaige",
+    "published_at": "2026-11-09T17:10:29Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/google-deepmind/mujoco/releases/tag/4.0.0",
+      "author": "google-deepmind",
+      "published_at": "2026-11-06T15:39:53Z",
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Major release of the reference open physics engine, Apache-2.0, binaries + pip + browser viewer; new deformable/plastic materials and PBR viewer widen use beyond robotics."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2119840029753147392/img/Ez4GsN0erflMfqEh.jpg",
+    "alt": "Four MuJoCo 4.0 plasticity demos: bent wires, dented clay block, creased paper, impacted foil sheets",
+    "credit": "@DynamicWebPaige / Google DeepMind"
+  },
+  "verification": {
+    "checked_at": "2026-11-10T08:51:24Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 142706 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-10T08:51:24Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-10T08:51:24Z",
+  "history": [
+    {
+      "operation_id": "6c1c7295-e7d0-419e-9cef-bf26781c26c5",
+      "action": "submit",
+      "at": "2026-11-10T08:51:24Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c7813832612d05875ff2ead02b35289e0c28c178ef80f2bf1e67424e1d069869",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
