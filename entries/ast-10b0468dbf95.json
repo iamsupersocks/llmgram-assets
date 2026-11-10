@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-10b0468dbf95",
+  "name": "Keyline Icons v2.6.0 (1,833 MIT icons, 4 styles)",
+  "summary": "Free icon set for shadcn/ui and any UI: 1,833 icons on a 24px grid, each in stroke, two-tone, duotone and fill, cut rounded and sharp (14,664 SVGs). v2.6.0 (2026-11-08) adds 141 icons (food, clothing, buildings). SVG files plus npm packages (React, React Native, CLI, MCP) and a Figma plugin.",
+  "category": "icons-ui",
+  "tags": [
+    "icons",
+    "svg",
+    "shadcn-ui",
+    "react",
+    "figma",
+    "mit",
+    "ui"
+  ],
+  "publisher": {
+    "name": "Keyline Icons",
+    "url": "https://keylineicons.com/"
+  },
+  "resource_url": "https://keylineicons.com/",
+  "download_url": "https://github.com/keyline-icons/keyline-icons/archive/refs/tags/v2.6.0.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/keyline-icons/keyline-icons/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT: keep the copyright/permission notice when redistributing the files; no attribution needed in shipped UI per publisher."
+  },
+  "procedure": [
+    "Browse and search icons on keylineicons.com, copy or export the SVG",
+    "Or install the npm package (e.g. @keyline-icons/react) for React projects",
+    "Or download the v2.6.0 source zip from GitHub for all SVGs"
+  ],
+  "stats": {
+    "count": "1,833 icons x 4 styles x 2 corners = 14,664 SVGs",
+    "size": "~45 MB source zip",
+    "formats": [
+      "SVG",
+      "npm",
+      "Figma"
+    ],
+    "cadence": "frequent releases (v2.5.0 11-02, v2.6.0 11-08)"
+  },
+  "source": {
+    "url": "https://x.com/zafarlab/status/2119865278557212854",
+    "author": "@zafarlab",
+    "published_at": "2026-11-09T18:50:42Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "Large, consistent MIT icon set with real traction (197 stars, npm ~10k weekly per site); official release post with 66 likes/46 bookmarks. Directly usable in apps, games UI and sites."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HWtGOsCWEAAKNoT.png",
+    "alt": "Grid of Keyline Icons v2.6.0 new icons in four styles on black, title '141 new free icons, 1,833 in all, MIT licensed'",
+    "credit": "@zafarlab"
+  },
+  "verification": {
+    "checked_at": "2026-11-10T08:51:16Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 80160 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-10T08:51:16Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-10T08:51:16Z",
+  "history": [
+    {
+      "operation_id": "5f67abdb-4201-439e-9a2a-98d705395f25",
+      "action": "submit",
+      "at": "2026-11-10T08:51:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6e7549f6095abd3c6e9e30f988caef0c150b2c12f0d0eb463fe573dd8e27f2bc",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
