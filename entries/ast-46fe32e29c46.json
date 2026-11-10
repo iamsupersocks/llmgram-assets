@@ -68,7 +68,7 @@
     "credit": "@DynamicWebPaige / Google DeepMind"
   },
   "verification": {
-    "checked_at": "2026-11-10T08:51:24Z",
+    "checked_at": "2026-11-10T08:51:38Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -88,12 +88,12 @@
       "detail": "image/jpg, 142706 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-10T08:51:24Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-10T08:51:24Z",
+  "updated_at": "2026-11-10T08:51:38Z",
   "history": [
     {
       "operation_id": "6c1c7295-e7d0-419e-9cef-bf26781c26c5",
@@ -103,6 +103,15 @@
       "payload_sha256": "c7813832612d05875ff2ead02b35289e0c28c178ef80f2bf1e67424e1d069869",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "51b62d78-d8b5-4b07-8cf6-25b343e0c031",
+      "action": "update",
+      "at": "2026-11-10T08:51:38Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ccdbb0ab362900d9f6ee32b3d6b6b9d0af8bfcf5f797e2a7935e84254b4cabc9",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
