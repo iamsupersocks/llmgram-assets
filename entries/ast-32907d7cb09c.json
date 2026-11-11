@@ -1,0 +1,96 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-32907d7cb09c",
+  "name": "smasher (game asset optimizer)",
+  "summary": "Rust library and CLI that shrinks game assets: packs sprites into atlases, converts textures to KTX2/Basis, compresses meshes with Draco or meshopt, and emits phone/desktop/high quality levels.",
+  "category": "tools",
+  "tags": [
+    "gamedev",
+    "ktx2",
+    "draco",
+    "meshopt",
+    "sprite-atlas",
+    "rust",
+    "cli"
+  ],
+  "publisher": {
+    "name": "joydle",
+    "url": "https://github.com/joydle"
+  },
+  "resource_url": "https://github.com/joydle/smasher",
+  "download_url": "https://joydle.github.io/smasher/",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/joydle/smasher/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Very new repo (created 2026-11-08, 2 stars); not yet verified hands-on."
+  },
+  "procedure": [
+    "Open https://github.com/joydle/smasher",
+    "Follow the README to install the Rust CLI",
+    "Run it on your sprites, textures and models"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/batuhnnsk/status/2120217578052391059",
+    "author": "@batuhnnsk",
+    "published_at": "2026-11-10T23:00:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Useful pipeline tool under Apache-2.0, but 3-day-old repo with 2 stars; held until it shows traction and a release."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/a2423c4348746edbf54e89de0d59a8ade59ceb3c610586b454619f661156213e/joydle/smasher",
+    "alt": "Make game assets small: sprite atlases, KTX2/Basis textures, Draco and meshopt geometry, and quality levels for phone, desktop and high. A Rust library and CLI. - joydle/smasher",
+    "credit": "joydle"
+  },
+  "verification": {
+    "checked_at": "2026-11-11T08:48:52Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 75322 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-11T08:48:52Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-11T08:48:52Z",
+  "history": [
+    {
+      "operation_id": "c27adde0-4475-4383-9f5b-5eb031b37323",
+      "action": "submit",
+      "at": "2026-11-11T08:48:52Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1efa4f5ddc3869a9778aab4d7423f4408ae5bb6c2428c46e45d00a9c21cf2fcf",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
