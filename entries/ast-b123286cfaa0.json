@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b123286cfaa0",
+  "name": "Kubai Icons",
+  "summary": "2,800+ animated, consistent-style icons (nearly 900 objects plus badged and 'off' variants) for React, Vue, web components and static SVG, plus an agent skill for Claude Code/Codex that draws new icons in the same style. Browse, recolor and download SVG/PNG or ZIP collections on icons.kubai.design.",
+  "category": "icons-ui",
+  "tags": [
+    "icons",
+    "svg",
+    "react",
+    "vue",
+    "animated",
+    "agent-skill",
+    "mit"
+  ],
+  "publisher": {
+    "name": "kubai087",
+    "url": "https://github.com/kubai087"
+  },
+  "resource_url": "https://github.com/kubai087/kubai-icons",
+  "download_url": "https://icons.kubai.design/icons/",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (icons and packages)",
+    "license_url": "https://github.com/kubai087/kubai-icons/blob/master/LICENSING.md",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Icons/packages MIT (keep copyright notice). The skill is under a source-available Kubai Icons License; website code all rights reserved."
+  },
+  "procedure": [
+    "Browse and download icons as SVG/PNG or a ZIP collection at https://icons.kubai.design/icons/",
+    "Or install packages: npm i kubai-icons-react (or kubai-icons-vue, kubai-icons-static)",
+    "Optional: clone the repo into your agent skills folder to use the icon-drawing skill"
+  ],
+  "stats": {
+    "count": "2,800+ icons",
+    "size": "",
+    "formats": [
+      "SVG",
+      "PNG",
+      "React",
+      "Vue"
+    ],
+    "cadence": "active (npm 0.5.0)"
+  },
+  "source": {
+    "url": "https://x.com/davidpereIsHIM/status/2120170142130696297",
+    "author": "@davidpereIsHIM",
+    "published_at": "2026-11-10T21:00:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "Large MIT icon set with React/Vue/SVG packages and a browsable site; ~700 GitHub stars in a week; licensing clearly split (icons MIT, skill source-available)."
+  },
+  "image": {
+    "url": "https://icons.kubai.design/assets/og.png",
+    "alt": "Kubai Icons preview image",
+    "credit": "kubai087"
+  },
+  "verification": {
+    "checked_at": "2026-11-11T08:48:47Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 367283 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-11T08:48:47Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-11T08:48:47Z",
+  "history": [
+    {
+      "operation_id": "f6815113-8d16-4f6c-a31a-040ed071f105",
+      "action": "submit",
+      "at": "2026-11-11T08:48:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5dbbb6a3a8599f0358a0d85214727e61df5a0e922b253cef081680d5572886cd",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
