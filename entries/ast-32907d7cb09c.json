@@ -42,7 +42,7 @@
   "source": {
     "url": "https://x.com/batuhnnsk/status/2120217578052391059",
     "author": "@batuhnnsk",
-    "published_at": "2026-11-10T23:00:00Z",
+    "published_at": "2026-11-10T18:10:37Z",
     "kind": "x_post"
   },
   "related_sources": [],
@@ -56,7 +56,7 @@
     "credit": "joydle"
   },
   "verification": {
-    "checked_at": "2026-11-11T08:48:52Z",
+    "checked_at": "2026-11-11T08:49:09Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,7 +81,7 @@
   "flags": [],
   "added_at": "2026-11-11T08:48:52Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-11T08:48:52Z",
+  "updated_at": "2026-11-11T08:49:09Z",
   "history": [
     {
       "operation_id": "c27adde0-4475-4383-9f5b-5eb031b37323",
@@ -90,6 +90,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "1efa4f5ddc3869a9778aab4d7423f4408ae5bb6c2428c46e45d00a9c21cf2fcf",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "5dc8dbe9-39d7-49b8-b6fa-7448a3f99996",
+      "action": "update",
+      "at": "2026-11-11T08:49:09Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bbe38a1958a9ab630b82fb21cd30a500c1afce46a7cf463dd019c267afcf65f8",
+      "result": "updated",
       "status": "candidate"
     }
   ]
