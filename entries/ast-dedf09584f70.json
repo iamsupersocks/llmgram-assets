@@ -1,0 +1,113 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-dedf09584f70",
+  "name": "VRM Retro Viewer (VRM avatar to pixel sprites + Pyxel 3D)",
+  "summary": "Free browser tool: drop a VRM 0.x/1.0 avatar (VRoid etc.), animate it with 231 bundled CC0 motions (Quaternius UAL 1&2, KayKit) and export transparent 8- or 4-direction sprite sheets (PNG + GIF, 32-128 px) or Pyxel 3 3D data with a loader. You can add your own FBX/VRMA motions. Runs locally in the page (Pyodide), no upload, no install; full source on GitHub.",
+  "category": "tools",
+  "tags": [
+    "vrm",
+    "vroid",
+    "pixel-art",
+    "sprite-sheet",
+    "pyxel",
+    "retro",
+    "cc0-motions",
+    "browser",
+    "mit"
+  ],
+  "publisher": {
+    "name": "haruka_apps",
+    "url": "https://haruka-apps-games.itch.io/"
+  },
+  "resource_url": "https://haruka-apps-games.itch.io/vrm-retro-viewer",
+  "download_url": "https://github.com/harukaappscreate/vrm-retro-viewer/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/harukaappscreate/vrm-retro-viewer/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (itch.io free tool, runs in browser)",
+    "notes": "Tool code MIT; bundled motions CC0. Exported sprites follow your VRM's own license (tool shows it and warns). Added Mixamo motions keep Mixamo terms. Provided AS IS. Desktop browser."
+  },
+  "procedure": [
+    "Open the itch.io page on a desktop browser and click Run tool (or press Try sample).",
+    "Drop your .vrm file; pick a motion from the 231 CC0 motions (or add .fbx/.vrma).",
+    "Choose size, 4/8 directions and fps, then export sprite sheets (PNG + GIF) or Pyxel 3D ZIP.",
+    "Optional: download the MIT source from GitHub and run it on your desktop."
+  ],
+  "stats": {
+    "count": "231 CC0 motions",
+    "size": "repo zip ~11.2 MB",
+    "formats": [
+      "VRM",
+      "VRMA",
+      "FBX",
+      "PNG",
+      "GIF",
+      "Pyxel"
+    ],
+    "cadence": "published on itch 2026-11-11, updated 2026-11-12"
+  },
+  "source": {
+    "url": "https://x.com/haruka_apps/status/2120533269641113647",
+    "author": "@haruka_apps",
+    "published_at": "2026-11-11T15:05:03Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/harukaappscreate/vrm-retro-viewer",
+      "author": "haruka_apps",
+      "published_at": "2026-11-11T23:54:09Z",
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "First-party new drop (108 likes, 67 bookmarks in <1 day): turns any VRM into game-ready pixel sprites with 231 CC0 motions, free, local, MIT source. Repo itself is brand new (0 stars)."
+  },
+  "image": {
+    "url": "https://img.itch.zone/aW1nLzMyMTA4MDc5LnBuZw==/original/NmZkB9.png",
+    "alt": "Pixel-art VRM schoolgirl avatar mid-dance beside 'VRM Retro Viewer' title, four direction sprite previews, '231 CC0 motions, free / in your browser'",
+    "credit": "haruka_apps"
+  },
+  "verification": {
+    "checked_at": "2026-11-12T08:45:08Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 35019 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-12T08:45:08Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-12T08:45:08Z",
+  "history": [
+    {
+      "operation_id": "59ee88b0-67a2-4be9-b409-833fa0277110",
+      "action": "submit",
+      "at": "2026-11-12T08:45:08Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "de17736b40a5cef8482b5c60ee95d161fa4f4f690fda5380b3e46e2d08dfce8f",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
