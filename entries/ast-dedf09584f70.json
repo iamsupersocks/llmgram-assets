@@ -65,7 +65,7 @@
   ],
   "verdict": {
     "score": 72,
-    "why": "First-party new drop (108 likes, 67 bookmarks in <1 day): turns any VRM into game-ready pixel sprites with 231 CC0 motions, free, local, MIT source. Repo itself is brand new (0 stars)."
+    "why": "Verified 2026-11-12 ~10:10 Paris: itch page 200 (Free tool, published 11-11 14:51 UTC), MIT LICENSE read in repo, main.zip 200 (11.2 MB), credits list CC0 Quaternius/KayKit motions, cover image viewed. Repo new (0 stars)."
   },
   "image": {
     "url": "https://img.itch.zone/aW1nLzMyMTA4MDc5LnBuZw==/original/NmZkB9.png",
@@ -73,7 +73,7 @@
     "credit": "haruka_apps"
   },
   "verification": {
-    "checked_at": "2026-11-12T08:45:08Z",
+    "checked_at": "2026-11-12T08:45:21Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -93,12 +93,12 @@
       "detail": "image/png, 35019 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-12T08:45:08Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-12T08:45:08Z",
+  "updated_at": "2026-11-12T08:45:21Z",
   "history": [
     {
       "operation_id": "59ee88b0-67a2-4be9-b409-833fa0277110",
@@ -108,6 +108,15 @@
       "payload_sha256": "de17736b40a5cef8482b5c60ee95d161fa4f4f690fda5380b3e46e2d08dfce8f",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "d97f741a-e814-40cb-a6c0-6b1887dce09e",
+      "action": "update",
+      "at": "2026-11-12T08:45:21Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5e3931049b5cf936ca509ed5d42e61de476c29b5c33bf2ffdbeaae1774ede159",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
