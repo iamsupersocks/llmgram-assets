@@ -2,7 +2,7 @@
   "schema_version": "llmgram-asset/v1",
   "id": "ast-176795931346",
   "name": "Sozai Search MCP",
-  "summary": "MCP server for Claude Code, Codex, Cursor and other MCP clients: search an index of 36,287 free 3D assets (Poly Haven, ambientCG, Kenney, Quaternius, plus Quixel Megascans Fab listings) by keywords or meaning, preview them, and download GLB/PBR/HDRI files at real-world scale in metres. No GPU, API key or account. The tool hosts no files; downloads come from the official libraries.",
+  "summary": "MCP server for Claude Code, Codex, Cursor and other MCP clients: search an index of 38,943 free 3D assets (Poly Haven, ambientCG, Kenney, Quaternius, KayKit, Polygonal Mind, 512 CC0 VRM avatars, NASA 3D, plus Quixel Megascans Fab listings) by keywords or meaning, preview them, and download GLB/VRM/PBR/HDRI files at real-world scale in metres. No GPU, API key or account. The tool hosts no files; downloads come from the official libraries.",
   "category": "tools",
   "tags": [
     "mcp",
@@ -13,6 +13,9 @@
     "ambientcg",
     "kenney",
     "quaternius",
+    "kaykit",
+    "vrm",
+    "nasa",
     "cc0"
   ],
   "publisher": {
@@ -28,7 +31,7 @@
     "commercial_use": "yes",
     "signup_required": false,
     "price": "$0",
-    "notes": "Code MIT. Assets keep own licences (mostly CC0). 22,696 of 36,287 index rows are Megascans (Fab link only; Epic account, no redistribution). Kenney/Quaternius need local kit-zip ingest. Direct fetch: Poly Haven + ambientCG. Brand/logo not MIT."
+    "notes": "Code MIT. Assets keep own licences (mostly CC0; NASA models under NASA media guidelines: credit, no endorsement). Megascans are Fab-link only (Epic account, no redistribution). Kenney/Quaternius need kit-zip ingest. Brand/logo not MIT."
   },
   "procedure": [
     "Install uv, then in your project register the server: claude mcp add sozai -s project -- uvx --from git+https://github.com/kanaworksai-hue/sozai-search-mcp sozai (Codex/Cursor take the same uvx command).",
@@ -37,16 +40,17 @@
     "Optional: run sozai semantic-setup (~350 MB EmbeddingGemma 2) for meaning search in any language."
   ],
   "stats": {
-    "count": "36,287 indexed (22,696 Megascans Fab-only)",
-    "size": "repo zip ~2.6 MB; data zip 13.4 MB",
+    "count": "38,943 indexed (v0.2.x, data-2026.11.12)",
+    "size": "repo zip ~2.7 MB; data zip 14.7 MB",
     "formats": [
       "GLB",
+      "VRM",
       "PBR maps",
       "HDR",
       "EXR",
       "MCP"
     ],
-    "cadence": "first release 2026-11-08; data-2026.11.08"
+    "cadence": "v0.1.0 11-08; v0.2.0 11-11 (+2,656 models); v0.2.2 11-11"
   },
   "source": {
     "url": "https://x.com/KanaWorks_AI/status/2119437439467201005",
@@ -62,15 +66,21 @@
       "kind": "x_post"
     },
     {
-      "url": "https://github.com/kanaworksai-hue/sozai-search-mcp/releases/download/data-2026.11.08/sozai-data-2026.11.08.zip",
+      "url": "https://x.com/KanaWorks_AI/status/2120526048773459998",
+      "author": "@KanaWorks_AI",
+      "published_at": "2026-11-11T14:36:22Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://github.com/kanaworksai-hue/sozai-search-mcp/releases/tag/v0.2.0",
       "author": "KanaWorks_AI",
-      "published_at": "2026-11-08T13:27:34Z",
+      "published_at": "2026-11-11T14:06:54Z",
       "kind": "github"
     }
   ],
   "verdict": {
-    "score": 78,
-    "why": "Verified 2026-11-08 17:45 Paris: repo and data zip 200, MIT LICENSE read, 36,287-record index and NOTICE.txt checked, banner image viewed. Megascans remain Fab-link-only; Kenney/Quaternius need kit ingest."
+    "score": 80,
+    "why": "Rechecked 2026-11-12 Paris: v0.2.0-0.2.2 release notes read (38,943 assets, KayKit/Polygonal Mind/OSA CC0, NASA own terms), MIT LICENSE unchanged, main.zip and data-2026.11.12 zip 200. 49 stars."
   },
   "image": {
     "url": "https://raw.githubusercontent.com/kanaworksai-hue/sozai-search-mcp/main/docs/assets/banner-en.jpg",
@@ -78,7 +88,7 @@
     "credit": "KanaWorks_AI / Tokyo AI Visuals LLC"
   },
   "verification": {
-    "checked_at": "2026-11-08T16:46:36Z",
+    "checked_at": "2026-11-12T08:45:29Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -103,7 +113,7 @@
   "flags": [],
   "added_at": "2026-11-08T16:46:27Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T16:46:36Z",
+  "updated_at": "2026-11-12T08:45:29Z",
   "history": [
     {
       "operation_id": "fc9605af-609b-453c-9546-6b8f826b06ff",
@@ -120,6 +130,15 @@
       "at": "2026-11-08T16:46:36Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "e5639a1da7fff3e22901bdd9eb80a27cacfc95c704049abbae9108dedfa7edb7",
+      "result": "updated",
+      "status": "published"
+    },
+    {
+      "operation_id": "8aaced80-4447-4e76-8cbc-258697bbff57",
+      "action": "update",
+      "at": "2026-11-12T08:45:29Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "43eb7275a7f5f89be7dc03f10ccef90cc2e98f03e23e16b391d17787f67bc95b",
       "result": "updated",
       "status": "published"
     }
