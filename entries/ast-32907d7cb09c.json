@@ -26,7 +26,7 @@
     "commercial_use": "yes",
     "signup_required": false,
     "price": "$0",
-    "notes": "Very new repo (created 2026-11-08, 2 stars); not yet verified hands-on."
+    "notes": "Very new repo (created 2026-11-08); recheck 2026-11-12: v0.1.0 release exists, still 2 stars, no push since 11-08. Not verified hands-on."
   },
   "procedure": [
     "Open https://github.com/joydle/smasher",
@@ -56,7 +56,7 @@
     "credit": "joydle"
   },
   "verification": {
-    "checked_at": "2026-11-11T08:49:09Z",
+    "checked_at": "2026-11-12T08:45:45Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -69,11 +69,11 @@
       "status": 200,
       "detail": "reachable"
     },
-    "image_ok": true,
+    "image_ok": false,
     "image": {
-      "ok": true,
-      "status": 200,
-      "detail": "image/png, 75322 bytes"
+      "ok": false,
+      "status": 429,
+      "detail": "http error"
     }
   },
   "hold": true,
@@ -81,7 +81,7 @@
   "flags": [],
   "added_at": "2026-11-11T08:48:52Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-11T08:49:09Z",
+  "updated_at": "2026-11-12T08:45:45Z",
   "history": [
     {
       "operation_id": "c27adde0-4475-4383-9f5b-5eb031b37323",
@@ -98,6 +98,15 @@
       "at": "2026-11-11T08:49:09Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "bbe38a1958a9ab630b82fb21cd30a500c1afce46a7cf463dd019c267afcf65f8",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "bc5bc720-eece-475a-a029-f2a32bf53acc",
+      "action": "update",
+      "at": "2026-11-12T08:45:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6454462d2a4cd5d91bd5415bdb71542124a23e6c99effec18e7908e120f62da6",
       "result": "updated",
       "status": "candidate"
     }
