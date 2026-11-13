@@ -26,7 +26,7 @@
     "commercial_use": "unknown",
     "signup_required": false,
     "price": "$0",
-    "notes": "Repo LICENSE MIT (inherited Microsoft TRELLIS copyright). HF model card still states no license (rechecked 2026-11-12); training data provenance not documented. Linux + NVIDIA GPU, CUDA 12.8."
+    "notes": "Repo LICENSE MIT (inherited Microsoft TRELLIS copyright). HF model card still states no license (rechecked 2026-11-13, card unchanged since 2026-11-03); training data provenance not documented. Linux + NVIDIA GPU, CUDA 12.8."
   },
   "procedure": [
     "git clone https://github.com/Master-cai/CoLa3D",
@@ -34,7 +34,7 @@
     "python scripts/inference/demo.py --mode free|mask|point"
   ],
   "stats": {
-    "count": "67 GitHub stars at 2026-11-12 check",
+    "count": "68 GitHub stars at 2026-11-13 check",
     "size": "",
     "formats": [
       "mesh (GLB/OBJ outputs)"
@@ -65,7 +65,7 @@
     "credit": "CoLa3D authors"
   },
   "verification": {
-    "checked_at": "2026-11-12T08:45:52Z",
+    "checked_at": "2026-11-13T08:51:14Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -90,7 +90,7 @@
   "flags": [],
   "added_at": "2026-11-07T08:49:03Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-12T08:45:52Z",
+  "updated_at": "2026-11-13T08:51:14Z",
   "history": [
     {
       "operation_id": "cd9efb60-f495-4d58-8b86-4572490b9a12",
@@ -107,6 +107,15 @@
       "at": "2026-11-12T08:45:52Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "c0275cdc36f0deec2d5eaf0327dc3849e719341e5db992da2b3e2c0e33385dd0",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "92f5c1d6-064c-4981-bc3a-8566113079ab",
+      "action": "update",
+      "at": "2026-11-13T08:51:14Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4f2ca50026a260284cc70dccefc8566f48f3e6508f27ca8bcd24cda620bfd714",
       "result": "updated",
       "status": "candidate"
     }
