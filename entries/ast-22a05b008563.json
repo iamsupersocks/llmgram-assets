@@ -80,7 +80,7 @@
     "credit": "Zyphra"
   },
   "verification": {
-    "checked_at": "2026-11-13T08:50:39Z",
+    "checked_at": "2026-11-13T08:50:59Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -100,12 +100,12 @@
       "detail": "image/png, 543872 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-13T08:50:39Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-13T08:50:39Z",
+  "updated_at": "2026-11-13T08:50:59Z",
   "history": [
     {
       "operation_id": "b982d674-b8b4-4ea7-a015-ceb8365728af",
@@ -115,6 +115,15 @@
       "payload_sha256": "c776f97f4ae017a4a45eed7b353342aedf61d9a240ae71a8bb9256155fe4aa9a",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "25cbd083-a256-4a2b-bfdb-e3b0fe748fb9",
+      "action": "update",
+      "at": "2026-11-13T08:50:59Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "fa27766e5c1b00fd1e5c50df62fc456fc98668f21d6b6df92f9a53512cf35713",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
