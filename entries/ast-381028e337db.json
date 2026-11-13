@@ -1,0 +1,108 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-381028e337db",
+  "name": "Poly Haven Lite (CC0 asset library on Blender Extensions)",
+  "summary": "Official Poly Haven asset library for Blender 5.3's new asset-library extensions: enable it in Preferences > Extensions and a curated subset (~300) of Poly Haven CC0 HDRIs, photoscanned PBR materials, props and demo scenes appears in Blender's Asset Browser, streamed from the Blender CDN. No account, no paywall. The full library and tools remain in the separate Poly Haven add-on.",
+  "category": "textures-materials",
+  "tags": [
+    "blender",
+    "blender-5.3",
+    "asset-library",
+    "cc0",
+    "hdri",
+    "pbr",
+    "3d-models",
+    "poly-haven"
+  ],
+  "publisher": {
+    "name": "Poly Haven",
+    "url": "https://polyhaven.com/"
+  },
+  "resource_url": "https://extensions.blender.org/asset-libraries/poly-haven/",
+  "download_url": "https://extensions.blender.org/download/sha256:2e1b54ec5a2b9818a0e59d282dae0d26a433d32f08f8160558d00766deb6cf25/asset-library-poly-haven-v1.0.0.zip?repository=%2Fapi%2Fv1%2Fextensions%2F&blender_version_min=5.3.0",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Requires Blender 5.3+. Lite subset only (Poly Haven: 'just the assets, and only a few of them'); full library + LOD/resolution tools are in the paid Poly Haven add-on. Blender notes asset libraries are publisher-managed, not curated."
+  },
+  "procedure": [
+    "Install Blender 5.3 or newer.",
+    "Open Edit > Preferences > Extensions, search 'Poly Haven Lite' and enable it (or drag the Get Asset Library button from the page into Blender).",
+    "Open the Asset Browser and pick the Poly Haven library; drag HDRIs, materials or models into your scene."
+  ],
+  "stats": {
+    "count": "~304 assets (CDN index, v1.0.0)",
+    "size": "393 B manifest; assets streamed on demand",
+    "formats": [
+      "blend",
+      "HDRI",
+      "PBR"
+    ],
+    "cadence": "v1.0.0, listed with Blender 5.3 release"
+  },
+  "source": {
+    "url": "https://x.com/polyhaven/status/2120910172117680589",
+    "author": "@polyhaven",
+    "published_at": "2026-11-12T16:02:44Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://extensions.blender.org/asset-libraries/poly-haven/",
+      "author": "Poly Haven",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 85,
+    "why": "Official Poly Haven CC0 assets now one click inside Blender 5.3 via the official Extensions platform; no account, commercial use OK. Strong traction (1.2K likes, 1.7K installs). Only a lite subset, full library stays on polyhaven.com / paid add-on."
+  },
+  "image": {
+    "url": "https://extensions.blender.org//media/thumbnails/ec/ec2fddce732661312bf2fc211bad14b71e7307da106ff1de7677f974809d2e30_1920x1080.webp",
+    "alt": "Rendered city back alley with brick walls, ivy and props, Poly Haven logo in the center",
+    "credit": "Poly Haven / Blender Extensions"
+  },
+  "verification": {
+    "checked_at": "2026-11-13T08:50:14Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 238756 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-13T08:50:14Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-13T08:50:14Z",
+  "history": [
+    {
+      "operation_id": "cc26ba71-07f9-49ff-9f2d-6d101ac8ae1b",
+      "action": "submit",
+      "at": "2026-11-13T08:50:14Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8d6ef4cb9a8a5896c68a0249a030f989377884d07d19c3dc43e12cd87abe45ec",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
