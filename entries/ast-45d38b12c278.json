@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-45d38b12c278",
+  "name": "PSX Convenience Store Assets Pack (free low-poly PS1-style props)",
+  "summary": "Free PS1/PSX-style low-poly convenience store kit for retro, horror and survival games: checkout counter, cash register, barcode scanner, shelves, drink fridge, chest freezer, basket, cart, crates, boxes, displays and canned/boxed products, with separate parts for interactive pieces. FBX, OBJ, GLB and a Unity package with low-res PNG textures.",
+  "category": "3d-models",
+  "tags": [
+    "psx",
+    "ps1",
+    "low-poly",
+    "retro",
+    "horror",
+    "unity",
+    "props",
+    "game-assets"
+  ],
+  "publisher": {
+    "name": "PolyNomad",
+    "url": "https://polynomad.itch.io/"
+  },
+  "resource_url": "https://polynomad.itch.io/psx-convenience-store-assets-pack",
+  "download_url": "https://polynomad.itch.io/psx-convenience-store-assets-pack",
+  "access": {
+    "model": "free",
+    "license": "PolyNomad pack terms (free & commercial use, modify OK)",
+    "license_url": "https://polynomad.itch.io/psx-convenience-store-assets-pack",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (name your own price, optional tip)",
+    "notes": "Usable in free and commercial projects and may be modified; no redistribution or resale of the assets themselves, standalone or in another pack. Terms stated on the itch page."
+  },
+  "procedure": [
+    "Open the itch.io page and click Download Now.",
+    "Choose 'No thanks, just take me to the downloads' (or tip).",
+    "Download 'PSX Convenience Store – Vol. 01.zip' (5.6 MB) and import FBX/OBJ/GLB or the Unity package."
+  ],
+  "stats": {
+    "count": "18 assets",
+    "size": "5.6 MB zip",
+    "formats": [
+      "fbx",
+      "obj",
+      "glb",
+      "unitypackage",
+      "png"
+    ],
+    "cadence": "Vol. 01, published 2026-11-11"
+  },
+  "source": {
+    "url": "https://x.com/Bynolt/status/2120844729281552486",
+    "author": "@Bynolt",
+    "published_at": "2026-11-12T11:42:41Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 60,
+    "why": "Clean free PSX prop kit with commercial use and multiple formats, from the creator directly. Small (18 assets) and low traction so far; zip contents not yet verified hands-on."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HW7AsQ8WoAAOb0E.png",
+    "alt": "PSX-style convenience store interior with fridges, counter and canned goods, title 'PSX Convenience Store Assets Pack, 18 assets, Free'",
+    "credit": "PolyNomad"
+  },
+  "verification": {
+    "checked_at": "2026-11-13T08:50:47Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 639084 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-13T08:50:47Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-13T08:50:47Z",
+  "history": [
+    {
+      "operation_id": "78621cb7-a35c-49dc-a101-6462e2ee41a5",
+      "action": "submit",
+      "at": "2026-11-13T08:50:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "55c9b8e24d35d8cba733bb100213baf1a766c7e76e2dc08f2044120a556d9f30",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
