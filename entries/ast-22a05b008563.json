@@ -1,0 +1,120 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-22a05b008563",
+  "name": "ZONOS3-Mini (open-weight voice-cloning TTS, 43 languages)",
+  "summary": "Zyphra's compact text-to-speech model (sparse MoE, ~100M active / ~800M total params): zero-shot voice cloning from a short clip, voice design by age/accent/texture, and word-level steering of emotion, pace and delivery, in 43 languages. Runs locally in real time, including in the browser via WebGPU; GGUF builds, SGLang-Omni serving and sample voices included. Useful for game voices, narration and dubbing.",
+  "category": "models-weights",
+  "tags": [
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "webgpu",
+    "gguf",
+    "zyphra",
+    "apache-2.0"
+  ],
+  "publisher": {
+    "name": "Zyphra",
+    "url": "https://www.zyphra.com/"
+  },
+  "resource_url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+  "download_url": "https://huggingface.co/Zyphra/ZONOS3-Mini/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0 (weights); MIT (inference code)",
+    "license_url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0; optional hosted API on Zyphra Cloud",
+    "notes": "HF card license: apache-2.0, not gated. Code repo github.com/Zyphra/ZONOS3-Mini is MIT. Only clone voices you have consent for. Browser demo needs WebGPU."
+  },
+  "procedure": [
+    "Try it with no install in the browser: https://zyphra.com/zonos3-mini/localplayground/lite (WebGPU).",
+    "Or download the weights from https://huggingface.co/Zyphra/ZONOS3-Mini (GGUF backbone + codec).",
+    "Run locally with the runtimes in https://github.com/Zyphra/ZONOS3-Mini, or serve with SGLang-Omni: sgl-omni serve --model-path Zyphra/ZONOS3-Mini."
+  ],
+  "stats": {
+    "count": "43 languages; ~100M active / ~800M total params",
+    "size": "~30.7 GB full repo (300 files incl. GGUF variants and sample voices)",
+    "formats": [
+      "gguf",
+      "safetensors",
+      "pt"
+    ],
+    "cadence": "v1, HF blog 2026-11-11/12"
+  },
+  "source": {
+    "url": "https://huggingface.co/blog/Zyphra/zonos3-mini",
+    "author": "Zyphra",
+    "published_at": "2026-11-12T00:26:17Z",
+    "kind": "huggingface"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/ryu0000000001/status/2121054736359326094",
+      "author": "@ryu0000000001",
+      "published_at": "2026-11-13T01:37:11Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://x.com/Prince_Canuma/status/2121044588458553684",
+      "author": "@Prince_Canuma",
+      "published_at": "2026-11-13T00:56:51Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://github.com/Zyphra/ZONOS3-Mini",
+      "author": "Zyphra",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 82,
+    "why": "Strong open TTS for creators: Apache-2.0 weights (commercial OK), runs in-browser and on laptops, 43 languages, voice cloning and steerable delivery; 251 HF likes and 8.5K downloads in days, already ported to mlx-audio-swift. Vendor benchmarks not independently verified."
+  },
+  "image": {
+    "url": "https://cdn-uploads.huggingface.co/production/uploads/6332099cacb6472115b17421/ylmMAwt2-jhfC9hn1fYS-.png",
+    "alt": "ZONOS3 MINI title over an orange and grey audio waveform on black",
+    "credit": "Zyphra"
+  },
+  "verification": {
+    "checked_at": "2026-11-13T08:50:39Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 543872 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-13T08:50:39Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-13T08:50:39Z",
+  "history": [
+    {
+      "operation_id": "b982d674-b8b4-4ea7-a015-ceb8365728af",
+      "action": "submit",
+      "at": "2026-11-13T08:50:39Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c776f97f4ae017a4a45eed7b353342aedf61d9a240ae71a8bb9256155fe4aa9a",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
