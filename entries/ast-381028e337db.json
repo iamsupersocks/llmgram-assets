@@ -68,7 +68,7 @@
     "credit": "Poly Haven / Blender Extensions"
   },
   "verification": {
-    "checked_at": "2026-11-13T08:50:14Z",
+    "checked_at": "2026-11-13T08:50:58Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -88,12 +88,12 @@
       "detail": "image/webp, 238756 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-13T08:50:14Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-13T08:50:14Z",
+  "updated_at": "2026-11-13T08:50:58Z",
   "history": [
     {
       "operation_id": "cc26ba71-07f9-49ff-9f2d-6d101ac8ae1b",
@@ -103,6 +103,15 @@
       "payload_sha256": "8d6ef4cb9a8a5896c68a0249a030f989377884d07d19c3dc43e12cd87abe45ec",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "72cf2ea7-d451-41c3-b033-6422d74fa69f",
+      "action": "update",
+      "at": "2026-11-13T08:50:58Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9ff985055fe28dcfa6a23307560275a74817678b67c33bea05481f1c6fb57b0e",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
