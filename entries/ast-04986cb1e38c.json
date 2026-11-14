@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-04986cb1e38c",
+  "name": "Shred kit (agent-driven Blender paper-shred video template)",
+  "summary": "Open-source Blender + Python template that renders an 8-second vertical (1080x1920, 60 fps) loop: your poster (text, fonts, colours, picture) is ripped, shredded and rebuilt as real paper in 3D, with a designed sound track. Ships an AGENTS.md playbook so Claude Code, Codex or Cursor can set it up, or use the kit.py CLI directly.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "video-template",
+    "motion-design",
+    "python",
+    "coding-agent",
+    "social-video",
+    "sound-design",
+    "gpl"
+  ],
+  "publisher": {
+    "name": "Amir Mushich",
+    "url": "https://github.com/amirmushichge"
+  },
+  "resource_url": "https://github.com/amirmushichge/shred-kit",
+  "download_url": "https://github.com/amirmushichge/shred-kit",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0",
+    "license_url": "https://github.com/amirmushichge/shred-kit/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Code GPL-3.0; bundled sound recordings public domain (Wikimedia Commons); videos you render are yours, commercial use included. Needs Blender 5.x, Python 3.10+, ffmpeg and a GPU (final render ~1h15 on RTX 4070 laptop)."
+  },
+  "procedure": [
+    "git clone https://github.com/amirmushichge/shred-kit (or ask your coding agent to clone it and follow AGENTS.md)",
+    "python -m venv .venv && pip install -r requirements.txt, then python kit.py doctor",
+    "Set your lines/fonts/colours with python kit.py set ..., preview with kit.py poster and kit.py stills",
+    "python kit.py render --quality final --social; files land in out/"
+  ],
+  "stats": {
+    "count": "20 GitHub stars at 2026-11-14 check",
+    "size": "~23 MB repo",
+    "formats": [
+      "MP4",
+      "WAV",
+      "BLEND",
+      "PY"
+    ],
+    "cadence": "repo created 2026-11-13"
+  },
+  "source": {
+    "url": "https://x.com/AmirMushich/status/2121339167800213934",
+    "author": "@AmirMushich",
+    "published_at": "2026-11-13T20:27:24Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Primary repo from the author of the post, GPL-3.0 LICENSE and public-domain sound sources read, clear README and procedure. Young repo (1 day) but strong post traction (228 likes) and a complete, self-contained template."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/amirmushichge/shred-kit/main/docs/cover.jpg",
+    "alt": "Shred kit cover: the rebuilt paper poster after the shredder",
+    "credit": "Amir Mushich"
+  },
+  "verification": {
+    "checked_at": "2026-11-14T08:51:29Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 42220 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-14T08:51:29Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-14T08:51:29Z",
+  "history": [
+    {
+      "operation_id": "cdcf8db7-52a9-4890-a6f9-4efe55ccece5",
+      "action": "submit",
+      "at": "2026-11-14T08:51:29Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "49abb5cd495f945b29635aee37fd5264b408b4cbca1647e55e61719e458149c2",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
