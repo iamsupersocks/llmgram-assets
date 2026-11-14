@@ -66,7 +66,7 @@
     "credit": "ambientCG (CC0)"
   },
   "verification": {
-    "checked_at": "2026-11-14T08:51:22Z",
+    "checked_at": "2026-11-14T08:51:42Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -86,12 +86,12 @@
       "detail": "image/jpg, 196443 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-14T08:51:22Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-14T08:51:22Z",
+  "updated_at": "2026-11-14T08:51:42Z",
   "history": [
     {
       "operation_id": "816f34a5-264e-46a1-8a3e-e726823528ee",
@@ -101,6 +101,15 @@
       "payload_sha256": "07b2361960bfd342eefec4ecf16c65f85008d598f8ba9791fa9bcfdc3d630732",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "15fe3591-092b-4a99-99ed-0846219b2f32",
+      "action": "update",
+      "at": "2026-11-14T08:51:42Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b6869873ba47519894a8206c93780e536b37e0dc9c7e0c26dde7ff0e09853307",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
