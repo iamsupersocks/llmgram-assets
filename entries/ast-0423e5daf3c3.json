@@ -1,0 +1,106 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-0423e5daf3c3",
+  "name": "ambientCG Evening Sky HDRI 049 A & B (CC0)",
+  "summary": "Two new evening-sky HDRI environments from ambientCG, released 2026-11-13. Each ships as a ZIP with an EXR HDR, a tonemapped JPG, a ready Blender .blend, a USD (.usdc) file and a Godot .tres, in 1K up to 16K. Useful for sunset/dusk lighting and backgrounds in Blender, Godot, Unreal or any HDRI-based renderer.",
+  "category": "hdri-environments",
+  "tags": [
+    "hdri",
+    "sky",
+    "evening",
+    "sunset",
+    "cc0",
+    "exr",
+    "blender",
+    "godot",
+    "usd",
+    "lighting"
+  ],
+  "publisher": {
+    "name": "ambientCG (Lennart Demes)",
+    "url": "https://ambientcg.com/"
+  },
+  "resource_url": "https://ambientcg.com/a/EveningSkyHDRI049A",
+  "download_url": "https://ambientcg.com/list?id=EveningSkyHDRI049B,EveningSkyHDRI049A",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://docs.ambientcg.com/license/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "CC0: no attribution required, commercial use OK, no account needed. Variant B at https://ambientcg.com/a/EveningSkyHDRI049B."
+  },
+  "procedure": [
+    "Open https://ambientcg.com/a/EveningSkyHDRI049A (or the B variant at /a/EveningSkyHDRI049B)",
+    "Pick a resolution (1K, 2K, 4K, 8K, 12K or 16K) and click download; no account needed",
+    "Unzip and load the _HDR.exr as a world/environment texture, or open the bundled .blend / .tres / .usdc"
+  ],
+  "stats": {
+    "count": "2 HDRIs (049 A and 049 B), 6 resolutions each",
+    "size": "A: 3.7 MB (1K) to 497 MB (16K); B: 2.6 MB (1K) to 228 MB (16K)",
+    "formats": [
+      "EXR",
+      "JPG",
+      "BLEND",
+      "USDC",
+      "TRES",
+      "PNG"
+    ],
+    "cadence": "ambientCG publishes new CC0 assets regularly"
+  },
+  "source": {
+    "url": "https://x.com/ambientCG/status/2121213328169250945",
+    "author": "@ambientCG",
+    "published_at": "2026-11-13T12:07:22Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 82,
+    "why": "Official publisher post, CC0 read on the ambientCG license page, pages and ZIP download verified (1K ZIP contents listed: EXR, JPG, blend, usdc, tres). High-quality, zero-friction HDRIs."
+  },
+  "image": {
+    "url": "https://ambientcg.com/api/metaimage-list?ratio=1.5&id=EveningSkyHDRI049A",
+    "alt": "Preview of the ambientCG Evening Sky HDRI 049 A: an evening sky panorama",
+    "credit": "ambientCG (CC0)"
+  },
+  "verification": {
+    "checked_at": "2026-11-14T08:51:22Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 196443 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-14T08:51:22Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-14T08:51:22Z",
+  "history": [
+    {
+      "operation_id": "816f34a5-264e-46a1-8a3e-e726823528ee",
+      "action": "submit",
+      "at": "2026-11-14T08:51:22Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "07b2361960bfd342eefec4ecf16c65f85008d598f8ba9791fa9bcfdc3d630732",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
