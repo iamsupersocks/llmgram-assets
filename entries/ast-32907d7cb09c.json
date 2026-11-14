@@ -26,7 +26,7 @@
     "commercial_use": "yes",
     "signup_required": false,
     "price": "$0",
-    "notes": "Very new repo (created 2026-11-08). Recheck 2026-11-13: still 2 stars, 0 forks, no push since 2026-11-08; v0.1.0 release only. Not verified hands-on."
+    "notes": "Very new repo (created 2026-11-08). Recheck 2026-11-14: still 2 stars, 0 forks, no push since 2026-11-08; v0.1.0 release only. Not verified hands-on."
   },
   "procedure": [
     "Open https://github.com/joydle/smasher",
@@ -56,7 +56,7 @@
     "credit": "joydle"
   },
   "verification": {
-    "checked_at": "2026-11-13T08:51:09Z",
+    "checked_at": "2026-11-14T08:51:46Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,7 +81,7 @@
   "flags": [],
   "added_at": "2026-11-11T08:48:52Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-13T08:51:09Z",
+  "updated_at": "2026-11-14T08:51:46Z",
   "history": [
     {
       "operation_id": "c27adde0-4475-4383-9f5b-5eb031b37323",
@@ -116,6 +116,15 @@
       "at": "2026-11-13T08:51:09Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "3c4cfa0c680ce20dfd90f5b69778db0c23c428362b3b4a8613cd6f760cb1b658",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "b45cb188-d09d-4bea-b780-ca0294455c8c",
+      "action": "update",
+      "at": "2026-11-14T08:51:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "208147cf11d17ac60832265f40e7b044d8aa435ce7ecb6b1a21de2ae0343acb9",
       "result": "updated",
       "status": "candidate"
     }
