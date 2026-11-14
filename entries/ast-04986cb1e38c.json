@@ -63,7 +63,7 @@
     "credit": "Amir Mushich"
   },
   "verification": {
-    "checked_at": "2026-11-14T08:51:29Z",
+    "checked_at": "2026-11-14T08:51:46Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -83,12 +83,12 @@
       "detail": "image/jpg, 42220 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-14T08:51:29Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-14T08:51:29Z",
+  "updated_at": "2026-11-14T08:51:46Z",
   "history": [
     {
       "operation_id": "cdcf8db7-52a9-4890-a6f9-4efe55ccece5",
@@ -98,6 +98,15 @@
       "payload_sha256": "49abb5cd495f945b29635aee37fd5264b408b4cbca1647e55e61719e458149c2",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "01b8673e-0c39-4edd-862b-6252f8f7e6f1",
+      "action": "update",
+      "at": "2026-11-14T08:51:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "092d4262774ddaea18d02d0084187d1cf3a7ad9ede03933a55bb52230ecd6e49",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
