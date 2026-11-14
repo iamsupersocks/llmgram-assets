@@ -26,7 +26,7 @@
     "commercial_use": "unknown",
     "signup_required": false,
     "price": "$0",
-    "notes": "Repo LICENSE MIT (inherited Microsoft TRELLIS copyright). HF model card still states no license (rechecked 2026-11-13, card unchanged since 2026-11-03); training data provenance not documented. Linux + NVIDIA GPU, CUDA 12.8."
+    "notes": "Repo LICENSE MIT (inherited Microsoft TRELLIS copyright). HF model card still states no license (rechecked 2026-11-14, HF lastModified 2026-11-03); training data provenance not documented. Linux + NVIDIA GPU, CUDA 12.8."
   },
   "procedure": [
     "git clone https://github.com/Master-cai/CoLa3D",
@@ -65,7 +65,7 @@
     "credit": "CoLa3D authors"
   },
   "verification": {
-    "checked_at": "2026-11-13T08:51:14Z",
+    "checked_at": "2026-11-14T08:51:46Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -90,7 +90,7 @@
   "flags": [],
   "added_at": "2026-11-07T08:49:03Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-13T08:51:14Z",
+  "updated_at": "2026-11-14T08:51:46Z",
   "history": [
     {
       "operation_id": "cd9efb60-f495-4d58-8b86-4572490b9a12",
@@ -116,6 +116,15 @@
       "at": "2026-11-13T08:51:14Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "4f2ca50026a260284cc70dccefc8566f48f3e6508f27ca8bcd24cda620bfd714",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "981944a4-7ad7-4285-81bb-2feeffef253a",
+      "action": "update",
+      "at": "2026-11-14T08:51:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "f0e7c75a273008b84789c032eca2811fb354f94f53b5a1f5300a49e591b99b2c",
       "result": "updated",
       "status": "candidate"
     }
