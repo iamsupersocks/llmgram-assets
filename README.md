@@ -37,6 +37,26 @@ supplied by the caller.
 correction. `unsafe` and `duplicate` flags, and `retired`, are cleared only by
 a human edit in this repository.
 
+## Daily link check
+
+A link can die, or a page move, after the asset is published.
+`llmgram_assets.recheck` checks the `resource_url` and `download_url` of every
+published asset again. A failure is counted in `verification.recheck`; after
+two consecutive failures the asset gets a `dead_link` flag by `linkcheck` and
+leaves the page. If the links answer again, the checker closes its own flag;
+an `asset_update` with a working link does too. Records with any other open
+flag, candidates and retired records are not touched. The picture is not
+checked: the site serves its own copy. Nothing is committed while every link
+answers.
+
+```bash
+python3 -m llmgram_assets.recheck --local-root . --dry-run   # report only
+```
+
+On the server it runs once a day from `deploy/llmgram-assets-recheck.timer`,
+on its own clone of this repository (`~/llmgram-assets-mcp/recheck-data`), with
+the gateway's deploy key.
+
 ## MCP server
 
 Two entry points share the same tools and rules.
