@@ -1,0 +1,111 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-bf7c2e992fc6",
+  "name": "Scarlet (open-source AI video editor)",
+  "summary": "Desktop video editor (macOS, Windows, Ubuntu preview) where you tell Claude Code or Codex, by voice or text, what to change and review the edit on a timeline; original footage stays intact. Strong on dialogue cutting for interviews, podcasts and talking heads: removes pauses, false starts and repeated takes. Exports MP4 or an OpenTimelineIO timeline for DaVinci Resolve.",
+  "category": "tools",
+  "tags": [
+    "video-editing",
+    "ai-agent",
+    "claude-code",
+    "codex",
+    "dialogue-cutting",
+    "tauri",
+    "otio",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Forward Future (Matthew Berman)",
+    "url": "https://github.com/Forward-Future"
+  },
+  "resource_url": "https://github.com/Forward-Future/scarlet",
+  "download_url": "https://github.com/Forward-Future/scarlet/releases",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/Forward-Future/scarlet/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (AI edits use your existing Claude Code or Codex subscription)",
+    "notes": "Early development; frequent releases. Agent features require a Claude Code or Codex account. Linux is an Ubuntu 24.04 x86-64 preview."
+  },
+  "procedure": [
+    "Download the installer for macOS (dmg) or Windows (exe/msi) from https://github.com/Forward-Future/scarlet/releases, or build from source with pnpm",
+    "Create a project and import video, audio or images",
+    "In Settings > General connect Claude Code or Codex, then ask for edits by text or voice (hold V)",
+    "Export as MP4 or .otio timeline"
+  ],
+  "stats": {
+    "count": "255 GitHub stars at 2026-11-15 check",
+    "size": "~159 MB Windows installer (v0.1.100)",
+    "formats": [
+      "MP4",
+      "MOV",
+      "WAV",
+      "MP3",
+      "OTIO"
+    ],
+    "cadence": "repo created 2026-11-13; v0.1.100 on 2026-11-15"
+  },
+  "source": {
+    "url": "https://x.com/MatthewBerman/status/2121653901179150691",
+    "author": "@MatthewBerman",
+    "published_at": "2026-11-14T17:18:03Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/aiedge_/status/2121741220993216691",
+      "author": "@aiedge_",
+      "published_at": "2026-11-14T23:05:01Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Free MIT desktop editor from a known creator, installers downloadable today, useful agent-driven dialogue cutting with Resolve export. Early-stage and needs a paid Claude Code/Codex plan for AI edits."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HXHwZXJbAAAhk1h.jpg",
+    "alt": "Scarlet GitHub README: purple S app icon, description of the AI video editor and download links",
+    "credit": "Forward Future / @aiedge_"
+  },
+  "verification": {
+    "checked_at": "2026-11-15T08:34:20Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 163740 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-15T08:34:20Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-15T08:34:20Z",
+  "history": [
+    {
+      "operation_id": "b999306f-c761-48a5-9e6e-a1a9a821e9ca",
+      "action": "submit",
+      "at": "2026-11-15T08:34:20Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8b569d7895d08fd8fa49a13eec256986eb4c1356a40ab5730476efcb1f184ae8",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
