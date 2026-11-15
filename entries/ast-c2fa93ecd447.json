@@ -25,7 +25,7 @@
     "commercial_use": "yes",
     "signup_required": true,
     "price": "$0",
-    "notes": "Credit 'Textures by Stylized World — stylizedworld.com' required; no redistribution/resale of raw files or inclusion in other libraries. Verified-email account needed; rechecked 2026-11-13: site 200 but downloads still behind account (SPA), files not verified."
+    "notes": "Credit 'Textures by Stylized World — stylizedworld.com' required; no redistribution/resale. Rechecked 2026-11-15: public /api/assets lists 61 assets with per-asset 1k/2k/4k zip + sbsar file names, but the download itself is behind a free account, so files not verified."
   },
   "procedure": [
     "Create a free Stylized World account and verify your email.",
@@ -33,9 +33,13 @@
     "Download, then credit Stylized World in your project."
   ],
   "stats": {
-    "count": "61 assets (at relaunch)",
+    "count": "61 assets (public API, 2026-11-15)",
     "size": "",
-    "formats": [],
+    "formats": [
+      "zip",
+      "jpg",
+      "sbsar"
+    ],
     "cadence": ""
   },
   "source": {
@@ -55,7 +59,7 @@
     "credit": "Stylized World"
   },
   "verification": {
-    "checked_at": "2026-11-13T08:51:14Z",
+    "checked_at": "2026-11-15T08:34:33Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -74,7 +78,7 @@
   "flags": [],
   "added_at": "2026-11-09T08:42:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-13T08:51:14Z",
+  "updated_at": "2026-11-15T08:34:33Z",
   "history": [
     {
       "operation_id": "4da5602f-a4f1-4443-913f-8467e95217f5",
@@ -91,6 +95,15 @@
       "at": "2026-11-13T08:51:14Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "7975d7150485539c0347385c3b04cac3311dfec8c89951a5a101b788cfbfb8bc",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "f4f805eb-fe61-41d2-a9db-5736740d01c5",
+      "action": "update",
+      "at": "2026-11-15T08:34:33Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ce3d76bffa94f884773a1c4205a4f3dd521249cc26061b4bccc279310449a153",
       "result": "updated",
       "status": "candidate"
     }
