@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-b63172fee8a6",
+  "name": "TontaubeV1.1 (open-weight TTS with voice cloning)",
+  "summary": "Multilingual text-to-speech model (EN/DE primary; ES, FR, IT, NL, PT) for expressive voice cloning from ~5-60 s of reference audio, long-form audiobook generation and streaming. Adds five style sliders (rate, pauses, intonation, pitch, articulation). 4-bit int4 build is a 1.8 GB download that runs on small GPUs (~4 GiB VRAM) and AVX2 x86-64 CPUs; bf16 weights for vLLM.",
+  "category": "models-weights",
+  "tags": [
+    "text-to-speech",
+    "voice-cloning",
+    "audiobook",
+    "multilingual",
+    "open-weights",
+    "int4",
+    "local"
+  ],
+  "publisher": {
+    "name": "Tontaube AI (Cremer & Cremer Technologies UG)",
+    "url": "https://tontaube.ai/"
+  },
+  "resource_url": "https://huggingface.co/TontaubeAI/TontaubeV1.1",
+  "download_url": "https://huggingface.co/TontaubeAI/TontaubeV1.1-int4",
+  "access": {
+    "model": "free",
+    "license": "Tontaube Community Model License 1.0",
+    "license_url": "https://huggingface.co/TontaubeAI/TontaubeV1.1/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0; commercial license by email above EUR 200k group revenue",
+    "notes": "Free for research/noncommercial and for commercial use under EUR 200k group revenue, with 'Powered by TontaubeV1' credit. Hosted speech-generation services always need a commercial license. Derivatives keep the same license. Inference code Apache-2.0."
+  },
+  "procedure": [
+    "git clone --branch v1.1.0 --depth 1 https://github.com/craitech/tontaube.git",
+    "cd tontaube && uv run --python 3.12 --frozen tontaube serve (downloads the int4 model by default; TTS_BACKEND=vllm for bf16, needs 24 GiB NVIDIA GPU)",
+    "POST text (and optional voice_audio_b64 reference) to http://127.0.0.1:8080/predict to get WAV audio"
+  ],
+  "stats": {
+    "count": "2.9B-parameter model, 4 codebook predictors",
+    "size": "1.8 GB (int4) / 6.4 GB (bf16)",
+    "formats": [
+      "safetensors",
+      "WAV"
+    ],
+    "cadence": "V1.1 published on HF 2026-11-10"
+  },
+  "source": {
+    "url": "https://x.com/TeksEdge/status/2121756314682708184",
+    "author": "@TeksEdge",
+    "published_at": "2026-11-15T00:05:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://tontaube.ai/licensing/",
+      "author": "Tontaube",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://github.com/craitech/tontaube",
+      "author": "craitech",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Local voice cloning and audiobook TTS that fits on CPU/small GPU; weights ungated and downloadable. Custom license (free under EUR 200k revenue, no hosted TTS service), young repo with low traction so far."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HXHavsSbAAAGKbs.jpg",
+    "alt": "Hugging Face page of TontaubeAI/TontaubeV1.1-int4 with the Tontaube bird logo and model description",
+    "credit": "Tontaube AI / @TeksEdge"
+  },
+  "verification": {
+    "checked_at": "2026-11-15T08:34:10Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 47397 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-15T08:34:10Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-15T08:34:10Z",
+  "history": [
+    {
+      "operation_id": "5e95134f-f80f-4d67-8f1e-8804c7c167bf",
+      "action": "submit",
+      "at": "2026-11-15T08:34:10Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "82a82b7f22ed0fc8a54531bd112719bb9736e4c3c03267a06d235c613ec38cc6",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
