@@ -71,7 +71,7 @@
     "credit": "Forward Future / @aiedge_"
   },
   "verification": {
-    "checked_at": "2026-11-15T08:34:20Z",
+    "checked_at": "2026-11-15T08:34:32Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -91,12 +91,12 @@
       "detail": "image/jpg, 163740 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-15T08:34:20Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-15T08:34:20Z",
+  "updated_at": "2026-11-15T08:34:32Z",
   "history": [
     {
       "operation_id": "b999306f-c761-48a5-9e6e-a1a9a821e9ca",
@@ -106,6 +106,15 @@
       "payload_sha256": "8b569d7895d08fd8fa49a13eec256986eb4c1356a40ab5730476efcb1f184ae8",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "ff60a98c-6e6a-4d99-97a5-3c71a1d03e95",
+      "action": "update",
+      "at": "2026-11-15T08:34:32Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a0f6cc7d1eeac0c4492eab2ae3dff390a2aa061a129f54cdc1c3f4e6f785c567",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
