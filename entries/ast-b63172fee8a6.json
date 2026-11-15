@@ -72,7 +72,7 @@
     "credit": "Tontaube AI / @TeksEdge"
   },
   "verification": {
-    "checked_at": "2026-11-15T08:34:10Z",
+    "checked_at": "2026-11-15T08:34:29Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -92,12 +92,12 @@
       "detail": "image/jpg, 47397 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-15T08:34:10Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-15T08:34:10Z",
+  "updated_at": "2026-11-15T08:34:29Z",
   "history": [
     {
       "operation_id": "5e95134f-f80f-4d67-8f1e-8804c7c167bf",
@@ -107,6 +107,15 @@
       "payload_sha256": "82a82b7f22ed0fc8a54531bd112719bb9736e4c3c03267a06d235c613ec38cc6",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "ed5029eb-3e99-434e-9a02-b17ac450e27f",
+      "action": "update",
+      "at": "2026-11-15T08:34:29Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "7357eccfdcd6ff34ff5a1b3b75738b4612c368cb6a83a99dd12e01bb80ef751c",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
