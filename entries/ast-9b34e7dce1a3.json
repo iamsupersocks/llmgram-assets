@@ -75,7 +75,7 @@
     "credit": "Meituan LongCat demo via @TeksEdge"
   },
   "verification": {
-    "checked_at": "2026-11-16T08:35:31Z",
+    "checked_at": "2026-11-16T08:35:57Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -95,12 +95,12 @@
       "detail": "image/jpg, 82799 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-16T08:35:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-16T08:35:31Z",
+  "updated_at": "2026-11-16T08:35:57Z",
   "history": [
     {
       "operation_id": "09fd60cd-e1a5-4002-85d4-8d603ad5b171",
@@ -110,6 +110,15 @@
       "payload_sha256": "366433fde53f21469c785af0054f8d4a6c2f5ceeeee886060fa298ace7fa3e21",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "87ab658e-b42b-435c-9aad-131c2775cd60",
+      "action": "update",
+      "at": "2026-11-16T08:35:57Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1ba960a27e5787f0e7054a82cb0aa1b1928f579daef05d101f3e6d5eba262a7c",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
