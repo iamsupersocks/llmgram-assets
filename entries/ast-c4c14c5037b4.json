@@ -75,7 +75,7 @@
     "credit": "Moji-Waku Kenkyu"
   },
   "verification": {
-    "checked_at": "2026-11-16T08:35:21Z",
+    "checked_at": "2026-11-16T08:35:56Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -95,12 +95,12 @@
       "detail": "image/jpg, 135691 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-16T08:35:21Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-16T08:35:21Z",
+  "updated_at": "2026-11-16T08:35:56Z",
   "history": [
     {
       "operation_id": "236029d4-eac3-4349-9a28-e7106a168abe",
@@ -110,6 +110,15 @@
       "payload_sha256": "bdec84700d0ed05300fa4973daf958ef79bd1f5cff16cfabb96ab525bd632cd6",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "aadf246b-35b0-4fe7-8127-88e5dea72cac",
+      "action": "update",
+      "at": "2026-11-16T08:35:56Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "654f07dcee14124de8f7a6bae730c5abd28a9154215f3abbcb2e055fa80f5d17",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
