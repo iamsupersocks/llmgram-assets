@@ -1,0 +1,115 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c4c14c5037b4",
+  "name": "Zu-Den Pippi (図電ピッピ) retro-futuristic Japanese font",
+  "summary": "New free Japanese display font from Moji-Waku Kenkyu, inspired by Westminster, Data 70 and the anime Zillion. One extra-bold weight in Normal and 11° Oblique, covering kana, Latin, digits, JIS level 1 (2,965) and level 2 (803) kanji plus 114 IBM extended kanji. Useful for retro/sci-fi titles, game UI and posters; free for personal and commercial use, including webfont and logos.",
+  "category": "fonts",
+  "tags": [
+    "font",
+    "japanese",
+    "display",
+    "retro-futuristic",
+    "otf",
+    "ttf",
+    "webfont",
+    "commercial-use"
+  ],
+  "publisher": {
+    "name": "Moji-Waku Kenkyu (もじワク研究)",
+    "url": "https://moji-waku.com/"
+  },
+  "resource_url": "https://moji-waku.com/zudenpippi/",
+  "download_url": "https://moji-waku.com/download/zudenpippi.zip",
+  "access": {
+    "model": "free",
+    "license": "Moji-Waku Kenkyu font license (free font, commercial OK)",
+    "license_url": "https://moji-waku.com/mj_work_license/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "No credit needed. Allowed: print, web, webfont, logos (incl. trademarked), video, games, apps, use in AI tools. Forbidden: redistributing/reselling or modifying the font files, AI training on the font (license updated 2026-11-13)."
+  },
+  "procedure": [
+    "Open https://moji-waku.com/zudenpippi/",
+    "Click DOWNLOAD otf (zudenpippi.zip, ~3.1 MB) or DOWNLOAD ttf (zudenpippi_ttf.zip, ~4.7 MB); a WEB FONT package is also offered",
+    "Unzip and install Zu-Den-Pippi-Normal and Zu-Den-Pippi-Oblique",
+    "Read readme.txt and the license page before commercial use"
+  ],
+  "stats": {
+    "count": "2 styles (Normal, Oblique), 1 weight (EB); ~3,900 kanji",
+    "size": "3.1 MB (OTF zip), 4.7 MB (TTF zip)",
+    "formats": [
+      "OTF",
+      "TTF",
+      "webfont"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/colisscom/status/2122126767490310219",
+    "author": "@colisscom",
+    "published_at": "2026-11-16T00:37:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/mojiwaku/status/2120676730432340209",
+      "author": "@mojiwaku",
+      "published_at": "2026-11-12T00:35:07Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://coliss.com/articles/freebies/free-font-zudenpippi.html",
+      "author": "coliss",
+      "published_at": "2026-11-16T00:00:00Z",
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Fresh release (11-12) by an established free-font foundry, strong traction (publisher post 421 likes/380 bookmarks, coliss 331 likes). Direct no-signup download verified, license read on publisher page: commercial use free, no credit. Caveats: no file redistribution/modification, no AI training."
+  },
+  "image": {
+    "url": "https://moji-waku.com/zudenpippi/img/zudenpippi_ogp.jpg",
+    "alt": "Zu-Den Pippi logo in bold black retro-futuristic Japanese letters over a cyan pattern of stacked kanji",
+    "credit": "Moji-Waku Kenkyu"
+  },
+  "verification": {
+    "checked_at": "2026-11-16T08:35:21Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 135691 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-16T08:35:21Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-16T08:35:21Z",
+  "history": [
+    {
+      "operation_id": "236029d4-eac3-4349-9a28-e7106a168abe",
+      "action": "submit",
+      "at": "2026-11-16T08:35:21Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bdec84700d0ed05300fa4973daf958ef79bd1f5cff16cfabb96ab525bd632cd6",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
