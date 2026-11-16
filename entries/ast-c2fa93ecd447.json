@@ -25,7 +25,7 @@
     "commercial_use": "yes",
     "signup_required": true,
     "price": "$0",
-    "notes": "Credit 'Textures by Stylized World — stylizedworld.com' required; no redistribution/resale. Rechecked 2026-11-15: public /api/assets lists 61 assets with per-asset 1k/2k/4k zip + sbsar file names, but the download itself is behind a free account, so files not verified."
+    "notes": "Credit 'Textures by Stylized World — stylizedworld.com' required; no redistribution/resale. Rechecked 2026-11-16: site 200, public /api/assets still lists assets (royalty-free), but downloads remain behind a free account (no signup done), so files not verified."
   },
   "procedure": [
     "Create a free Stylized World account and verify your email.",
@@ -59,7 +59,7 @@
     "credit": "Stylized World"
   },
   "verification": {
-    "checked_at": "2026-11-15T08:34:33Z",
+    "checked_at": "2026-11-16T08:36:17Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -78,7 +78,7 @@
   "flags": [],
   "added_at": "2026-11-09T08:42:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-15T08:34:33Z",
+  "updated_at": "2026-11-16T08:36:17Z",
   "history": [
     {
       "operation_id": "4da5602f-a4f1-4443-913f-8467e95217f5",
@@ -104,6 +104,15 @@
       "at": "2026-11-15T08:34:33Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "ce3d76bffa94f884773a1c4205a4f3dd521249cc26061b4bccc279310449a153",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "08f12a72-e979-4298-92b4-c053d4b55806",
+      "action": "update",
+      "at": "2026-11-16T08:36:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "393a953e84b94688b4e1d70fea8d12d1c644368cb506e423f8b5857b9b04fd2d",
       "result": "updated",
       "status": "candidate"
     }
