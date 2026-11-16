@@ -1,0 +1,115 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-9b34e7dce1a3",
+  "name": "LongCat-Video-Avatar 1.6",
+  "summary": "Meituan LongCat's open-weights model for audio-driven talking-avatar video: give it a portrait image (or text) plus a voice track and it generates lip-synced video of one or several speakers, with continuation past 10 minutes while keeping identity stable. 1.6 (released 2026-11-13) improves lip sync and expressiveness over 1.5 and ships INT8 weights and two task LoRAs. MIT licensed, usable for dubbing, tutors, explainers.",
+  "category": "models-weights",
+  "tags": [
+    "talking-avatar",
+    "lip-sync",
+    "audio-to-video",
+    "video-generation",
+    "open-weights",
+    "mit",
+    "diffusers",
+    "meituan"
+  ],
+  "publisher": {
+    "name": "Meituan LongCat",
+    "url": "https://huggingface.co/meituan-longcat"
+  },
+  "resource_url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+  "download_url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/meituan-longcat/LongCat-Video/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (self-hosted, needs large NVIDIA GPUs)",
+    "notes": "Weights MIT, not gated. Bundles Whisper-large-v3 and a vocal-separator ONNX with their own terms. No Meituan trademark/patent rights. Reference demos use 2+ GPUs (torchrun); Hopper FP8 path optional. Get consent before animating real people."
+  },
+  "procedure": [
+    "git clone https://github.com/meituan-longcat/LongCat-Video and install its requirements (Python 3.10, conda) plus the avatar requirements",
+    "huggingface-cli download meituan-longcat/LongCat-Video --local-dir ./weights/LongCat-Video",
+    "huggingface-cli download meituan-longcat/LongCat-Video-Avatar-1.6 --local-dir ./weights/LongCat-Video-Avatar-1.6",
+    "Run run_demo_avatar_single_audio_to_video.py (or the multi-audio script) with --checkpoint_dir and a LoRA from loraA/ or loraB/, following the README examples"
+  ],
+  "stats": {
+    "count": "base transformer (6 shards) + INT8 variant + 2 LoRAs",
+    "size": "",
+    "formats": [
+      "safetensors",
+      "onnx",
+      "mp4"
+    ],
+    "cadence": "v1.0 2025-12, v1.5 2026-05, v1.6 2026-11-13"
+  },
+  "source": {
+    "url": "https://x.com/TeksEdge/status/2122208048521302341",
+    "author": "@TeksEdge",
+    "published_at": "2026-11-16T06:00:02Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://meigen-ai.github.io/LongCat-Video-Avatar-1.6-Page/",
+      "author": "Meituan LongCat",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://github.com/meituan-longcat/LongCat-Video",
+      "author": "meituan-longcat",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 76,
+    "why": "Fresh (11-13) MIT open-weights talking-avatar model from a credible lab (LongCat-Video repo 9.4k stars; v1.5 had 907 HF likes). Pages, HF repo and GitHub MIT LICENSE verified. Caveats: heavy multi-GPU inference, bundled third-party components, deepfake misuse risk."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2122130162963951616/img/13KSE-Mjyp4F7Rpl.jpg",
+    "alt": "Video frame titled LongCat-Video-Avatar 1.6 showing a generated woman with long dark hair talking to camera in a living room",
+    "credit": "Meituan LongCat demo via @TeksEdge"
+  },
+  "verification": {
+    "checked_at": "2026-11-16T08:35:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 82799 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-16T08:35:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-16T08:35:31Z",
+  "history": [
+    {
+      "operation_id": "09fd60cd-e1a5-4002-85d4-8d603ad5b171",
+      "action": "submit",
+      "at": "2026-11-16T08:35:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "366433fde53f21469c785af0054f8d4a6c2f5ceeeee886060fa298ace7fa3e21",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
