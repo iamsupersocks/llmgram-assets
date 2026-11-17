@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-407df48303c8",
+  "name": "img2threejs (image-to-3D as procedural Three.js code)",
+  "summary": "Agent skill that rebuilds the object in a reference image as a code-only, procedural Three.js model (primitives, procedural shaders, generated geometry) instead of photogrammetry or mesh extraction. Staged passes from blockout to materials, Python scripts do the quality gating, the model only judges renders. Output is animation-ready source code, viewable in a live demo gallery.",
+  "category": "tools",
+  "tags": [
+    "image-to-3d",
+    "three.js",
+    "procedural",
+    "agent-skill",
+    "claude-code",
+    "codex",
+    "webgl"
+  ],
+  "publisher": {
+    "name": "img2threejs",
+    "url": "https://github.com/img2threejs"
+  },
+  "resource_url": "https://github.com/img2threejs/img2threejs",
+  "download_url": "https://github.com/img2threejs/img2threejs",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/img2threejs/img2threejs/blob/HEAD/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Needs a coding agent (Claude Code, Codex, OpenCode or Hermes); model usage costs are your own."
+  },
+  "procedure": [
+    "Install Node.js 18+, Git and Python 3.10+",
+    "Run: npx --yes img2threejs@latest install (links the skill into detected agents)",
+    "Run: npx --yes img2threejs@latest doctor to confirm",
+    "Give your agent a reference image and ask it to rebuild the object"
+  ],
+  "stats": {
+    "count": "21.5k GitHub stars",
+    "size": "",
+    "formats": [
+      "Three.js",
+      "TypeScript",
+      "JS"
+    ],
+    "cadence": "v2.0.1, last push 2026-11-16"
+  },
+  "source": {
+    "url": "https://x.com/hsianghui/status/2122257620450893921",
+    "author": "@hsianghui",
+    "published_at": "2026-11-16T09:17:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 78,
+    "why": "Very popular (21.5k stars), Apache-2.0, actively maintained, live demo gallery; a distinct code-based approach to image-to-3D useful for web/game prototyping. Output quality depends on the agent model used."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/47f77e3919b1c507fd650c37aa9ef13de38c8fcbb22cd6ac23622d44d8106f6e/img2threejs/img2threejs",
+    "alt": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D. - img2threejs/img2threejs",
+    "credit": "img2threejs"
+  },
+  "verification": {
+    "checked_at": "2026-11-17T08:34:09Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 79428 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-17T08:34:09Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-17T08:34:09Z",
+  "history": [
+    {
+      "operation_id": "b28911dc-65cb-464f-80c1-17aa90d6926f",
+      "action": "submit",
+      "at": "2026-11-17T08:34:09Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "cbaa643d27fd4100f51b122e4ec71a29a8078e7c7f4e7aab9cd85e2bc2ba91a4",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
