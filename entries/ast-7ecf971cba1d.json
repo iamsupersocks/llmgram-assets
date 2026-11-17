@@ -1,0 +1,107 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-7ecf971cba1d",
+  "name": "Sisir (free standalone hair grooming tool)",
+  "summary": "Free standalone guide-based hair grooming tool for character artists. Now creates card-based hair for games and real-time work as well as strands, adds a Texture module (per-tile hair layers, baked color and AO, auto-trace strands from a reference texture), and has open-source MIT integration plugins for Blender 4.2+, Maya 2022+ and 3ds Max 2022+.",
+  "category": "tools",
+  "tags": [
+    "hair",
+    "grooming",
+    "hair-cards",
+    "blender",
+    "maya",
+    "3ds-max",
+    "real-time"
+  ],
+  "publisher": {
+    "name": "Sisir (Rick Barber)",
+    "url": "https://sisir.sisir-hairtool.workers.dev/"
+  },
+  "resource_url": "https://sisir.sisir-hairtool.workers.dev/",
+  "download_url": "https://github.com/Rick-Barber/Sisir-Plugins",
+  "access": {
+    "model": "free-with-signup",
+    "license": "Freeware (app); plugins MIT",
+    "license_url": "https://github.com/Rick-Barber/Sisir-Plugins",
+    "commercial_use": "unknown",
+    "signup_required": true,
+    "price": "$0, donations optional",
+    "notes": "Windows only. App download link is given on the Sisir Discord server (per CG Channel). App license terms not verified; only the plugins are MIT."
+  },
+  "procedure": [
+    "Join the Sisir Discord server from the product website",
+    "Get the Windows download link there",
+    "Install the Blender/Maya/3ds Max plugins from the Sisir-Plugins GitHub repo"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "Blender",
+      "Maya",
+      "3ds Max"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://www.cgchannel.com/2026/11/new-cg-software-you-may-have-missed-15-november-2026/",
+    "author": "CG Channel (Jim Thacker)",
+    "published_at": "2026-11-15T00:00:00Z",
+    "kind": "article"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/cgloungestudio/status/2122382362030096619",
+      "author": "@cgloungestudio",
+      "published_at": "2026-11-16T17:32:41Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 62,
+    "why": "Useful free hair-card tool with MIT DCC bridges, covered by CG Channel; held because the app license and commercial terms are unverified and the download sits behind Discord."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HXQ3c8VakAAPHNp.jpg?name=orig",
+    "alt": "",
+    "credit": "@cgloungestudio"
+  },
+  "verification": {
+    "checked_at": "2026-11-17T08:34:16Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 319906 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-17T08:34:16Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-17T08:34:16Z",
+  "history": [
+    {
+      "operation_id": "52984bfe-92cb-4c99-947f-db3e0754ba77",
+      "action": "submit",
+      "at": "2026-11-17T08:34:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "13422fe263b99a3f9806a89635ef34f926f2c74ad7e7aec9e6b10f66c04bf850",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
