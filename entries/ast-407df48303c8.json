@@ -61,7 +61,7 @@
     "credit": "img2threejs"
   },
   "verification": {
-    "checked_at": "2026-11-17T08:34:09Z",
+    "checked_at": "2026-11-17T08:34:29Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,12 +81,12 @@
       "detail": "image/png, 79428 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-17T08:34:09Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-17T08:34:09Z",
+  "updated_at": "2026-11-17T08:34:29Z",
   "history": [
     {
       "operation_id": "b28911dc-65cb-464f-80c1-17aa90d6926f",
@@ -96,6 +96,15 @@
       "payload_sha256": "cbaa643d27fd4100f51b122e4ec71a29a8078e7c7f4e7aab9cd85e2bc2ba91a4",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "4f1d2c8e-7a3b-4e59-9c61-0b8d2e7f1a17",
+      "action": "update",
+      "at": "2026-11-17T08:34:29Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1ef51ebed70447965f5c66135b22e92800485710c9a4493e1b7f777e68725fa3",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
