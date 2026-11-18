@@ -69,7 +69,7 @@
     "credit": "Guillaume Bissieres via 80 Level"
   },
   "verification": {
-    "checked_at": "2026-11-18T08:32:00Z",
+    "checked_at": "2026-11-18T08:32:22Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -89,12 +89,12 @@
       "detail": "image/jpg, 85378 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-18T08:32:00Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-18T08:32:00Z",
+  "updated_at": "2026-11-18T08:32:22Z",
   "history": [
     {
       "operation_id": "a3f98106-b68d-4ad6-a8df-7b52f4f8aea0",
@@ -104,6 +104,15 @@
       "payload_sha256": "dd6f7ac9cc5fa11f56a9958a14b751b33c88c4dc4d19fc93ecb5835f3dcbd307",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "415f9a07-c8df-4ea4-b939-948ba422a8d7",
+      "action": "update",
+      "at": "2026-11-18T08:32:22Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6e38ae8b8c5ab0aecf39913bb85574586fa541152d9de597bd5dbd70da0f2148",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
