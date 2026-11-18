@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-ca9a32179e25",
+  "name": "Cheap Ground Fog for Godot 4 (CC0)",
+  "summary": "Ground-fog effect for Godot 4: a GroundFog node parented to the player spawns a circle of fog that follows the player, sits on the terrain under it and is pushed around by moving bodies. Settings cover lighting, wind, refill speed and push strength. Ships as a full Godot 4.8 project (Forward+, Jolt) with a debug scene and a web demo. Look inspired by the Ocarina of Time remake.",
+  "category": "simulation",
+  "tags": [
+    "godot",
+    "vfx",
+    "fog",
+    "shader",
+    "cc0"
+  ],
+  "publisher": {
+    "name": "OrdinaryCicada (oddpotatodev)",
+    "url": "https://oddpotatodev.itch.io/"
+  },
+  "resource_url": "https://oddpotatodev.itch.io/godot-cheap-ground-fog",
+  "download_url": "https://oddpotatodev.itch.io/godot-cheap-ground-fog",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://oddpotatodev.itch.io/godot-cheap-ground-fog",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Fog code is CC0 as the itch page states. The demo character (Godot Plush by gtibo) is MIT; its license file is inside the project. Web demo looks thinner than the desktop Forward+ build."
+  },
+  "procedure": [
+    "Open the itch.io page and download the project (free)",
+    "Open it in Godot 4.8+ with Forward+ and run the debug scene",
+    "To use it in a game, copy the fog folder, add a GroundFog node as a child of the player, and set the terrain and disturb masks to your layers"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "Godot 4 project"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/80Level/status/2122737940031832186",
+    "author": "@80Level",
+    "published_at": "2026-11-17T17:05:38Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://80.lv/articles/free-ocarina-of-time-remake-style-ground-fog-in-godot",
+      "author": "80 Level",
+      "published_at": "2026-11-17T00:00:00Z",
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 8,
+    "why": "CC0 and free with no signup, a drop-in node, and a playable demo. Strong traction (861 likes, 534 bookmarks on the 80 Level post)."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2122737918653370369/img/8rAo0b0pivRlICjO.jpg",
+    "alt": "Godot plush character standing in soft ground fog on a checker floor",
+    "credit": "OrdinaryCicada via 80 Level"
+  },
+  "verification": {
+    "checked_at": "2026-11-18T08:31:56Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 35889 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-18T08:31:56Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-18T08:31:56Z",
+  "history": [
+    {
+      "operation_id": "e0f9e840-96eb-49d9-8f3d-e408fbe3b101",
+      "action": "submit",
+      "at": "2026-11-18T08:31:56Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a3f0ce56fdd3845ed9ed2bc4522eb89e36f297061f4483fec5958ccd364fb672",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
