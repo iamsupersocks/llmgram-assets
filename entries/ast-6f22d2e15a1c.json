@@ -1,0 +1,115 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6f22d2e15a1c",
+  "name": "Apple FastFrames (S 1.3B / L 14B) — interactive-latency video diffusion",
+  "summary": "Apple ML Research released FastFrames-S (1.3B) and FastFrames-L (14B), autoregressive two-step video diffusion models built on Wan2.1. They generate 480p video at interactive latency: about 35 ms per step on 1 GPU for S, per the README profiling. The release also includes a LingBot 1.3B world-model variant said to be 16x faster, with fluid camera control, plus code for the demo, T2V, VBench and training.",
+  "category": "models-weights",
+  "tags": [
+    "video-generation",
+    "world-model",
+    "diffusion",
+    "apple",
+    "research"
+  ],
+  "publisher": {
+    "name": "Apple (apple-aiml-research)",
+    "url": "https://apple-aiml-research.github.io/ml-fastframes/"
+  },
+  "resource_url": "https://huggingface.co/apple/FastFrames-L",
+  "download_url": "https://huggingface.co/apple/FastFrames-L",
+  "access": {
+    "model": "research-only",
+    "license": "Apple Machine Learning Research Model License (apple-amlr)",
+    "license_url": "https://huggingface.co/apple/FastFrames-L/blob/main/LICENSE",
+    "commercial_use": "no",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Weights are limited to non-commercial research and so are any derivatives. Code is under Apple's sample-code license (GitHub LICENSE). Needs Linux x86-64, an NVIDIA GPU and CUDA 12.8. L targets multi-GPU setups."
+  },
+  "procedure": [
+    "Clone github.com/apple-aiml-research/ml-fastframes and run uv sync",
+    "Download the FastFrames weights from Hugging Face (apple/FastFrames-S or -L) and the third-party weights, following docs/installation.md#checkpoints",
+    "Run scripts/generate.py --model ff-s, or the LingBot demo at localhost:8000"
+  ],
+  "stats": {
+    "count": "",
+    "size": "1.3B and 14B params",
+    "formats": [
+      "safetensors checkpoints"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/techfren/status/2122861852610965707",
+    "author": "@techfren",
+    "published_at": "2026-11-18T01:18:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://apple-aiml-research.github.io/ml-fastframes/",
+      "author": "",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.23226",
+      "author": "",
+      "published_at": null,
+      "kind": "article"
+    },
+    {
+      "url": "https://github.com/apple-aiml-research/ml-fastframes",
+      "author": "",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 7,
+    "why": "Primary Apple release of open weights with code and an arXiv paper, a concrete latency claim, and a world-model angle for interactive scenes. Research-only, so it can't ship in products."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2122861718225526784/img/dBGPzDhE0w1Vv06Y.jpg",
+    "alt": "Title card: Interactive world models with FastFrames — LingBot keyboard navigation, RealWonder physics-based dragging",
+    "credit": "Apple ML Research"
+  },
+  "verification": {
+    "checked_at": "2026-11-18T08:32:05Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 62580 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-18T08:32:05Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-18T08:32:05Z",
+  "history": [
+    {
+      "operation_id": "53a64a38-e2ea-4df8-9044-3c38367bae77",
+      "action": "submit",
+      "at": "2026-11-18T08:32:05Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "58bcb53c7415adb9564fc0088f501305303307135a26cb29f6146df5139f53ad",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
