@@ -75,7 +75,7 @@
     "credit": "Apple ML Research"
   },
   "verification": {
-    "checked_at": "2026-11-18T08:32:05Z",
+    "checked_at": "2026-11-18T08:32:27Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -95,12 +95,12 @@
       "detail": "image/jpg, 62580 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-18T08:32:05Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-18T08:32:05Z",
+  "updated_at": "2026-11-18T08:32:27Z",
   "history": [
     {
       "operation_id": "53a64a38-e2ea-4df8-9044-3c38367bae77",
@@ -110,6 +110,15 @@
       "payload_sha256": "58bcb53c7415adb9564fc0088f501305303307135a26cb29f6146df5139f53ad",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "2c7a20b6-7e1c-4a24-baa3-ffa23742a156",
+      "action": "update",
+      "at": "2026-11-18T08:32:27Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "67d585a3ca13af395146dbd098d4903b30e5086a909962bbcba8a4d63620e565",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
