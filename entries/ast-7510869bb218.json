@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-7510869bb218",
+  "name": "Falling Leaves (Blender add-on)",
+  "summary": "Blender add-on that builds a falling-leaves scene in one click: it creates an emitter, a leaf and a collision ground, then scatters and animates leaves with physics settings (count, lifetime, size, mass, drag, rotation) and wind presets. It can import a leaf from an image and export or import simulation settings. OpenCV is bundled. It comes from the same author as the free Leaf Gen add-on.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "addon",
+    "particles",
+    "nature",
+    "animation"
+  ],
+  "publisher": {
+    "name": "Guillaume Bissieres",
+    "url": "https://bissieres.gumroad.com/"
+  },
+  "resource_url": "https://extensions.blender.org/add-ons/falling-leaves/",
+  "download_url": "https://extensions.blender.org/add-ons/falling-leaves/",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0-or-later",
+    "license_url": "https://extensions.blender.org/add-ons/falling-leaves/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 on Blender Extensions; optional $0+ pay-what-you-want on Gumroad",
+    "notes": "Listed for Windows only on Blender Extensions. Needs Blender 4.2 LTS or newer. 39 MB."
+  },
+  "procedure": [
+    "Open the Blender Extensions page",
+    "Drag Get Add-on into Blender 4.2+, or download it and install from disk",
+    "In the 3D view, open the N panel, go to the Falling Leaves tab, and click Run Falling Leaves"
+  ],
+  "stats": {
+    "count": "v1.7.0, 170 downloads",
+    "size": "39.0 MB",
+    "formats": [
+      "Blender extension"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/80Level/status/2122759301349458260",
+    "author": "@80Level",
+    "published_at": "2026-11-17T18:30:31Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://80.lv/articles/this-free-blender-add-on-lets-you-generate-scatter-animate-fallen-leaves",
+      "author": "80 Level",
+      "published_at": "2026-11-17T00:00:00Z",
+      "kind": "article"
+    },
+    {
+      "url": "https://github.com/GuillaumeBissieres/blender-falling-leaves",
+      "author": "",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 7,
+    "why": "Free, GPL, on the official Blender Extensions platform, and solves a concrete scene-dressing task. It's niche and listed for Windows only."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2122759285637586945/img/il8AVLMgkB3vbPMg.jpg",
+    "alt": "Blender viewport with the Falling Leaves panel and scattered red leaves",
+    "credit": "Guillaume Bissieres via 80 Level"
+  },
+  "verification": {
+    "checked_at": "2026-11-18T08:32:00Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 85378 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-18T08:32:00Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-18T08:32:00Z",
+  "history": [
+    {
+      "operation_id": "a3f98106-b68d-4ad6-a8df-7b52f4f8aea0",
+      "action": "submit",
+      "at": "2026-11-18T08:32:00Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "dd6f7ac9cc5fa11f56a9958a14b751b33c88c4dc4d19fc93ecb5835f3dcbd307",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
