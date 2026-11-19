@@ -59,7 +59,7 @@
     "credit": "Nicolas Drum"
   },
   "verification": {
-    "checked_at": "2026-11-19T08:36:38Z",
+    "checked_at": "2026-11-19T08:37:11Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -73,12 +73,12 @@
       "detail": "image/jpg, 175431 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-19T08:36:38Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-19T08:36:38Z",
+  "updated_at": "2026-11-19T08:37:11Z",
   "history": [
     {
       "operation_id": "3b6b1302-c0ea-498b-8a87-c89c6be01aca",
@@ -88,6 +88,15 @@
       "payload_sha256": "f63642c17833a054ff248873de081bb11ed1b2f18f6c37d3f1daef9149c5cae1",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "8c1f4a2e-6d3b-4b7e-9f21-3a5c7e9d1b04",
+      "action": "update",
+      "at": "2026-11-19T08:37:11Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "19c0d6fb64ae115c722dcfffa23460df9173f4aaa36618cfce560b20ec24c3f2",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
