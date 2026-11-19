@@ -1,0 +1,93 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-4367735774bd",
+  "name": "Splat Repair (repair brush editor for Gaussian splats)",
+  "summary": "Desktop editor for Gaussian splat scans: paint over a sign or floater and Fast Fill rebuilds the surface by copying nearby splats (CPU, ~0.3-1.5 s on 550k splats). Optional Deep Fill uses LaMa inpainting on NVIDIA GPUs; also brush/lasso selection, clone stamp and floater cleanup. Reads/writes PLY, SPLAT, SPZ.",
+  "category": "tools",
+  "tags": [
+    "gaussian-splatting",
+    "3dgs",
+    "editor",
+    "inpainting",
+    "photogrammetry",
+    "cleanup"
+  ],
+  "publisher": {
+    "name": "Nicolas Drum",
+    "url": "https://nicolasdrum.com/"
+  },
+  "resource_url": "https://github.com/NicolasDrum/splat-repair",
+  "download_url": null,
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/NicolasDrum/splat-repair/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Early one-person release (repo created Nov 16, 2026); tested on Windows 10/11 only. Deep Fill needs an NVIDIA GPU + CUDA (~3 GB downloads). Photoshop fill is optional and needs your own Photoshop."
+  },
+  "procedure": [
+    "Install Git, Node.js 22+ and Python 3.10-3.13",
+    "Clone https://github.com/NicolasDrum/splat-repair",
+    "Follow the README install steps, then open a .ply/.splat/.spz scan"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "PLY",
+      "SPLAT",
+      "SPZ"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/GreatCreations_/status/2123039300027822545",
+    "author": "@GreatCreations_",
+    "published_at": "2026-11-18T13:03:07Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Fills a real gap (inpainting for splat scans) with a working CPU path and documented limits; Apache-2.0. Young repo, Windows-only so far."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/NicolasDrum/splat-repair/main/docs/before.jpg",
+    "alt": "Gaussian splat scan of a beach hut sign before repair",
+    "credit": "Nicolas Drum"
+  },
+  "verification": {
+    "checked_at": "2026-11-19T08:36:38Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 175431 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-19T08:36:38Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-19T08:36:38Z",
+  "history": [
+    {
+      "operation_id": "3b6b1302-c0ea-498b-8a87-c89c6be01aca",
+      "action": "submit",
+      "at": "2026-11-19T08:36:38Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "f63642c17833a054ff248873de081bb11ed1b2f18f6c37d3f1daef9149c5cae1",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
