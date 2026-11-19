@@ -1,0 +1,112 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-82aac62be74b",
+  "name": "Allo (free variable font by Josh Puckett)",
+  "summary": "Open-source rounded sans-serif family adapted from Inter: variable weight 100-900, roundness axis 0-100, automatic optical size 14-32, drawn (not slanted) obliques, stylistic alternates, built-in icons and 50+ languages. Usable for UI, web, print and logos.",
+  "category": "fonts",
+  "tags": [
+    "font",
+    "variable-font",
+    "ofl",
+    "sans-serif",
+    "ui",
+    "rounded"
+  ],
+  "publisher": {
+    "name": "Josh Puckett",
+    "url": "https://joshpuckett.me/"
+  },
+  "resource_url": "https://allo.joshpuckett.me/",
+  "download_url": "https://allo.joshpuckett.me/downloads/Allo-1.0.3.zip",
+  "access": {
+    "model": "open-source",
+    "license": "OFL-1.1",
+    "license_url": "https://github.com/joshpuckett/allo/blob/main/OFL.txt",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "SIL OFL 1.1: free for personal and commercial use, bundling allowed; font files may not be sold on their own. Portions adapted from Inter."
+  },
+  "procedure": [
+    "Open https://allo.joshpuckett.me/",
+    "Download Allo-1.0.3.zip (about 3.2 MB) or run npm install allo-font",
+    "Install the variable or static fonts, or self-host the web files"
+  ],
+  "stats": {
+    "count": "606 glyphs, 467 characters",
+    "size": "3.2 MB zip",
+    "formats": [
+      "TTF",
+      "WOFF2",
+      "npm"
+    ],
+    "cadence": "v1.0.3, frequent post-launch updates"
+  },
+  "source": {
+    "url": "https://x.com/joshpuckett/status/2122329345670988258",
+    "author": "@joshpuckett",
+    "published_at": "2026-11-16T14:02:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/joshpuckett/allo",
+      "author": "",
+      "published_at": null,
+      "kind": "github"
+    },
+    {
+      "url": "https://x.com/ardakaanozcan_/status/2123022495725002795",
+      "author": "@ardakaanozcan_",
+      "published_at": "2026-11-18T11:56:21Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 86,
+    "why": "Genuinely new, well-built OFL variable font with a roundness axis, 1k+ GitHub stars in 3 days and real adoption; direct zip download, no signup."
+  },
+  "image": {
+    "url": "https://allo.joshpuckett.me/og.png",
+    "alt": "Allo wordmark with stickers showing weight, roundness and optical-size axes and a $0.00 free badge",
+    "credit": "Josh Puckett"
+  },
+  "verification": {
+    "checked_at": "2026-11-19T08:36:31Z",
+    "resource_ok": false,
+    "resource": {
+      "ok": false,
+      "status": null,
+      "detail": "TimeoutError"
+    },
+    "download_ok": false,
+    "download": {
+      "ok": false,
+      "status": null,
+      "detail": "TimeoutError"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": null,
+      "detail": "TimeoutError"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-19T08:36:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-19T08:36:31Z",
+  "history": [
+    {
+      "operation_id": "0ef6830e-3b2d-4559-9e8d-ac46e2ca68be",
+      "action": "submit",
+      "at": "2026-11-19T08:36:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "dfbf8f34c88abe3347f405d9d243a9cdeb764ec43bfbf240e58038bb9046d0f4",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
