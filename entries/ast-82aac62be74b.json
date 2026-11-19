@@ -72,7 +72,7 @@
     "credit": "Josh Puckett"
   },
   "verification": {
-    "checked_at": "2026-11-19T08:36:31Z",
+    "checked_at": "2026-11-19T08:37:15Z",
     "resource_ok": false,
     "resource": {
       "ok": false,
@@ -92,12 +92,12 @@
       "detail": "TimeoutError"
     }
   },
-  "hold": true,
+  "hold": false,
   "status": "candidate",
   "flags": [],
   "added_at": "2026-11-19T08:36:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-19T08:36:31Z",
+  "updated_at": "2026-11-19T08:37:15Z",
   "history": [
     {
       "operation_id": "0ef6830e-3b2d-4559-9e8d-ac46e2ca68be",
@@ -106,6 +106,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "dfbf8f34c88abe3347f405d9d243a9cdeb764ec43bfbf240e58038bb9046d0f4",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "d47b2c91-0e5a-4f3c-8a6d-5b2e1f9c7a38",
+      "action": "update",
+      "at": "2026-11-19T08:37:15Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6c1db853f37b2f94643ef78443a0a004a64cae126f1ccd55dda15f3e91225611",
+      "result": "updated",
       "status": "candidate"
     }
   ]
