@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-94113bb9669b",
+  "name": "Open4DGS (open 4D Gaussian splatting pipeline for volumetric video)",
+  "summary": "Arizona State University NEM pipeline that turns synchronized multi-camera video into 4D Gaussian splat reconstructions (TRiGS), with learned per-camera sub-frame timing offsets and a real-time viewer. Core tools MIT, trainer AGPL-3.0; example 27- and 45-camera captures on Hugging Face.",
+  "category": "tools",
+  "tags": [
+    "4dgs",
+    "gaussian-splatting",
+    "volumetric-video",
+    "multi-camera",
+    "research"
+  ],
+  "publisher": {
+    "name": "ASU Narrative and Emerging Media Labs",
+    "url": "https://open4dgs.asunemlabs.com/"
+  },
+  "resource_url": "https://github.com/ASU-NEM-Labs/open4dgs-core",
+  "download_url": "https://github.com/ASU-NEM-Labs/open4dgs-trigs",
+  "access": {
+    "model": "open-source",
+    "license": "MIT (core) + AGPL-3.0 (trainer)",
+    "license_url": "https://github.com/ASU-NEM-Labs/open4dgs-core/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Trainer is AGPL-3.0. Example datasets: private noncommercial evaluation only, HF sign-in + terms required. Initial research release; end-to-end GPU run on split repos not yet completed per README."
+  },
+  "procedure": [
+    "Read SETUP.md in open4dgs-core (two-repository install)",
+    "Clone open4dgs-core and open4dgs-trigs",
+    "Optionally request the HF dataset asu-nem-labs/open4dgs-datasets"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/tokufxug/status/2123250223770386906",
+    "author": "@tokufxug",
+    "published_at": "2026-11-19T03:01:16Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://open4dgs.asunemlabs.com/",
+      "author": "",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 65,
+    "why": "Rare open production-oriented 4DGS pipeline, but mixed MIT/AGPL licensing, noncommercial datasets and an unvalidated end-to-end run."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/92bc3b08b47c3442a5d029e72e14ee4b77e851afece1165ce554d07b93164fb7/ASU-NEM-Labs/open4dgs-core",
+    "alt": "Tools for preparing synchronized multi-camera captures, initializing dynamic Gaussian scenes, and exporting 4D reconstructions. Companion to Open4DGS-Trigs. - ASU-NEM-Labs/open4dgs-core",
+    "credit": "ASU Narrative and Emerging Media Labs"
+  },
+  "verification": {
+    "checked_at": "2026-11-19T08:36:45Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 76521 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-19T08:36:45Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-19T08:36:45Z",
+  "history": [
+    {
+      "operation_id": "521778ce-1aa1-4368-9213-850398522d75",
+      "action": "submit",
+      "at": "2026-11-19T08:36:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8a141db29f278afcb93bbe7341d8c56cdba75fd2dd04276693ca8b0b55794f50",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
