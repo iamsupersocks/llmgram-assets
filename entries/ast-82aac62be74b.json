@@ -40,7 +40,7 @@
       "WOFF2",
       "npm"
     ],
-    "cadence": "v1.0.3, frequent post-launch updates"
+    "cadence": "v1.0.3 (rechecked 2026-11-20), frequent post-launch updates"
   },
   "source": {
     "url": "https://x.com/joshpuckett/status/2122329345670988258",
@@ -72,7 +72,7 @@
     "credit": "Josh Puckett"
   },
   "verification": {
-    "checked_at": "2026-11-19T08:37:15Z",
+    "checked_at": "2026-11-20T08:34:18Z",
     "resource_ok": false,
     "resource": {
       "ok": false,
@@ -97,7 +97,7 @@
   "flags": [],
   "added_at": "2026-11-19T08:36:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-19T08:37:15Z",
+  "updated_at": "2026-11-20T08:34:18Z",
   "history": [
     {
       "operation_id": "0ef6830e-3b2d-4559-9e8d-ac46e2ca68be",
@@ -114,6 +114,15 @@
       "at": "2026-11-19T08:37:15Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "6c1db853f37b2f94643ef78443a0a004a64cae126f1ccd55dda15f3e91225611",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "6b0e2f4a-9c31-4d7e-a2b8-1120a0930a01",
+      "action": "update",
+      "at": "2026-11-20T08:34:18Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e8d9407a447becae93fb798bc26562f02640cc63afc160f32b90c6c1c98de772",
       "result": "updated",
       "status": "candidate"
     }
