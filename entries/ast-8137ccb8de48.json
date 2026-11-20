@@ -1,0 +1,113 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-8137ccb8de48",
+  "name": "Inworld SAVA (open voice activity + end-of-turn detection model)",
+  "summary": "SAVA (Semantic-Acoustic Voice Activity) is one small streaming model (25.5M params) that returns two probabilities every 40 ms on 16 kHz audio: whether a frame holds speech, and whether the speaker's turn is complete. Uses sound and sentence context to ignore coughs, laughs, music and keyboard noise. Runs on a single CPU thread (3.8 ms per 40 ms frame on M3 Max); Inworld reports a 71 ms median completed-turn detection vs 210 ms for the open model it compared against.",
+  "category": "models-weights",
+  "tags": [
+    "audio",
+    "vad",
+    "voice-activity-detection",
+    "turn-detection",
+    "voice-agents",
+    "streaming",
+    "apache-2.0",
+    "cpu"
+  ],
+  "publisher": {
+    "name": "Inworld AI",
+    "url": "https://inworld.ai/open-source"
+  },
+  "resource_url": "https://github.com/inworld-ai/sava",
+  "download_url": "https://huggingface.co/inworld/sava",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/inworld-ai/sava/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "One Apache 2.0 license covers code and weights (patent grant included). HF repo ungated; weights auto-download on first use. Responds to any voice: no target-speaker selection."
+  },
+  "procedure": [
+    "python -m pip install inworld-sava (Python 3.10+)",
+    "Run sava run recording.wav (weights download from Hugging Face on first use)",
+    "For a microphone: pip install \"inworld-sava[mic]\" then sava mic",
+    "In code: sava.load('inworld/sava'), then sava.Session(model).push(audio) for streaming"
+  ],
+  "stats": {
+    "count": "1 model, 25.5M params",
+    "size": "~51 MB (sava.safetensors)",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": "released 2026-11-18"
+  },
+  "source": {
+    "url": "https://x.com/inworld/status/2123120546908926300",
+    "author": "@inworld",
+    "published_at": "2026-11-18T18:25:58Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://inworld.ai/open-source",
+      "author": "Inworld AI",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://huggingface.co/inworld/sava",
+      "author": "inworld",
+      "published_at": null,
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 76,
+    "why": "Open (Apache 2.0) speech + end-of-turn detection in one CPU-light model, a building block for voice agents, NPC dialogue and live captioning. Benchmarks are the publisher's own; ungated weights, pip install."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/03f627c0ae8d85c11739c3dda1244e4b1d39ff9659d86bde3cffe0e11f02af83/inworld-ai/sava",
+    "alt": "GitHub card for inworld-ai/sava: streaming voice activity and end-of-turn detection in one model",
+    "credit": "GitHub / Inworld AI"
+  },
+  "verification": {
+    "checked_at": "2026-11-20T08:39:23Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 50445 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-20T08:39:23Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-20T08:39:23Z",
+  "history": [
+    {
+      "operation_id": "1ffbef35-6f54-44dd-b5ea-9ea8f9645dc4",
+      "action": "submit",
+      "at": "2026-11-20T08:39:23Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3c735541b8937a497229668cedb78758e4388b59a7acece8088936866f39f17d",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
