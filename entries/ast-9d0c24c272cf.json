@@ -1,0 +1,108 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-9d0c24c272cf",
+  "name": "Bead (free font made for 3D-printed text)",
+  "summary": "Free OFL font by Printago designed for FDM printing: every stroke is exactly two extrusion lines wide, so small names, serial numbers and labels slice as clean walls instead of gap fill. Comes in Small/Medium/Large sizes, each in raised, Cut (debossed) and Open (cut-in, printed face down) variants, with a nozzle-to-size table and test 3MF files.",
+  "category": "fonts",
+  "tags": [
+    "font",
+    "3d-printing",
+    "fdm",
+    "ofl",
+    "slicer",
+    "labels",
+    "orcaslicer",
+    "bambu"
+  ],
+  "publisher": {
+    "name": "Printago",
+    "url": "https://printago.io/"
+  },
+  "resource_url": "https://printago.io/bead",
+  "download_url": "https://www.printago.io/bead-files/bead-fonts.zip",
+  "access": {
+    "model": "open-source",
+    "license": "OFL-1.1",
+    "license_url": "https://www.printago.io/bead-files/OFL.txt",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "SIL OFL 1.1 with Reserved Font Name Bead: free for personal and commercial use and embedding; font files may not be sold on their own; modified versions must be renamed."
+  },
+  "procedure": [
+    "Open https://printago.io/bead and click Download the font",
+    "Unzip bead-fonts.zip (9 TTF files + OFL + README)",
+    "Pick Small/Medium/Large and the raised, Cut or Open variant",
+    "Set the font size from the README table for your nozzle (e.g. 0.4 mm nozzle: Small = 8.0 mm font size)"
+  ],
+  "stats": {
+    "count": "9 TTF files, 78 characters",
+    "size": "94 KB zip",
+    "formats": [
+      "TTF",
+      "3MF"
+    ],
+    "cadence": "new (Nov 2026)"
+  },
+  "source": {
+    "url": "https://x.com/realPrintago/status/2123401378533974147",
+    "author": "@realPrintago",
+    "published_at": "2026-11-19T13:01:54Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://printago.io/blog/bead-font-for-3d-printed-text",
+      "author": "Printago",
+      "published_at": null,
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Niche but genuinely useful: a free OFL typeface engineered for the slicer (0 gap fill in Printago's OrcaSlicer comparison against 12 fonts), with direct zip download and no signup. Comparison data is the publisher's own."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123400987855437824/pu/img/Xmr3zclPxd_QGYZz.jpg",
+    "alt": "",
+    "credit": "@realPrintago"
+  },
+  "verification": {
+    "checked_at": "2026-11-20T08:39:31Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 77767 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-20T08:39:31Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-20T08:39:31Z",
+  "history": [
+    {
+      "operation_id": "123fb4b6-309b-4a30-a96d-20dd46898757",
+      "action": "submit",
+      "at": "2026-11-20T08:39:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9f314910c182e2f5f56e27bd5f19225ee3cfbeb5985d3a77d72761044372db6e",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
