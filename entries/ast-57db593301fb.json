@@ -42,7 +42,7 @@
       "safetensors",
       "WAV"
     ],
-    "cadence": "v1 released 2026-11-18; restoration planned for v2"
+    "cadence": "v1 released 2026-11-18; restoration planned for v2 (verified 2026-11-20)"
   },
   "source": {
     "url": "https://x.com/inworld/status/2123120546908926300",
@@ -74,7 +74,7 @@
     "credit": "GitHub / Inworld AI"
   },
   "verification": {
-    "checked_at": "2026-11-20T08:39:15Z",
+    "checked_at": "2026-11-20T08:39:58Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -94,12 +94,12 @@
       "detail": "image/png, 52509 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-20T08:39:15Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-20T08:39:15Z",
+  "updated_at": "2026-11-20T08:39:58Z",
   "history": [
     {
       "operation_id": "d9b81ba7-0607-4785-97ce-bf10e4ef45e3",
@@ -109,6 +109,15 @@
       "payload_sha256": "fbf7b9761b5d0ba5fe5559b9c373fb08779978d6965b5b9ed93d731bda4ae049",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "c68c4ece-1b4a-42a5-ae0e-e80c8dcbf8b3",
+      "action": "update",
+      "at": "2026-11-20T08:39:58Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6c8a0286ba354cf55f2eabe01565df30e8cb26d6c6ea40207e9ac6fcbca8503e",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
