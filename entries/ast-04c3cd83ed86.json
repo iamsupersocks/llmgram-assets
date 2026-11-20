@@ -44,7 +44,7 @@
       "FBX",
       "VMD"
     ],
-    "cadence": "active (pushed Nov 8, 2026)"
+    "cadence": "very active: Linux AppImage + UE5.7 plugins 11-19/20; ~2.3k stars"
   },
   "source": {
     "url": "https://x.com/TheSoloFactory/status/2119284770446447037",
@@ -58,6 +58,12 @@
       "author": "@SLT_OFFICIAL_JP",
       "published_at": "2026-11-08T00:45:00Z",
       "kind": "x_post"
+    },
+    {
+      "url": "https://x.com/VibeCodeReview/status/2123605004871516289",
+      "author": "@VibeCodeReview",
+      "published_at": "2026-11-20T02:31:02Z",
+      "kind": "x_post"
     }
   ],
   "verdict": {
@@ -70,18 +76,18 @@
     "credit": "toyxyz / RGB MoCap"
   },
   "verification": {
-    "checked_at": "2026-11-08T08:50:58Z",
-    "resource_ok": false,
+    "checked_at": "2026-11-20T08:40:18Z",
+    "resource_ok": true,
     "resource": {
-      "ok": false,
-      "status": null,
-      "detail": "TimeoutError"
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
     },
-    "download_ok": false,
+    "download_ok": true,
     "download": {
-      "ok": false,
-      "status": 504,
-      "detail": "http error"
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
     },
     "image_ok": true,
     "image": {
@@ -95,7 +101,7 @@
   "flags": [],
   "added_at": "2026-11-08T08:50:58Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-08T08:50:58Z",
+  "updated_at": "2026-11-20T08:40:18Z",
   "history": [
     {
       "operation_id": "3c57ee7a-9d16-4ba3-a8bb-e01436d4d38a",
@@ -104,6 +110,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "3bed7b0ffc8c2f280f698b05a1472cea2196608e05276a6dbb626afc96529b10",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "336c65e5-4ab2-48aa-a74a-bb6f90c7171a",
+      "action": "update",
+      "at": "2026-11-20T08:40:18Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bc8f4dc3ddcac4e71d238d863f46dbb02c780973e910c0be7fe75cd535302d1d",
+      "result": "updated",
       "status": "candidate"
     }
   ]
