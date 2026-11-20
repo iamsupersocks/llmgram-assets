@@ -1,0 +1,114 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-57db593301fb",
+  "name": "Inworld Voice Isolator (open 48 kHz speech denoising model)",
+  "summary": "Open-weight voice isolation from Inworld: removes background chatter, music and noise from speech while keeping laughs, breaths and the speaker's character. Two 48 kHz models share one architecture: an offline model (64M params) for recordings and a realtime model (58M) that streams with 20 ms lookahead. Also outputs the removed background, useful for vocal/music separation and dataset cleanup.",
+  "category": "models-weights",
+  "tags": [
+    "audio",
+    "speech-enhancement",
+    "denoising",
+    "voice-isolation",
+    "48khz",
+    "streaming",
+    "apache-2.0",
+    "pytorch"
+  ],
+  "publisher": {
+    "name": "Inworld AI",
+    "url": "https://inworld.ai/open-source"
+  },
+  "resource_url": "https://github.com/inworld-ai/voice-isolator",
+  "download_url": "https://huggingface.co/inworld/voice-isolator",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/inworld-ai/voice-isolator/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "One Apache 2.0 license covers code and weights (patent grant included, no separate model terms). HF repo ungated; weights auto-download on first use."
+  },
+  "procedure": [
+    "pip install inworld-voice-isolation (Python 3.10+, PyTorch 2.1+)",
+    "Run voice-isolate input.wav output_clean.wav (offline model downloads from Hugging Face on first use)",
+    "For live audio use --mode streaming --lookahead 2 or the VoiceIsolator(mode='streaming') Python API",
+    "Optional: pip install \"inworld-voice-isolation[fast]\" for CUDA kernels; Apple-silicon MPS supported"
+  ],
+  "stats": {
+    "count": "2 models (offline 64M, realtime 58M)",
+    "size": "~256 MB offline checkpoint (denoiser.safetensors)",
+    "formats": [
+      "safetensors",
+      "WAV"
+    ],
+    "cadence": "v1 released 2026-11-18; restoration planned for v2"
+  },
+  "source": {
+    "url": "https://x.com/inworld/status/2123120546908926300",
+    "author": "@inworld",
+    "published_at": "2026-11-18T18:25:58Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://inworld.ai/open-source",
+      "author": "Inworld AI",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "author": "inworld",
+      "published_at": null,
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 82,
+    "why": "Rare fully open (Apache 2.0, code + weights) 48 kHz full-band voice isolator with both offline and streaming models; directly useful for podcast/video cleanup, game dialogue and speech datasets. New (repo created 11-16), ungated weights, pip install."
+  },
+  "image": {
+    "url": "https://opengraph.githubassets.com/c76eb06c2ecf9d9f703f332d73d69effd1f878db0216e0f46c6d7a5c58e61404/inworld-ai/voice-isolator",
+    "alt": "GitHub card for inworld-ai/voice-isolator: voice isolation, separating clean speech from background noise and mixed audio",
+    "credit": "GitHub / Inworld AI"
+  },
+  "verification": {
+    "checked_at": "2026-11-20T08:39:15Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 52509 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-20T08:39:15Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-20T08:39:15Z",
+  "history": [
+    {
+      "operation_id": "d9b81ba7-0607-4785-97ce-bf10e4ef45e3",
+      "action": "submit",
+      "at": "2026-11-20T08:39:15Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "fbf7b9761b5d0ba5fe5559b9c373fb08779978d6965b5b9ed93d731bda4ae049",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
