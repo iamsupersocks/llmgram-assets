@@ -1,0 +1,119 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-ec675ddcb98d",
+  "name": "Blenda 4D (free motion-design layout add-on for Blender)",
+  "summary": "GPL add-on that gives regular Blender a Cinema 4D-style motion-design workflow: command bar, Object/Attribute/Material Managers, 17 parametric primitives, 12 parametric splines, live generators (Extrude, Lathe, Sweep, Loft, Boolean, Array...), deformers (Bend, Twist, Taper...), a Sky object, asset browser and render presets. One switch returns to standard Blender. No fork, nothing to compile. MoClone cloner and full timeline not yet ported (roadmap).",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "blender-addon",
+    "motion-design",
+    "c4d-workflow",
+    "procedural",
+    "splines",
+    "gpl-3.0",
+    "ui"
+  ],
+  "publisher": {
+    "name": "Joseph Fagan / Blenda 4D contributors",
+    "url": "https://blenda4d.com/"
+  },
+  "resource_url": "https://blenda4d.com/",
+  "download_url": "https://github.com/recon007jf/Blenda4D/releases/download/v0.1.0/blenda4d-0.1.0.zip",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0-or-later",
+    "license_url": "https://github.com/recon007jf/Blenda4D/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "GPL-3.0-or-later (per LICENSE and blender_manifest.toml); free to use for commercial work, modified redistributions must stay GPL. Requires Blender 5.2 LTS+. Tested on Mac/Linux, Windows testers wanted."
+  },
+  "procedure": [
+    "Install Blender 5.2 LTS or later",
+    "Download blenda4d-0.1.0.zip from the GitHub latest release",
+    "In Blender: Edit > Preferences > Add-ons > Install from Disk, pick the zip",
+    "Use the Blenda 4D | Blender switch at top right to toggle layouts"
+  ],
+  "stats": {
+    "count": "v0.1.0",
+    "size": "334 KB zip",
+    "formats": [
+      "Blender extension zip"
+    ],
+    "cadence": "source + v0.1.0 published 2026-11-20"
+  },
+  "source": {
+    "url": "https://x.com/JosephF78645755/status/2123529057807851634",
+    "author": "@JosephF78645755",
+    "published_at": "2026-11-19T21:29:15Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/recon007jf/Blenda4D",
+      "author": "recon007jf",
+      "published_at": null,
+      "kind": "github"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EIfYbG5T6UA",
+      "author": "Joseph Fagan",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://x.com/freshmograph/status/2123679130260783563",
+      "author": "@freshmograph",
+      "published_at": "2026-11-20T07:25:00Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 75,
+    "why": "Brings a C4D-like motion-design workflow to free Blender as a plain add-on (previously a waitlisted fork, now GPL). Brand new v0.1 (source went up this morning), so expect gaps (no cloner yet), but downloadable, documented and genuinely differentiated."
+  },
+  "image": {
+    "url": "https://i.ytimg.com/vi/EIfYbG5T6UA/maxresdefault.jpg",
+    "alt": "Blenda 4D layout in Blender: viewport with sweep spiral, object manager and attribute panel, 'Free + open source' badge",
+    "credit": "Joseph Fagan (YouTube)"
+  },
+  "verification": {
+    "checked_at": "2026-11-20T08:39:44Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 247579 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-20T08:39:44Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-20T08:39:44Z",
+  "history": [
+    {
+      "operation_id": "82df79e6-b7a4-4686-92a5-ae3550df8edc",
+      "action": "submit",
+      "at": "2026-11-20T08:39:44Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "85b968456e39366cd59c48f7520780cd746999960ac463e99165076ff4ffa1ec",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
