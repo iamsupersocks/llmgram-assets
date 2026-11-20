@@ -41,7 +41,7 @@
     "formats": [
       "Blender extension zip"
     ],
-    "cadence": "source + v0.1.0 published 2026-11-20"
+    "cadence": "source + v0.1.0 published 2026-11-20 (verified same day)"
   },
   "source": {
     "url": "https://x.com/JosephF78645755/status/2123529057807851634",
@@ -79,7 +79,7 @@
     "credit": "Joseph Fagan (YouTube)"
   },
   "verification": {
-    "checked_at": "2026-11-20T08:39:44Z",
+    "checked_at": "2026-11-20T08:40:09Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -99,12 +99,12 @@
       "detail": "image/jpg, 247579 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-20T08:39:44Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-20T08:39:44Z",
+  "updated_at": "2026-11-20T08:40:09Z",
   "history": [
     {
       "operation_id": "82df79e6-b7a4-4686-92a5-ae3550df8edc",
@@ -114,6 +114,15 @@
       "payload_sha256": "85b968456e39366cd59c48f7520780cd746999960ac463e99165076ff4ffa1ec",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "29791a91-bbbc-4409-8984-8dbdaffe14b3",
+      "action": "update",
+      "at": "2026-11-20T08:40:09Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1bcd72028725456465f4ea191848e3f3017cc6bbfdd0ca5c5444d07d53b36287",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
