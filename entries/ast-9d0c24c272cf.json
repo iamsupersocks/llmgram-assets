@@ -64,11 +64,11 @@
   },
   "image": {
     "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123400987855437824/pu/img/Xmr3zclPxd_QGYZz.jpg",
-    "alt": "",
+    "alt": "Printago video frame: large outlined letters P and R showing two-line strokes, with the caption 'Blobby small text?'",
     "credit": "@realPrintago"
   },
   "verification": {
-    "checked_at": "2026-11-20T08:39:31Z",
+    "checked_at": "2026-11-20T08:40:02Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -88,12 +88,12 @@
       "detail": "image/jpg, 77767 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-20T08:39:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-20T08:39:31Z",
+  "updated_at": "2026-11-20T08:40:02Z",
   "history": [
     {
       "operation_id": "123fb4b6-309b-4a30-a96d-20dd46898757",
@@ -103,6 +103,15 @@
       "payload_sha256": "9f314910c182e2f5f56e27bd5f19225ee3cfbeb5985d3a77d72761044372db6e",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "836dabd9-f73d-443c-ae40-d8df1c07eddb",
+      "action": "update",
+      "at": "2026-11-20T08:40:02Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a1ce6d9c35fad48e22af4fd55172e0e5e48ee514cec6decd5ab8bf30676e6498",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
