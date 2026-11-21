@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-3e6bd27c6595",
+  "name": "Punchcutter (open-source AI type foundry)",
+  "summary": "MIT agent skill and CLI that designs real font families from a one-sentence description, a photo of handwriting or a mood image, or by remixing an OFL font (Roboto Flex, Noto, Inter...). Outputs variable and static TTF/OTF, WOFF2 with CSS and UFO sources, with spacing, kerning and its own Studio app. Works with Claude, ChatGPT, Codex, Cursor and Gemini CLI.",
+  "category": "tools",
+  "tags": [
+    "fonts",
+    "typography",
+    "font-generation",
+    "agents",
+    "variable-font",
+    "ufo",
+    "skill"
+  ],
+  "publisher": {
+    "name": "Rishi Shah (byrishi)",
+    "url": "https://github.com/byrishi"
+  },
+  "resource_url": "https://github.com/byrishi/punchcutter",
+  "download_url": "https://github.com/byrishi/punchcutter/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/byrishi/punchcutter/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (needs your own AI agent subscription)",
+    "notes": "Tool is MIT; OFL remixes (route 6) ship under the OFL with a new name and the original credited."
+  },
+  "procedure": [
+    "Open https://github.com/byrishi/punchcutter and the docs at https://byrishi.github.io/punchcutter/",
+    "Install the skill in your agent (see Getting started / skills.sh)",
+    "Describe a typeface or send a photo of the handwriting sheet",
+    "Export the generated family (TTF/OTF, WOFF2+CSS, UFO)"
+  ],
+  "stats": {
+    "count": "",
+    "size": "",
+    "formats": [
+      "TTF",
+      "OTF",
+      "WOFF2",
+      "UFO"
+    ],
+    "cadence": "new repo (created 2026-11-13, last push 2026-11-15), ~30 stars"
+  },
+  "source": {
+    "url": "https://x.com/EveryDevAi/status/2123579327417893288",
+    "author": "@EveryDevAi",
+    "published_at": "2026-11-20T00:49:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://byrishi.github.io/punchcutter/",
+      "author": "Rishi Shah",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 62,
+    "why": "Distinctive open tool that produces actual font files and sources rather than images; MIT. Young project with low adoption so far."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/byrishi/punchcutter/main/assets/gallery.png",
+    "alt": "Specimen of five font families made with Punchcutter: Burin Grotesk, Pomelo Round, Quarry Slab, Semaphore Condensed, Lumen Contrast",
+    "credit": "Rishi Shah"
+  },
+  "verification": {
+    "checked_at": "2026-11-21T08:40:35Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 231650 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-21T08:40:35Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-21T08:40:35Z",
+  "history": [
+    {
+      "operation_id": "bb5dacf2-b878-4257-ab60-b5cb79071bfe",
+      "action": "submit",
+      "at": "2026-11-21T08:40:35Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "177f518a3ad6d975f19387b5685813c4c96970ed97cd00821f202dff46aa7e57",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
