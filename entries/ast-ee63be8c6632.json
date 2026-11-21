@@ -70,7 +70,7 @@
     "credit": "KernModels"
   },
   "verification": {
-    "checked_at": "2026-11-21T08:40:07Z",
+    "checked_at": "2026-11-21T08:41:01Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,8 +80,8 @@
     "download_ok": true,
     "download": {
       "ok": true,
-      "status": 200,
-      "detail": "reachable"
+      "status": 429,
+      "detail": "reachable, access restricted"
     },
     "image_ok": true,
     "image": {
@@ -90,12 +90,12 @@
       "detail": "image/jpg, 88542 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-21T08:40:07Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-21T08:40:07Z",
+  "updated_at": "2026-11-21T08:41:01Z",
   "history": [
     {
       "operation_id": "c8931574-8e10-470b-99a2-8a326fd24b71",
@@ -105,6 +105,15 @@
       "payload_sha256": "2d628c2c606d77a3dd911e9386f40171aa99fd8d7939530d4041c71f174c3bbe",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "f0e0ce4b-872e-4e3e-b3ac-4564d13864e9",
+      "action": "update",
+      "at": "2026-11-21T08:41:01Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4b74bc11e2f6de0b307e3d15c54d1fd9852af92889b79bc369c813210d5c5857",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
