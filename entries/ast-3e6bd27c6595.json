@@ -69,7 +69,7 @@
     "credit": "Rishi Shah"
   },
   "verification": {
-    "checked_at": "2026-11-21T08:40:35Z",
+    "checked_at": "2026-11-21T08:40:57Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -89,12 +89,12 @@
       "detail": "image/png, 231650 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-21T08:40:35Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-21T08:40:35Z",
+  "updated_at": "2026-11-21T08:40:57Z",
   "history": [
     {
       "operation_id": "bb5dacf2-b878-4257-ab60-b5cb79071bfe",
@@ -104,6 +104,15 @@
       "payload_sha256": "177f518a3ad6d975f19387b5685813c4c96970ed97cd00821f202dff46aa7e57",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7fac8ad0-425b-49d2-8b6c-e22265778dfe",
+      "action": "update",
+      "at": "2026-11-21T08:40:57Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c0044fb07c7b28b65e4a29428856cda799fdf91ee28a1fb4794e902df5589056",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
