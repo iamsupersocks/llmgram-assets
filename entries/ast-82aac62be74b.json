@@ -29,18 +29,19 @@
   },
   "procedure": [
     "Open https://allo.joshpuckett.me/",
-    "Download Allo-1.0.3.zip (about 3.2 MB) or run npm install allo-font",
-    "Install the variable or static fonts, or self-host the web files"
+    "Download Allo-1.0.3.zip (about 4.6 MB unpacked: 18 static OTF, the variable TTF, WOFF2 web fonts and the license) or run npm install allo-font",
+    "Install the variable or static fonts, or self-host the WOFF2 files"
   ],
   "stats": {
-    "count": "606 glyphs, 467 characters",
-    "size": "3.2 MB zip",
+    "count": "606 glyphs, 467 characters; 18 static OTF + variable TTF",
+    "size": "zip ~3.2 MB (41 files)",
     "formats": [
+      "OTF",
       "TTF",
       "WOFF2",
       "npm"
     ],
-    "cadence": "v1.0.3 (rechecked 2026-11-20), frequent post-launch updates"
+    "cadence": "v1.0.3 (rechecked 2026-11-21)"
   },
   "source": {
     "url": "https://x.com/joshpuckett/status/2122329345670988258",
@@ -72,7 +73,7 @@
     "credit": "Josh Puckett"
   },
   "verification": {
-    "checked_at": "2026-11-20T08:34:18Z",
+    "checked_at": "2026-11-21T08:41:04Z",
     "resource_ok": false,
     "resource": {
       "ok": false,
@@ -97,7 +98,7 @@
   "flags": [],
   "added_at": "2026-11-19T08:36:31Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-20T08:34:18Z",
+  "updated_at": "2026-11-21T08:41:04Z",
   "history": [
     {
       "operation_id": "0ef6830e-3b2d-4559-9e8d-ac46e2ca68be",
@@ -123,6 +124,15 @@
       "at": "2026-11-20T08:34:18Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "e8d9407a447becae93fb798bc26562f02640cc63afc160f32b90c6c1c98de772",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "e739fa74-7b1e-4317-aebf-1b94cb705009",
+      "action": "update",
+      "at": "2026-11-21T08:41:04Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d5c0b609a5c1c53c6945276c6551593ba729618b4421c6d97ca9f9b74e28b31c",
       "result": "updated",
       "status": "candidate"
     }
