@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-218e4adca188",
+  "name": "Stylized Water Lite for Godot 4 (TinyLanternDev)",
+  "summary": "Free Lite edition of a stylized 3D water shader for Godot 4.7+: two Gerstner waves, colour by depth, shore foam line, the Tropical preset and a small example scene (Kenney CC0 rocks). GDScript and Godot shaders only, works on Forward+, Mobile and Compatibility/Web. The paid full pack ($14.99) adds 6 presets, caustics, SSR, floating objects, splashes, waterfall and underwater view.",
+  "category": "tools",
+  "tags": [
+    "godot",
+    "godot4",
+    "shader",
+    "water",
+    "stylized",
+    "vfx",
+    "game-dev",
+    "freemium"
+  ],
+  "publisher": {
+    "name": "TinyLanternDev",
+    "url": "https://tinylanterndev.itch.io/"
+  },
+  "resource_url": "https://tinylanterndev.itch.io/stylized-water",
+  "download_url": "https://tinylanterndev.itch.io/stylized-water",
+  "access": {
+    "model": "freemium",
+    "license": "Stylized Water for Godot 4 Asset License (LICENSE.txt)",
+    "license_url": "https://tinylanterndev.itch.io/stylized-water",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 Lite; full pack $14.99 (on sale $11.24 at check)",
+    "notes": "Use and modify in unlimited commercial or non-commercial games; no attribution required; may not resell/redistribute the shader, scripts or textures alone or in packs, templates or public repos. Code AI-assisted per page."
+  },
+  "procedure": [
+    "Open the itch.io page",
+    "Under the file list, click Download next to StylizedWater_Lite_v1.1.1.zip (79 kB, free demo file)",
+    "Copy addons/stylized_water_lite into your Godot 4.7+ project",
+    "Open examples_lite/lite_demo.tscn or apply water_lite_tropical.tres to a plane"
+  ],
+  "stats": {
+    "count": "1 shader + Tropical preset + example scene",
+    "size": "79 kB (Lite zip)",
+    "formats": [
+      "gdshader",
+      "tres",
+      "tscn",
+      "GLB"
+    ],
+    "cadence": "v1.1.1 (updated 2026-11-20); first published 2026-11-12"
+  },
+  "source": {
+    "url": "https://x.com/cutetoxicguy/status/2123801039933780418",
+    "author": "@cutetoxicguy",
+    "published_at": "2026-11-20T15:30:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 66,
+    "why": "Usable free Godot water shader with a clear commercial license and a well-documented paid upgrade; v1.1 splash update is recent. Lite is deliberately minimal."
+  },
+  "image": {
+    "url": "https://img.itch.zone/aW1nLzMyMTQ5MzE4LnBuZw==/original/hnbM%2Br.png",
+    "alt": "Godot render of a small tropical island in turquoise stylized water with shore foam and a pirate ship",
+    "credit": "TinyLanternDev"
+  },
+  "verification": {
+    "checked_at": "2026-11-21T08:40:16Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 429,
+      "detail": "reachable, access restricted"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 429,
+      "detail": "reachable, access restricted"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 500956 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-21T08:40:16Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-21T08:40:16Z",
+  "history": [
+    {
+      "operation_id": "7c620c24-20e2-4965-8b7d-dd656eea9bfb",
+      "action": "submit",
+      "at": "2026-11-21T08:40:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1fbb73173db6072880351da4796e4799b80271e97fd11ba5f6ac1eb47ac1c6e9",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
