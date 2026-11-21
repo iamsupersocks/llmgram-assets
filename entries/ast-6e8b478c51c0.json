@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6e8b478c51c0",
+  "name": "AnyMachine (agent-built rigged machines in Blender)",
+  "summary": "MIT repo documenting a pipeline where a coding agent builds machines in Blender Python: reference sheets first, then part-by-part modeling, rigging and animation, with renders checked against the references. Includes build scripts, notes and exported GLBs: a 30 m stilt walker (160 parts, 104 bones, hydraulics, 3 animations), a helicopter, lifeboat station, oil-rig props, light fixtures, plus rigged laptop/quadruped/backpack experiments with 0-1 joint parameters.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "procedural",
+    "rigging",
+    "animation",
+    "agents",
+    "glb",
+    "hard-surface",
+    "python"
+  ],
+  "publisher": {
+    "name": "Apekshik Panigrahi",
+    "url": "https://github.com/apekshik"
+  },
+  "resource_url": "https://github.com/apekshik/anymachine",
+  "download_url": "https://github.com/apekshik/anymachine/archive/refs/heads/main.zip",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/apekshik/anymachine/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "README status: experiments, no endpoint yet; models are simpler than their reference sheets in places. Requires Blender and an agent (author used Claude Code) to reproduce."
+  },
+  "procedure": [
+    "Open https://github.com/apekshik/anymachine",
+    "Read PIPELINE.md (part 1 machines, part 2 complex static objects)",
+    "Clone or download the repo zip",
+    "Run a build script such as stilt/build_stilt.py in Blender, or import the provided GLBs (e.g. stilt/stilt.glb)"
+  ],
+  "stats": {
+    "count": "6 experiments (stilt, hardsurface, laptop, quadruped, spider, backpacks)",
+    "size": "stilt.glb ~36 MB",
+    "formats": [
+      "py",
+      "GLB",
+      "md"
+    ],
+    "cadence": "active (last push 2026-11-17); ~900 stars"
+  },
+  "source": {
+    "url": "https://x.com/bonduelleioat/status/2123842056842018835",
+    "author": "@bonduelleioat",
+    "published_at": "2026-11-20T18:13:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/apekshik/anymachine",
+      "author": "@apekshik",
+      "published_at": "2026-11-04T08:06:50Z",
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Concrete, reproducible agent-to-Blender method with real scripts and rigged GLB outputs under MIT; differs from mesh generators by building clean part-based rigs. Still experimental."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/apekshik/anymachine/main/stilt/renders/stilt_compare_3q.jpg",
+    "alt": "Concept painting of a tall four-legged stilt walker beside the agent-built Blender model with a small human figure for scale",
+    "credit": "Apekshik Panigrahi"
+  },
+  "verification": {
+    "checked_at": "2026-11-21T08:40:26Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 113714 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-21T08:40:26Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-21T08:40:26Z",
+  "history": [
+    {
+      "operation_id": "7de514b0-ba71-45b0-a175-fa6f44f3a427",
+      "action": "submit",
+      "at": "2026-11-21T08:40:26Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a9c1e71ce869d2f40a06b956cefd41b61df3d8ec49ae45bfef5df9a5d7fdd7ef",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
