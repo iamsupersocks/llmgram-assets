@@ -69,7 +69,7 @@
     "credit": "Apekshik Panigrahi"
   },
   "verification": {
-    "checked_at": "2026-11-21T08:40:26Z",
+    "checked_at": "2026-11-21T08:40:53Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -89,12 +89,12 @@
       "detail": "image/jpg, 113714 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-21T08:40:26Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-21T08:40:26Z",
+  "updated_at": "2026-11-21T08:40:53Z",
   "history": [
     {
       "operation_id": "7de514b0-ba71-45b0-a175-fa6f44f3a427",
@@ -104,6 +104,15 @@
       "payload_sha256": "a9c1e71ce869d2f40a06b956cefd41b61df3d8ec49ae45bfef5df9a5d7fdd7ef",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "cd28d6ec-07b8-49b9-b50d-28de8427c662",
+      "action": "update",
+      "at": "2026-11-21T08:40:53Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "0ff13e77240f9cc74979dfa31f0759fb1763a60a994e3de07c9c574fbc79cd3a",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
