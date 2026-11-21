@@ -63,12 +63,12 @@
     "credit": "TinyLanternDev"
   },
   "verification": {
-    "checked_at": "2026-11-21T08:40:16Z",
+    "checked_at": "2026-11-21T08:40:57Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
-      "status": 429,
-      "detail": "reachable, access restricted"
+      "status": 200,
+      "detail": "reachable"
     },
     "download_ok": true,
     "download": {
@@ -83,12 +83,12 @@
       "detail": "image/png, 500956 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-21T08:40:16Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-21T08:40:16Z",
+  "updated_at": "2026-11-21T08:40:57Z",
   "history": [
     {
       "operation_id": "7c620c24-20e2-4965-8b7d-dd656eea9bfb",
@@ -98,6 +98,15 @@
       "payload_sha256": "1fbb73173db6072880351da4796e4799b80271e97fd11ba5f6ac1eb47ac1c6e9",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "d1db733a-5ebb-4225-9ff9-64b0846b42ba",
+      "action": "update",
+      "at": "2026-11-21T08:40:57Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8d749bcb63dc0133a2ca14f56ded3507b0b71f49a112fe067e898cc21025a65b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
