@@ -1,0 +1,110 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-ee63be8c6632",
+  "name": "Free Cozy Winter 3D Starter Pack (KernModels)",
+  "summary": "8 hand-modeled low-poly winter props in two styles: 4 Classic Stud (snowman, gift box, pine tree, campfire) and 4 Stylized (ice crystal, winter lamp, wooden sled, candy cane), 560-1,368 tris each, clean quads. FBX (pre-scaled for Roblox Studio) and GLB for Unity, Godot, Unreal, Three.js and Blender, plus standalone seamless PBR maps. Useful for holiday updates and winter game scenes.",
+  "category": "3d-models",
+  "tags": [
+    "3d-models",
+    "low-poly",
+    "winter",
+    "christmas",
+    "game-assets",
+    "roblox",
+    "glb",
+    "fbx",
+    "pbr"
+  ],
+  "publisher": {
+    "name": "KernModels",
+    "url": "https://kernmodels.itch.io/"
+  },
+  "resource_url": "https://kernmodels.itch.io/free-cozy-winter-3d-starter-pack-8-low-poly-props-4-stud-4-stylized",
+  "download_url": "https://kernmodels.itch.io/free-cozy-winter-3d-starter-pack-8-low-poly-props-4-stud-4-stylized",
+  "access": {
+    "model": "free",
+    "license": "KernModels asset license (stated on itch page)",
+    "license_url": "https://kernmodels.itch.io/free-cozy-winter-3d-starter-pack-8-low-poly-props-4-stud-4-stylized",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (name your own price)",
+    "notes": "Free for personal and commercial games/projects; credit appreciated, not required; do not redistribute or resell the raw asset pack. Page states no generative AI used."
+  },
+  "procedure": [
+    "Open the itch.io page",
+    "Click Download Now, enter $0 or any amount, then 'No thanks, just take me to the downloads'",
+    "Download Cozy_Winter_StarterPack_v1.0.zip (4.1 MB)",
+    "Import the GLB (or the Roblox-scaled FBX) into your engine"
+  ],
+  "stats": {
+    "count": "8 models",
+    "size": "4.1 MB zip",
+    "formats": [
+      "FBX",
+      "GLB",
+      "PNG"
+    ],
+    "cadence": "v1.0, published 2026-11-20"
+  },
+  "source": {
+    "url": "https://x.com/KernModels/status/2123910501088559599",
+    "author": "@KernModels",
+    "published_at": "2026-11-20T22:44:58Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/KernModels/status/2123910528854872421",
+      "author": "@KernModels",
+      "published_at": "2026-11-20T22:45:05Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Small but genuinely free, commercial-OK, cleanly specified multi-engine pack (GLB+FBX+PBR maps) from the creator; useful seasonal props. Limited count."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HXmk5xhWsAAU9wR.jpg",
+    "alt": "Render of the 8 props: blocky snowman, layered pine tree, gift box, campfire, ice crystals, winter lamp, sled and candy cane",
+    "credit": "KernModels"
+  },
+  "verification": {
+    "checked_at": "2026-11-21T08:40:07Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 429,
+      "detail": "reachable, access restricted"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 88542 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-21T08:40:07Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-21T08:40:07Z",
+  "history": [
+    {
+      "operation_id": "c8931574-8e10-470b-99a2-8a326fd24b71",
+      "action": "submit",
+      "at": "2026-11-21T08:40:07Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2d628c2c606d77a3dd911e9386f40171aa99fd8d7939530d4041c71f174c3bbe",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
