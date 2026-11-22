@@ -1,0 +1,114 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-145b84bce0d9",
+  "name": "LATO.2 — image/mesh to 3D mesh with controllable vertex count (code + weights)",
+  "summary": "Open research model that generates a 3D mesh in two stages: vertex positions under a vertex budget you choose (V-Flow), then the connectivity (T-Flow). Works from an input mesh (remesh/retopology) or, since Nov 19, from a single image via a TRELLIS scaffold. Updated v1.0+rl weights (Nov 18) clean up topology. Useful for game-ready low/mid-poly meshes with a set polycount. Needs an NVIDIA GPU with CUDA.",
+  "category": "models-weights",
+  "tags": [
+    "image-to-3d",
+    "mesh-generation",
+    "retopology",
+    "low-poly",
+    "game-assets",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Hang Long, Tianhao Zhao et al. (HUST / Meshy AI)",
+    "url": "https://lohhhha.github.io/LATO.2/"
+  },
+  "resource_url": "https://github.com/LoHhhha/LATO.2",
+  "download_url": "https://huggingface.co/0x4c48/LATO.2",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/LoHhhha/LATO.2/blob/master/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT on code and on the Hugging Face weights. Image2Mesh reuses Microsoft TRELLIS (MIT). Online demo on a Hugging Face Space."
+  },
+  "procedure": [
+    "Clone https://github.com/LoHhhha/LATO.2 and run `. ./setup.sh --all` (conda env, Python 3.10, PyTorch 2.6, CUDA 12.4, nvcc needed)",
+    "Download weights with `python scripts/ckpt_download.py` (from huggingface.co/0x4c48/LATO.2)",
+    "Mesh to mesh: `python scripts/e2e_inference.py --mesh_dir <dir> --out_dir <out> --vert_num 2000`",
+    "Image to mesh: `python scripts/image_e2e_inference.py --image_dir <dir> --out_dir <out> --vert_num 2000`",
+    "Or try it without installing: https://huggingface.co/spaces/0x4c48/lato2-mesh-generation"
+  ],
+  "stats": {
+    "count": "7 checkpoints (V-Flow, T-Flow, VAEs, encoders)",
+    "size": "",
+    "formats": [
+      "OBJ",
+      "PLY",
+      "PT"
+    ],
+    "cadence": "weights updated 2026-11-18; image2mesh 2026-11-19"
+  },
+  "source": {
+    "url": "https://x.com/0x4C48/status/2124411178726375477",
+    "author": "@0x4C48",
+    "published_at": "2026-11-22T07:54:29Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://lohhhha.github.io/LATO.2/",
+      "author": "",
+      "published_at": null,
+      "kind": "website"
+    },
+    {
+      "url": "https://huggingface.co/spaces/0x4c48/lato2-mesh-generation",
+      "author": "",
+      "published_at": null,
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 78,
+    "why": "Real code + MIT weights with a vertex-budget control that targets game-ready topology; fresh image-to-mesh pipeline. Research-grade install (CUDA build), so not plug-and-play for artists."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/LoHhhha/LATO.2/master/assets/image2mesh.png",
+    "alt": "Four input images (armour, chest plate, plant trellis, mech) next to the wireframe meshes LATO.2 generated from them",
+    "credit": "LATO.2 authors (GitHub repo)"
+  },
+  "verification": {
+    "checked_at": "2026-11-22T08:37:18Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 2456830 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-22T08:37:18Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-22T08:37:18Z",
+  "history": [
+    {
+      "operation_id": "fd00e9bb-d8cb-4500-9a6c-ec4fa3aff69a",
+      "action": "submit",
+      "at": "2026-11-22T08:37:18Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ee426ee749b3eaabe49a76a4e44efc8484727732d4bcaefe0a7ba17b1d2511fc",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
