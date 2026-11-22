@@ -65,7 +65,7 @@
     "credit": "ShapeCraft repo"
   },
   "verification": {
-    "checked_at": "2026-11-22T08:37:46Z",
+    "checked_at": "2026-11-22T08:38:25Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -85,12 +85,12 @@
       "detail": "image/jpg, 143849 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-22T08:37:46Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-22T08:37:46Z",
+  "updated_at": "2026-11-22T08:38:25Z",
   "history": [
     {
       "operation_id": "8c1417a7-c2c6-4cdd-85eb-057db59acac5",
@@ -100,6 +100,15 @@
       "payload_sha256": "8352272e9b71b360716e7113c87d01f62b6ad069297c4c9755666acf8752dabb",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "720156f1-d300-4458-9cee-c4f6dc3394c0",
+      "action": "update",
+      "at": "2026-11-22T08:38:25Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "147047bf3c5bfd596618273fdc3211929dea2fea37ca0f3dce129f5ee5a0d512",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
