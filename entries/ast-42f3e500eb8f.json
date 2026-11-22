@@ -69,7 +69,7 @@
     "credit": "Direct3D-V3 authors (GitHub repo)"
   },
   "verification": {
-    "checked_at": "2026-11-22T08:37:29Z",
+    "checked_at": "2026-11-22T08:38:18Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -89,12 +89,12 @@
       "detail": "image/png, 4269786 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-22T08:37:29Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-22T08:37:29Z",
+  "updated_at": "2026-11-22T08:38:18Z",
   "history": [
     {
       "operation_id": "ac124ec8-86e1-482b-b2cf-726670a0b14c",
@@ -104,6 +104,15 @@
       "payload_sha256": "95251747642468a3d584dc2129999072c30ba621885a792198d6b4147c0ce1e7",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "9814b1b6-9301-43cd-9eb5-40267a4b57d0",
+      "action": "update",
+      "at": "2026-11-22T08:38:18Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c684a894117703ab6cda9218853a64cd0254fb0ab154b0b01a68cfb72277305b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
