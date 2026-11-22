@@ -57,11 +57,11 @@
   },
   "image": {
     "url": "https://pbs.twimg.com/media/HXqSE1dXYAAjtl5.jpg?name=orig",
-    "alt": "",
+    "alt": "Six low-poly PSX-style human characters in casual outfits standing in a grey room, titled Modular Characters, 6 rigged characters, GLB + FBX",
     "credit": "@CubicleGameDev"
   },
   "verification": {
-    "checked_at": "2026-11-22T08:37:54Z",
+    "checked_at": "2026-11-22T08:38:25Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,12 +81,12 @@
       "detail": "image/jpg, 181665 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-22T08:37:54Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-22T08:37:54Z",
+  "updated_at": "2026-11-22T08:38:25Z",
   "history": [
     {
       "operation_id": "797666e0-d252-4eb5-8a3a-64e5000f35e3",
@@ -96,6 +96,15 @@
       "payload_sha256": "fb339fb9a22e87e5ebca2d247b6c7170d1776dea7d50e8a7500ada473f705463",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "b003e486-c827-444a-a233-5caa92ae790a",
+      "action": "update",
+      "at": "2026-11-22T08:38:25Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "909535571389cfa40231e77cc0e34938945af076cccfc908af997b6bb132d361",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
