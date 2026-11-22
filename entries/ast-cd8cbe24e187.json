@@ -1,0 +1,101 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-cd8cbe24e187",
+  "name": "PSX Modular Humans — 6 free rigged low-poly retro characters (GLB + FBX)",
+  "summary": "Six PS1-style low-poly humans (913–1,035 tris each) with casual, sporty and office outfits and props, each split into swappable meshes on one 18-bone FK rig and one 128×128 pixel-art atlas. GLB and FBX with embedded textures, plus PNG previews and an import guide. Good for PSX horror, retro RPG NPCs and game jams. No animation clips (rest pose).",
+  "category": "3d-models",
+  "tags": [
+    "psx",
+    "low-poly",
+    "characters",
+    "rigged",
+    "retro",
+    "glb",
+    "fbx"
+  ],
+  "publisher": {
+    "name": "Cubicle Studio (guilherme587)",
+    "url": "https://guilherme587.itch.io/"
+  },
+  "resource_url": "https://guilherme587.itch.io/psx-modular-humans-free-retro-character-pack",
+  "download_url": "https://guilherme587.itch.io/psx-modular-humans-free-retro-character-pack/purchase",
+  "access": {
+    "model": "free",
+    "license": "Cubicle Studio asset license",
+    "license_url": "https://guilherme587.itch.io/psx-modular-humans-free-retro-character-pack",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (name your own price)",
+    "notes": "Use in personal and commercial projects, no attribution needed; no resale or redistribution of the files as standalone assets. itch page is tagged AI-assisted / AI graphics."
+  },
+  "procedure": [
+    "Open the itch.io page and click Download Now",
+    "On the name-your-price screen choose 'No thanks, just take me to the downloads'",
+    "Download PSX_Modular_Characters_v1.0.zip (846 kB)",
+    "Import the GLB or FBX from Export/; keep Nearest/Point texture filtering for the PSX look"
+  ],
+  "stats": {
+    "count": "6 characters",
+    "size": "846 kB zip",
+    "formats": [
+      "GLB",
+      "FBX",
+      "PNG"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/CubicleGameDev/status/2124171108945391624",
+    "author": "@CubicleGameDev",
+    "published_at": "2026-11-21T16:00:32Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 62,
+    "why": "Clean, rigged, free-for-commercial PSX characters with a proper license file; small pack, no animations, and itch flags AI assistance."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HXqSE1dXYAAjtl5.jpg?name=orig",
+    "alt": "",
+    "credit": "@CubicleGameDev"
+  },
+  "verification": {
+    "checked_at": "2026-11-22T08:37:54Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 181665 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-22T08:37:54Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-22T08:37:54Z",
+  "history": [
+    {
+      "operation_id": "797666e0-d252-4eb5-8a3a-64e5000f35e3",
+      "action": "submit",
+      "at": "2026-11-22T08:37:54Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "fb339fb9a22e87e5ebca2d247b6c7170d1776dea7d50e8a7500ada473f705463",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
