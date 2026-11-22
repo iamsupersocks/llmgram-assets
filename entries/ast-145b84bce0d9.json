@@ -74,7 +74,7 @@
     "credit": "LATO.2 authors (GitHub repo)"
   },
   "verification": {
-    "checked_at": "2026-11-22T08:37:18Z",
+    "checked_at": "2026-11-22T08:38:14Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -94,12 +94,12 @@
       "detail": "image/png, 2456830 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-22T08:37:18Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-22T08:37:18Z",
+  "updated_at": "2026-11-22T08:38:14Z",
   "history": [
     {
       "operation_id": "fd00e9bb-d8cb-4500-9a6c-ec4fa3aff69a",
@@ -109,6 +109,15 @@
       "payload_sha256": "ee426ee749b3eaabe49a76a4e44efc8484727732d4bcaefe0a7ba17b1d2511fc",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "01cce969-c0d3-4ad4-a250-629b34aefee6",
+      "action": "update",
+      "at": "2026-11-22T08:38:14Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "83eeb279f91aa846ea0a973527505280dbb35c2ad795fe9556aa5501d656a23d",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
