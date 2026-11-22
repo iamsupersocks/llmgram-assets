@@ -1,0 +1,105 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-ccc334c44c58",
+  "name": "ShapeCraft — free open-source direct-modeling CAD (alpha)",
+  "summary": "Local-first solid modeler on Open CASCADE: sketch on any face, pull it into a solid, drag edges to round them; every step stays editable in History. Opens .shapr, STEP, Parasolid, IGES, STL, OBJ, 3MF and DXF/SVG sketches. Aimed at 3D-printing parts, enclosures and props. No account or telemetry; macOS, Windows, Linux (plus Android/iOS builds). Built-in tutorials in 11 languages.",
+  "category": "tools",
+  "tags": [
+    "cad",
+    "3d-modeling",
+    "3d-printing",
+    "shapr3d-alternative",
+    "desktop-app",
+    "mit",
+    "apache-2.0"
+  ],
+  "publisher": {
+    "name": "jackharvest",
+    "url": "https://jackharvest.com/shapecraft/"
+  },
+  "resource_url": "https://github.com/jackharvest/shapecraft",
+  "download_url": "https://github.com/jackharvest/shapecraft/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "MIT OR Apache-2.0",
+    "license_url": "https://github.com/jackharvest/shapecraft/blob/main/LICENSE-MIT",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Alpha (v0.11.2-alpha). Open CASCADE is LGPL-2.1 (dynamically linked, see NOTICE). Not affiliated with Shapr3D."
+  },
+  "procedure": [
+    "Open https://github.com/jackharvest/shapecraft/releases/latest",
+    "Download: macos-universal.dmg, windows-x64-setup.exe / .msi / portable zip, or linux AppImage / .deb / .rpm / tar.gz",
+    "Launch and pick the navigation style you know on first run",
+    "Follow one of the three built-in tutorials"
+  ],
+  "stats": {
+    "count": "",
+    "size": "33-106 MB per build",
+    "formats": [
+      "STEP",
+      "IGES",
+      "STL",
+      "OBJ",
+      "3MF",
+      "DXF",
+      "SVG"
+    ],
+    "cadence": "v0.11.2-alpha on 2026-11-21, near-daily releases"
+  },
+  "source": {
+    "url": "https://x.com/hsianghui/status/2124003661923967136",
+    "author": "@hsianghui",
+    "published_at": "2026-11-21T04:55:09Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 66,
+    "why": "Genuinely free, permissive CAD with real STEP/STL support and builds for every OS; good for printable props and parts. Still alpha, single maintainer."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/jackharvest/shapecraft/main/website/media/handheld-finished.jpg",
+    "alt": "ShapeCraft window showing a blue clamshell handheld console model with its sketch/extrude history panel",
+    "credit": "ShapeCraft repo"
+  },
+  "verification": {
+    "checked_at": "2026-11-22T08:37:46Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 143849 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-22T08:37:46Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-22T08:37:46Z",
+  "history": [
+    {
+      "operation_id": "8c1417a7-c2c6-4cdd-85eb-057db59acac5",
+      "action": "submit",
+      "at": "2026-11-22T08:37:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8352272e9b71b360716e7113c87d01f62b6ad069297c4c9755666acf8752dabb",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
