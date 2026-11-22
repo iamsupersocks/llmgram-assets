@@ -1,0 +1,104 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c2cadf563bf4",
+  "name": "SketchCraft — free open-source SketchUp-style 3D modeler",
+  "summary": "Desktop push/pull modeler for houses, rooms, furniture and props: draw an outline, pull it up, type exact sizes. Opens SketchUp (.skp), DXF/DWG, IFC, FBX/OBJ and point-cloud scans; saves glTF, FBX, OBJ, STL, DAE, IFC, PDF, MP4. Groups, components, tags, renders, section cuts, a Cut list plugin, plus a CLI and MCP server for agents. Mac, Windows, Linux; self-updating.",
+  "category": "tools",
+  "tags": [
+    "3d-modeling",
+    "sketchup-alternative",
+    "architecture",
+    "gltf",
+    "desktop-app",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Jason Sutter (jasonsutter87)",
+    "url": "https://github.com/jasonsutter87"
+  },
+  "resource_url": "https://github.com/jasonsutter87/sketchcraft",
+  "download_url": "https://github.com/jasonsutter87/sketchcraft/releases/latest",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/jasonsutter87/sketchcraft/blob/develop/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Builds are not code-signed yet (macOS: Open Anyway; Windows: Run anyway). DWG and IFC import need a free helper. Clean-room project, not affiliated with SketchUp/Trimble."
+  },
+  "procedure": [
+    "Open https://github.com/jasonsutter87/sketchcraft/releases/latest",
+    "Download the file for your computer: universal .dmg (Mac), x64-setup.exe / .msi / portable zip (Windows), AppImage / .deb / .rpm (Linux)",
+    "First launch: allow the unsigned app (Mac: System Settings > Privacy & Security > Open Anyway; Windows: More info > Run anyway)",
+    "Click Learn (top right) for the built-in lessons"
+  ],
+  "stats": {
+    "count": "",
+    "size": "15-96 MB per installer",
+    "formats": [
+      "SKP",
+      "glTF",
+      "FBX",
+      "OBJ",
+      "STL",
+      "IFC",
+      "DXF"
+    ],
+    "cadence": "v0.3.9 on 2026-11-21, frequent releases"
+  },
+  "source": {
+    "url": "https://x.com/hsianghui/status/2124338286873489665",
+    "author": "@hsianghui",
+    "published_at": "2026-11-22T03:04:50Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Free MIT SketchUp-like modeler that actually opens .skp and exports glTF/FBX for games; downloadable builds for all three OSes. Young project (repo created Nov 13), unsigned binaries."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/jasonsutter87/sketchcraft/develop/docs/craftsman_street.png",
+    "alt": "A two-storey Craftsman house with porch, trees, street lamp and a red car modeled in SketchCraft",
+    "credit": "SketchCraft README"
+  },
+  "verification": {
+    "checked_at": "2026-11-22T08:37:38Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 222507 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-22T08:37:38Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-22T08:37:38Z",
+  "history": [
+    {
+      "operation_id": "6227678b-4465-4d7d-97d6-ab0d12610bdc",
+      "action": "submit",
+      "at": "2026-11-22T08:37:38Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "b39e589ca377eb18dce54a23abfdf813caaa74fcd2298ace09b0733af636992a",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
