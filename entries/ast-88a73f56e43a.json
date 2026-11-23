@@ -1,0 +1,99 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-88a73f56e43a",
+  "name": "Higer-Regular (Didone display serif, OFL)",
+  "summary": "Cold, tall Didone display serif for headlines, branding and editorial layouts: high stroke contrast, chiselled serifs, Latin with European diacritics, lining/tabular figures, standard and discretionary ligatures, kerning. Single Regular weight, v1.0, shipped as OTF and WOFF2.",
+  "category": "fonts",
+  "tags": [
+    "font",
+    "serif",
+    "didone",
+    "display",
+    "ofl",
+    "editorial",
+    "woff2"
+  ],
+  "publisher": {
+    "name": "Mohd Ayat Ansari (YAZZ EDITION)",
+    "url": "https://github.com/mohdayatansari"
+  },
+  "resource_url": "https://github.com/mohdayatansari/Higer-Regular",
+  "download_url": "https://github.com/mohdayatansari/Higer-Regular/releases/download/v1.0/Higer-Regular-v1.0.zip",
+  "access": {
+    "model": "open-source",
+    "license": "OFL-1.1",
+    "license_url": "https://github.com/mohdayatansari/Higer-Regular/blob/main/License.md",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "SIL OFL 1.1 with Reserved Font Name 'Higer-Regular': use and embed commercially, do not sell the font by itself, modified versions must be renamed."
+  },
+  "procedure": [
+    "Open the GitHub repo mohdayatansari/Higer-Regular",
+    "Download Higer-Regular-v1.0.zip from Releases (or Fonts/OpenType-PS/Higer-Regular.otf)",
+    "Install the OTF on desktop, or use Fonts/Web-PS/Higer-Regular.woff2 with @font-face"
+  ],
+  "stats": {
+    "count": "1 weight (Regular)",
+    "size": "55 KB zip (OTF 53 KB, WOFF2 25 KB)",
+    "formats": [
+      "OTF",
+      "WOFF2"
+    ],
+    "cadence": "v1.0 released 2026-11-18"
+  },
+  "source": {
+    "url": "https://x.com/MOHDAyatAnsari/status/2124732424231829921",
+    "author": "@MOHDAyatAnsari",
+    "published_at": "2026-11-23T05:11:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 60,
+    "why": "Verified: OFL text read in repo, release zip downloaded (valid OTF + WOFF2). Distinctive free display serif; small single-weight indie release with no traction yet."
+  },
+  "image": {
+    "url": "https://github.com/user-attachments/assets/e92ba373-5dff-4605-853a-60806695dec6",
+    "alt": "Higer specimen: white Didone uppercase, lowercase, numerals and symbols on an orange background",
+    "credit": "Mohd Ayat Ansari"
+  },
+  "verification": {
+    "checked_at": "2026-11-23T08:37:53Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 1196807 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-23T08:37:53Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-23T08:37:53Z",
+  "history": [
+    {
+      "operation_id": "ebdd2608-97c7-4ffe-b07d-f854ae2a8102",
+      "action": "submit",
+      "at": "2026-11-23T08:37:53Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "86c647c24a8b22cb4b934655bc6a599077ed91c0a2b71f7dfe25b9e10761f0bd",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
