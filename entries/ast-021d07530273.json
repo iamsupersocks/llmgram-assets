@@ -1,0 +1,107 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-021d07530273",
+  "name": "Munin 2.0 (open 120B Danish/English agentic-coding model)",
+  "summary": "120B-parameter (12B active) open-weights model from Danish Foundation Models, post-trained from NVIDIA Nemotron 3 Super Base with SFT on LUMI and RL on software-engineering/terminal tasks on Gefion. Model card reports SWE-bench Verified 66.2% (58.1% SFT, 49.3% Nemotron 3 Super in the same harness), 128k context. BF16 weights plus NVFP4 (Blackwell) and SFT checkpoints; served with vLLM (README example uses 8 GPUs).",
+  "category": "models-weights",
+  "tags": [
+    "llm",
+    "open-weights",
+    "agentic-coding",
+    "danish",
+    "nemotron",
+    "moe",
+    "mamba",
+    "vllm"
+  ],
+  "publisher": {
+    "name": "Danish Foundation Models (Alexandra Institute)",
+    "url": "https://foundationmodels.dk/"
+  },
+  "resource_url": "https://huggingface.co/danish-foundation-models/munin-2.0",
+  "download_url": "https://huggingface.co/danish-foundation-models/munin-2.0/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "NVIDIA Nemotron Open Model License",
+    "license_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "License states works are commercially usable; redistribution must keep notices and include 'Licensed by NVIDIA Corporation under the NVIDIA Nemotron Model License'. Not gated on HF. Card: no dedicated safety training, run agents in sandboxes."
+  },
+  "procedure": [
+    "Open the Hugging Face repo danish-foundation-models/munin-2.0 (no login, not gated)",
+    "Download the BF16 safetensors (~247 GB total) with huggingface-cli or git, or use the munin-2.0-nvfp4 repo on Blackwell GPUs",
+    "Serve with vLLM 0.28 per the model card (trust-remote-code, qwen3_coder tool parser, nemotron_v3 reasoning parser)",
+    "Call it through the OpenAI-compatible endpoint"
+  ],
+  "stats": {
+    "count": "3 repos (BF16, NVFP4, SFT)",
+    "size": "~247 GB (BF16, 104 files)",
+    "formats": [
+      "safetensors"
+    ],
+    "cadence": "released 2026-11-18"
+  },
+  "source": {
+    "url": "https://x.com/Dennis_Rye/status/2124437439229952095",
+    "author": "@Dennis_Rye",
+    "published_at": "2026-11-22T09:38:50Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://foundationmodels.dk/news/2026/11/18/munin-20-release-note.html",
+      "author": "Danish Foundation Models",
+      "published_at": "2026-11-18T00:00:00Z",
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 68,
+    "why": "Verified: HF repo not gated, weights resolve, license read on NVIDIA page (commercially usable). Substantive open release with measured agentic-coding gains, but a general LLM needing a multi-GPU server; outside the creative-asset core (cf. Inkling 2 Mini reject 11-21)."
+  },
+  "image": {
+    "url": "https://huggingface.co/danish-foundation-models/munin-2.0/resolve/main/munin2_header.png",
+    "alt": "Munin 2.0 banner by Danish Foundation Models showing SWE-bench Verified 66.2, Terminal-Bench 2.1 38.1, Terminal-Bench Lite 64.2, EuroEval Danish 71.1",
+    "credit": "Danish Foundation Models"
+  },
+  "verification": {
+    "checked_at": "2026-11-23T08:37:36Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 352314 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-23T08:37:36Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-23T08:37:36Z",
+  "history": [
+    {
+      "operation_id": "28d46810-eaf9-45ac-87ba-63411d0201d4",
+      "action": "submit",
+      "at": "2026-11-23T08:37:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2c8632ce9f12f0976451fd71efa446a210974ea7a8a9739b7a106eb6d20ad40d",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
