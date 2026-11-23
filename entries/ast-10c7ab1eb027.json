@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-10c7ab1eb027",
+  "name": "PSX Trees (27 low-poly PS1-style trees & foliage, CC0)",
+  "summary": "27 PS1-style trees and foliage pieces (oaks, pines, willow, palm, dead wood, bushes, ferns, grass, hedge, far-distance billboards) at 6 to 758 triangles each, with tiny 16-colour dithered textures and alpha-clip leaf cards. One GLB per model with embedded textures, plus the PNG textures, previews, contact sheet and a .blend. Ready for Godot, Blender or Unity (glTFast).",
+  "category": "3d-models",
+  "tags": [
+    "psx",
+    "ps1",
+    "low-poly",
+    "trees",
+    "foliage",
+    "cc0",
+    "godot",
+    "retro",
+    "glb"
+  ],
+  "publisher": {
+    "name": "Gravy Assets",
+    "url": "https://gravyassets.itch.io/"
+  },
+  "resource_url": "https://gravyassets.itch.io/psx-trees",
+  "download_url": "https://gravyassets.itch.io/psx-trees",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (name your own price)",
+    "notes": "CC0 stated on the itch page and in the bundled README; no credit required (appreciated)."
+  },
+  "procedure": [
+    "Open gravyassets.itch.io/psx-trees",
+    "Click Download Now, then 'No thanks, just take me to the downloads' (or pay what you want)",
+    "Download PSX_Trees_v1.zip (2.4 MB) and drop the .glb files into your engine",
+    "Set texture filtering to Nearest and turn mipmaps off for the PS1 look"
+  ],
+  "stats": {
+    "count": "27 models (+26 textures, .blend)",
+    "size": "2.4 MB zip",
+    "formats": [
+      "GLB",
+      "PNG",
+      "BLEND"
+    ],
+    "cadence": "v1, published 2026-11-23"
+  },
+  "source": {
+    "url": "https://x.com/GravyAssets/status/2124673425230700916",
+    "author": "@GravyAssets",
+    "published_at": "2026-11-23T01:16:33Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Fresh CC0 pack, downloaded and checked: 27 GLB + textures + .blend, README confirms CC0 and clean low-tri topology. Useful drop-in set for retro/horror 3D games."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HXxa9a-WQAAl6QE.jpg",
+    "alt": "Foggy low-poly PS1-style forest with pines, oaks, bushes, a fallen log and a stump; caption PSX Trees 27 models",
+    "credit": "Gravy Assets"
+  },
+  "verification": {
+    "checked_at": "2026-11-23T08:37:45Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 85307 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-23T08:37:45Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-23T08:37:45Z",
+  "history": [
+    {
+      "operation_id": "63c8c059-6216-4ce0-8d48-7fd41d59fc67",
+      "action": "submit",
+      "at": "2026-11-23T08:37:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "54a3e58832cd84e1cad413b50bf0b7cdf22fce02cc8a9663a46d0c1791471c14",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
