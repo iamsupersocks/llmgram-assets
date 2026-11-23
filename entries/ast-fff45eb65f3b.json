@@ -1,0 +1,105 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-fff45eb65f3b",
+  "name": "XR Animator v0.37.0 (free webcam full-body mocap app)",
+  "summary": "Free AI motion-capture app: full-body, face (52 ARKit blendshapes) and hand tracking from a single webcam or video, driving any VRM/MMD avatar. Records and exports motion to VMD/BVH/glTF, sends VMC protocol to VSeeFace/VNyan/Warudo. v0.37.0 public release adds lip sync from audio input and camera/leg-animation fixes. Runs in the browser or as a Windows/Linux/macOS/Android app.",
+  "category": "animations-mocap",
+  "tags": [
+    "mocap",
+    "webcam",
+    "vtuber",
+    "vrm",
+    "mmd",
+    "bvh",
+    "mediapipe",
+    "lip-sync",
+    "free"
+  ],
+  "publisher": {
+    "name": "Butz Yung (System Animator Online)",
+    "url": "https://github.com/ButzYung"
+  },
+  "resource_url": "https://github.com/ButzYung/SystemAnimatorOnline",
+  "download_url": "https://github.com/ButzYung/SystemAnimatorOnline/releases/tag/XR-Animator_v0.37.0",
+  "access": {
+    "model": "free",
+    "license": "CC BY-NC-SA 4.0 (source code)",
+    "license_url": "https://github.com/ButzYung/SystemAnimatorOnline",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0; patrons get early access ~9 months ahead",
+    "notes": "README: CC BY-NC-SA applies to adapting the source code; it does not apply to content you generate (e.g. mocap videos/motions with your own assets), over which XR Animator claims no rights. Bundled third-party assets keep their own licenses."
+  },
+  "procedure": [
+    "Try it in the browser at sao.animetheme.com/XR_Animator.html, or",
+    "Open GitHub Releases for XR-Animator_v0.37.0 and download the zip for Windows, Linux, macOS (ARM64/x64 beta) or Android",
+    "Unzip and run, load a VRM/MMD avatar and enable webcam full-body tracking",
+    "Record and export motion as BVH/VMD/glTF, or stream via VMC protocol"
+  ],
+  "stats": {
+    "count": "5 platform builds",
+    "size": "~0.39-0.53 GB per zip",
+    "formats": [
+      "BVH",
+      "VMD",
+      "glTF",
+      "VRM",
+      "VRMA"
+    ],
+    "cadence": "v0.37.0 public release 2026-11-22 (early access Oct 2025)"
+  },
+  "source": {
+    "url": "https://x.com/butz_yung/status/2124500792283664465",
+    "author": "@butz_yung",
+    "published_at": "2026-11-22T13:50:34Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 70,
+    "why": "Verified: release page and Windows zip resolve, web app 200, license section read in README. Mature free webcam mocap (2k GitHub stars) with BVH export useful for indie animation; source is non-commercial but generated content is unrestricted."
+  },
+  "image": {
+    "url": "https://github.com/ButzYung/SystemAnimatorOnline/raw/master/images/XR_Animator_thumbnail01.png",
+    "alt": "XR Animator banner: a photo of a crouching woman, an anime avatar copying the pose and a tracked skeleton, captioned FREE AI-based Mocap",
+    "credit": "Butz Yung"
+  },
+  "verification": {
+    "checked_at": "2026-11-23T08:38:03Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 205836 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-23T08:38:03Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-23T08:38:03Z",
+  "history": [
+    {
+      "operation_id": "ad0bf69e-9418-488f-8dec-64b8a5fd5be7",
+      "action": "submit",
+      "at": "2026-11-23T08:38:03Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c77ffa5b3565da5a3b0361fce2afdbc223855335a3f7e56653e1082a399ca385",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
