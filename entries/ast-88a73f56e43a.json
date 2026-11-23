@@ -59,7 +59,7 @@
     "credit": "Mohd Ayat Ansari"
   },
   "verification": {
-    "checked_at": "2026-11-23T08:37:53Z",
+    "checked_at": "2026-11-23T08:38:17Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -79,12 +79,12 @@
       "detail": "image/jpg, 1196807 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-23T08:37:53Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-23T08:37:53Z",
+  "updated_at": "2026-11-23T08:38:17Z",
   "history": [
     {
       "operation_id": "ebdd2608-97c7-4ffe-b07d-f854ae2a8102",
@@ -94,6 +94,15 @@
       "payload_sha256": "86c647c24a8b22cb4b934655bc6a599077ed91c0a2b71f7dfe25b9e10761f0bd",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "dc60c82b-8355-43ec-87d1-458c7fc4b945",
+      "action": "update",
+      "at": "2026-11-23T08:38:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "8f5dc0a4dd233cd1ce6d42223fa5a001635f4b21eb05e3fa461943c659a85427",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
