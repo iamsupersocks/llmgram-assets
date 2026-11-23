@@ -65,7 +65,7 @@
     "credit": "Butz Yung"
   },
   "verification": {
-    "checked_at": "2026-11-23T08:38:03Z",
+    "checked_at": "2026-11-23T08:38:17Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -85,12 +85,12 @@
       "detail": "image/png, 205836 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-23T08:38:03Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-23T08:38:03Z",
+  "updated_at": "2026-11-23T08:38:17Z",
   "history": [
     {
       "operation_id": "ad0bf69e-9418-488f-8dec-64b8a5fd5be7",
@@ -100,6 +100,15 @@
       "payload_sha256": "c77ffa5b3565da5a3b0361fce2afdbc223855335a3f7e56653e1082a399ca385",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "fe101dce-f8de-406d-a612-e8bd3d843161",
+      "action": "update",
+      "at": "2026-11-23T08:38:17Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c104682b84a5aced87b2ddd538efc813fca7345ee355ce3ef82eb4d98d16ed07",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
