@@ -63,7 +63,7 @@
     "credit": "Gravy Assets"
   },
   "verification": {
-    "checked_at": "2026-11-23T08:37:45Z",
+    "checked_at": "2026-11-23T08:38:13Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -83,12 +83,12 @@
       "detail": "image/jpg, 85307 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-23T08:37:45Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-23T08:37:45Z",
+  "updated_at": "2026-11-23T08:38:13Z",
   "history": [
     {
       "operation_id": "63c8c059-6216-4ce0-8d48-7fd41d59fc67",
@@ -98,6 +98,15 @@
       "payload_sha256": "54a3e58832cd84e1cad413b50bf0b7cdf22fce02cc8a9663a46d0c1791471c14",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "7b1f951e-7170-4193-8bb0-15695adf0c57",
+      "action": "update",
+      "at": "2026-11-23T08:38:13Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "282c753decde206d09e6a7696c9dfc7a8ffeb55543d86cdc6bda790f9c8de3d7",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
