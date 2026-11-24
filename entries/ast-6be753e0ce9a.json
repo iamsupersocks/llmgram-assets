@@ -1,0 +1,110 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6be753e0ce9a",
+  "name": "Animated SOG (.asog) – streamable 4D Gaussian splat format",
+  "summary": "Open file format and toolkit for 4D Gaussian splats (volumetric video in the browser). One .asog file holds moving splats with spherical harmonics and optional sound; repo ships the v1 spec, a Python encoder/decoder + flip-book pipeline, and PlayCanvas and three.js players. Example from the README: 180 per-frame PLY scans (3.6 GB) become one 12.4 MB file.",
+  "category": "tools",
+  "tags": [
+    "gaussian-splatting",
+    "4dgs",
+    "volumetric-video",
+    "three.js",
+    "playcanvas",
+    "webgpu",
+    "file-format",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "Arrival.Space",
+    "url": "https://arrival.space/"
+  },
+  "resource_url": "https://github.com/arrival-space/animated-sog",
+  "download_url": "https://codeload.github.com/arrival-space/animated-sog/zip/refs/heads/main",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/arrival-space/animated-sog/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Flip-book conversion needs a CUDA GPU and the external Open4DGS trainer (AGPL-3.0, not included). Sample Rubloff clips come from the Infinite-Realities Datasets (cite as requested). Not yet on PyPI/npm: install from the repo."
+  },
+  "procedure": [
+    "Open https://github.com/arrival-space/animated-sog or try the browser viewers (PlayCanvas / three.js links in the README).",
+    "Download the repo (Code > Download ZIP) or git clone it.",
+    "Install the Python package from the repo's python/ folder, then run `asog encode clip.trigsbin clip.asog --audio sound.mp3` on a TRiGS clip exported by Open4DGS.",
+    "For a folder of per-frame 3DGS PLYs, run `asog flipbook run frames/ work/` (CUDA GPU + Open4DGS required, see docs/pipeline.md).",
+    "Play the file with AsogPlayer (PlayCanvas) or AsogThreePlayer (three.js) from the js/ package; sample clips are in test-data/."
+  ],
+  "stats": {
+    "count": "3 sample clips (1 s, 6 s, 6 s 4K)",
+    "size": "sample clips 3.2–27 MB",
+    "formats": [
+      ".asog",
+      "PLY",
+      "trigsbin"
+    ],
+    "cadence": "format v1 (repo created 2026-11-20)"
+  },
+  "source": {
+    "url": "https://x.com/thelaurenneal/status/2124986640372252974",
+    "author": "@thelaurenneal",
+    "published_at": "2026-11-23T22:01:10Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/arrival-space/animated-sog",
+      "author": "arrival-space",
+      "published_at": "2026-11-20T10:58:53Z",
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Real, MIT-licensed format + encoder + two web players for streaming 4D splat clips with sound; README backs the size claims (3.6 GB to 12.4 MB). Useful for volumetric-video creators on the web. Young (format v1, 47 stars), encoding depends on external AGPL Open4DGS."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/arrival-space/animated-sog/main/docs/media/rubloff-turntable.webp",
+    "alt": "Animated 4D Gaussian splat of a man standing and gesturing, played from a single .asog file",
+    "credit": "Arrival.Space / Infinite Realities (Rubloff capture)"
+  },
+  "verification": {
+    "checked_at": "2026-11-24T08:43:47Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 1027786 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-24T08:43:47Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-24T08:43:47Z",
+  "history": [
+    {
+      "operation_id": "5ddb6c45-faf6-428e-a8dd-8dcfea50f7a1",
+      "action": "submit",
+      "at": "2026-11-24T08:43:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "06945f53d67e3f2171702f1a94fa20cb3915f680f8882d5bacac44e3ddbf91a4",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
