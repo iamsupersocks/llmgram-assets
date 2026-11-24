@@ -71,7 +71,7 @@
     "credit": "Vuena (CC0)"
   },
   "verification": {
-    "checked_at": "2026-11-24T08:43:55Z",
+    "checked_at": "2026-11-24T08:44:29Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -91,12 +91,12 @@
       "detail": "image/png, 62888 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-24T08:43:55Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-24T08:43:55Z",
+  "updated_at": "2026-11-24T08:44:29Z",
   "history": [
     {
       "operation_id": "287fb1ba-8b7b-4834-ad15-831de480b014",
@@ -106,6 +106,15 @@
       "payload_sha256": "bbbfb96cdcf5dbb2669e7ff0708e4bf2d92bd04bf849c5ba293629ad21f1b69b",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "d1fd7645-cee1-4c29-9c09-8abfef6893aa",
+      "action": "update",
+      "at": "2026-11-24T08:44:29Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "db4134229fa5e574e0efe3f8b7d411e886bd53d1e1382446dbdbd00aeaae0a9b",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
