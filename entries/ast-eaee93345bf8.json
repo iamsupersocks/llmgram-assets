@@ -1,0 +1,111 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-eaee93345bf8",
+  "name": "Vuena Assets MCP – 76 CC0 low-poly 3D models (GLB)",
+  "summary": "Free MCP server plus direct URLs for 76 CC0 low-poly 3D models as self-contained GLB files (14 rigged with animation clips): characters, animals, toy cars, Halloween/winter props, PSX-style horror props and store/factory/apartment items. Coding agents (Claude Code, Cursor…) can search and pull models straight into a game project; browser games can load the GLBs directly (CORS open).",
+  "category": "3d-models",
+  "tags": [
+    "cc0",
+    "low-poly",
+    "glb",
+    "rigged",
+    "game-assets",
+    "mcp",
+    "three.js",
+    "godot",
+    "free"
+  ],
+  "publisher": {
+    "name": "Vuena",
+    "url": "https://vuena.itch.io/"
+  },
+  "resource_url": "https://github.com/Vuena/vuena-assets-mcp",
+  "download_url": "https://vuena-assets.test-games.workers.dev/",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0 (assets); MIT (code)",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0; optional paid full packs on itch.io",
+    "notes": "Models are free samples of Vuena's paid itch.io packs. Generated procedurally by code written with AI assistance (no AI image/3D generators per the publisher). No credit needed."
+  },
+  "procedure": [
+    "Browse the models at https://vuena-assets.test-games.workers.dev/ (catalog.json lists every GLB and preview URL).",
+    "Download a model directly: https://vuena-assets.test-games.workers.dev/models/{id}.glb.",
+    "Or add the hosted MCP to your agent: `claude mcp add --transport http vuena-assets https://vuena-assets.test-games.workers.dev/mcp`.",
+    "For local saving into a project folder, run the stdio server: `npx -y vuena-assets-mcp` and call download_asset.",
+    "FBX versions with textures are in the free Vuena Free Mega Starter download on itch.io (name your own price)."
+  ],
+  "stats": {
+    "count": "76 models (14 rigged)",
+    "size": "e.g. rigged cat 0.9 MB",
+    "formats": [
+      "GLB",
+      "PNG",
+      "FBX"
+    ],
+    "cadence": "first release 2026-11-23"
+  },
+  "source": {
+    "url": "https://x.com/vuenagames/status/2124986142319939912",
+    "author": "@vuenagames",
+    "published_at": "2026-11-23T21:59:11Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://vuena.itch.io/vuena-free-mega-starter",
+      "author": "Vuena",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Genuine CC0 GLB set with open direct URLs and an agent-friendly MCP; license stated in repo, catalog.json and itch page. Small (76 models), stylized/procedural, and a funnel to paid packs; brand new (0 stars)."
+  },
+  "image": {
+    "url": "https://vuena-assets.test-games.workers.dev/previews/animal_cat.png",
+    "alt": "Low-poly cartoon orange tabby cat, one of the rigged CC0 GLB models",
+    "credit": "Vuena (CC0)"
+  },
+  "verification": {
+    "checked_at": "2026-11-24T08:43:55Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 62888 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-24T08:43:55Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-24T08:43:55Z",
+  "history": [
+    {
+      "operation_id": "287fb1ba-8b7b-4834-ad15-831de480b014",
+      "action": "submit",
+      "at": "2026-11-24T08:43:55Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "bbbfb96cdcf5dbb2669e7ff0708e4bf2d92bd04bf849c5ba293629ad21f1b69b",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
