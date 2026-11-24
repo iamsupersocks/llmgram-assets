@@ -1,0 +1,103 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-06336c04c81e",
+  "name": "Astro-Rangers: Yellow – free low-poly sci-fi character",
+  "summary": "Free low-poly sci-fi ranger character from ItsMudtip, in rigged and unrigged versions (.blend + .fbx) with a sniper rifle, swappable hands and pixel-art textures. Ready for game prototypes, animations or renders.",
+  "category": "3d-models",
+  "tags": [
+    "low-poly",
+    "character",
+    "rigged",
+    "sci-fi",
+    "blender",
+    "fbx",
+    "pixel-art",
+    "itch.io",
+    "free"
+  ],
+  "publisher": {
+    "name": "ItsMudtip",
+    "url": "https://itsmudtip.itch.io/"
+  },
+  "resource_url": "https://itsmudtip.itch.io/astro-ranger-yellow",
+  "download_url": "https://itsmudtip.itch.io/astro-ranger-yellow",
+  "access": {
+    "model": "free",
+    "license": "ItsMudtip EULA (commercial use with mandatory attribution)",
+    "license_url": "https://itsmudtip.itch.io/astro-ranger-yellow",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0 (name your own price)",
+    "notes": "Personal and commercial use allowed; credit 'Astro Ranger - Yellow 3D Model by ItsMudtip' required; no resale/redistribution of the model or edits; no NFT or AI-training use (EULA in the zip)."
+  },
+  "procedure": [
+    "Open https://itsmudtip.itch.io/astro-ranger-yellow.",
+    "Click Download Now, enter $0 (or tip) and choose 'No thanks, just take me to the downloads'.",
+    "Download YELLOW_Asset_Pack.zip (1.9 MB) and read README_License.txt inside.",
+    "Use RIGGED/Yellow_Rigged.fbx or .blend for animation, UNRRIGED/ for static use; textures are in TEXTURES/."
+  ],
+  "stats": {
+    "count": "1 character (rigged + unrigged), 10 textures",
+    "size": "1.9 MB zip",
+    "formats": [
+      "BLEND",
+      "FBX",
+      "PNG"
+    ],
+    "cadence": "published 2026-11-23"
+  },
+  "source": {
+    "url": "https://x.com/ItsMudtip/status/2124850457038233720",
+    "author": "@ItsMudtip",
+    "published_at": "2026-11-23T13:00:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Real free download (zip fetched, EULA read), clean rigged + unrigged character usable commercially with credit. Single character and attribution/no-redistribution EULA keep it a small, niche entry."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HXyODtdXQAAURiv.jpg",
+    "alt": "Yellow-and-black low-poly sci-fi ranger posed with a sniper rifle, 'Astro Yellow asset pack' poster",
+    "credit": "ItsMudtip"
+  },
+  "verification": {
+    "checked_at": "2026-11-24T08:44:16Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 121231 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-24T08:44:16Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-24T08:44:16Z",
+  "history": [
+    {
+      "operation_id": "8027031b-9052-4d45-b106-64ae23d99f1c",
+      "action": "submit",
+      "at": "2026-11-24T08:44:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "52cd9593ec8004407695351469094a7a73c97bfc0e3a08593e0c2f6a534715f8",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
