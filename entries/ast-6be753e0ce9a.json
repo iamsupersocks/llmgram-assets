@@ -70,7 +70,7 @@
     "credit": "Arrival.Space / Infinite Realities (Rubloff capture)"
   },
   "verification": {
-    "checked_at": "2026-11-24T08:43:47Z",
+    "checked_at": "2026-11-24T08:44:25Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -90,12 +90,12 @@
       "detail": "image/webp, 1027786 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-24T08:43:47Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-24T08:43:47Z",
+  "updated_at": "2026-11-24T08:44:25Z",
   "history": [
     {
       "operation_id": "5ddb6c45-faf6-428e-a8dd-8dcfea50f7a1",
@@ -105,6 +105,15 @@
       "payload_sha256": "06945f53d67e3f2171702f1a94fa20cb3915f680f8882d5bacac44e3ddbf91a4",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "0c1f18b1-86a2-4ed7-a359-4172e7c9d929",
+      "action": "update",
+      "at": "2026-11-24T08:44:25Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "87f3ef4c69274ee237882d8069036cc246e2200bebe5170ae6b2595b566133e7",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
