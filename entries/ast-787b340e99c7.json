@@ -71,7 +71,7 @@
     "credit": "SuddleMercury / JustRigIt"
   },
   "verification": {
-    "checked_at": "2026-11-24T08:44:06Z",
+    "checked_at": "2026-11-24T08:44:40Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -91,12 +91,12 @@
       "detail": "image/png, 234547 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-24T08:44:06Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-24T08:44:06Z",
+  "updated_at": "2026-11-24T08:44:40Z",
   "history": [
     {
       "operation_id": "4e9bc8fb-eebd-455a-a3cb-430b9ec0f42b",
@@ -106,6 +106,15 @@
       "payload_sha256": "2ae8fbbc0e36cf8a9d50da1af4401deeb66edc629a2169fd6ce78d00432e2242",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "4d1a5ac7-ff86-4b41-b54b-885d4c435ea1",
+      "action": "update",
+      "at": "2026-11-24T08:44:40Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "5dd0f69b28edade797d24ec6ad08e22a294b0ccb247aa33aefb25c69c2fac316",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
