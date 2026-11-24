@@ -1,0 +1,111 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-787b340e99c7",
+  "name": "JustRigIt – local video mocap + auto-rig for game engines",
+  "summary": "Free, open-source tool that turns a phone video into game-ready character animation on your own PC: NVIDIA GEM-X tracks body, fingers and root motion locally, then JustRigIt cleans it up (floor, facing, smoothing, foot locking), auto-rigs your GLB/GLTF/FBX character and exports for Unreal 5, Godot 4, Unity or Blender with engine-specific bone names. No account, no upload.",
+  "category": "animations-mocap",
+  "tags": [
+    "mocap",
+    "auto-rig",
+    "animation",
+    "godot",
+    "unreal",
+    "unity",
+    "blender",
+    "local",
+    "open-source"
+  ],
+  "publisher": {
+    "name": "SuddleMercury",
+    "url": "https://github.com/SuddleMercury"
+  },
+  "resource_url": "https://github.com/SuddleMercury/justrigit",
+  "download_url": "https://codeload.github.com/SuddleMercury/justrigit/zip/refs/heads/main",
+  "access": {
+    "model": "open-source",
+    "license": "AGPL-3.0-or-later",
+    "license_url": "https://github.com/SuddleMercury/justrigit/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "App is AGPL (modified versions offered as a service must share source). Capture installer downloads GEM-X weights under the NVIDIA Open Model License (commercial use allowed). Video capture: Windows 10/11 + NVIDIA RTX 8 GB+ VRAM; no GitHub release published yet."
+  },
+  "procedure": [
+    "Download the repo ZIP from https://github.com/SuddleMercury/justrigit (no release build is published yet).",
+    "Open Start-JustRigIt.bat (or dist/justrigit.html in a modern browser) for rigging, retargeting and export.",
+    "For video capture on Windows with an NVIDIA RTX GPU, run Install-Capture.bat once (~15 GB: Python, PyTorch, ffmpeg, GEM-X model).",
+    "Drop a phone video (whole body, up to 60 s), pick the mannequin or your own GLB/GLTF/FBX character.",
+    "Choose Unreal 5, Godot 4, Unity or Blender and in-place or root motion, then download the zip with the import guide."
+  ],
+  "stats": {
+    "count": "1 app (v0.3.0)",
+    "size": "app 1 MB HTML; capture install ~15 GB",
+    "formats": [
+      "GLB",
+      "GLTF",
+      "FBX"
+    ],
+    "cadence": "v0.3.0, last commit 2026-11-03"
+  },
+  "source": {
+    "url": "https://x.com/SuddleMercury/status/2124916891038753207",
+    "author": "@SuddleMercury",
+    "published_at": "2026-11-23T17:24:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/SuddleMercury/justrigit",
+      "author": "SuddleMercury",
+      "published_at": "2026-11-03T01:40:22Z",
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 62,
+    "why": "Useful local mocap-to-engine pipeline built on commercially usable GEM-X weights, with clear third-party license notes. Single-author project (2 stars, no release, last commit 11-03), Windows/RTX-only capture; I could not run the capture on the box."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/SuddleMercury/justrigit/main/docs/screenshots/03-character.png",
+    "alt": "JustRigIt app showing a captured walk animation on a grey mannequin with the character-pick panel",
+    "credit": "SuddleMercury / JustRigIt"
+  },
+  "verification": {
+    "checked_at": "2026-11-24T08:44:06Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 234547 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-24T08:44:06Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-24T08:44:06Z",
+  "history": [
+    {
+      "operation_id": "4e9bc8fb-eebd-455a-a3cb-430b9ec0f42b",
+      "action": "submit",
+      "at": "2026-11-24T08:44:06Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2ae8fbbc0e36cf8a9d50da1af4401deeb66edc629a2169fd6ce78d00432e2242",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
