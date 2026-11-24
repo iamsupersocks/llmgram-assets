@@ -63,7 +63,7 @@
     "credit": "ItsMudtip"
   },
   "verification": {
-    "checked_at": "2026-11-24T08:44:16Z",
+    "checked_at": "2026-11-24T08:44:44Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -83,12 +83,12 @@
       "detail": "image/jpg, 121231 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-24T08:44:16Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-24T08:44:16Z",
+  "updated_at": "2026-11-24T08:44:44Z",
   "history": [
     {
       "operation_id": "8027031b-9052-4d45-b106-64ae23d99f1c",
@@ -98,6 +98,15 @@
       "payload_sha256": "52cd9593ec8004407695351469094a7a73c97bfc0e3a08593e0c2f6a534715f8",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "48718c21-277b-482f-bd33-0a6694dac3f5",
+      "action": "update",
+      "at": "2026-11-24T08:44:44Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "2ab85b6a0ce4c43564ff3d5dc9cc02310e550f931d0b1f0ebc841d1309228041",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
