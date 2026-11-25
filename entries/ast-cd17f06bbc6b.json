@@ -1,0 +1,94 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-cd17f06bbc6b",
+  "name": "Free Mocap Pack 09: Basketball (Anderson Rohr)",
+  "summary": "23 basketball motion-capture animations (~4 minutes total, 60 fps): dribbles, passes, defense, blocks, layup, jump shots, dunks, free throw, three-pointer. Captured with Rokoko and cleaned in Rokoko Studio, delivered as FBX for three skeletons: Rokoko Default, Reallusion iClone and UE5 Manny. Part of a series of free mocap packs.",
+  "category": "animations-mocap",
+  "tags": [
+    "mocap",
+    "basketball",
+    "fbx",
+    "rokoko",
+    "unreal-engine",
+    "iclone",
+    "sports",
+    "animation"
+  ],
+  "publisher": {
+    "name": "Anderson Rohr",
+    "url": "https://linktr.ee/andersonrohr"
+  },
+  "resource_url": "https://andersonrohr.gumroad.com/l/mocap_pack9",
+  "download_url": null,
+  "access": {
+    "model": "free",
+    "license": "Anderson Rohr free mocap pack terms (on Gumroad page)",
+    "license_url": "https://andersonrohr.gumroad.com/l/mocap_pack9",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0+ (pay what you want, enter 0)",
+    "notes": "Free for personal and commercial projects, attribution not required. No redistribution, resale or repackaging as a standalone product. Delivered through Gumroad checkout."
+  },
+  "procedure": [
+    "Open the Gumroad page.",
+    "Enter 0 (or any amount) in the price field and add to cart.",
+    "Complete the Gumroad checkout to receive the download link.",
+    "Import the FBX matching your rig (Rokoko Default, iClone or UE5 Manny)."
+  ],
+  "stats": {
+    "count": "23 animations (~4 min)",
+    "size": "",
+    "formats": [
+      "FBX"
+    ],
+    "cadence": "series (pack 09)"
+  },
+  "source": {
+    "url": "https://x.com/andersonrohr/status/2125275236102705508",
+    "author": "@andersonrohr",
+    "published_at": "2026-11-24T17:07:56Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 76,
+    "why": "Clean sports mocap retargeted to three common skeletons, free with commercial use and no attribution required. Minus: Gumroad checkout step, FBX only, small pack."
+  },
+  "image": {
+    "url": "https://public-files.gumroad.com/2qkjdsij6bv1ksjle11p2mq879rr",
+    "alt": "Three mannequins performing basketball moves (dribble, jump shot) with title 'Free Mocap Pack 09: Basketball'",
+    "credit": "Anderson Rohr"
+  },
+  "verification": {
+    "checked_at": "2026-11-25T08:40:14Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 25487 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-25T08:40:14Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-25T08:40:14Z",
+  "history": [
+    {
+      "operation_id": "db43f3bd-d03f-4f8d-9065-74b0eda5b415",
+      "action": "submit",
+      "at": "2026-11-25T08:40:14Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c4730da8d408717e173cd3396820864ee905a49ac88c7d519e0a46af7c3d7030",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
