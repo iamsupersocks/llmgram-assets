@@ -60,7 +60,7 @@
     "credit": "Anderson Rohr"
   },
   "verification": {
-    "checked_at": "2026-11-25T08:40:14Z",
+    "checked_at": "2026-11-25T08:40:47Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -74,12 +74,12 @@
       "detail": "image/jpg, 25487 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-25T08:40:14Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-25T08:40:14Z",
+  "updated_at": "2026-11-25T08:40:47Z",
   "history": [
     {
       "operation_id": "db43f3bd-d03f-4f8d-9065-74b0eda5b415",
@@ -89,6 +89,15 @@
       "payload_sha256": "c4730da8d408717e173cd3396820864ee905a49ac88c7d519e0a46af7c3d7030",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "f1c37b1b-c572-4eeb-84ec-09238eb78700",
+      "action": "update",
+      "at": "2026-11-25T08:40:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "07b4561902137ac2706b7e7107d6be8002c2d567faf835f954a21bd268993920",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
