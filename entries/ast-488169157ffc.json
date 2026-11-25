@@ -1,0 +1,100 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-488169157ffc",
+  "name": "AmbientCG Browser (Blender extension)",
+  "summary": "Unofficial Blender 4.2+ extension that searches ambientCG's CC0 materials and HDRIs from the 3D Viewport sidebar (N panel). Pick 1K-16K and JPG/PNG, then 'Add Material' builds the full PBR node setup (color, roughness, normal, height, AO, metal, opacity, emission) on selected objects, or 'Set World HDRI' with strength/rotation. Downloads are cached and work offline; no account or API key.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "blender-extension",
+    "ambientcg",
+    "cc0",
+    "pbr",
+    "materials",
+    "hdri",
+    "add-on"
+  ],
+  "publisher": {
+    "name": "jsiovn",
+    "url": "https://github.com/jsiovn/ambientcg-browser"
+  },
+  "resource_url": "https://jsiovn.github.io/ambientcg-browser/",
+  "download_url": "https://jsiovn.github.io/ambientcg-browser/ambientcg_browser-1.1.2.zip",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0-or-later",
+    "license_url": "https://github.com/jsiovn/ambientcg-browser/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Unofficial, not affiliated with ambientCG. Assets fetched are ambientCG CC0. Needs Blender online access to search/download."
+  },
+  "procedure": [
+    "In Blender 4.2+, open Edit > Preferences > Get Extensions > Repositories > + > Add Remote Repository.",
+    "Paste https://jsiovn.github.io/ambientcg-browser/index.json, tick Check for Updates on Startup, click Create.",
+    "Search 'AmbientCG Browser' in Get Extensions and click Install (or drag the zip button from the page onto Blender).",
+    "In the 3D Viewport press N, open the AmbientCG tab, search, choose resolution, then Add Material or Set World HDRI."
+  ],
+  "stats": {
+    "count": "",
+    "size": "36 KB (v1.1.2)",
+    "formats": [
+      "Blender extension (zip)"
+    ],
+    "cadence": "v1.1.2 released 2026-11-20"
+  },
+  "source": {
+    "url": "https://x.com/PaoloPhan/status/2125487809398231097",
+    "author": "@PaoloPhan",
+    "published_at": "2026-11-25T07:12:38Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Puts ambientCG's whole CC0 material/HDRI library one click away inside Blender with proper PBR node setup and offline cache; installs via an official Blender extension repository so it auto-updates. Minus: very new (2 stars), unofficial."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HX8_yYhbwAIzWn-.jpg",
+    "alt": "Blender viewport with a sphere using ambientCG Rock 064 and the AmbientCG sidebar panel showing search, resolution and Add Material",
+    "credit": "@PaoloPhan / jsiovn"
+  },
+  "verification": {
+    "checked_at": "2026-11-25T08:40:23Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 99588 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-25T08:40:23Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-25T08:40:23Z",
+  "history": [
+    {
+      "operation_id": "183eb0b8-47d4-43b4-8fd3-07707e712075",
+      "action": "submit",
+      "at": "2026-11-25T08:40:23Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "48a0632dea75d09277c93b9a0a7a50d6b392e52cb8893829dba1d9f842f2a4c2",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
