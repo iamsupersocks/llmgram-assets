@@ -60,7 +60,7 @@
     "credit": "@PaoloPhan / jsiovn"
   },
   "verification": {
-    "checked_at": "2026-11-25T08:40:23Z",
+    "checked_at": "2026-11-25T08:40:47Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -80,12 +80,12 @@
       "detail": "image/jpg, 99588 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-25T08:40:23Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-25T08:40:23Z",
+  "updated_at": "2026-11-25T08:40:47Z",
   "history": [
     {
       "operation_id": "183eb0b8-47d4-43b4-8fd3-07707e712075",
@@ -95,6 +95,15 @@
       "payload_sha256": "48a0632dea75d09277c93b9a0a7a50d6b392e52cb8893829dba1d9f842f2a4c2",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "e6cfbe54-208b-469a-b26f-85b76cb47833",
+      "action": "update",
+      "at": "2026-11-25T08:40:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ec48250ac5e0424ec24b034c4778cb5697ad8459b034d3d78b9ab9ac8d6e4cd4",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
