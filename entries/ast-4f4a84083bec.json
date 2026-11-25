@@ -1,0 +1,96 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-4f4a84083bec",
+  "name": "Stylized Christmas Asset Pack (WillowBoxArt)",
+  "summary": "42 stylized Christmas 3D models (40 unique + 2 color variants): Santa, elf, snowman, reindeer, gingerbread man, decorated tree, sleigh, Christmas train with modular track, gifts, wreath, ornaments and props. One shared material and a 512x512 gradient atlas (~293k triangles total). Free FBX pack plus a ready-to-import Unity 6 package (Built-in RP). No rigs or animations. Page states no generative AI was used.",
+  "category": "3d-models",
+  "tags": [
+    "christmas",
+    "stylized",
+    "low-poly",
+    "fbx",
+    "unity",
+    "game-assets",
+    "props",
+    "holiday"
+  ],
+  "publisher": {
+    "name": "WillowBoxArt",
+    "url": "https://willowboxart.itch.io/"
+  },
+  "resource_url": "https://willowboxart.itch.io/stylized-christmas-asset-pack",
+  "download_url": null,
+  "access": {
+    "model": "free",
+    "license": "WillowBoxArt license (LICENSE file in pack; summary on itch page)",
+    "license_url": "https://willowboxart.itch.io/stylized-christmas-asset-pack",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (name your own price)",
+    "notes": "Personal and commercial use; credit to WillowBoxArt required. No resale, redistribution, repackaging or re-upload of the original assets. Blender/Maya source scenes are Patreon-only (paid)."
+  },
+  "procedure": [
+    "Open the itch.io page and click Download Now.",
+    "Choose 'No thanks, just take me to the downloads' (or pay what you want).",
+    "Download 'Christmas Pack - FBX models + texture' or the Unity package (35 MB each).",
+    "Credit WillowBoxArt in your project."
+  ],
+  "stats": {
+    "count": "42 FBX models",
+    "size": "35 MB per download",
+    "formats": [
+      "FBX",
+      "unitypackage",
+      "PNG"
+    ],
+    "cadence": "published 2026-11-21, updated 2026-11-25"
+  },
+  "source": {
+    "url": "https://x.com/WillowBoxArt/status/2125301426138271745",
+    "author": "@WillowBoxArt",
+    "published_at": "2026-11-24T18:52:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 72,
+    "why": "Timely, coherent holiday set with characters, vehicles and props on one atlas, free for commercial use, no generative AI. Minus: credit required, no rigs, source files paywalled."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HX6WDZcW4AAgFbU.jpg",
+    "alt": "Stylized 3D Christmas scene with Santa, elf, snowman, reindeer, gingerbread man, decorated tree, sleigh and toy train in snow",
+    "credit": "WillowBoxArt"
+  },
+  "verification": {
+    "checked_at": "2026-11-25T08:40:32Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 146774 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-25T08:40:32Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-25T08:40:32Z",
+  "history": [
+    {
+      "operation_id": "a06acd55-b756-4d73-8ae3-7cb88ca41607",
+      "action": "submit",
+      "at": "2026-11-25T08:40:32Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "dc6b79af094ace7ac50edfe8f5ebb1443b6db908b47d958aeca4a9646562fb09",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
