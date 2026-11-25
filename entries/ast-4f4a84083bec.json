@@ -62,7 +62,7 @@
     "credit": "WillowBoxArt"
   },
   "verification": {
-    "checked_at": "2026-11-25T08:40:32Z",
+    "checked_at": "2026-11-25T08:40:50Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -76,12 +76,12 @@
       "detail": "image/jpg, 146774 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-25T08:40:32Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-25T08:40:32Z",
+  "updated_at": "2026-11-25T08:40:50Z",
   "history": [
     {
       "operation_id": "a06acd55-b756-4d73-8ae3-7cb88ca41607",
@@ -91,6 +91,15 @@
       "payload_sha256": "dc6b79af094ace7ac50edfe8f5ebb1443b6db908b47d958aeca4a9646562fb09",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "d4e00ce2-604a-4f27-b386-ae81a0333071",
+      "action": "update",
+      "at": "2026-11-25T08:40:50Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d3564bedde91a0b12d048fc1e994245b3c1c68663bc20df80ee2b5f233a7c6c2",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
