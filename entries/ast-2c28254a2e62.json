@@ -1,0 +1,113 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-2c28254a2e62",
+  "name": "Parkour Motion Capture GLB (codepawl)",
+  "summary": "98 optical-mocap parkour clips (box vaults, trapezoid obstacles, balance beam, flips; 17 moves, ~59.6k frames at 60 fps) retargeted onto a free CC0 Quaternius character, each shipped with the obstacle it was captured on as GLB. Tiers for web (meshopt), mobile (KTX2), engine (Godot/Blender/Unreal mannequin bone names), animation-only and raw 15-joint skeleton. 60 clips pass contact checks; the rest are in a 'flagged' split with the reason.",
+  "category": "animations-mocap",
+  "tags": [
+    "mocap",
+    "parkour",
+    "glb",
+    "gltf",
+    "retargeting",
+    "godot",
+    "threejs",
+    "unreal",
+    "obstacles",
+    "apache-2.0"
+  ],
+  "publisher": {
+    "name": "codepawl",
+    "url": "https://huggingface.co/codepawl"
+  },
+  "resource_url": "https://huggingface.co/datasets/codepawl/parkour-mocap-glb",
+  "download_url": "https://huggingface.co/datasets/codepawl/parkour-mocap-glb/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0 (character CC0-1.0)",
+    "license_url": "https://huggingface.co/datasets/codepawl/parkour-mocap-glb/blob/main/LICENSES.md",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Credit required: hhtools Parkour Mocap by YaojieShen (Apache-2.0). Character: Quaternius Universal Base Characters, CC0. Clips in the 'flagged' split failed a contact/joint check; use with care."
+  },
+  "procedure": [
+    "Open the Hugging Face dataset page (no account needed).",
+    "Pick a tier folder: objects/ (web), mobile/, engine/ (Godot, Blender, Unreal), motion/ (animation only, load character/ once) or skeleton/ (raw source skeleton).",
+    "Download a clip's .glb directly, or clone the whole repo (~1.1 GB) with git/huggingface-cli.",
+    "Optional: preview clips in the viewer Space https://huggingface.co/spaces/codepawl/parkour-mocap-viewer"
+  ],
+  "stats": {
+    "count": "98 clips (60 pass checks, 38 flagged), 17 moves",
+    "size": "~1.1 GB repo; engine tier 690.8 MB, web tier 42.4 MB",
+    "formats": [
+      "GLB",
+      "glTF",
+      "KTX2",
+      "WebP",
+      "Parquet"
+    ],
+    "cadence": "one-off release (created 2026-11-20, updated 2026-11-23)"
+  },
+  "source": {
+    "url": "https://x.com/anxuanng/status/2125273237936283843",
+    "author": "@anxuanng",
+    "published_at": "2026-11-24T17:00:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://huggingface.co/datasets/YaojieShen/hhtools_parkour_mocap",
+      "author": "YaojieShen",
+      "published_at": "2026-11-12T04:38:42Z",
+      "kind": "huggingface"
+    }
+  ],
+  "verdict": {
+    "score": 84,
+    "why": "Rare free mocap that ships with matching obstacle geometry, in engine-ready GLB tiers with permissive Apache-2.0 license and CC0 character; tested in three.js, Blender and Godot per the card. Minus: README has a few template glitches ('undefined m/s'), 38 clips flagged, no fingers."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/amplify_video_thumb/2124802783027335168/img/aVq4EkDmyoMZC0Ex.jpg",
+    "alt": "Several retargeted characters vaulting and climbing grey box and trapezoid obstacles in a 3D editor scene",
+    "credit": "@anxuanng / codepawl"
+  },
+  "verification": {
+    "checked_at": "2026-11-25T08:40:07Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 116020 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-25T08:40:07Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-25T08:40:07Z",
+  "history": [
+    {
+      "operation_id": "5e6ee625-95e4-4641-9618-3523ec6c22ef",
+      "action": "submit",
+      "at": "2026-11-25T08:40:07Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "9cc133ecd71450b0c560ee2c03c4aabfdcf5ab0a391d0cafa08ac0d1056effe2",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
