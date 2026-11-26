@@ -1,0 +1,107 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-56fcb9d4388c",
+  "name": "Assets2Godot (Poly Haven, ambientCG & BlendKit browser inside Godot)",
+  "summary": "Godot 4.4+ editor plugin that turns the editor into an asset workspace: browse and download the CC0 Poly Haven and ambientCG catalogs (models, textures, HDRIs) and BlendKit, plus index your own asset drives, with staged imports into the project and automatic .blend-to-.tres material conversion via a local Blender. Now listed on the official Godot Asset Store.",
+  "category": "tools",
+  "tags": [
+    "godot",
+    "godot-plugin",
+    "poly-haven",
+    "ambientcg",
+    "blenderkit",
+    "asset-browser",
+    "pbr",
+    "hdri"
+  ],
+  "publisher": {
+    "name": "ikonnow (Ingmar Konnow)",
+    "url": "https://github.com/ikonnow"
+  },
+  "resource_url": "https://store.godotengine.org/asset/ikonnow/assets2godot/",
+  "download_url": "https://github.com/ikonnow/Assets2Godot/releases/tag/v0.9.1",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-2.0",
+    "license_url": "https://github.com/ikonnow/Assets2Godot/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Alpha (v0.9.1 marked unstable on the store). Poly Haven/ambientCG need no account; BlendKit login optional and its assets follow BlendKit terms. Based on BlenderKit's bk_godot. Code written with AI assistants, ships no AI art."
+  },
+  "procedure": [
+    "In Godot 4.4+, open the AssetLib/Asset Store tab and search Assets2Godot, or download assets2godot_v0.9.1.zip (with BlendKit client binaries) or the _nobin zip from GitHub releases.",
+    "Copy addons/assets2godot into your project and enable it in Project Settings > Plugins.",
+    "Open the Poly Haven, ambientCG or BlendKit tab, pick an asset and download; imports are staged into res://imported_assets/."
+  ],
+  "stats": {
+    "count": "3 providers + local index",
+    "size": "34.5 MB full zip / 352 KB without binaries",
+    "formats": [
+      "Godot addon",
+      "GDScript"
+    ],
+    "cadence": "v0.8.1 to v0.9.1 in Nov 2026"
+  },
+  "source": {
+    "url": "https://x.com/ikonnow/status/2125701698135937174",
+    "author": "@ikonnow",
+    "published_at": "2026-11-25T21:22:33Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/ikonnow/Assets2Godot",
+      "author": "ikonnow",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Useful for Godot devs: puts the big CC0 libraries (Poly Haven, ambientCG) plus BlendKit one click away in the editor; fresh store listing, GPLv2, downloads verified. Alpha quality, small audience so far."
+  },
+  "image": {
+    "url": "https://asset-store-prod.fra1.digitaloceanspaces.com/assets/3816/store_thumbnail_16x9.webp",
+    "alt": "Grid of asset cards in the Godot editor: a console, HDRI skies, plants, a cabinet, fabric material and shelves",
+    "credit": "ikonnow / Godot Asset Store"
+  },
+  "verification": {
+    "checked_at": "2026-11-26T08:38:08Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/webp, 104558 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-26T08:38:08Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-26T08:38:08Z",
+  "history": [
+    {
+      "operation_id": "e200b30f-153f-49a8-823b-6bad65dc9c1c",
+      "action": "submit",
+      "at": "2026-11-26T08:38:08Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "db2cf363bb06d88ad6c24de797c8ddbbbb7a5f41ce626b08c47a4d73b8eac00c",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
