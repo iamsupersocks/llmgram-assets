@@ -1,0 +1,113 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c6105e0c6302",
+  "name": "NeoWorld-10K v0.1 (1,324 articulated, simulation-ready 3D objects)",
+  "summary": "CC BY 4.0 dataset of articulated household 3D assets (v0.1: 1,324 objects of a planned 10,000) across 19 domains. Each object ships a textured GLB, USDZ, URDF kinematic tree, native .blend, part meshes, joint/axis/limit annotations and four-view renders. Assets are synthetic: reconstructed by the NeoWorld-3 pipeline from generated images, then checked with geometry/articulation tests and human review. Useful for simulation, robotics and interactive props.",
+  "category": "datasets",
+  "tags": [
+    "3d",
+    "articulated-objects",
+    "simulation",
+    "urdf",
+    "usdz",
+    "glb",
+    "blender",
+    "embodied-ai",
+    "openusd",
+    "simready"
+  ],
+  "publisher": {
+    "name": "Doxi-AI (NeoWorld team)",
+    "url": "https://huggingface.co/Doxi-AI"
+  },
+  "resource_url": "https://huggingface.co/datasets/Doxi-AI/NeoWorld-10K",
+  "download_url": "https://huggingface.co/datasets/Doxi-AI/NeoWorld-10K/tree/main/objects",
+  "access": {
+    "model": "open-source",
+    "license": "CC-BY-4.0",
+    "license_url": "https://huggingface.co/datasets/Doxi-AI/NeoWorld-10K/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Attribution required (cite NeoWorld-3 paper). Ungated on Hugging Face; also mirrored on ModelScope. Synthetic assets reconstructed from generated images; physics tests are simulated, not real-world."
+  },
+  "procedure": [
+    "Open the Hugging Face dataset page (or the ModelScope mirror).",
+    "Browse objects/<object_id>/ and download object.glb, object.usdz, object.urdf with parts/, or articulation.blend.",
+    "For the whole set use huggingface-cli download Doxi-AI/NeoWorld-10K --repo-type dataset (about 153 GB)."
+  ],
+  "stats": {
+    "count": "1,324 objects (v0.1 of 10,000)",
+    "size": "~153 GB",
+    "formats": [
+      "GLB",
+      "USDZ",
+      "URDF",
+      "BLEND",
+      "PNG",
+      "JSON"
+    ],
+    "cadence": "v0.1 2026-11-23; more assets in later updates"
+  },
+  "source": {
+    "url": "https://x.com/ModelScope2022/status/2125783835820298461",
+    "author": "@ModelScope2022",
+    "published_at": "2026-11-26T02:48:56Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://modelscope.ai/datasets/Doxi-AI/NeoWorld-10K",
+      "author": "Doxi-AI",
+      "published_at": null,
+      "kind": "website"
+    }
+  ],
+  "verdict": {
+    "score": 71,
+    "why": "Fresh (HF repo created 2026-11-23), large CC BY 4.0 set of editable articulated objects with GLB/USDZ/URDF/.blend per object, ungated; download verified. Synthetic/AI-reconstructed origin and research-leaning focus noted."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125783818086879232/pu/img/LKuQdbghI0GvvsVI.jpg",
+    "alt": "Grid of rendered household 3D objects: sofa, fan, washing machine, headphones, toaster, chair, stroller, laptop",
+    "credit": "ModelScope / Doxi-AI NeoWorld-10K"
+  },
+  "verification": {
+    "checked_at": "2026-11-26T08:38:30Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 101410 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-26T08:38:30Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-26T08:38:30Z",
+  "history": [
+    {
+      "operation_id": "31e362d4-5b59-4a2f-8a30-c2f7903dcf15",
+      "action": "submit",
+      "at": "2026-11-26T08:38:30Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "26a01718feb12310b628ac4fd06b7baee937eb6d756fa0612b97d0cf1ea9be23",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
