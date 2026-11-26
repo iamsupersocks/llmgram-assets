@@ -1,0 +1,95 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-f53791e8e47e",
+  "name": "Rig Linter (Blender add-on: rig checks before Unreal/Unity/FBX export)",
+  "summary": "Free Blender extension (v0.2.0) that checks an armature and its skinned meshes before export to Unreal, Unity or generic FBX: 19 checks (helper bones, multiple roots, weights not summing to 1, too many influences, unapplied scale, ngons, unit scale...), each with an explanation and a one-click fix for the safe ones. Ships with a demo character and a short manual.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "blender-addon",
+    "rigging",
+    "fbx",
+    "unreal",
+    "unity",
+    "export",
+    "game-dev"
+  ],
+  "publisher": {
+    "name": "Depth Pass",
+    "url": "https://depthpass.com/"
+  },
+  "resource_url": "https://depthpass.com/market/rig-linter/",
+  "download_url": null,
+  "access": {
+    "model": "free-with-signup",
+    "license": "GPL-3.0-or-later",
+    "license_url": null,
+    "commercial_use": "yes",
+    "signup_required": true,
+    "price": "$0 with newsletter email signup",
+    "notes": "Download opens after entering an email (subscribes you to the Depth Pass Friday letter). Tested on Blender 5.2.3; not yet tested on Rigify/Auto-Rig Pro. Demo character by Quaternius (CC0)."
+  },
+  "procedure": [
+    "Open the Rig Linter page on depthpass.com.",
+    "Enter your email (Friday letter signup); the download opens right away.",
+    "In Blender: Edit > Preferences > Get Extensions > Install from Disk, pick the zip."
+  ],
+  "stats": {
+    "count": "19 checks, v0.2.0",
+    "size": "",
+    "formats": [
+      "Blender extension zip",
+      "PDF",
+      "Markdown"
+    ],
+    "cadence": ""
+  },
+  "source": {
+    "url": "https://x.com/thedepthpass/status/2125610144004210859",
+    "author": "@thedepthpass",
+    "published_at": "2026-11-25T15:18:00Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 55,
+    "why": "Practical game-export helper for Blender riggers, GPL-3.0 per page; but gated behind a newsletter email, so files, license file and version could not be checked without subscribing."
+  },
+  "image": {
+    "url": "https://pbs.twimg.com/media/HX-vKXwW4AAAk1y.jpg?name=orig",
+    "alt": "Rig Linter, free: a Depth Pass card with the Blender add-on panel listing rig problems before export.",
+    "credit": "@thedepthpass"
+  },
+  "verification": {
+    "checked_at": "2026-11-26T08:38:36Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 55128 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-26T08:38:36Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-26T08:38:36Z",
+  "history": [
+    {
+      "operation_id": "b83f789e-30e2-4aee-9540-8cf4be8045cd",
+      "action": "submit",
+      "at": "2026-11-26T08:38:36Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "4d5d0019e58253228907fa24c1c76f285c9128befd547ff4cc79c0ab635a961e",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
