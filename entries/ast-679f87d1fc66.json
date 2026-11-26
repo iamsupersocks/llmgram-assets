@@ -59,7 +59,7 @@
     "credit": "Raphaël Garcia / RG Houdini Bridge README"
   },
   "verification": {
-    "checked_at": "2026-11-26T08:37:58Z",
+    "checked_at": "2026-11-26T08:38:47Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -79,12 +79,12 @@
       "detail": "image/png, 472444 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-26T08:37:58Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-26T08:37:58Z",
+  "updated_at": "2026-11-26T08:38:47Z",
   "history": [
     {
       "operation_id": "389d0a67-5ec4-461d-8716-0b9cd7880892",
@@ -94,6 +94,15 @@
       "payload_sha256": "6a72d8ef76b10c701463dc2783289bb9f7439b5b8629f8934119a7c28e30a046",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "e7b77833-94aa-479c-bdd9-a9e553358c49",
+      "action": "update",
+      "at": "2026-11-26T08:38:47Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "1dbbea76390841933f6ddf371efcd0354edd0165f9238f4d5a6e93465be497cf",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
