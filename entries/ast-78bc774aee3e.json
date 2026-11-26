@@ -1,0 +1,113 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-78bc774aee3e",
+  "name": "Poly Molly (2,245 free low-poly 3D models, editable in the browser)",
+  "summary": "Library of 2,245 low-poly game models in 44 themed packs plus 326 rigged characters, all generated from code recipes (no AI image/3D generators per the publisher). Each model can be resized and recolored in the browser Studio, then downloaded at real-metre scale as GLB or USDZ (FBX, OBJ, Godot and Unity packages with a free account). Free for commercial use, no credit required.",
+  "category": "3d-models",
+  "tags": [
+    "low-poly",
+    "glb",
+    "usdz",
+    "fbx",
+    "godot",
+    "unity",
+    "blender",
+    "rigged-characters",
+    "game-assets",
+    "procedural"
+  ],
+  "publisher": {
+    "name": "Poly Molly (Mercandi Media LLC)",
+    "url": "https://polymolly.dev/about"
+  },
+  "resource_url": "https://polymolly.dev/",
+  "download_url": "https://polymolly.dev/library",
+  "access": {
+    "model": "freemium",
+    "license": "Poly Molly Free License v1.2",
+    "license_url": "https://polymolly.dev/license",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 low-poly catalog; Pro HD/Weathering $9.99/mo or $99/yr, Lifetime $149 (not on sale yet)",
+    "notes": "No credit needed. No resale/redistribution of the files, no AI training or building a competing generator, no bulk scraping. GLB/USDZ without account; FBX/OBJ/engine packages need a free email account. Custom builds rate-limited (50/hour)."
+  },
+  "procedure": [
+    "Open polymolly.dev/library and search or pick a pack.",
+    "Open a model page; optionally change size or colours in Studio.",
+    "Click 'Download GLB · Free' (no account) or sign in with a free account for FBX, OBJ, Godot or Unity packages."
+  ],
+  "stats": {
+    "count": "2,245 models, 44 packs, 326 rigged characters",
+    "size": "",
+    "formats": [
+      "GLB",
+      "USDZ",
+      "FBX",
+      "OBJ",
+      "Godot",
+      "Unity"
+    ],
+    "cadence": "launched 2026-11-25; new packs regularly"
+  },
+  "source": {
+    "url": "https://x.com/Meraktans/status/2125593201109041535",
+    "author": "@Meraktans",
+    "published_at": "2026-11-25T14:11:25Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/PolyMollyx/status/2125599872997097615",
+      "author": "@PolyMollyx",
+      "published_at": "2026-11-25T14:37:56Z",
+      "kind": "x_post"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Large, coherent free low-poly library launched 2026-11-25 with clear commercial-use license and no-account GLB download (verified); parametric recolor/resize is a real differentiator. Restrictions (no redistribution/AI training) and freemium HD upsell noted."
+  },
+  "image": {
+    "url": "https://polymolly.dev/og-image.jpg",
+    "alt": "Poly Molly banner: low-poly 3D camp scene with cabins, trees, a pond and a dock",
+    "credit": "Poly Molly"
+  },
+  "verification": {
+    "checked_at": "2026-11-26T08:38:18Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 104198 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-26T08:38:18Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-26T08:38:18Z",
+  "history": [
+    {
+      "operation_id": "54b00a5e-e792-43b5-a8df-ba452646d8b2",
+      "action": "submit",
+      "at": "2026-11-26T08:38:18Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e6f67edfe088d7f8f50a97bd6d6ee9c8e25fcd46362c54e069b1d3436e782045",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
