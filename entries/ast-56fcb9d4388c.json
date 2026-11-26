@@ -67,7 +67,7 @@
     "credit": "ikonnow / Godot Asset Store"
   },
   "verification": {
-    "checked_at": "2026-11-26T08:38:08Z",
+    "checked_at": "2026-11-26T08:38:51Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -87,12 +87,12 @@
       "detail": "image/webp, 104558 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-26T08:38:08Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-26T08:38:08Z",
+  "updated_at": "2026-11-26T08:38:51Z",
   "history": [
     {
       "operation_id": "e200b30f-153f-49a8-823b-6bad65dc9c1c",
@@ -102,6 +102,15 @@
       "payload_sha256": "db2cf363bb06d88ad6c24de797c8ddbbbb7a5f41ce626b08c47a4d73b8eac00c",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "6908b420-9663-41af-adb0-735a3c3cc932",
+      "action": "update",
+      "at": "2026-11-26T08:38:51Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "ec4425eee71313e75f5880e5f3201d909166017c6ee63543f7c3341b59ef82ba",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
