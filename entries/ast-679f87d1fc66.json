@@ -1,0 +1,99 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-679f87d1fc66",
+  "name": "RG Houdini Bridge (Houdini nodes & HDAs as live Blender modifiers)",
+  "summary": "Open-source Blender extension that turns Houdini's own nodes, SideFX Labs tools and your HDAs into live, non-destructive modifiers in Blender: parameters show up in the modifier panel and recook when the mesh below changes, with no export step. Houdini runs in the background on the same machine. Useful for artists who want Houdini procedural tools inside a Blender modifier stack.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "houdini",
+    "hda",
+    "procedural",
+    "modifiers",
+    "blender-extension",
+    "pipeline"
+  ],
+  "publisher": {
+    "name": "Raphaël Garcia (raphaelg-dev)",
+    "url": "https://github.com/raphaelg-dev"
+  },
+  "resource_url": "https://github.com/raphaelg-dev/RGHoudiniBlender",
+  "download_url": "https://github.com/raphaelg-dev/RGHoudiniBlender/releases/download/v1.0.0/rg_houdini_bridge-1.0.0.zip",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0-or-later",
+    "license_url": "https://github.com/raphaelg-dev/RGHoudiniBlender/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 (needs a local Houdini 20+ licence able to run hython; tested with Houdini Indie)",
+    "notes": "Requires Houdini installed on the same machine; Apprentice untested; your use must fit your Houdini licence terms. Tested only on Blender 5.2 / Windows. HDAs can run Python."
+  },
+  "procedure": [
+    "Download rg_houdini_bridge-1.0.0.zip from the GitHub release (not Code > Download ZIP).",
+    "In Blender 5.2: Edit > Preferences > Get Extensions > Install from Disk, pick the zip.",
+    "In Preferences > Add-ons > RG Houdini Bridge > Houdini tab, check your Houdini install is listed.",
+    "In the viewport sidebar (N) > Houdini tab, click 'Read the Houdini Tools', then add a tool as a modifier."
+  ],
+  "stats": {
+    "count": "v1.0.0",
+    "size": "237 KB zip",
+    "formats": [
+      "Blender extension zip"
+    ],
+    "cadence": "first release 2026-11-25"
+  },
+  "source": {
+    "url": "https://x.com/raphaelg_dev/status/2125848376491258363",
+    "author": "@raphaelg_dev",
+    "published_at": "2026-11-26T07:05:23Z",
+    "kind": "x_post"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 74,
+    "why": "Fresh (repo and v1.0.0 release 2026-11-25), genuinely new bridge between Houdini HDAs and Blender's modifier stack, GPL-3.0 with a well-documented README; limited by needing a Houdini licence and being tested only on Windows/Blender 5.2."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/raphaelg-dev/RGHoudiniBlender/main/docs/images/banner.png",
+    "alt": "Blender viewport with an orange 3D Houdini logo and a pig head, a stack of Houdini modifiers in the Properties editor",
+    "credit": "Raphaël Garcia / RG Houdini Bridge README"
+  },
+  "verification": {
+    "checked_at": "2026-11-26T08:37:58Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 472444 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-26T08:37:58Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-26T08:37:58Z",
+  "history": [
+    {
+      "operation_id": "389d0a67-5ec4-461d-8716-0b9cd7880892",
+      "action": "submit",
+      "at": "2026-11-26T08:37:58Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6a72d8ef76b10c701463dc2783289bb9f7439b5b8629f8934119a7c28e30a046",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
