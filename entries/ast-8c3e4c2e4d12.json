@@ -82,7 +82,7 @@
     "credit": "Angelo / Hyperbond Studio"
   },
   "verification": {
-    "checked_at": "2026-11-27T08:35:09Z",
+    "checked_at": "2026-11-27T08:37:22Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -102,12 +102,12 @@
       "detail": "image/jpg, 76854 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-27T08:35:09Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-27T08:35:09Z",
+  "updated_at": "2026-11-27T08:37:22Z",
   "history": [
     {
       "operation_id": "49f3286a-59c1-45ae-943b-23d21bf9b95e",
@@ -117,6 +117,15 @@
       "payload_sha256": "3dad3e413f5153adc3856a8ff74288b83c36deeedc1673a9018334d146b265d0",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "627e1f3b-668c-4aa4-9c7d-e5f2bc497463",
+      "action": "update",
+      "at": "2026-11-27T08:37:22Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "c0bc711aab33577b05a16fc93c317bf24cb33ea3a548f1409873cca594f22d93",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
