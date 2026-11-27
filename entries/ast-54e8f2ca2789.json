@@ -63,12 +63,12 @@
     "why": "Fresh, ungated Apache-2.0 weights for a playable image-to-world model, same family of resource as Hy-Nomas already in the catalog. Useful for prototyping interactive scenes; FPS figures are the publisher's own, and it needs a top-end GPU."
   },
   "image": {
-    "url": "https://raw.githubusercontent.com/amap-cvlab/ABot-World/main/assets/abot-world-0.5-cover.png",
-    "alt": "ABot-World cover collage: robots in a kitchen and playroom, a red car on a road, snowy forest, desert rider",
+    "url": "https://amap-cvlab.github.io/ABot-World/assets/world-05/embodied-poster.jpg",
+    "alt": "ABot-World frame: a robot arm picking up a blue block in a workshop, with on-screen WASD and arrow controls",
     "credit": "AMAP CV Lab"
   },
   "verification": {
-    "checked_at": "2026-11-27T08:35:28Z",
+    "checked_at": "2026-11-27T08:36:41Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,11 +81,11 @@
       "status": 200,
       "detail": "reachable"
     },
-    "image_ok": false,
+    "image_ok": true,
     "image": {
-      "ok": false,
+      "ok": true,
       "status": 200,
-      "detail": "too large"
+      "detail": "image/jpg, 131636 bytes"
     }
   },
   "hold": true,
@@ -93,7 +93,7 @@
   "flags": [],
   "added_at": "2026-11-27T08:35:28Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-27T08:35:28Z",
+  "updated_at": "2026-11-27T08:36:41Z",
   "history": [
     {
       "operation_id": "bffca62d-5b5c-40b1-9594-409fc15dae1a",
@@ -102,6 +102,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "49f5ebbc47f4ff6716909a49ca270460d37aaed8b74a2d3d0bd8658c1f75c847",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "c92c2ec8-6ec5-41e9-b741-4dac9e9e7329",
+      "action": "update",
+      "at": "2026-11-27T08:36:41Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e57f7b44ea3b04de86ed207504884340e608d4f56bbbd7d91568e702ada67ea7",
+      "result": "updated",
       "status": "candidate"
     }
   ]
