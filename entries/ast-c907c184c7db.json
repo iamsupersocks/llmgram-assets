@@ -64,12 +64,12 @@
     "why": "Clear CC0 audio with no signup, stated non-AI, and a practical twist: per-sound hit points for frame-accurate sync in Remotion. Repo dates from Oct 9 (backfill surfaced by a Nov 26 post); MP3 128 kbps only, built around React/Remotion."
   },
   "image": {
-    "url": "https://soundza.com/soundkit-card.png",
-    "alt": "SoundKit card: 'sound synced to your video' with whoosh, hits and riser tracks lined up on a cut",
+    "url": "https://raw.githubusercontent.com/soundza/soundkit/main/assets/banner.png",
+    "alt": "SoundKit banner: CC0 sound effects and music beds for Remotion and React, each with its hit point",
     "credit": "Soundza"
   },
   "verification": {
-    "checked_at": "2026-11-27T08:35:37Z",
+    "checked_at": "2026-11-27T08:36:45Z",
     "resource_ok": false,
     "resource": {
       "ok": false,
@@ -82,11 +82,11 @@
       "status": 200,
       "detail": "reachable"
     },
-    "image_ok": false,
+    "image_ok": true,
     "image": {
-      "ok": false,
-      "status": null,
-      "detail": "TimeoutError"
+      "ok": true,
+      "status": 200,
+      "detail": "image/png, 340208 bytes"
     }
   },
   "hold": true,
@@ -94,7 +94,7 @@
   "flags": [],
   "added_at": "2026-11-27T08:35:37Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-27T08:35:37Z",
+  "updated_at": "2026-11-27T08:36:45Z",
   "history": [
     {
       "operation_id": "1e8a6d43-86f5-491c-a08d-71ebea5e47cc",
@@ -103,6 +103,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "e6ceb1436bbae1ae936e7192ae6214756de7ab77f667e1058b499249e77156a9",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "ffed5fa6-3a18-4152-957d-e9756dcfb731",
+      "action": "update",
+      "at": "2026-11-27T08:36:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "56d53756677d88ba3d29f197de8ed4d095f235f10285591d3b650c5e995a2d64",
+      "result": "updated",
       "status": "candidate"
     }
   ]
