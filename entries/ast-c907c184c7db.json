@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-c907c184c7db",
+  "name": "SoundKit by Soundza (250 CC0 video sound effects and music beds)",
+  "summary": "225 non-AI sound effects and 25 music beds made for video (whooshes, hits, risers, logo stings, glitches, clicks, notifications), all CC0. Each sound carries its hit point, so it lands on the exact frame in Remotion or React. One shadcn command copies a sound into your project as a TypeScript file with the MP3 embedded; nothing loads from a server at playback. Includes an agent skill for Claude Code/Codex/Cursor.",
+  "category": "audio-sfx",
+  "tags": [
+    "sfx",
+    "sound-effects",
+    "music-beds",
+    "cc0",
+    "remotion",
+    "react",
+    "shadcn",
+    "video",
+    "motion-graphics"
+  ],
+  "publisher": {
+    "name": "Soundza",
+    "url": "https://soundza.com/"
+  },
+  "resource_url": "https://soundza.com/soundkit",
+  "download_url": "https://github.com/soundza/soundkit",
+  "access": {
+    "model": "free",
+    "license": "CC0-1.0 (audio); MIT (code)",
+    "license_url": "https://github.com/soundza/soundkit/blob/main/LICENSE-AUDIO",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "No attribution needed. No account or key for SoundKit; the wider Soundza library and its MCP need a sign-in."
+  },
+  "procedure": [
+    "Browse and listen at https://soundza.com/soundkit",
+    "In a React/Remotion project run: npx shadcn add https://soundza.com/r/air-whoosh.json (swap the sound name)",
+    "For Remotion add the component too: npx shadcn add @soundza/remotion",
+    "Or clone https://github.com/soundza/soundkit to get every sound file under registry/soundza/sounds/"
+  ],
+  "stats": {
+    "count": "250 (225 SFX + 25 music beds)",
+    "size": "",
+    "formats": [
+      "mp3",
+      "ts"
+    ],
+    "cadence": "repo active (last push 2026-11-26)"
+  },
+  "source": {
+    "url": "https://x.com/SahilPanhotra/status/2125876892834427185",
+    "author": "@SahilPanhotra",
+    "published_at": "2026-11-26T08:58:42Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/soundza/soundkit",
+      "author": "soundza",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 74,
+    "why": "Clear CC0 audio with no signup, stated non-AI, and a practical twist: per-sound hit points for frame-accurate sync in Remotion. Repo dates from Oct 9 (backfill surfaced by a Nov 26 post); MP3 128 kbps only, built around React/Remotion."
+  },
+  "image": {
+    "url": "https://soundza.com/soundkit-card.png",
+    "alt": "SoundKit card: 'sound synced to your video' with whoosh, hits and riser tracks lined up on a cut",
+    "credit": "Soundza"
+  },
+  "verification": {
+    "checked_at": "2026-11-27T08:35:37Z",
+    "resource_ok": false,
+    "resource": {
+      "ok": false,
+      "status": null,
+      "detail": "TimeoutError"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": null,
+      "detail": "TimeoutError"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-27T08:35:37Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-27T08:35:37Z",
+  "history": [
+    {
+      "operation_id": "1e8a6d43-86f5-491c-a08d-71ebea5e47cc",
+      "action": "submit",
+      "at": "2026-11-27T08:35:37Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e6ceb1436bbae1ae936e7192ae6214756de7ab77f667e1058b499249e77156a9",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
