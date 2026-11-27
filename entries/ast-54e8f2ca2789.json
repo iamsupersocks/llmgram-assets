@@ -68,7 +68,7 @@
     "credit": "AMAP CV Lab"
   },
   "verification": {
-    "checked_at": "2026-11-27T08:36:41Z",
+    "checked_at": "2026-11-27T08:37:32Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -88,12 +88,12 @@
       "detail": "image/jpg, 131636 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-27T08:35:28Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-27T08:36:41Z",
+  "updated_at": "2026-11-27T08:37:32Z",
   "history": [
     {
       "operation_id": "bffca62d-5b5c-40b1-9594-409fc15dae1a",
@@ -112,6 +112,15 @@
       "payload_sha256": "e57f7b44ea3b04de86ed207504884340e608d4f56bbbd7d91568e702ada67ea7",
       "result": "updated",
       "status": "candidate"
+    },
+    {
+      "operation_id": "cbe1c157-8468-4f3a-97b2-332a0da4ed25",
+      "action": "update",
+      "at": "2026-11-27T08:37:32Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "d16505dc36f6117102fd2675c7dbdc098f409a7e3a0b302f218f57168e2a1425",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
