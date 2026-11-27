@@ -57,12 +57,12 @@
     "why": "Strong, widely adopted image-to-3D model (2.7k stars, ComfyUI port) under MIT, not in the catalog. Backfill, not fresh (May–Sep 2026). Held because HF metadata flags EU as disallowed, which conflicts with the plain MIT text."
   },
   "image": {
-    "url": "https://raw.githubusercontent.com/TencentARC/Pixal3D/master/assets/teaser.png",
-    "alt": "Pixal3D teaser: framed concept images on a wall with the matching generated 3D models (robots, castle, pirate shark, turtle) in front",
-    "credit": "Tencent ARC Lab"
+    "url": "https://ldyang694.github.io/projects/pixal3d/results/2_mesh.webp",
+    "alt": "Textured 3D mimic treasure chest from the Pixal3D project page results",
+    "credit": "Tencent ARC Lab / Pixal3D project page"
   },
   "verification": {
-    "checked_at": "2026-11-27T08:35:46Z",
+    "checked_at": "2026-11-27T08:36:45Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -75,11 +75,11 @@
       "status": 200,
       "detail": "reachable"
     },
-    "image_ok": false,
+    "image_ok": true,
     "image": {
-      "ok": false,
+      "ok": true,
       "status": 200,
-      "detail": "too large"
+      "detail": "image/webp, 151940 bytes"
     }
   },
   "hold": true,
@@ -87,7 +87,7 @@
   "flags": [],
   "added_at": "2026-11-27T08:35:46Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-27T08:35:46Z",
+  "updated_at": "2026-11-27T08:36:45Z",
   "history": [
     {
       "operation_id": "1cb1d853-eb95-4283-9f42-5a6a96fba64f",
@@ -96,6 +96,15 @@
       "actor": "oauth:Cursor",
       "payload_sha256": "a6f329849e704019659197cca09751d27f258c6db7196cbefd2e995c77fa3862",
       "result": "created",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "787472e9-db8f-49d2-a9a9-cb3707e51d74",
+      "action": "update",
+      "at": "2026-11-27T08:36:45Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "892f31c34a6317915c5ae17a0981c1d5f340c4bd83a1d13c86c4580cf0155d10",
+      "result": "updated",
       "status": "candidate"
     }
   ]
