@@ -1,0 +1,122 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-8c3e4c2e4d12",
+  "name": "Angelo 2.1 (open-source Blender fork with a built-in AI agent)",
+  "summary": "Free, open-source fork of Blender (based on Blender 5.3.0) with an AI agent that works in your real scene using your own Claude/ChatGPT subscription or API key. 2.1 adds a built-in Retopology tool (42/42 runs on the publisher's frozen test set vs 22 for QuadriFlow), rig tools (retarget, game rigs for Unreal/Unity/Godot, IK), Shape Cut, Scatter, UV Layout, collision hulls and Splats to Mesh. macOS (Apple silicon) and Windows.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "blender-fork",
+    "ai-agent",
+    "retopology",
+    "rigging",
+    "gaussian-splats",
+    "gamedev",
+    "gpl"
+  ],
+  "publisher": {
+    "name": "Hyperbond Studio Pte. Ltd. (Angelo / Call Me Sensei)",
+    "url": "https://angelo.studio/"
+  },
+  "resource_url": "https://angelo.studio/",
+  "download_url": "https://angelo.studio/download",
+  "access": {
+    "model": "open-source",
+    "license": "GPL-3.0-or-later as distributed (own source files GPL-2.0-or-later)",
+    "license_url": "https://github.com/call-me-sensei-app/angelo/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0 for individuals (bring your own model, billed by your provider); Team $10/seat/month; Enterprise $400/org/month",
+    "notes": "Agent needs your own Claude/ChatGPT subscription or API key. Angelo name/logos not covered by GPL. Not affiliated with the Blender Foundation. Linux planned for 2.2. macOS 26+ on Apple silicon or Windows x64."
+  },
+  "procedure": [
+    "Open https://angelo.studio/download",
+    "Download Angelo-2.1.0-macos-arm64.dmg (macOS 26+, Apple silicon) or Angelo-2.1.0-windows-x64.msi (Windows x64)",
+    "Optionally check the file against the published .sha256",
+    "Install, launch, and connect your Claude or ChatGPT subscription or your own API key for the agent",
+    "Source code: https://github.com/call-me-sensei-app/angelo (each release tagged)"
+  ],
+  "stats": {
+    "count": "v2.1.0",
+    "size": "macOS DMG ~501 MB; Windows MSI ~576 MB",
+    "formats": [
+      "dmg",
+      "msi",
+      "blend"
+    ],
+    "cadence": "1.0 → 2.0 (Nov 18) → 2.1 (Nov 25), auto-updates"
+  },
+  "source": {
+    "url": "https://x.com/juminoz/status/2125475649632829552",
+    "author": "@juminoz",
+    "published_at": "2026-11-25T06:24:18Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://x.com/ph8games/status/2126030808876232718",
+      "author": "@ph8games",
+      "published_at": "2026-11-26T19:10:19Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://x.com/its_automated/status/2126180051506942356",
+      "author": "@its_automated",
+      "published_at": "2026-11-27T05:03:21Z",
+      "kind": "x_post"
+    },
+    {
+      "url": "https://github.com/call-me-sensei-app/angelo",
+      "author": "call-me-sensei-app",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 80,
+    "why": "Real downloadable GPL app (Blender fork) with installers and full source; 2.1 bundles retopo, rigging and splat-to-mesh tools artists usually buy as add-ons. 90K views / 1.4K saves on the launch post. Agent features need a paid model subscription or key; benchmark numbers are the publisher's own."
+  },
+  "image": {
+    "url": "https://angelo.studio/og/home.jpg",
+    "alt": "Angelo banner: 'Imagine like a kid. Create like a master.' next to a rendered teacup dragon scene",
+    "credit": "Angelo / Hyperbond Studio"
+  },
+  "verification": {
+    "checked_at": "2026-11-27T08:35:09Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 76854 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-27T08:35:09Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-27T08:35:09Z",
+  "history": [
+    {
+      "operation_id": "49f3286a-59c1-45ae-943b-23d21bf9b95e",
+      "action": "submit",
+      "at": "2026-11-27T08:35:09Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "3dad3e413f5153adc3856a8ff74288b83c36deeedc1673a9018334d146b265d0",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
