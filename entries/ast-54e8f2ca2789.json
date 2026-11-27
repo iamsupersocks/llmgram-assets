@@ -1,0 +1,108 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-54e8f2ca2789",
+  "name": "ABot-World 0.5 Iris (5B real-time interactive world model)",
+  "summary": "Open-weight 5B causal world model that turns a still image into a real-time interactive video world you steer with the keyboard (WASD/IJKL) and change with text prompts mid-rollout. Streams ~21 FPS on a single RTX 5090 per the publisher; fine-tuned from Wan2.2-TI2V-5B, with a streaming FantasyDecoder. Ships with a Gradio demo and six interactive example scenes.",
+  "category": "models-weights",
+  "tags": [
+    "world-model",
+    "interactive-video",
+    "image-to-video",
+    "real-time",
+    "wan2.2",
+    "apache-2.0",
+    "gamedev",
+    "simulation"
+  ],
+  "publisher": {
+    "name": "AMAP CV Lab (Alibaba AMAP)",
+    "url": "https://amap-cvlab.github.io/ABot-World/"
+  },
+  "resource_url": "https://huggingface.co/acvlab/ABot-World-0-5-5B-Iris",
+  "download_url": "https://huggingface.co/acvlab/ABot-World-0-5-5B-Iris/tree/main",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/acvlab/ABot-World-0-5-5B-Iris/blob/main/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "Ungated. Third-party parts listed in THIRD_PARTY_NOTICES.md (Wan2.2 Apache-2.0, etc.). Demo sample images: replace before redistribution. Larger Halo 30B model is not part of this release. Needs a high-end NVIDIA GPU."
+  },
+  "procedure": [
+    "Clone the code: https://github.com/amap-cvlab/ABot-World and follow its setup",
+    "Download weights: hf download acvlab/ABot-World-0-5-5B-Iris --local-dir checkpoints/ABot-World-0-5-5B-Iris (or ModelScope amap_cvlab/ABot-World-0-5-5B-Iris)",
+    "Run the demo: bash web_client/run.sh, pick a scene, steer with WASD/IJKL",
+    "Optional: ABOTWORLD_CONFIG=configs/iris/model_inference.yaml for FantasyDecoder"
+  ],
+  "stats": {
+    "count": "5B parameters",
+    "size": "~27.8 GB repo (DiT safetensors 10.5 GB)",
+    "formats": [
+      "safetensors",
+      "pth"
+    ],
+    "cadence": "weights released 2026-11-24"
+  },
+  "source": {
+    "url": "https://x.com/ModelScope2022/status/2125907860533989784",
+    "author": "@ModelScope2022",
+    "published_at": "2026-11-26T11:01:46Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/amap-cvlab/ABot-World",
+      "author": "amap-cvlab",
+      "published_at": null,
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Fresh, ungated Apache-2.0 weights for a playable image-to-world model, same family of resource as Hy-Nomas already in the catalog. Useful for prototyping interactive scenes; FPS figures are the publisher's own, and it needs a top-end GPU."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/amap-cvlab/ABot-World/main/assets/abot-world-0.5-cover.png",
+    "alt": "ABot-World cover collage: robots in a kitchen and playroom, a red car on a road, snowy forest, desert rider",
+    "credit": "AMAP CV Lab"
+  },
+  "verification": {
+    "checked_at": "2026-11-27T08:35:28Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": 200,
+      "detail": "too large"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-27T08:35:28Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-27T08:35:28Z",
+  "history": [
+    {
+      "operation_id": "bffca62d-5b5c-40b1-9594-409fc15dae1a",
+      "action": "submit",
+      "at": "2026-11-27T08:35:28Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "49f5ebbc47f4ff6716909a49ca270460d37aaed8b74a2d3d0bd8658c1f75c847",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
