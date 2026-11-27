@@ -61,7 +61,7 @@
     "credit": "HelixDB"
   },
   "verification": {
-    "checked_at": "2026-11-27T08:35:18Z",
+    "checked_at": "2026-11-27T08:37:31Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -81,12 +81,12 @@
       "detail": "image/png, 269431 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-27T08:35:18Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-27T08:35:18Z",
+  "updated_at": "2026-11-27T08:37:31Z",
   "history": [
     {
       "operation_id": "8da5c99f-305b-45ed-a1d2-acc4f46c827b",
@@ -96,6 +96,15 @@
       "payload_sha256": "f5a1221059d304fb3d7279c31f513c04ae96d7dabd3cb09e3c45d1ba8147f10b",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "a21e64d7-31cc-430f-bf6e-447046824f3f",
+      "action": "update",
+      "at": "2026-11-27T08:37:31Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "013231e7566899f771740cdc2d76e63b9134de1fb9f3837dd612977f96052409",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
