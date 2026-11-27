@@ -1,0 +1,102 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-885786b50868",
+  "name": "Pixal3D (Tencent ARC image-to-3D with PBR textures)",
+  "summary": "Open image-to-3D model (SIGGRAPH 2026) that lifts pixel features into 3D by back-projection, giving close-to-reconstruction fidelity with detailed geometry and PBR textures. Outputs a GLB mesh from one image, or from several views of the same object. The main branch uses the TRELLIS.2 backbone; low-VRAM mode, training code and a data toolkit are included. A ComfyUI port exists (Comfy-Org/Pixal3D).",
+  "category": "models-weights",
+  "tags": [
+    "image-to-3d",
+    "3d-generation",
+    "pbr",
+    "glb",
+    "trellis2",
+    "siggraph-2026",
+    "tencent",
+    "mit"
+  ],
+  "publisher": {
+    "name": "Tencent ARC Lab & Tsinghua University",
+    "url": "https://ldyang694.github.io/projects/pixal3d/"
+  },
+  "resource_url": "https://github.com/TencentARC/Pixal3D",
+  "download_url": "https://huggingface.co/TencentARC/Pixal3D",
+  "access": {
+    "model": "open-source",
+    "license": "MIT",
+    "license_url": "https://github.com/TencentARC/Pixal3D/blob/master/LICENSE",
+    "commercial_use": "yes",
+    "signup_required": false,
+    "price": "$0",
+    "notes": "MIT for code and weights per NOTICE; dinov2 Apache-2.0. HF card metadata sets extra_gated_eu_disallowed: true although the repo is not gated (weights downloaded from France on 2026-11-27). Needs a TRELLIS.2 CUDA setup."
+  },
+  "procedure": [
+    "Set up the TRELLIS.2 environment (https://github.com/microsoft/TRELLIS.2)",
+    "Clone https://github.com/TencentARC/Pixal3D and pip install -r requirements.txt, natten 0.21.0 and utils3d",
+    "Weights come from https://huggingface.co/TencentARC/Pixal3D",
+    "Run: python inference.py --image your.png --output out.glb (add --low_vram on smaller GPUs)",
+    "No install: try the demo at https://huggingface.co/spaces/TencentARC/Pixal3D"
+  ],
+  "stats": {
+    "count": "1.3B DiT stages (shape + texture)",
+    "size": "~46 GB of checkpoints",
+    "formats": [
+      "safetensors",
+      "glb"
+    ],
+    "cadence": "code May 2026, multi-view Sep 2026"
+  },
+  "source": {
+    "url": "https://github.com/TencentARC/Pixal3D",
+    "author": "TencentARC",
+    "published_at": "2026-05-10T15:35:28Z",
+    "kind": "github"
+  },
+  "related_sources": [],
+  "verdict": {
+    "score": 68,
+    "why": "Strong, widely adopted image-to-3D model (2.7k stars, ComfyUI port) under MIT, not in the catalog. Backfill, not fresh (May–Sep 2026). Held because HF metadata flags EU as disallowed, which conflicts with the plain MIT text."
+  },
+  "image": {
+    "url": "https://raw.githubusercontent.com/TencentARC/Pixal3D/master/assets/teaser.png",
+    "alt": "Pixal3D teaser: framed concept images on a wall with the matching generated 3D models (robots, castle, pirate shark, turtle) in front",
+    "credit": "Tencent ARC Lab"
+  },
+  "verification": {
+    "checked_at": "2026-11-27T08:35:46Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": false,
+    "image": {
+      "ok": false,
+      "status": 200,
+      "detail": "too large"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-27T08:35:46Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-27T08:35:46Z",
+  "history": [
+    {
+      "operation_id": "1cb1d853-eb95-4283-9f42-5a6a96fba64f",
+      "action": "submit",
+      "at": "2026-11-27T08:35:46Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "a6f329849e704019659197cca09751d27f258c6db7196cbefd2e995c77fa3862",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
