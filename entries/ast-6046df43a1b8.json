@@ -1,0 +1,110 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-6046df43a1b8",
+  "name": "Amuse 4.0 (free open-source local AI studio: image, video, music, speech)",
+  "summary": "Windows desktop app that runs open generative models on your own GPU (NVIDIA, AMD, Intel): text/image-to-image and inpainting (FLUX.2 Klein, Qwen Image...), text/image-to-video with long chunked clips (LTX-2.x, Wan 2.2, HunyuanVideo 1.5), music (ACE-Step 1.5, Stable Audio 3), TTS and voice cloning, sound effects, transcription and local chat. v4.0.0 adds the audio and language backends. No account, no credits; models download from Hugging Face in Q4/Q8/full precision.",
+  "category": "tools",
+  "tags": [
+    "local-ai",
+    "image-generation",
+    "video-generation",
+    "music-generation",
+    "tts",
+    "sfx",
+    "windows",
+    "open-source",
+    "stable-diffusion-cpp",
+    "llama-cpp"
+  ],
+  "publisher": {
+    "name": "Amuse (saddam213 / AmuseAI)",
+    "url": "https://www.amuse-ai.com/"
+  },
+  "resource_url": "https://www.amuse-ai.com/",
+  "download_url": "https://github.com/saddam213/AmuseAI/releases/download/v4.0.0/Amuse_v4.0.0.exe",
+  "access": {
+    "model": "open-source",
+    "license": "Apache-2.0 (app); each model under its own license",
+    "license_url": "https://github.com/saddam213/AmuseAI/blob/main/LICENSE",
+    "commercial_use": "restricted",
+    "signup_required": false,
+    "price": "$0, no subscription or credits",
+    "notes": "App is Apache-2.0; commercial use of outputs depends on each downloaded model's license. Windows 10/11 64-bit only; GPU needed (bigger video models need much more VRAM). Models are downloaded separately."
+  },
+  "procedure": [
+    "Open https://www.amuse-ai.com/ and click Download for Windows (or grab Amuse_v4.0.0.exe / .zip from the GitHub v4.0.0 release)",
+    "Run the ~420 MB installer on Windows 10/11 64-bit",
+    "On first start Amuse picks the backend for your GPU",
+    "Open the model manager, download a model at Q4, Q8 or full precision (check its license), then generate"
+  ],
+  "stats": {
+    "count": "image, video, audio and text studios",
+    "size": "installer 419 MB (exe) / 418 MB (zip)",
+    "formats": [
+      "exe",
+      "zip"
+    ],
+    "cadence": "v4.0.0 released 2026-11-27; repo active"
+  },
+  "source": {
+    "url": "https://x.com/samsom32450/status/2126563745707266191",
+    "author": "@samsom32450",
+    "published_at": "2026-11-28T06:28:01Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://github.com/saddam213/AmuseAI/releases/tag/v4.0.0",
+      "author": "saddam213",
+      "published_at": "2026-11-27T22:42:54Z",
+      "kind": "github"
+    }
+  ],
+  "verdict": {
+    "score": 72,
+    "why": "Fresh major release (v4.0.0, Nov 27) of a free Apache-2.0 app that bundles image, video, music, TTS and SFX generation locally with no account or credits, on AMD/Intel as well as NVIDIA. Limits: Windows only, needs a capable GPU, and output rights depend on each model's own license."
+  },
+  "image": {
+    "url": "https://www.amuse-ai.com/assets/brand/og-image.jpg",
+    "alt": "Amuse banner: 'Your own AI studio. No cloud required.' next to a screenshot of the app's image generation screen",
+    "credit": "Amuse"
+  },
+  "verification": {
+    "checked_at": "2026-11-28T08:39:54Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 110340 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-28T08:39:54Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-28T08:39:54Z",
+  "history": [
+    {
+      "operation_id": "6b2e9e7c-d77b-480b-b941-566763ef4182",
+      "action": "submit",
+      "at": "2026-11-28T08:39:54Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "28433c9a193ae78a56394696961ad233f67fcb5da8269814b17851e50a7b0b07",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
