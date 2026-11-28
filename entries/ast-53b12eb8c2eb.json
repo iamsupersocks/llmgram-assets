@@ -1,0 +1,109 @@
+{
+  "schema_version": "llmgram-asset/v1",
+  "id": "ast-53b12eb8c2eb",
+  "name": "Face Picker (free Blender add-on for 2D face animation, no rig)",
+  "summary": "Free Blender add-on by SouthernShotty that turns numbered PNG sequences into a clickable library of facial expressions you browse and keyframe in the 3D Viewport. Simple mode swaps whole faces; Advanced mode controls eyes and mouth separately. Works for any image-sequence swap (screens, signs). Free tier includes the full add-on, a demo character and 25 starter face textures; a paid bundle adds 300+ faces and vector sources.",
+  "category": "tools",
+  "tags": [
+    "blender",
+    "addon",
+    "facial-animation",
+    "2d-faces",
+    "stylized",
+    "character-animation",
+    "image-sequence"
+  ],
+  "publisher": {
+    "name": "SouthernShotty LLC",
+    "url": "https://superhivemarket.com/products/blender-face-picker"
+  },
+  "resource_url": "https://superhivemarket.com/products/blender-face-picker",
+  "download_url": "https://superhivemarket.com/products/blender-face-picker",
+  "access": {
+    "model": "freemium",
+    "license": "GPL (add-on code); Superhive Royalty Free (textures, models, vectors)",
+    "license_url": "https://superhivemarket.com/page/royalty-free-license",
+    "commercial_use": "yes",
+    "signup_required": null,
+    "price": "$0 add-on + sample assets; add-on + 300-face bundle $15 ($9.75 on sale)",
+    "notes": "Assets: personal and commercial use OK, no resale/redistribution, not in logos. $0 checkout via the Superhive cart (account need not verified). Listed for Blender 5.3."
+  },
+  "procedure": [
+    "Open the Superhive product page",
+    "Pick the $0 option (add-on + free sample model and face textures) and add it to cart",
+    "Complete the $0 checkout and download the zip",
+    "In Blender 5.3: Edit > Preferences > Add-ons > Install from Disk, then open Face Picker in the 3D Viewport sidebar"
+  ],
+  "stats": {
+    "count": "add-on + demo character + 25 face textures (free tier)",
+    "size": "",
+    "formats": [
+      "zip",
+      "py",
+      "png",
+      "blend"
+    ],
+    "cadence": "published ~2026-11-21; 400+ downloads"
+  },
+  "source": {
+    "url": "https://x.com/80Level/status/2126383139287159256",
+    "author": "@80Level",
+    "published_at": "2026-11-27T18:30:21Z",
+    "kind": "x_post"
+  },
+  "related_sources": [
+    {
+      "url": "https://80.lv/articles/create-expressive-2d-face-animations-in-blender-with-ease",
+      "author": "80 Level (Amber Rutherford)",
+      "published_at": "2026-11-27T00:00:00Z",
+      "kind": "article"
+    }
+  ],
+  "verdict": {
+    "score": 70,
+    "why": "Useful free tool from a well-known Blender educator: stylized 2D face animation without rigging, keyed from thumbnails. Free tier is the full add-on (GPL) with starter faces. The big face library is paid, and it targets Blender 5.3."
+  },
+  "image": {
+    "url": "https://assets.superhivemarket.com/store/product/269669/image/xlarge-7c2dc8c120e17f06749747fc0d586554.jpeg",
+    "alt": "Face Picker banner: stylized cap-wearing character beside a grid of clickable 2D face expressions (Normal, Sad, Happy, Angry...)",
+    "credit": "SouthernShotty / Superhive"
+  },
+  "verification": {
+    "checked_at": "2026-11-28T08:40:02Z",
+    "resource_ok": true,
+    "resource": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "download_ok": true,
+    "download": {
+      "ok": true,
+      "status": 200,
+      "detail": "reachable"
+    },
+    "image_ok": true,
+    "image": {
+      "ok": true,
+      "status": 200,
+      "detail": "image/jpg, 165991 bytes"
+    }
+  },
+  "hold": true,
+  "status": "candidate",
+  "flags": [],
+  "added_at": "2026-11-28T08:40:02Z",
+  "added_by": "oauth:Cursor",
+  "updated_at": "2026-11-28T08:40:02Z",
+  "history": [
+    {
+      "operation_id": "a6df7b80-3c08-4505-90f7-ea13bd173f29",
+      "action": "submit",
+      "at": "2026-11-28T08:40:02Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "e6848c46f2617985c0dfa38086d65e62b9a6c6045dbbf2ed47979fcccf6d36d9",
+      "result": "created",
+      "status": "candidate"
+    }
+  ]
+}
