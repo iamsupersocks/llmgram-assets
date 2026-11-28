@@ -69,7 +69,7 @@
     "credit": "SouthernShotty / Superhive"
   },
   "verification": {
-    "checked_at": "2026-11-28T08:40:02Z",
+    "checked_at": "2026-11-28T08:40:16Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -89,12 +89,12 @@
       "detail": "image/jpg, 165991 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-28T08:40:02Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-28T08:40:02Z",
+  "updated_at": "2026-11-28T08:40:16Z",
   "history": [
     {
       "operation_id": "a6df7b80-3c08-4505-90f7-ea13bd173f29",
@@ -104,6 +104,15 @@
       "payload_sha256": "e6848c46f2617985c0dfa38086d65e62b9a6c6045dbbf2ed47979fcccf6d36d9",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "f17f79c2-2c98-45d7-8970-363dc2f11a1c",
+      "action": "update",
+      "at": "2026-11-28T08:40:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "6c1953177c4d1879615e33a75a24d607ac794e3a6c274214ff6e1c7c4870d6cd",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
