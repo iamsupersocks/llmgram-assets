@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily link check of the LLMgram assets
+
+[Timer]
+# Before the PM's morning run (about 9:30 Paris), so she finds the flags.
+OnCalendar=*-*-* 06:00:00 Europe/Paris
+RandomizedDelaySec=20min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
