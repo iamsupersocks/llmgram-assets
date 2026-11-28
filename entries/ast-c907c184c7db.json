@@ -69,7 +69,7 @@
     "credit": "Soundza"
   },
   "verification": {
-    "checked_at": "2026-11-27T08:37:36Z",
+    "checked_at": "2026-11-28T08:40:16Z",
     "resource_ok": false,
     "resource": {
       "ok": false,
@@ -94,7 +94,7 @@
   "flags": [],
   "added_at": "2026-11-27T08:35:37Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-27T08:37:36Z",
+  "updated_at": "2026-11-28T08:40:16Z",
   "history": [
     {
       "operation_id": "1e8a6d43-86f5-491c-a08d-71ebea5e47cc",
@@ -120,6 +120,15 @@
       "at": "2026-11-27T08:37:36Z",
       "actor": "oauth:Cursor",
       "payload_sha256": "09ee4724695bd3488826dfb59fc7e2c71486be169a9c56842aae272fd31b576f",
+      "result": "updated",
+      "status": "candidate"
+    },
+    {
+      "operation_id": "bb622e42-2a28-4474-91c4-7c0e0e4a7082",
+      "action": "update",
+      "at": "2026-11-28T08:40:16Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "948c948e8492138bcbfdd6dd9c1c06f892f93413fe4c09d7f459c2d85e55f34c",
       "result": "updated",
       "status": "candidate"
     }
