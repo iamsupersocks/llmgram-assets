@@ -70,7 +70,7 @@
     "credit": "Amuse"
   },
   "verification": {
-    "checked_at": "2026-11-28T08:39:54Z",
+    "checked_at": "2026-11-28T08:40:12Z",
     "resource_ok": true,
     "resource": {
       "ok": true,
@@ -90,12 +90,12 @@
       "detail": "image/jpg, 110340 bytes"
     }
   },
-  "hold": true,
-  "status": "candidate",
+  "hold": false,
+  "status": "published",
   "flags": [],
   "added_at": "2026-11-28T08:39:54Z",
   "added_by": "oauth:Cursor",
-  "updated_at": "2026-11-28T08:39:54Z",
+  "updated_at": "2026-11-28T08:40:12Z",
   "history": [
     {
       "operation_id": "6b2e9e7c-d77b-480b-b941-566763ef4182",
@@ -105,6 +105,15 @@
       "payload_sha256": "28433c9a193ae78a56394696961ad233f67fcb5da8269814b17851e50a7b0b07",
       "result": "created",
       "status": "candidate"
+    },
+    {
+      "operation_id": "6fc8bd0f-f9ce-4fc8-9565-4da5103f90c2",
+      "action": "update",
+      "at": "2026-11-28T08:40:12Z",
+      "actor": "oauth:Cursor",
+      "payload_sha256": "14b11795ffb4ea508d9c3bfd94377154ba5279b37d3d9ca68ea0e3e82d0b5e04",
+      "result": "updated",
+      "status": "published"
     }
   ]
 }
